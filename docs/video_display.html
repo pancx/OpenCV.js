@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<title>video display</title>
+<head>
+<style>
+.contentarea {
+    display:inline;
+}
+canvas {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+
+<div id="CodeArea">
+<h3>Input your code</h3>
+<textarea rows="40" cols="90" id="TestCode" spellcheck="false">
+
+
+</textarea>
+</div><br>
+
+<canvas id="bgsCanvasFrame" hidden></canvas>
+<div id="contentarea">
+    <button id="bgsStartup" disabled="true" onclick="bgsStartup()">try it</button>
+    <button id="bgsStop" disabled="true" onclick="bgsStopVideo()">stop</button><br>
+    <video id="bgsVideo" src="box.mp4" width="640" hidden>Your browser does not support the video tag.</video>
+    <canvas id="bgsCanvasOutput"></canvas>
+</div>
+<script src="adapter.js"></script>
+<script src="utils.js"></script>
+<script async src="opencv.js" id="opencvjs"></script>
+<script>
+// bgs means BackgroundSubtractorMOG2
+// Some HTML elements we need to configure.
+var bgsVideo = document.getElementById("bgsVideo");
+var bgsCanvasFrame = document.getElementById("bgsCanvasFrame");
+var bgsStop = document.getElementById("bgsStop");
+
+// In this case, We set width 640, and the height will be computed based on the input video.
+var bgsWidth = bgsVideo.width;
+var bgsHeight = null;
+var bgsLoopIndex = null;
+var frame = null;
+var fgmask = null;
+
+bgsVideo.oncanplay = function() {
+    bgsVideo.setAttribute("height", bgsVideo.videoHeight/bgsVideo.videoWidth*bgsVideo.width);
+    bgsHeight = bgsVideo.height;
+    bgsCanvasFrame.setAttribute("width", bgsWidth);
+    bgsCanvasFrame.setAttribute("height", bgsHeight);
+};
+
+bgsVideo.onended = bgsStopVideo;
+
+function bgsStartup() {
+    if(bgsVideo.readyState !== 4)
+        bgsVideo.load();
+    bgsVideo.play();
+    bgsStop.disabled = false;
+
+    var context = bgsCanvasFrame.getContext("2d");
+
+    frame = new cv.Mat(bgsHeight, bgsWidth, cv.CV_8UC4);
+    fgmask = new cv.Mat();
+    var fgbg = new cv.BackgroundSubtractorMOG2(500, 16, true);
+
+    bgsLoopIndex = setInterval(
+        function() {
+            if(bgsVideo.ended) bgsStopVideo();
+            context.drawImage(bgsVideo, 0, 0, bgsWidth, bgsHeight);
+            frame.data().set(context.getImageData(0, 0, bgsWidth, bgsHeight).data);
+
+            fgbg.apply(frame, fgmask, -1);
+
+            cv.imshow("bgsCanvasOutput", fgmask);
+
+        }, 33);    
+}
+
+function bgsStopVideo() {
+    clearInterval(bgsLoopIndex);
+    if (frame != null && !frame.isDeleted()) {
+        frame.delete();
+        frame = null;
+    }
+    if (fgmask != null && !fgmask.isDeleted()) {
+        fgmask.delete();
+        fgmask = null;
+    }
+    //document.getElementById("bgsCanvasOutput").getContext("2d").clearRect(0, 0, bgsWidth, bgsHeight);
+    bgsVideo.pause();
+    bgsVideo.currentTime = 0;
+}
+
+function onReady() {
+    document.getElementById("bgsStartup").disabled = false;
+}
+if (typeof cv !== 'undefined') {
+    onReady();
+} else {
+    document.getElementById("opencvjs").onload = onReady;
+}
+</script>
+</body>
+</html>

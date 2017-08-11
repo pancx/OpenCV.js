@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>
+<style>
+canvas {
+    border: 1px solid black;
+}
+.err {
+    color: red;
+}
+</style>
+</head>
+<body>
+
+<div id="CodeArea">
+<h3>Input your code</h3>
+<textarea rows="30" cols="90" id="csTestCode" spellcheck="false">
+// Mats used in the loop are all declared and deleted elsewhere
+// take first frame of the video
+csFrame = new cv.Mat(csHeight, csWidth, cv.CV_8UC4);
+let cap = new cv.VideoCapture("csVideo"); // "csVideo" is the id of the video tag
+cap.read(csFrame);
+
+// setup initial location of window
+let trackWindow = new cv.Rect(300, 120, 125, 250); // simply hardcoded the values 300, 120, 125, 250
+
+// set up the ROI for tracking
+let csRoi = csFrame.getRoiRect(trackWindow);
+let csHsvRoi = new cv.Mat();
+cv.cvtColor(csRoi, csHsvRoi, cv.COLOR_RGBA2RGB);
+cv.cvtColor(csHsvRoi, csHsvRoi, cv.COLOR_RGB2HSV);
+let mask = new cv.Mat();
+let lowScalar = new cv.Scalar(30, 30, 0);
+let highScalar = new cv.Scalar(180, 180, 180);
+let low = new cv.Mat(csHsvRoi.rows, csHsvRoi.cols, csHsvRoi.type(), lowScalar);
+let high = new cv.Mat(csHsvRoi.rows, csHsvRoi.cols, csHsvRoi.type(), highScalar);
+cv.inRange(csHsvRoi, low, high, mask);
+csRoiHist = new cv.Mat();
+let csHsvRoiVec = new cv.MatVector();
+csHsvRoiVec.push_back(csHsvRoi);
+cv.calcHist(csHsvRoiVec, [0], mask, csRoiHist, [180], [0,180]);
+cv.normalize(csRoiHist, csRoiHist, 0, 255, cv.NORM_MINMAX);
+
+// delete useless mats.
+csRoi.delete(); csHsvRoi.delete(); mask.delete(); low.delete(); high.delete(); csHsvRoiVec.delete();
+
+// Setup the termination criteria, either 10 iteration or move by atleast 1 pt
+let termCrit = new cv.TermCriteria(cv.TERM_CRITERIA_EPS | cv.TERM_CRITERIA_COUNT, 10, 1);
+
+csHsv = new cv.Mat();
+csHsvVec = new cv.MatVector();
+csHsvVec.push_back(csHsv);
+csDst = new cv.Mat();
+let trackBox;
+csLoopIndex = setInterval(
+    function() {
+        if(csVideo.ended) {
+            csStopVideo();
+            return;
+        }
+        cap.read(csFrame);
+        cv.cvtColor(csFrame, csHsv, cv.COLOR_RGBA2RGB);
+        cv.cvtColor(csHsv, csHsv, cv.COLOR_RGB2HSV);
+        csHsvVec.set(0, csHsv);
+        cv.calcBackProject(csHsvVec, [0], csRoiHist, csDst, [0,180], 1);
+
+        // apply camshift to get the new location
+        [trackBox, trackWindow] = cv.CamShift(csDst, trackWindow, termCrit);
+
+        // Draw it on image
+        let pts = cv.rotatedRectPoints(trackBox);
+        cv.line(csFrame, pts[0], pts[1], [255, 0, 0, 255], 3);
+        cv.line(csFrame, pts[1], pts[2], [255, 0, 0, 255], 3);
+        cv.line(csFrame, pts[2], pts[3], [255, 0, 0, 255], 3);
+        cv.line(csFrame, pts[3], pts[0], [255, 0, 0, 255], 3);
+        cv.imshow("csCanvasOutput", csFrame);
+    }, 33);  
+</textarea>
+<p class="err" id="csErr"></p>
+</div>
+<div id="contentarea">
+    <button id="csStartup" disabled="true" onclick="csStartup()">try it</button>
+    <button id="csStop" disabled="true" onclick="csStopVideo()">stop</button><br>
+    <video id="csVideo" src="cup.mp4" width="640" muted hidden>Your browser does not support the video tag.</video>
+    <canvas id="csCanvasOutput"></canvas>
+</div>
+<script async src="opencv.js" id="opencvjs"></script>
+<script>
+// cs means Camshift
+// Some HTML elements we need to configure.
+let csVideo = document.getElementById("csVideo");
+let csStop = document.getElementById("csStop");
+
+// In this case, We set width 640, and the height will be computed based on the input video.
+let csWidth = csVideo.width;
+let csHeight = null;
+let csLoopIndex = null;
+let csFrame = null;
+let csDst = null;
+let csHsvVec = null;
+let csHsv = null;
+let csRoiHist = null;
+
+csVideo.oncanplay = function() {
+    csVideo.setAttribute("height", csVideo.videoHeight/csVideo.videoWidth*csVideo.width);
+    csHeight = csVideo.height;
+};
+
+csVideo.onended = csStopVideo;
+
+function csStartup() {
+    if(csVideo.readyState !== 4)
+        csVideo.load();
+    csVideo.play();
+    csStop.disabled = false;
+    let csTestCode = document.getElementById("csTestCode").value;
+    try {
+        eval(csTestCode);
+        document.getElementById("csErr").innerHTML = " ";
+    } catch(err) {
+        document.getElementById("csErr").innerHTML = err;
+    }
+    document.getElementById("csStartup").disabled = true;
+}
+
+function csStopVideo() {
+    clearInterval(csLoopIndex);
+    if (csFrame != null && !csFrame.isDeleted()) {
+        csFrame.delete();
+        csFrame = null;
+    }
+    if (csDst != null && !csDst.isDeleted()) {
+        csDst.delete();
+        csDst = null;
+    }
+    if (csHsvVec != null && !csHsvVec.isDeleted()) {
+        csHsvVec.delete();
+        csHsvVec = null;
+    }
+    if (csRoiHist != null && !csRoiHist.isDeleted()) {
+        csRoiHist.delete();
+        csRoiHist = null;
+    }
+    if (csHsv != null && !csHsv.isDeleted()) {
+        csHsv.delete();
+        csHsv = null;
+    }
+    //document.getElementById("csCanvasOutput").getContext("2d").clearRect(0, 0, csWidth, csHeight);
+    csVideo.pause();
+    csVideo.currentTime = 0;
+    document.getElementById("csStartup").disabled = false;
+}
+
+function onReady() {
+    document.getElementById("csStartup").disabled = false;
+}
+if (typeof cv !== 'undefined') {
+    onReady();
+} else {
+    document.getElementById("opencvjs").onload = onReady;
+}
+</script>
+</body>
+</html>

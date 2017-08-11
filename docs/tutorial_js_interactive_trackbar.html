@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<title>Add a Trackbar to Your Application</title>
+<head>
+<style>
+canvas {
+    border: 1px solid black;
+}
+</style>
+</head>
+<body>
+<div id="CodeArea">
+<h2>Input your code</h2>
+<textarea rows="8" cols="70" id="TestCode" spellcheck="false">
+var alpha = value/trackbar.max;
+var beta = ( 1.0 - alpha );
+var dst = new cv.Mat();
+cv.addWeighted( src1, alpha, src2, beta, 0.0, dst, -1);
+cv.imshow("canvas3", dst);
+dst.delete();
+</textarea>
+</div>
+<div id="showcase">
+    <div>
+        <canvas id="canvas1"></canvas>
+        <canvas id="canvas2"></canvas>
+    </div>
+    Weight: <input type="range" id="trackbar" disabled="true" value="50" min="0" max="100" step="1" 
+    oninput="addWeighted(this.value)"><input type="text" id="weightValue" size="3" value="50"><br>
+    <canvas id="canvas3"></canvas>
+</div>
+<script src="utils.js"></script>
+<script async src="opencv.js" id="opencvjs"></script>
+<script>
+var weightValue = document.getElementById('weightValue');
+var trackbar = document.getElementById('trackbar');
+
+function addWeighted(value) {
+    weightValue.value = value;    
+    var text = document.getElementById("TestCode").value;
+    eval(text);
+}
+
+loadImageToCanvas("LinuxLogo.jpg", "canvas1");
+loadImageToCanvas("WindowsLogo.jpg", "canvas2");
+
+var src1, src2;
+document.getElementById("opencvjs").onload = function() {
+    src1 = cv.imread("canvas1");
+    src2 = cv.imread("canvas2");
+    addWeighted(trackbar.value);
+    trackbar.disabled = false;
+};
+</script>
+</body>
+</html>

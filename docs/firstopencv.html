@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>My First OpenCV.js Web Page</h1>
+<p id='status'>OpenCV.js is loading.</p>
+<div>
+    <img id='srcImage' src='lena.jpg'></img>
+    <canvas id='outputCanvas'></canvas>
+</div>
+<input type='file' id='fileInput' accept='image/gif, image/jpeg, image/png'/>
+<div>
+<div>
+<script>
+var Module = {
+  'onRuntimeInitialized': () => {document.getElementById('status').innerHTML = 'OpenCV.js is ready';}
+}
+</script>
+<script src="opencv.js" id="opencvjs" async></script>
+<script>
+let imgElement = document.getElementById('srcImage')
+let inputElement = document.getElementById('fileInput');
+let outputCanvas = document.getElementById('outputCanvas');
+inputElement.addEventListener("change", (e) => {
+  imgElement.src = URL.createObjectURL(e.target.files[0]);
+}, false);
+
+imgElement.onload = function() {
+  if (typeof cv !== 'undefined') {
+  	onReady();
+  } else {
+    document.getElementById("opencvjs").onload = onReady;
+  }
+};
+
+
+function onReady() {
+  let mat = cv.imread('srcImage');
+  cv.imshow(outputCanvas, mat);
+}
+if (typeof cv !== 'undefined') {
+  onReady();
+} else {
+  document.getElementById("opencvjs").onload = onReady;
+}
+</script>
+</body>
+</html>
