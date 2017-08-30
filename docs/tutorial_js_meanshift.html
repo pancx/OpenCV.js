@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -202,7 +202,7 @@ cap.read(msFrame);
 let trackWindow = new cv.Rect(300, 120, 125, 250); // simply hardcoded the values 300, 120, 125, 250
 
 // set up the ROI for tracking
-let msRoi = msFrame.getRoiRect(trackWindow);
+let msRoi = msFrame.roi(trackWindow);
 let msHsvRoi = new cv.Mat();
 cv.cvtColor(msRoi, msHsvRoi, cv.COLOR_RGBA2RGB);
 cv.cvtColor(msHsvRoi, msHsvRoi, cv.COLOR_RGB2HSV);
@@ -233,14 +233,14 @@ msLoopIndex = setInterval(
         if(msVideo.ended) {
             msStopVideo();
             return;
-        }       
+        }
         cap.read(msFrame);
         cv.cvtColor(msFrame, msHsv, cv.COLOR_RGBA2RGB);
         cv.cvtColor(msHsv, msHsv, cv.COLOR_RGB2HSV);
         cv.calcBackProject(msHsvVec, [0], msRoiHist, msDst, [0,180], 1);
 
         // Apply meanshift to get the new location
-        // and it also returns number of iterations meanShift took to converge, 
+        // and it also returns number of iterations meanShift took to converge,
         // which is useless in this demo.
         [ , trackWindow] = cv.meanShift(msDst, trackWindow, termCrit);
 
@@ -251,7 +251,7 @@ msLoopIndex = setInterval(
     }, 33);
 </textarea>
 <p class="err" id="msErr"></p>
-</div> 
+</div>
 <div id="contentarea">
     <button id="msStartup" disabled="true" onclick="msStartup()">try it</button>
     <button id="msStop" disabled="true" onclick="msStopVideo()">stop</button><br>
@@ -373,7 +373,7 @@ cap.read(csFrame);
 let trackWindow = new cv.Rect(300, 120, 125, 250); // simply hardcoded the values 300, 120, 125, 250
 
 // set up the ROI for tracking
-let csRoi = csFrame.getRoiRect(trackWindow);
+let csRoi = csFrame.roi(trackWindow);
 let csHsvRoi = new cv.Mat();
 cv.cvtColor(csRoi, csHsvRoi, cv.COLOR_RGBA2RGB);
 cv.cvtColor(csHsvRoi, csHsvRoi, cv.COLOR_RGB2HSV);
@@ -421,7 +421,7 @@ csLoopIndex = setInterval(
         cv.line(csFrame, pts[2], pts[3], [255, 0, 0, 255], 3);
         cv.line(csFrame, pts[3], pts[0], [255, 0, 0, 255], 3);
         cv.imshow("csCanvasOutput", csFrame);
-    }, 33);  
+    }, 33);
 </textarea>
 <p class="err" id="csErr"></p>
 </div>
@@ -519,7 +519,7 @@ if (typeof cv !== 'undefined') {
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -573,7 +573,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

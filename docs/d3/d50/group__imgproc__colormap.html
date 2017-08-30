@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -185,6 +185,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gadf478a5e5ff49d8aa24e726ea6f65d15"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d50/group__imgproc__colormap.html#gadf478a5e5ff49d8aa24e726ea6f65d15">cv::applyColorMap</a> (InputArray src, OutputArray dst, int colormap)</td></tr>
 <tr class="memdesc:gadf478a5e5ff49d8aa24e726ea6f65d15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a GNU Octave/MATLAB equivalent colormap on a given image.  <a href="../../d3/d50/group__imgproc__colormap.html#gadf478a5e5ff49d8aa24e726ea6f65d15">More...</a><br /></td></tr>
 <tr class="separator:gadf478a5e5ff49d8aa24e726ea6f65d15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gacb22288ddccc55f9bd9e6d492b409cae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d50/group__imgproc__colormap.html#gacb22288ddccc55f9bd9e6d492b409cae">cv::applyColorMap</a> (InputArray src, OutputArray dst, InputArray userColor)</td></tr>
+<tr class="memdesc:gacb22288ddccc55f9bd9e6d492b409cae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applies a user colormap on a given image.  <a href="../../d3/d50/group__imgproc__colormap.html#gacb22288ddccc55f9bd9e6d492b409cae">More...</a><br /></td></tr>
+<tr class="separator:gacb22288ddccc55f9bd9e6d492b409cae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>The human perception isn't built for observing fine changes in grayscale images. Human eyes are more sensitive to observing changes between colors, so you often need to recolor your grayscale images to get a clue about them. OpenCV now comes with various colormaps to enhance the visualization in your computer vision application.</p>
@@ -293,7 +296,7 @@ parula</div></div>
         <tr>
           <td class="memname">void cv::applyColorMap </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -325,6 +328,49 @@ parula</div></div>
   </table>
   </dd>
 </dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#a8">falsecolor.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="gacb22288ddccc55f9bd9e6d492b409cae"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cv::applyColorMap </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
+          <td class="paramname"><em>src</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a>&#160;</td>
+          <td class="paramname"><em>dst</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
+          <td class="paramname"><em>userColor</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Applies a user colormap on a given image. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">src</td><td>The source image, grayscale or colored of type CV_8UC1 or CV_8UC3. </td></tr>
+    <tr><td class="paramname">dst</td><td>The result is the colormapped source image. Note: <a class="el" href="../../d3/d63/classcv_1_1Mat.html#a55ced2c8d844d683ea9a725c60037ad0" title="Allocates new array data if needed. ">Mat::create</a> is called on dst. </td></tr>
+    <tr><td class="paramname">userColor</td><td>The colormap to apply of type CV_8UC1 or CV_8UC3 and size 256 </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -332,7 +378,7 @@ parula</div></div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -386,7 +432,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

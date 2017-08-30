@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -177,7 +177,7 @@ image</div></div>
 <li>The labels of k-Nearest Neighbours.</li>
 <li>Corresponding distances from new-comer to each nearest neighbour.</li>
 </ol>
-<p>So let's see how it works. New comer is marked in green color. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;newcomer = np.random.randint(0,100,(1,2)).astype(np.float32)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;plt.scatter(newcomer[:,0],newcomer[:,1],80,<span class="stringliteral">&#39;g&#39;</span>,<span class="stringliteral">&#39;o&#39;</span>)</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;knn = cv2.ml.KNearest_create()</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;knn.train(trainData, cv2.ml.ROW_SAMPLE, responses)</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;ret, results, neighbours ,dist = knn.findNearest(newcomer, 3)</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keywordflow">print</span> <span class="stringliteral">&quot;result: &quot;</span>, results,<span class="stringliteral">&quot;\n&quot;</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordflow">print</span> <span class="stringliteral">&quot;neighbours: &quot;</span>, neighbours,<span class="stringliteral">&quot;\n&quot;</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keywordflow">print</span> <span class="stringliteral">&quot;distance: &quot;</span>, dist</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;plt.show()</div></div><!-- fragment --><p> I got the result as follows: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;result:  [[ 1.]]</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;neighbours:  [[ 1.  1.  1.]]</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;distance:  [[ 53.  58.  61.]]</div></div><!-- fragment --><p> It says our new-comer got 3 neighbours, all from Blue family. Therefore, he is labelled as Blue family. It is obvious from plot below:</p>
+<p>So let's see how it works. New comer is marked in green color. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;newcomer = np.random.randint(0,100,(1,2)).astype(np.float32)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;plt.scatter(newcomer[:,0],newcomer[:,1],80,<span class="stringliteral">&#39;g&#39;</span>,<span class="stringliteral">&#39;o&#39;</span>)</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;knn = cv2.ml.KNearest_create()</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;knn.train(trainData, cv2.ml.ROW_SAMPLE, responses)</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;ret, results, neighbours ,dist = knn.findNearest(newcomer, 3)</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<a class="code" href="df/d57/namespacecv_1_1dnn.html#aa2ef06a8c0c2880c51d5f3e4e86abe4b">print</a>( <span class="stringliteral">&quot;result:  {}\n&quot;</span>.<a class="code" href="db/de0/group__core__utils.html#ga0cccdb2f73859309b0611cf70b1b9409">format</a>(results) )</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<a class="code" href="df/d57/namespacecv_1_1dnn.html#aa2ef06a8c0c2880c51d5f3e4e86abe4b">print</a>( <span class="stringliteral">&quot;neighbours:  {}\n&quot;</span>.<a class="code" href="db/de0/group__core__utils.html#ga0cccdb2f73859309b0611cf70b1b9409">format</a>(neighbours) )</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<a class="code" href="df/d57/namespacecv_1_1dnn.html#aa2ef06a8c0c2880c51d5f3e4e86abe4b">print</a>( <span class="stringliteral">&quot;distance:  {}\n&quot;</span>.<a class="code" href="db/de0/group__core__utils.html#ga0cccdb2f73859309b0611cf70b1b9409">format</a>(dist) )</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;plt.show()</div></div><!-- fragment --><p> I got the result as follows: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;result:  [[ 1.]]</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;neighbours:  [[ 1.  1.  1.]]</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;distance:  [[ 53.  58.  61.]]</div></div><!-- fragment --><p> It says our new-comer got 3 neighbours, all from Blue family. Therefore, he is labelled as Blue family. It is obvious from plot below:</p>
 <div class="image">
 <img src="knn_simple.png" alt="knn_simple.png"/>
 <div class="caption">
@@ -191,7 +191,7 @@ image</div></div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -245,7 +245,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -182,6 +182,8 @@ Macros</h2></td></tr>
 <tr class="separator:a1429ab6dbb1793e03a1d9932fd3f4c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4747580cd7c6469541608eee977de36c"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dac/cv__cpu__dispatch_8h.html#a4747580cd7c6469541608eee977de36c">CV_FMA3</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:a4747580cd7c6469541608eee977de36c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9103ca4e69d3eeff43acb560fb11430"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dac/cv__cpu__dispatch_8h.html#ad9103ca4e69d3eeff43acb560fb11430">CV_FP16</a>&#160;&#160;&#160;0</td></tr>
+<tr class="separator:ad9103ca4e69d3eeff43acb560fb11430"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adadf152370683c9deaede94125e62bc8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dac/cv__cpu__dispatch_8h.html#adadf152370683c9deaede94125e62bc8">CV_MMX</a>&#160;&#160;&#160;0</td></tr>
 <tr class="separator:adadf152370683c9deaede94125e62bc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac06c092da6abe81f2437f63a25aaa529"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dac/cv__cpu__dispatch_8h.html#ac06c092da6abe81f2437f63a25aaa529">CV_POPCNT</a>&#160;&#160;&#160;0</td></tr>
@@ -342,6 +344,18 @@ Macros</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ad9103ca4e69d3eeff43acb560fb11430"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CV_FP16&#160;&#160;&#160;0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="adadf152370683c9deaede94125e62bc8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -430,7 +444,7 @@ Macros</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:24 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:41 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -484,7 +498,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

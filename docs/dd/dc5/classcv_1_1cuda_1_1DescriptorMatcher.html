@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -189,43 +189,43 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a356ddc4994cfc7543859fa96b5b229c1"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a356ddc4994cfc7543859fa96b5b229c1">isMaskSupported</a> () const =0</td></tr>
 <tr class="memdesc:a356ddc4994cfc7543859fa96b5b229c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the descriptor matcher supports masking permissible matches.  <a href="#a356ddc4994cfc7543859fa96b5b229c1">More...</a><br /></td></tr>
 <tr class="separator:a356ddc4994cfc7543859fa96b5b229c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d01c0b727343e555238ee147d7ee7ba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a0d01c0b727343e555238ee147d7ee7ba">knnMatch</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> trainDescriptors, std::vector&lt; std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &gt; &amp;matches, int k, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>(), bool compactResult=false)=0</td></tr>
+<tr class="memitem:a0d01c0b727343e555238ee147d7ee7ba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a0d01c0b727343e555238ee147d7ee7ba">knnMatch</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> trainDescriptors, std::vector&lt; std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &gt; &amp;matches, int k, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>(), bool compactResult=false)=0</td></tr>
 <tr class="memdesc:a0d01c0b727343e555238ee147d7ee7ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the k best matches for each descriptor from a query set (blocking version).  <a href="#a0d01c0b727343e555238ee147d7ee7ba">More...</a><br /></td></tr>
 <tr class="separator:a0d01c0b727343e555238ee147d7ee7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fac44527ebef308819e6a854672f6fa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a9fac44527ebef308819e6a854672f6fa">knnMatch</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> queryDescriptors, std::vector&lt; std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &gt; &amp;matches, int k, const std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt; &amp;masks=std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt;(), bool compactResult=false)=0</td></tr>
+<tr class="memitem:a9fac44527ebef308819e6a854672f6fa"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a9fac44527ebef308819e6a854672f6fa">knnMatch</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> queryDescriptors, std::vector&lt; std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &gt; &amp;matches, int k, const std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt; &amp;masks=std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt;(), bool compactResult=false)=0</td></tr>
 <tr class="separator:a9fac44527ebef308819e6a854672f6fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5911f6cbdbd03c7782cc8dd925ba4a3e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a5911f6cbdbd03c7782cc8dd925ba4a3e">knnMatchAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> trainDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> matches, int k, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>(), <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())=0</td></tr>
+<tr class="memitem:a5911f6cbdbd03c7782cc8dd925ba4a3e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a5911f6cbdbd03c7782cc8dd925ba4a3e">knnMatchAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> trainDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> matches, int k, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>(), <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())=0</td></tr>
 <tr class="memdesc:a5911f6cbdbd03c7782cc8dd925ba4a3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the k best matches for each descriptor from a query set (asynchronous version).  <a href="#a5911f6cbdbd03c7782cc8dd925ba4a3e">More...</a><br /></td></tr>
 <tr class="separator:a5911f6cbdbd03c7782cc8dd925ba4a3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1e44dd5a7a8254d3ed144fe421413a80"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a1e44dd5a7a8254d3ed144fe421413a80">knnMatchAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> matches, int k, const std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt; &amp;masks=std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt;(), <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())=0</td></tr>
+<tr class="memitem:a1e44dd5a7a8254d3ed144fe421413a80"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a1e44dd5a7a8254d3ed144fe421413a80">knnMatchAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> matches, int k, const std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt; &amp;masks=std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt;(), <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())=0</td></tr>
 <tr class="separator:a1e44dd5a7a8254d3ed144fe421413a80"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada9788dbff11ff37f7a6d40e82f7c96d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#ada9788dbff11ff37f7a6d40e82f7c96d">knnMatchConvert</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> gpu_matches, std::vector&lt; std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &gt; &amp;matches, bool compactResult=false)=0</td></tr>
+<tr class="memitem:ada9788dbff11ff37f7a6d40e82f7c96d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#ada9788dbff11ff37f7a6d40e82f7c96d">knnMatchConvert</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> gpu_matches, std::vector&lt; std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &gt; &amp;matches, bool compactResult=false)=0</td></tr>
 <tr class="memdesc:ada9788dbff11ff37f7a6d40e82f7c96d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts matches array from internal representation to standard matches vector.  <a href="#ada9788dbff11ff37f7a6d40e82f7c96d">More...</a><br /></td></tr>
 <tr class="separator:ada9788dbff11ff37f7a6d40e82f7c96d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a062cb997b9031a7acbe77f4f60682304"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a062cb997b9031a7acbe77f4f60682304">match</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> trainDescriptors, std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &amp;matches, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>())=0</td></tr>
+<tr class="memitem:a062cb997b9031a7acbe77f4f60682304"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a062cb997b9031a7acbe77f4f60682304">match</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> trainDescriptors, std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &amp;matches, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>())=0</td></tr>
 <tr class="memdesc:a062cb997b9031a7acbe77f4f60682304"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the best match for each descriptor from a query set (blocking version).  <a href="#a062cb997b9031a7acbe77f4f60682304">More...</a><br /></td></tr>
 <tr class="separator:a062cb997b9031a7acbe77f4f60682304"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71f79d53a5d321077b43bf25603a306e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a71f79d53a5d321077b43bf25603a306e">match</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> queryDescriptors, std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &amp;matches, const std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt; &amp;masks=std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt;())=0</td></tr>
+<tr class="memitem:a71f79d53a5d321077b43bf25603a306e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a71f79d53a5d321077b43bf25603a306e">match</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> queryDescriptors, std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &amp;matches, const std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt; &amp;masks=std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt;())=0</td></tr>
 <tr class="separator:a71f79d53a5d321077b43bf25603a306e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad20d402f63e8d01cbf881476ea1a798"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#aad20d402f63e8d01cbf881476ea1a798">matchAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> trainDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> matches, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>(), <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())=0</td></tr>
+<tr class="memitem:aad20d402f63e8d01cbf881476ea1a798"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#aad20d402f63e8d01cbf881476ea1a798">matchAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> trainDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> matches, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>(), <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())=0</td></tr>
 <tr class="memdesc:aad20d402f63e8d01cbf881476ea1a798"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds the best match for each descriptor from a query set (asynchronous version).  <a href="#aad20d402f63e8d01cbf881476ea1a798">More...</a><br /></td></tr>
 <tr class="separator:aad20d402f63e8d01cbf881476ea1a798"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d255fb28411740971a763747109d4e3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a4d255fb28411740971a763747109d4e3">matchAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> matches, const std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt; &amp;masks=std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt;(), <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())=0</td></tr>
+<tr class="memitem:a4d255fb28411740971a763747109d4e3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a4d255fb28411740971a763747109d4e3">matchAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> matches, const std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt; &amp;masks=std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt;(), <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())=0</td></tr>
 <tr class="separator:a4d255fb28411740971a763747109d4e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a567592e9866ee163c353acc39850a7fb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a567592e9866ee163c353acc39850a7fb">matchConvert</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> gpu_matches, std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &amp;matches)=0</td></tr>
+<tr class="memitem:a567592e9866ee163c353acc39850a7fb"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a567592e9866ee163c353acc39850a7fb">matchConvert</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> gpu_matches, std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &amp;matches)=0</td></tr>
 <tr class="memdesc:a567592e9866ee163c353acc39850a7fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts matches array from internal representation to standard matches vector.  <a href="#a567592e9866ee163c353acc39850a7fb">More...</a><br /></td></tr>
 <tr class="separator:a567592e9866ee163c353acc39850a7fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40041e9545d8dee0c34b9000ece229d0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a40041e9545d8dee0c34b9000ece229d0">radiusMatch</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> trainDescriptors, std::vector&lt; std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &gt; &amp;matches, float maxDistance, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>(), bool compactResult=false)=0</td></tr>
+<tr class="memitem:a40041e9545d8dee0c34b9000ece229d0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a40041e9545d8dee0c34b9000ece229d0">radiusMatch</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> trainDescriptors, std::vector&lt; std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &gt; &amp;matches, float maxDistance, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>(), bool compactResult=false)=0</td></tr>
 <tr class="memdesc:a40041e9545d8dee0c34b9000ece229d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each query descriptor, finds the training descriptors not farther than the specified distance (blocking version).  <a href="#a40041e9545d8dee0c34b9000ece229d0">More...</a><br /></td></tr>
 <tr class="separator:a40041e9545d8dee0c34b9000ece229d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a348588903806ae644027dd968bba13b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a348588903806ae644027dd968bba13b0">radiusMatch</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> queryDescriptors, std::vector&lt; std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &gt; &amp;matches, float maxDistance, const std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt; &amp;masks=std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt;(), bool compactResult=false)=0</td></tr>
+<tr class="memitem:a348588903806ae644027dd968bba13b0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a348588903806ae644027dd968bba13b0">radiusMatch</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> queryDescriptors, std::vector&lt; std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &gt; &amp;matches, float maxDistance, const std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt; &amp;masks=std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt;(), bool compactResult=false)=0</td></tr>
 <tr class="separator:a348588903806ae644027dd968bba13b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a82d1dfd476176a21739cb99363fa6d0b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a82d1dfd476176a21739cb99363fa6d0b">radiusMatchAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> trainDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> matches, float maxDistance, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>(), <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())=0</td></tr>
+<tr class="memitem:a82d1dfd476176a21739cb99363fa6d0b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a82d1dfd476176a21739cb99363fa6d0b">radiusMatchAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> trainDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> matches, float maxDistance, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>(), <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())=0</td></tr>
 <tr class="memdesc:a82d1dfd476176a21739cb99363fa6d0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">For each query descriptor, finds the training descriptors not farther than the specified distance (asynchronous version).  <a href="#a82d1dfd476176a21739cb99363fa6d0b">More...</a><br /></td></tr>
 <tr class="separator:a82d1dfd476176a21739cb99363fa6d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3ffcd3f838ecb4cd96731bc1d426708a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a3ffcd3f838ecb4cd96731bc1d426708a">radiusMatchAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> matches, float maxDistance, const std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt; &amp;masks=std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt;(), <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())=0</td></tr>
+<tr class="memitem:a3ffcd3f838ecb4cd96731bc1d426708a"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#a3ffcd3f838ecb4cd96731bc1d426708a">radiusMatchAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> queryDescriptors, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> matches, float maxDistance, const std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt; &amp;masks=std::vector&lt; <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html">GpuMat</a> &gt;(), <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())=0</td></tr>
 <tr class="separator:a3ffcd3f838ecb4cd96731bc1d426708a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0d1b18aee5aad951c59d26121453ac9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#ae0d1b18aee5aad951c59d26121453ac9">radiusMatchConvert</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> gpu_matches, std::vector&lt; std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &gt; &amp;matches, bool compactResult=false)=0</td></tr>
+<tr class="memitem:ae0d1b18aee5aad951c59d26121453ac9"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#ae0d1b18aee5aad951c59d26121453ac9">radiusMatchConvert</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> gpu_matches, std::vector&lt; std::vector&lt; <a class="el" href="../../d4/de0/classcv_1_1DMatch.html">DMatch</a> &gt; &gt; &amp;matches, bool compactResult=false)=0</td></tr>
 <tr class="memdesc:ae0d1b18aee5aad951c59d26121453ac9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts matches array from internal representation to standard matches vector.  <a href="#ae0d1b18aee5aad951c59d26121453ac9">More...</a><br /></td></tr>
 <tr class="separator:ae0d1b18aee5aad951c59d26121453ac9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab220b434f827962455f430a12c65c074"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/dc5/classcv_1_1cuda_1_1DescriptorMatcher.html#ab220b434f827962455f430a12c65c074">train</a> ()=0</td></tr>
@@ -456,13 +456,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::knnMatch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>queryDescriptors</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>trainDescriptors</em>, </td>
         </tr>
         <tr>
@@ -480,7 +480,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>, </td>
         </tr>
         <tr>
@@ -528,7 +528,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::knnMatch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>queryDescriptors</em>, </td>
         </tr>
         <tr>
@@ -581,13 +581,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::knnMatchAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>queryDescriptors</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>trainDescriptors</em>, </td>
         </tr>
         <tr>
@@ -605,7 +605,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>, </td>
         </tr>
         <tr>
@@ -653,7 +653,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::knnMatchAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>queryDescriptors</em>, </td>
         </tr>
         <tr>
@@ -706,7 +706,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::knnMatchConvert </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>gpu_matches</em>, </td>
         </tr>
         <tr>
@@ -757,13 +757,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::match </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>queryDescriptors</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>trainDescriptors</em>, </td>
         </tr>
         <tr>
@@ -775,7 +775,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -815,7 +815,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::match </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>queryDescriptors</em>, </td>
         </tr>
         <tr>
@@ -856,13 +856,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::matchAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>queryDescriptors</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>trainDescriptors</em>, </td>
         </tr>
         <tr>
@@ -874,7 +874,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>, </td>
         </tr>
         <tr>
@@ -921,7 +921,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::matchAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>queryDescriptors</em>, </td>
         </tr>
         <tr>
@@ -968,7 +968,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::matchConvert </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>gpu_matches</em>, </td>
         </tr>
         <tr>
@@ -1012,13 +1012,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::radiusMatch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>queryDescriptors</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>trainDescriptors</em>, </td>
         </tr>
         <tr>
@@ -1036,7 +1036,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>, </td>
         </tr>
         <tr>
@@ -1084,7 +1084,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::radiusMatch </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>queryDescriptors</em>, </td>
         </tr>
         <tr>
@@ -1137,13 +1137,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::radiusMatchAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>queryDescriptors</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>trainDescriptors</em>, </td>
         </tr>
         <tr>
@@ -1161,7 +1161,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>, </td>
         </tr>
         <tr>
@@ -1209,7 +1209,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::radiusMatchAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>queryDescriptors</em>, </td>
         </tr>
         <tr>
@@ -1262,7 +1262,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::DescriptorMatcher::radiusMatchConvert </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>gpu_matches</em>, </td>
         </tr>
         <tr>
@@ -1336,7 +1336,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -1390,7 +1390,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

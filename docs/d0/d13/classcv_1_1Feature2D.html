@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -169,7 +169,7 @@ Inheritance diagram for cv::Feature2D:</div>
   <map id="cv::Feature2D_map" name="cv::Feature2D_map">
 <area href="../../d3/d46/classcv_1_1Algorithm.html" title="This is a base class for all more or less complex algorithms in OpenCV. " alt="cv::Algorithm" shape="rect" coords="0,0,156,24"/>
 <area href="../../d7/d19/classcv_1_1AgastFeatureDetector.html" title="Wrapping class for feature detection using the AGAST method. : " alt="cv::AgastFeatureDetector" shape="rect" coords="166,112,322,136"/>
-<area href="../../d8/d30/classcv_1_1AKAZE.html" title="Class implementing the AKAZE keypoint detector and descriptor extractor, described in  ..." alt="cv::AKAZE" shape="rect" coords="166,168,322,192"/>
+<area href="../../d8/d30/classcv_1_1AKAZE.html" title="Class implementing the AKAZE keypoint detector and descriptor extractor, described in ..." alt="cv::AKAZE" shape="rect" coords="166,168,322,192"/>
 <area href="../../de/dbf/classcv_1_1BRISK.html" title="Class implementing the BRISK keypoint detector and descriptor extractor, described in  ..." alt="cv::BRISK" shape="rect" coords="166,224,322,248"/>
 <area href="../../df/d74/classcv_1_1FastFeatureDetector.html" title="Wrapping class for feature detection using the FAST method. : " alt="cv::FastFeatureDetector" shape="rect" coords="166,280,322,304"/>
 <area href="../../df/d21/classcv_1_1GFTTDetector.html" title="Wrapping class for feature detection using the goodFeaturesToTrack function. : " alt="cv::GFTTDetector" shape="rect" coords="166,336,322,360"/>
@@ -184,7 +184,7 @@ Inheritance diagram for cv::Feature2D:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a7fc43191552b06aa37fbe5522f5b0c71"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d13/classcv_1_1Feature2D.html#a7fc43191552b06aa37fbe5522f5b0c71">~Feature2D</a> ()</td></tr>
 <tr class="separator:a7fc43191552b06aa37fbe5522f5b0c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab3cce8d56f4fc5e1d530b5931e1e8dc0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d13/classcv_1_1Feature2D.html#ab3cce8d56f4fc5e1d530b5931e1e8dc0">compute</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> image, std::vector&lt; <a class="el" href="../../d2/d29/classcv_1_1KeyPoint.html">KeyPoint</a> &gt; &amp;keypoints, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> descriptors)</td></tr>
+<tr class="memitem:ab3cce8d56f4fc5e1d530b5931e1e8dc0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d13/classcv_1_1Feature2D.html#ab3cce8d56f4fc5e1d530b5931e1e8dc0">compute</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> image, std::vector&lt; <a class="el" href="../../d2/d29/classcv_1_1KeyPoint.html">KeyPoint</a> &gt; &amp;keypoints, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> descriptors)</td></tr>
 <tr class="memdesc:ab3cce8d56f4fc5e1d530b5931e1e8dc0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the descriptors for a set of keypoints detected in an image (first variant) or image set (second variant).  <a href="#ab3cce8d56f4fc5e1d530b5931e1e8dc0">More...</a><br /></td></tr>
 <tr class="separator:ab3cce8d56f4fc5e1d530b5931e1e8dc0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad18e1027ffc8d9cffbb2d59c1d05b89e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d13/classcv_1_1Feature2D.html#ad18e1027ffc8d9cffbb2d59c1d05b89e">compute</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga606feabe3b50ab6838f1ba89727aa07a">InputArrayOfArrays</a> images, std::vector&lt; std::vector&lt; <a class="el" href="../../d2/d29/classcv_1_1KeyPoint.html">KeyPoint</a> &gt; &gt; &amp;keypoints, <a class="el" href="../../dc/d84/group__core__basic.html#ga889a09549b98223016170d9b613715de">OutputArrayOfArrays</a> descriptors)</td></tr>
@@ -195,12 +195,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab9d9e2e05b76de358b761c73d701ee90"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad305332f496cda90166b96939bf074a8"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d13/classcv_1_1Feature2D.html#ad305332f496cda90166b96939bf074a8">descriptorType</a> () const </td></tr>
 <tr class="separator:ad305332f496cda90166b96939bf074a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4e9a7082ec61ebc108806704fbd7887"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d13/classcv_1_1Feature2D.html#aa4e9a7082ec61ebc108806704fbd7887">detect</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> image, std::vector&lt; <a class="el" href="../../d2/d29/classcv_1_1KeyPoint.html">KeyPoint</a> &gt; &amp;keypoints, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>())</td></tr>
+<tr class="memitem:aa4e9a7082ec61ebc108806704fbd7887"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d13/classcv_1_1Feature2D.html#aa4e9a7082ec61ebc108806704fbd7887">detect</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> image, std::vector&lt; <a class="el" href="../../d2/d29/classcv_1_1KeyPoint.html">KeyPoint</a> &gt; &amp;keypoints, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>())</td></tr>
 <tr class="memdesc:aa4e9a7082ec61ebc108806704fbd7887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects keypoints in an image (first variant) or image set (second variant).  <a href="#aa4e9a7082ec61ebc108806704fbd7887">More...</a><br /></td></tr>
 <tr class="separator:aa4e9a7082ec61ebc108806704fbd7887"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5968e9bc8497a8eb845272b9442559f3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d13/classcv_1_1Feature2D.html#a5968e9bc8497a8eb845272b9442559f3">detect</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga606feabe3b50ab6838f1ba89727aa07a">InputArrayOfArrays</a> images, std::vector&lt; std::vector&lt; <a class="el" href="../../d2/d29/classcv_1_1KeyPoint.html">KeyPoint</a> &gt; &gt; &amp;keypoints, <a class="el" href="../../dc/d84/group__core__basic.html#ga606feabe3b50ab6838f1ba89727aa07a">InputArrayOfArrays</a> masks=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>())</td></tr>
 <tr class="separator:a5968e9bc8497a8eb845272b9442559f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8be0d1c20b08eb867184b8d74c15a677"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d13/classcv_1_1Feature2D.html#a8be0d1c20b08eb867184b8d74c15a677">detectAndCompute</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> image, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> mask, std::vector&lt; <a class="el" href="../../d2/d29/classcv_1_1KeyPoint.html">KeyPoint</a> &gt; &amp;keypoints, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> descriptors, bool useProvidedKeypoints=false)</td></tr>
+<tr class="memitem:a8be0d1c20b08eb867184b8d74c15a677"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d13/classcv_1_1Feature2D.html#a8be0d1c20b08eb867184b8d74c15a677">detectAndCompute</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> image, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> mask, std::vector&lt; <a class="el" href="../../d2/d29/classcv_1_1KeyPoint.html">KeyPoint</a> &gt; &amp;keypoints, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> descriptors, bool useProvidedKeypoints=false)</td></tr>
 <tr class="separator:a8be0d1c20b08eb867184b8d74c15a677"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adde40247045be74c569e7c73c4544f5c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d13/classcv_1_1Feature2D.html#adde40247045be74c569e7c73c4544f5c">empty</a> () const </td></tr>
 <tr class="memdesc:adde40247045be74c569e7c73c4544f5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return true if detector object is empty.  <a href="#adde40247045be74c569e7c73c4544f5c">More...</a><br /></td></tr>
@@ -284,7 +284,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::Feature2D::compute </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
@@ -452,7 +452,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::Feature2D::detect </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
@@ -464,7 +464,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -552,13 +552,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::Feature2D::detectAndCompute </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
         </tr>
         <tr>
@@ -717,7 +717,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:26 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:43 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -771,7 +771,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

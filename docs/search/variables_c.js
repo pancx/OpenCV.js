@@ -14,5 +14,6 @@ var searchData=
   ['loaded_5ffrom',['loaded_from',['../df/d6a/structCvPluginFuncInfo.html#a32b220f7101b603e2208e7a1b48611af',1,'CvPluginFuncInfo']]],
   ['locations',['locations',['../d3/d34/structcv_1_1DetectionROI.html#a9e3ba3daa336f41774e72b8ee2787876',1,'cv::DetectionROI']]],
   ['log_5f',['log_',['../d2/d6c/classcv_1_1videostab_1_1StabilizerBase.html#a3d134bf4df68ce2a559d5d69fb187c88',1,'cv::videostab::StabilizerBase']]],
+  ['logsoftmax',['logSoftMax',['../d8/d18/classcv_1_1dnn_1_1SoftmaxLayer.html#aa55c1c0d83caf0946865e225ae37f664',1,'cv::dnn::SoftmaxLayer']]],
   ['logstep',['logStep',['../d6/dca/classcv_1_1ml_1_1ParamGrid.html#a577e7820786e30214651d8a9702fd940',1,'cv::ml::ParamGrid']]]
 ];

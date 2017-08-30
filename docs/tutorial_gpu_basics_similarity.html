@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -147,7 +147,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">Similarity check (PNSR and SSIM) on the GPU </div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><dl class="todo"><dt><b><a class="el" href="dd/da0/todo.html#_todo000014">Todo:</a></b></dt><dd>update this tutorial</dd></dl>
+<div class="textblock"><dl class="todo"><dt><b><a class="el" href="dd/da0/todo.html#_todo000015">Todo:</a></b></dt><dd>update this tutorial</dd></dl>
 <h2>Goal </h2>
 <p>In the <a class="el" href="tutorial_video_input_psnr_ssim.html">Video Input with OpenCV and similarity measurement</a> tutorial I already presented the PSNR and SSIM methods for checking the similarity between the two images. And as you could see, the execution process takes quite some time , especially in the case of the SSIM. However, if the performance numbers of an OpenCV implementation for the CPU do not satisfy you and you happen to have an NVidia CUDA GPU device in your system, all is not lost. You may try to port or write your owm algorithm for the video card.</p>
 <p>This tutorial will give a good grasp on how to approach coding by using the GPU module of OpenCV. As a prerequisite you should already know how to handle the core, highgui and imgproc modules. So, our main goals are:</p>
@@ -185,7 +185,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:24 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:41 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -239,7 +239,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

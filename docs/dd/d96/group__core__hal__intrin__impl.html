@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -493,7 +493,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keywordtype">int</span> n&gt; <span class="keyword">inline</span> _Tpvec <a class="code" href="../../df/d91/group__core__hal__intrin.html#ga653feff62619b12d62fa650c0442cdee">v_rshr</a>(<span class="keyword">const</span> _Tpvec&amp; a) \</div><div class="line">{ \</div><div class="line">    _Tpvec c; \</div><div class="line">    for( <span class="keywordtype">int</span> i = 0; i &lt; _Tpvec::nlanes; i++ ) \</div><div class="line">        c.s[i] = (_Tp)((a.s[i] + ((_Tp)1 &lt;&lt; (n - 1))) &gt;&gt; n); \</div><div class="line">    return c; \</div><div class="line">}</div><div class="ttc" id="group__core__hal__intrin_html_ga653feff62619b12d62fa650c0442cdee"><div class="ttname"><a href="../../df/d91/group__core__hal__intrin.html#ga653feff62619b12d62fa650c0442cdee">cv::v_rshr</a></div><div class="ttdeci">v_int64x2 v_rshr(const v_int64x2 &amp;a)</div><div class="ttdef"><b>Definition:</b> intrin_cpp.hpp:1668</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keywordtype">int</span> n&gt; <span class="keyword">inline</span> _Tpvec <a class="code" href="../../df/d91/group__core__hal__intrin.html#ga653feff62619b12d62fa650c0442cdee">v_rshr</a>(<span class="keyword">const</span> _Tpvec&amp; a) \</div><div class="line">{ \</div><div class="line">    _Tpvec c; \</div><div class="line">    for( <span class="keywordtype">int</span> i = 0; i &lt; _Tpvec::nlanes; i++ ) \</div><div class="line">        c.s[i] = (_Tp)((a.s[i] + ((_Tp)1 &lt;&lt; (n - 1))) &gt;&gt; n); \</div><div class="line">    return c; \</div><div class="line">}</div><div class="ttc" id="group__core__hal__intrin_html_ga653feff62619b12d62fa650c0442cdee"><div class="ttname"><a href="../../df/d91/group__core__hal__intrin.html#ga653feff62619b12d62fa650c0442cdee">cv::v_rshr</a></div><div class="ttdeci">v_int64x2 v_rshr(const v_int64x2 &amp;a)</div><div class="ttdef"><b>Definition:</b> intrin_cpp.hpp:1693</div></div>
 </div><!-- fragment -->
 <p>Helper macro. </p>
 
@@ -615,7 +615,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keywordtype">int</span> n&gt; <span class="keyword">inline</span> _Tpvec <a class="code" href="../../df/d91/group__core__hal__intrin.html#ga7130e8834005b5dda77f185511d3e1d5">v_shl</a>(<span class="keyword">const</span> _Tpvec&amp; a) \</div><div class="line">{ <span class="keywordflow">return</span> a &lt;&lt; n; }</div><div class="ttc" id="group__core__hal__intrin_html_ga7130e8834005b5dda77f185511d3e1d5"><div class="ttname"><a href="../../df/d91/group__core__hal__intrin.html#ga7130e8834005b5dda77f185511d3e1d5">cv::v_shl</a></div><div class="ttdeci">v_int64x2 v_shl(const v_int64x2 &amp;a)</div><div class="ttdef"><b>Definition:</b> intrin_cpp.hpp:1629</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keywordtype">int</span> n&gt; <span class="keyword">inline</span> _Tpvec <a class="code" href="../../df/d91/group__core__hal__intrin.html#ga7130e8834005b5dda77f185511d3e1d5">v_shl</a>(<span class="keyword">const</span> _Tpvec&amp; a) \</div><div class="line">{ <span class="keywordflow">return</span> a &lt;&lt; n; }</div><div class="ttc" id="group__core__hal__intrin_html_ga7130e8834005b5dda77f185511d3e1d5"><div class="ttname"><a href="../../df/d91/group__core__hal__intrin.html#ga7130e8834005b5dda77f185511d3e1d5">cv::v_shl</a></div><div class="ttdeci">v_int64x2 v_shl(const v_int64x2 &amp;a)</div><div class="ttdef"><b>Definition:</b> intrin_cpp.hpp:1654</div></div>
 </div><!-- fragment -->
 <p>Helper macro. </p>
 
@@ -644,7 +644,7 @@ Macros</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keywordtype">int</span> n&gt; <span class="keyword">inline</span> _Tpvec <a class="code" href="../../df/d91/group__core__hal__intrin.html#gaa88233e943e689e251f5e3f4f7a8591e">v_shr</a>(<span class="keyword">const</span> _Tpvec&amp; a) \</div><div class="line">{ <span class="keywordflow">return</span> a &gt;&gt; n; }</div><div class="ttc" id="group__core__hal__intrin_html_gaa88233e943e689e251f5e3f4f7a8591e"><div class="ttname"><a href="../../df/d91/group__core__hal__intrin.html#gaa88233e943e689e251f5e3f4f7a8591e">cv::v_shr</a></div><div class="ttdeci">v_int64x2 v_shr(const v_int64x2 &amp;a)</div><div class="ttdef"><b>Definition:</b> intrin_cpp.hpp:1646</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keywordtype">int</span> n&gt; <span class="keyword">inline</span> _Tpvec <a class="code" href="../../df/d91/group__core__hal__intrin.html#gaa88233e943e689e251f5e3f4f7a8591e">v_shr</a>(<span class="keyword">const</span> _Tpvec&amp; a) \</div><div class="line">{ <span class="keywordflow">return</span> a &gt;&gt; n; }</div><div class="ttc" id="group__core__hal__intrin_html_gaa88233e943e689e251f5e3f4f7a8591e"><div class="ttname"><a href="../../df/d91/group__core__hal__intrin.html#gaa88233e943e689e251f5e3f4f7a8591e">cv::v_shr</a></div><div class="ttdeci">v_int64x2 v_shr(const v_int64x2 &amp;a)</div><div class="ttdef"><b>Definition:</b> intrin_cpp.hpp:1671</div></div>
 </div><!-- fragment -->
 <p>Helper macro. </p>
 
@@ -780,7 +780,7 @@ Macros</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -834,7 +834,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -259,7 +259,7 @@ struct cv::Ptr&lt; T &gt;</h3>
 It is safe to concurrently read (but not write) a <a class="el" href="../../d0/de7/structcv_1_1Ptr.html" title="Template class for smart pointers with shared ownership. ">Ptr</a> instance from multiple threads and therefore it is normally safe to use it in multi-threaded applications. The same is true for <a class="el" href="../../d3/d63/classcv_1_1Mat.html" title="n-dimensional dense array class ">Mat</a> and other C++ OpenCV classes that use internal reference counts. </dd></dl>
 </li>
 </ul>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/d7b/houghlines_8cpp-example.html#_a18">houghlines.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#_a8">lsd_lines.cpp</a>, and <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#_a21">segment_objects.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#_a1">falsecolor.cpp</a>, <a class="el" href="../../d2/d7b/houghlines_8cpp-example.html#_a19">houghlines.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#_a8">lsd_lines.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#_a21">segment_objects.cpp</a>, and <a class="el" href="../../da/d72/shape_example_8cpp-example.html#_a10">shape_example.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a62fe84229cc13c10910507a0b5c5ed8b"></a>
 <div class="memitem">
@@ -797,7 +797,7 @@ template&lt;typename Y &gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -851,7 +851,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -157,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p>This is the complete list of members for <a class="el" href="../../d1/d5d/structcv_1_1cudev_1_1VecTraits_3_01double4_01_4.html">cv::cudev::VecTraits&lt; double4 &gt;</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="../../d1/d5d/structcv_1_1cudev_1_1VecTraits_3_01double4_01_4.html#a76faae25f6e04d64ca7e60ac737b1847">all</a>(double v)</td><td class="entry"><a class="el" href="../../d1/d5d/structcv_1_1cudev_1_1VecTraits_3_01double4_01_4.html">cv::cudev::VecTraits&lt; double4 &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d1/d5d/structcv_1_1cudev_1_1VecTraits_3_01double4_01_4.html#a2337020402765bdf1bae5299db98fb33a91e28159bc11e937807e3c58f35468b0">cn</a> enum value</td><td class="entry"><a class="el" href="../../d1/d5d/structcv_1_1cudev_1_1VecTraits_3_01double4_01_4.html">cv::cudev::VecTraits&lt; double4 &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d1/d5d/structcv_1_1cudev_1_1VecTraits_3_01double4_01_4.html#acf97590741730e5933ba03356c88edc9a91e28159bc11e937807e3c58f35468b0">cn</a> enum value</td><td class="entry"><a class="el" href="../../d1/d5d/structcv_1_1cudev_1_1VecTraits_3_01double4_01_4.html">cv::cudev::VecTraits&lt; double4 &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d1/d5d/structcv_1_1cudev_1_1VecTraits_3_01double4_01_4.html#a01ad1b1218cdb41fe4d5eb8a351a6a1a">elem_type</a> typedef</td><td class="entry"><a class="el" href="../../d1/d5d/structcv_1_1cudev_1_1VecTraits_3_01double4_01_4.html">cv::cudev::VecTraits&lt; double4 &gt;</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="../../d1/d5d/structcv_1_1cudev_1_1VecTraits_3_01double4_01_4.html#a188d17b360f47f7050ee5c239b0a7f69">make</a>(double x, double y, double z, double w)</td><td class="entry"><a class="el" href="../../d1/d5d/structcv_1_1cudev_1_1VecTraits_3_01double4_01_4.html">cv::cudev::VecTraits&lt; double4 &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d1/d5d/structcv_1_1cudev_1_1VecTraits_3_01double4_01_4.html#ae65560ef424d28c66dace138a4d7f2a6">make</a>(const double *v)</td><td class="entry"><a class="el" href="../../d1/d5d/structcv_1_1cudev_1_1VecTraits_3_01double4_01_4.html">cv::cudev::VecTraits&lt; double4 &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
@@ -165,7 +165,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:28 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:45 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -219,7 +219,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

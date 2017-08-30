@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -161,12 +161,12 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4870abfa556e30a1525d5508e7bf3464"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../df/dbf/structcv_1_1cudev_1_1TypesEquals_3_01A_00_01A_01_4.html#a4870abfa556e30a1525d5508e7bf3464a68d076eb36da583e1fcca53401c00449">value</a> = 1
+<tr class="memitem:aec9b4a336d3cb01d673d7faf31b0a564"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../df/dbf/structcv_1_1cudev_1_1TypesEquals_3_01A_00_01A_01_4.html#aec9b4a336d3cb01d673d7faf31b0a564a68d076eb36da583e1fcca53401c00449">value</a> = 1
  }</td></tr>
-<tr class="separator:a4870abfa556e30a1525d5508e7bf3464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:aec9b4a336d3cb01d673d7faf31b0a564"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a4870abfa556e30a1525d5508e7bf3464"></a>
+<a class="anchor" id="aec9b4a336d3cb01d673d7faf31b0a564"></a>
 <div class="memitem">
 <div class="memproto">
 <div class="memtemplate">
@@ -178,7 +178,7 @@ template&lt;typename A &gt; </div>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a4870abfa556e30a1525d5508e7bf3464a68d076eb36da583e1fcca53401c00449"></a>value&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="aec9b4a336d3cb01d673d7faf31b0a564a68d076eb36da583e1fcca53401c00449"></a>value&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -191,7 +191,7 @@ template&lt;typename A &gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:28 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:45 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -245,7 +245,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

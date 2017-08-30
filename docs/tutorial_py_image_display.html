@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -164,7 +164,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </ul>
 <dl class="section note"><dt>Note</dt><dd>Instead of these three flags, you can simply pass integers 1, 0 or -1 respectively.</dd></dl>
 <p>See the code below: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> cv2</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"># Load an color image in grayscale</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;img = cv2.imread(<span class="stringliteral">&#39;messi5.jpg&#39;</span>,0)</div></div><!-- fragment --><p><b>warning</b></p>
-<p>Even if the image path is wrong, it won't throw any error, but print img will give you None</p>
+<p>Even if the image path is wrong, it won't throw any error, but <code>print img</code> will give you <code>None</code></p>
 <h3>Display an image</h3>
 <p>Use the function <b><a class="el" href="d7/dfc/group__highgui.html#ga453d42fe4cb60e5723281a89973ee563" title="Displays an image in the specified window. ">cv2.imshow()</a></b> to display an image in a window. The window automatically fits to the image size.</p>
 <p>First argument is a window name which is a string. second argument is our image. You can create as many windows as you wish, but with different window names. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cv2.imshow(<span class="stringliteral">&#39;image&#39;</span>,img)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;cv2.waitKey(0)</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;cv2.destroyAllWindows()</div></div><!-- fragment --><p> A screenshot of the window will look like this (in Fedora-Gnome machine):</p>
@@ -181,7 +181,7 @@ image</div></div>
 <p>First argument is the file name, second argument is the image you want to save. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cv2.imwrite(<span class="stringliteral">&#39;messigray.png&#39;</span>,img)</div></div><!-- fragment --><p> This will save the image in PNG format in the working directory.</p>
 <h3>Sum it up</h3>
 <p>Below program loads an image in grayscale, displays it, save the image if you press 's' and exit, or simply exit without saving if you press ESC key. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> cv2</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;img = cv2.imread(<span class="stringliteral">&#39;messi5.jpg&#39;</span>,0)</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;cv2.imshow(<span class="stringliteral">&#39;image&#39;</span>,img)</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;k = cv2.waitKey(0)</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordflow">if</span> k == 27:         <span class="comment"># wait for ESC key to exit</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    cv2.destroyAllWindows()</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="keywordflow">elif</span> k == ord(<span class="stringliteral">&#39;s&#39;</span>): <span class="comment"># wait for &#39;s&#39; key to save and exit</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    cv2.imwrite(<span class="stringliteral">&#39;messigray.png&#39;</span>,img)</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    cv2.destroyAllWindows()</div></div><!-- fragment --><p><b>warning</b></p>
-<p>If you are using a 64-bit machine, you will have to modify k = cv2.waitKey(0) line as follows : k = cv2.waitKey(0) &amp; 0xFF</p>
+<p>If you are using a 64-bit machine, you will have to modify <code>k = cv2.waitKey(0)</code> line as follows : <code>k = cv2.waitKey(0) &amp; 0xFF</code></p>
 <h2>Using Matplotlib </h2>
 <p>Matplotlib is a plotting library for Python which gives you wide variety of plotting methods. You will see them in coming articles. Here, you will learn how to display image with Matplotlib. You can zoom images, save it etc using Matplotlib. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> cv2</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;img = cv2.imread(<span class="stringliteral">&#39;messi5.jpg&#39;</span>,0)</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;plt.imshow(img, cmap = <span class="stringliteral">&#39;gray&#39;</span>, interpolation = <span class="stringliteral">&#39;bicubic&#39;</span>)</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;plt.xticks([]), plt.yticks([])  <span class="comment"># to hide tick values on X and Y axis</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;plt.show()</div></div><!-- fragment --><p> A screen-shot of the window will look like this :</p>
 <div class="image">
@@ -203,7 +203,7 @@ image</div></div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -257,7 +257,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

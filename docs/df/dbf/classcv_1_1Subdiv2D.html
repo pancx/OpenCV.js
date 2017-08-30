@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -404,7 +404,7 @@ Protected Attributes</h2></td></tr>
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rect</td><td>– Rectangle that includes all of the 2D points that are to be added to the subdivision.</td></tr>
+    <tr><td class="paramname">rect</td><td>Rectangle that includes all of the 2D points that are to be added to the subdivision.</td></tr>
   </table>
   </dd>
 </dl>
@@ -591,8 +591,8 @@ Protected Attributes</h2></td></tr>
 <p>Returns the edge destination. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">edge</td><td>– Subdivision edge ID. </td></tr>
-    <tr><td class="paramname">dstpt</td><td>– Output vertex location.</td></tr>
+    <tr><td class="paramname">edge</td><td>Subdivision edge ID. </td></tr>
+    <tr><td class="paramname">dstpt</td><td>Output vertex location.</td></tr>
   </table>
   </dd>
 </dl>
@@ -627,8 +627,8 @@ Protected Attributes</h2></td></tr>
 <p>Returns the edge origin. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">edge</td><td>– Subdivision edge ID. </td></tr>
-    <tr><td class="paramname">orgpt</td><td>– Output vertex location.</td></tr>
+    <tr><td class="paramname">edge</td><td>Subdivision edge ID. </td></tr>
+    <tr><td class="paramname">orgpt</td><td>Output vertex location.</td></tr>
   </table>
   </dd>
 </dl>
@@ -663,8 +663,8 @@ Protected Attributes</h2></td></tr>
 <p>Finds the subdivision vertex closest to the given point. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pt</td><td>– Input point. </td></tr>
-    <tr><td class="paramname">nearestPt</td><td>– Output subdivision vertex point.</td></tr>
+    <tr><td class="paramname">pt</td><td>Input point. </td></tr>
+    <tr><td class="paramname">nearestPt</td><td>Output subdivision vertex point.</td></tr>
   </table>
   </dd>
 </dl>
@@ -700,8 +700,8 @@ Protected Attributes</h2></td></tr>
 <p>Returns one of the edges related to the given edge. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">edge</td><td>– Subdivision edge ID. </td></tr>
-    <tr><td class="paramname">nextEdgeType</td><td>- Parameter specifying which of the related edges to return. The following values are possible:<ul>
+    <tr><td class="paramname">edge</td><td>Subdivision edge ID. </td></tr>
+    <tr><td class="paramname">nextEdgeType</td><td>Parameter specifying which of the related edges to return. The following values are possible:<ul>
 <li>NEXT_AROUND_ORG next around the edge origin ( eOnext on the picture below if e is the input edge)</li>
 <li>NEXT_AROUND_DST next around the edge vertex ( eDnext )</li>
 <li>PREV_AROUND_ORG previous around the edge origin (reversed eRnext )</li>
@@ -740,7 +740,7 @@ sample output</div></div>
 <p>Returns a list of all edges. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">edgeList</td><td>– Output vector.</td></tr>
+    <tr><td class="paramname">edgeList</td><td>Output vector.</td></tr>
   </table>
   </dd>
 </dl>
@@ -765,7 +765,7 @@ sample output</div></div>
 <p>Returns a list of the leading edge ID connected to each triangle. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">leadingEdgeList</td><td>– Output vector.</td></tr>
+    <tr><td class="paramname">leadingEdgeList</td><td>Output vector.</td></tr>
   </table>
   </dd>
 </dl>
@@ -790,7 +790,7 @@ sample output</div></div>
 <p>Returns a list of all triangles. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">triangleList</td><td>– Output vector.</td></tr>
+    <tr><td class="paramname">triangleList</td><td>Output vector.</td></tr>
   </table>
   </dd>
 </dl>
@@ -825,8 +825,8 @@ sample output</div></div>
 <p>Returns vertex location from vertex ID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">vertex</td><td>– vertex ID. </td></tr>
-    <tr><td class="paramname">firstEdge</td><td>– Optional. The first edge ID which is connected to the vertex. </td></tr>
+    <tr><td class="paramname">vertex</td><td>vertex ID. </td></tr>
+    <tr><td class="paramname">firstEdge</td><td>Optional. The first edge ID which is connected to the vertex. </td></tr>
   </table>
   </dd>
 </dl>
@@ -867,9 +867,9 @@ sample output</div></div>
 <p>Returns a list of all Voroni facets. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">idx</td><td>– Vector of vertices IDs to consider. For all vertices you can pass empty vector. </td></tr>
-    <tr><td class="paramname">facetList</td><td>– Output vector of the Voroni facets. </td></tr>
-    <tr><td class="paramname">facetCenters</td><td>– Output vector of the Voroni facets center points. </td></tr>
+    <tr><td class="paramname">idx</td><td>Vector of vertices IDs to consider. For all vertices you can pass empty vector. </td></tr>
+    <tr><td class="paramname">facetList</td><td>Output vector of the Voroni facets. </td></tr>
+    <tr><td class="paramname">facetCenters</td><td>Output vector of the Voroni facets center points. </td></tr>
   </table>
   </dd>
 </dl>
@@ -893,7 +893,7 @@ sample output</div></div>
 <p>Creates a new empty Delaunay subdivision. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">rect</td><td>– Rectangle that includes all of the 2D points that are to be added to the subdivision. </td></tr>
+    <tr><td class="paramname">rect</td><td>Rectangle that includes all of the 2D points that are to be added to the subdivision. </td></tr>
   </table>
   </dd>
 </dl>
@@ -917,7 +917,7 @@ sample output</div></div>
 <p>Insert a single point into a Delaunay triangulation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pt</td><td>– Point to insert.</td></tr>
+    <tr><td class="paramname">pt</td><td>Point to insert.</td></tr>
   </table>
   </dd>
 </dl>
@@ -943,7 +943,7 @@ sample output</div></div>
 <p>Insert multiple points into a Delaunay triangulation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">ptvec</td><td>– Points to insert.</td></tr>
+    <tr><td class="paramname">ptvec</td><td>Points to insert.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1018,9 +1018,9 @@ sample output</div></div>
 <p>Returns the location of a point within a Delaunay triangulation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">pt</td><td>– Point to locate. </td></tr>
-    <tr><td class="paramname">edge</td><td>– Output edge that the point belongs to or is located to the right of it. </td></tr>
-    <tr><td class="paramname">vertex</td><td>– Optional output vertex the input point coincides with.</td></tr>
+    <tr><td class="paramname">pt</td><td>Point to locate. </td></tr>
+    <tr><td class="paramname">edge</td><td>Output edge that the point belongs to or is located to the right of it. </td></tr>
+    <tr><td class="paramname">vertex</td><td>Optional output vertex the input point coincides with.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1030,7 +1030,7 @@ sample output</div></div>
 <li>The point falls onto the edge. The function returns PTLOC_ON_EDGE and edge will contain this edge.</li>
 <li>The point coincides with one of the subdivision vertices. The function returns PTLOC_VERTEX and vertex will contain a pointer to the vertex.</li>
 <li>The point is outside the subdivision reference rectangle. The function returns PTLOC_OUTSIDE_RECT and no pointers are filled.</li>
-<li>One of input arguments is invalid. A runtime error is raised or, if silent or “parent” error processing mode is selected, CV_PTLOC_ERROR is returned. </li>
+<li>One of input arguments is invalid. A runtime error is raised or, if silent or "parent" error processing mode is selected, CV_PTLOC_ERROR is returned. </li>
 </ul>
 </dd></dl>
 
@@ -1116,7 +1116,7 @@ sample output</div></div>
 <p>Returns next edge around the edge origin. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">edge</td><td>– Subdivision edge ID.</td></tr>
+    <tr><td class="paramname">edge</td><td>Subdivision edge ID.</td></tr>
   </table>
   </dd>
 </dl>
@@ -1151,8 +1151,8 @@ sample output</div></div>
 <p>Returns another edge of the same quad-edge. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">edge</td><td>– Subdivision edge ID. </td></tr>
-    <tr><td class="paramname">rotate</td><td>- Parameter specifying which of the edges of the same quad-edge as the input one to return. The following values are possible:<ul>
+    <tr><td class="paramname">edge</td><td>Subdivision edge ID. </td></tr>
+    <tr><td class="paramname">rotate</td><td>Parameter specifying which of the edges of the same quad-edge as the input one to return. The following values are possible:<ul>
 <li>0 - the input edge ( e on the picture below if e is the input edge)</li>
 <li>1 - the rotated edge ( eRot )</li>
 <li>2 - the reversed edge (reversed e (in green))</li>
@@ -1456,7 +1456,7 @@ sample output</div></div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -1510,7 +1510,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

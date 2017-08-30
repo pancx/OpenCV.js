@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -152,7 +152,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>To support this tutorial, several official OpenCV applications will be used: <a href="https://github.com/opencv/opencv/tree/master/apps/createsamples">opencv_createsamples</a>, <a href="https://github.com/opencv/opencv/tree/master/apps/annotation">opencv_annotation</a>, <a href="https://github.com/opencv/opencv/tree/master/apps/traincascade">opencv_traincascade</a> and <a href="https://github.com/opencv/opencv/tree/master/apps/visualisation">opencv_visualisation</a>.</p>
 <h3>Important notes</h3>
 <ul>
-<li>If you come accross any tutorial mentioning the old opencv_haartraining tool <em>(which is deprecated and still using the OpenCV1.x interface)</em>, then please ignore that tutorial and stick to the opencv_traincascade tool. This tool is a newer version, written in C++ in accordance to the OpenCV 2.x and OpenCV 3.x API. The opencv_traincascade supports both HAAR like wavelet features <a class="el" href="d0/de3/citelist.html#CITEREF_Viola01">[86]</a> and LBP (Local Binary Patterns) <a class="el" href="d0/de3/citelist.html#CITEREF_Liao2007">[47]</a> features. LBP features yield integer precision in contrast to HAAR features, yielding floating point precision, so both training and detection with LBP are several times faster then with HAAR features. Regarding the LBP and HAAR detection quality, it mainly depends on the training data used and the training parameters selected. It's possible to train a LBP-based classifier that will provide almost the same quality as HAAR-based one, within a percentage of the training time.</li>
+<li>If you come accross any tutorial mentioning the old opencv_haartraining tool <em>(which is deprecated and still using the OpenCV1.x interface)</em>, then please ignore that tutorial and stick to the opencv_traincascade tool. This tool is a newer version, written in C++ in accordance to the OpenCV 2.x and OpenCV 3.x API. The opencv_traincascade supports both HAAR like wavelet features <a class="el" href="d0/de3/citelist.html#CITEREF_Viola01">[87]</a> and LBP (Local Binary Patterns) <a class="el" href="d0/de3/citelist.html#CITEREF_Liao2007">[48]</a> features. LBP features yield integer precision in contrast to HAAR features, yielding floating point precision, so both training and detection with LBP are several times faster then with HAAR features. Regarding the LBP and HAAR detection quality, it mainly depends on the training data used and the training parameters selected. It's possible to train a LBP-based classifier that will provide almost the same quality as HAAR-based one, within a percentage of the training time.</li>
 <li>The newer cascade classifier detection interface from OpenCV 2.x and OpenCV 3.x (<a class="el" href="d1/de5/classcv_1_1CascadeClassifier.html">cv::CascadeClassifier</a>) supports working with both old and new model formats. opencv_traincascade can even save (export) a trained cascade in the older format if for some reason you are stuck using the old interface. At least training the model could then be done in the most stable interface.</li>
 <li>The opencv_traincascade application can use TBB for multi-threading. To use it in multicore mode OpenCV must be built with TBB support enabled.</li>
 </ul>
@@ -253,15 +253,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>Boosted classifer parameters:<ul>
 <li><code>-bt &lt;{DAB, RAB, LB, GAB(default)}&gt;</code> : Type of boosted classifiers: DAB - Discrete AdaBoost, RAB - Real AdaBoost, LB - LogitBoost, GAB - Gentle AdaBoost.</li>
-<li><code>-minHitRate &lt;min_hit_rate&gt;</code> : Minimal desired hit rate for each stage of the classifier. Overall hit rate may be estimated as (min_hit_rate ^ number_of_stages), <a class="el" href="d0/de3/citelist.html#CITEREF_Viola04">[87]</a> §4.1.</li>
-<li><code>-maxFalseAlarmRate &lt;max_false_alarm_rate&gt;</code> : Maximal desired false alarm rate for each stage of the classifier. Overall false alarm rate may be estimated as (max_false_alarm_rate ^ number_of_stages), <a class="el" href="d0/de3/citelist.html#CITEREF_Viola04">[87]</a> §4.1.</li>
+<li><code>-minHitRate &lt;min_hit_rate&gt;</code> : Minimal desired hit rate for each stage of the classifier. Overall hit rate may be estimated as (min_hit_rate ^ number_of_stages), <a class="el" href="d0/de3/citelist.html#CITEREF_Viola04">[88]</a> §4.1.</li>
+<li><code>-maxFalseAlarmRate &lt;max_false_alarm_rate&gt;</code> : Maximal desired false alarm rate for each stage of the classifier. Overall false alarm rate may be estimated as (max_false_alarm_rate ^ number_of_stages), <a class="el" href="d0/de3/citelist.html#CITEREF_Viola04">[88]</a> §4.1.</li>
 <li><code>-weightTrimRate &lt;weight_trim_rate&gt;</code> : Specifies whether trimming should be used and its weight. A decent choice is 0.95.</li>
 <li><code>-maxDepth &lt;max_depth_of_weak_tree&gt;</code> : Maximal depth of a weak tree. A decent choice is 1, that is case of stumps.</li>
 <li><code>-maxWeakCount &lt;max_weak_tree_count&gt;</code> : Maximal count of weak trees for every cascade stage. The boosted classifier (stage) will have so many weak trees (&lt;=maxWeakCount), as needed to achieve the given <code>-maxFalseAlarmRate</code>.</li>
 </ul>
 </li>
 <li>Haar-like feature parameters:<ul>
-<li><code>-mode &lt;BASIC (default) | CORE | ALL&gt;</code> : Selects the type of Haar features set used in training. BASIC use only upright features, while ALL uses the full set of upright and 45 degree rotated feature set. See <a class="el" href="d0/de3/citelist.html#CITEREF_Lienhart02">[48]</a> for more details.</li>
+<li><code>-mode &lt;BASIC (default) | CORE | ALL&gt;</code> : Selects the type of Haar features set used in training. BASIC use only upright features, while ALL uses the full set of upright and 45 degree rotated feature set. See <a class="el" href="d0/de3/citelist.html#CITEREF_Lienhart02">[49]</a> for more details.</li>
 </ul>
 </li>
 <li>Local Binary Patterns parameters: Local Binary Patterns don't have parameters.</li>
@@ -294,7 +294,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:24 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:41 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -348,7 +348,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

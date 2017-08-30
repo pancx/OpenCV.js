@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -176,14 +176,14 @@ Inheritance diagram for cv::cuda::Feature2DAsync:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ab46f0c614af0f833af3d094f379eb041"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db9/classcv_1_1cuda_1_1Feature2DAsync.html#ab46f0c614af0f833af3d094f379eb041">~Feature2DAsync</a> ()</td></tr>
 <tr class="separator:ab46f0c614af0f833af3d094f379eb041"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77ebc500b04962e7df8a882557ca4ffc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db9/classcv_1_1cuda_1_1Feature2DAsync.html#a77ebc500b04962e7df8a882557ca4ffc">computeAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> image, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> keypoints, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> descriptors, <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())</td></tr>
+<tr class="memitem:a77ebc500b04962e7df8a882557ca4ffc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db9/classcv_1_1cuda_1_1Feature2DAsync.html#a77ebc500b04962e7df8a882557ca4ffc">computeAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> image, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> keypoints, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> descriptors, <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())</td></tr>
 <tr class="memdesc:a77ebc500b04962e7df8a882557ca4ffc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the descriptors for a set of keypoints detected in an image.  <a href="#a77ebc500b04962e7df8a882557ca4ffc">More...</a><br /></td></tr>
 <tr class="separator:a77ebc500b04962e7df8a882557ca4ffc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7d062860cbfaf1db00d1a42965b17324"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db9/classcv_1_1cuda_1_1Feature2DAsync.html#a7d062860cbfaf1db00d1a42965b17324">convert</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> gpu_keypoints, std::vector&lt; <a class="el" href="../../d2/d29/classcv_1_1KeyPoint.html">KeyPoint</a> &gt; &amp;keypoints)=0</td></tr>
+<tr class="memitem:a7d062860cbfaf1db00d1a42965b17324"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db9/classcv_1_1cuda_1_1Feature2DAsync.html#a7d062860cbfaf1db00d1a42965b17324">convert</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> gpu_keypoints, std::vector&lt; <a class="el" href="../../d2/d29/classcv_1_1KeyPoint.html">KeyPoint</a> &gt; &amp;keypoints)=0</td></tr>
 <tr class="separator:a7d062860cbfaf1db00d1a42965b17324"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a56c6c75e25e9616934c25552164a363c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db9/classcv_1_1cuda_1_1Feature2DAsync.html#a56c6c75e25e9616934c25552164a363c">detectAndComputeAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> image, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> mask, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> keypoints, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> descriptors, bool useProvidedKeypoints=false, <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())</td></tr>
+<tr class="memitem:a56c6c75e25e9616934c25552164a363c"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db9/classcv_1_1cuda_1_1Feature2DAsync.html#a56c6c75e25e9616934c25552164a363c">detectAndComputeAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> image, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> mask, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> keypoints, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> descriptors, bool useProvidedKeypoints=false, <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())</td></tr>
 <tr class="separator:a56c6c75e25e9616934c25552164a363c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8e813808fdd7c647c39312d4fbe89b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db9/classcv_1_1cuda_1_1Feature2DAsync.html#ae8e813808fdd7c647c39312d4fbe89b1">detectAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> image, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> keypoints, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>(), <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())</td></tr>
+<tr class="memitem:ae8e813808fdd7c647c39312d4fbe89b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/db9/classcv_1_1cuda_1_1Feature2DAsync.html#ae8e813808fdd7c647c39312d4fbe89b1">detectAsync</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> image, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> keypoints, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> mask=<a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>(), <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())</td></tr>
 <tr class="memdesc:ae8e813808fdd7c647c39312d4fbe89b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Detects keypoints in an image.  <a href="#ae8e813808fdd7c647c39312d4fbe89b1">More...</a><br /></td></tr>
 <tr class="separator:ae8e813808fdd7c647c39312d4fbe89b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -224,7 +224,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::Feature2DAsync::computeAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
@@ -281,7 +281,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::Feature2DAsync::convert </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>gpu_keypoints</em>, </td>
         </tr>
         <tr>
@@ -316,13 +316,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::Feature2DAsync::detectAndComputeAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
         </tr>
         <tr>
@@ -375,7 +375,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::Feature2DAsync::detectAsync </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
@@ -387,7 +387,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>, </td>
         </tr>
         <tr>
@@ -429,7 +429,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -483,7 +483,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

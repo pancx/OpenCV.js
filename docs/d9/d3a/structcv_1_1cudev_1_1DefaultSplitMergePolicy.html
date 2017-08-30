@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -161,16 +161,16 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a4daf10b5a3b07ba0686295859f4f359a"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="../../d9/d3a/structcv_1_1cudev_1_1DefaultSplitMergePolicy.html#a4daf10b5a3b07ba0686295859f4f359aab44a6a7cbf65adaca7185690e1bc2790">block_size_x</a> = 32, 
+<tr class="memitem:a160d27503c5fa22e7921ce1642097466"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="../../d9/d3a/structcv_1_1cudev_1_1DefaultSplitMergePolicy.html#a160d27503c5fa22e7921ce1642097466ab44a6a7cbf65adaca7185690e1bc2790">block_size_x</a> = 32, 
 <br />
-&#160;&#160;<a class="el" href="../../d9/d3a/structcv_1_1cudev_1_1DefaultSplitMergePolicy.html#a4daf10b5a3b07ba0686295859f4f359aa2e4790ff6b5281896cfb668ce082e789">block_size_y</a> = 8
+&#160;&#160;<a class="el" href="../../d9/d3a/structcv_1_1cudev_1_1DefaultSplitMergePolicy.html#a160d27503c5fa22e7921ce1642097466a2e4790ff6b5281896cfb668ce082e789">block_size_y</a> = 8
 <br />
  }</td></tr>
-<tr class="separator:a4daf10b5a3b07ba0686295859f4f359a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a160d27503c5fa22e7921ce1642097466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a4daf10b5a3b07ba0686295859f4f359a"></a>
+<a class="anchor" id="a160d27503c5fa22e7921ce1642097466"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -180,9 +180,9 @@ Public Types</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a4daf10b5a3b07ba0686295859f4f359aab44a6a7cbf65adaca7185690e1bc2790"></a>block_size_x&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a160d27503c5fa22e7921ce1642097466ab44a6a7cbf65adaca7185690e1bc2790"></a>block_size_x&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a4daf10b5a3b07ba0686295859f4f359aa2e4790ff6b5281896cfb668ce082e789"></a>block_size_y&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a160d27503c5fa22e7921ce1642097466a2e4790ff6b5281896cfb668ce082e789"></a>block_size_y&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -195,7 +195,7 @@ Public Types</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -249,7 +249,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

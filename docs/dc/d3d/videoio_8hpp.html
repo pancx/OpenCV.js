@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -240,7 +240,11 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="../../d4/d15/group__videoio__flags__base.html#gga023786be1ee68a9105bf2e48c700294dabe73da7a65e66cdd47c87733a4ea6ef0">cv::CAP_IMAGES</a> = 2000, 
 <br />
-&#160;&#160;<a class="el" href="../../d4/d15/group__videoio__flags__base.html#gga023786be1ee68a9105bf2e48c700294da154dbbfdbcd9aee0ebcbca984479c57a">cv::CAP_ARAVIS</a> = 2100
+&#160;&#160;<a class="el" href="../../d4/d15/group__videoio__flags__base.html#gga023786be1ee68a9105bf2e48c700294da154dbbfdbcd9aee0ebcbca984479c57a">cv::CAP_ARAVIS</a> = 2100, 
+<br />
+&#160;&#160;<a class="el" href="../../d4/d15/group__videoio__flags__base.html#gga023786be1ee68a9105bf2e48c700294da30dc8f8843e26aa10d401799f62eaa25">cv::CAP_OPENCV_MJPEG</a> = 2200, 
+<br />
+&#160;&#160;<a class="el" href="../../d4/d15/group__videoio__flags__base.html#gga023786be1ee68a9105bf2e48c700294da7212c0c08fcb32247b7cdb62466955f4">cv::CAP_INTEL_MFX</a> = 2300
 <br />
  }<tr class="memdesc:ga023786be1ee68a9105bf2e48c700294d"><td class="mdescLeft">&#160;</td><td class="mdescRight">VideoCapture API backends identifier.  <a href="../../d4/d15/group__videoio__flags__base.html#ga023786be1ee68a9105bf2e48c700294d">More...</a><br /></td></tr>
 </td></tr>
@@ -972,7 +976,7 @@ Enumerations</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:24 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:41 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -1026,7 +1030,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

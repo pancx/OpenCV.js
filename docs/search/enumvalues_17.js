@@ -3,7 +3,7 @@ var searchData=
   ['warp_5ffill_5foutliers',['WARP_FILL_OUTLIERS',['../da/d54/group__imgproc__transform.html#gga5bb5a1fea74ea38e1a5445ca803ff121a94cc44aa86159abcff4683ec6841b097',1,'cv']]],
   ['warp_5finverse_5fmap',['WARP_INVERSE_MAP',['../da/d54/group__imgproc__transform.html#gga5bb5a1fea74ea38e1a5445ca803ff121aa48be1c433186c4eae1ea86aa0ca75ba',1,'cv']]],
   ['warp_5fshuffle_5ffunctions',['WARP_SHUFFLE_FUNCTIONS',['../d8/d40/group__cudacore__init.html#gga776cf8e0301b18e19be4782754274fe0a22dd302fe5c91cbb63078b4676f58cae',1,'cv::cuda']]],
-  ['warp_5fsize',['WARP_SIZE',['../df/dfc/group__cudev.html#ggad163efe52913d4c8367fb0fc9bb5d7ada9e7909cabd2fc84e1e7092a2f348eaf1',1,'cv::cudev']]],
+  ['warp_5fsize',['WARP_SIZE',['../df/dfc/group__cudev.html#gga1c2b65df761bc405e1b8730ef498bcf8a9e7909cabd2fc84e1e7092a2f348eaf1',1,'cv::cudev']]],
   ['wave_5fcorrect_5fhoriz',['WAVE_CORRECT_HORIZ',['../d7/d74/group__stitching__rotation.html#gga83b24d4c3e93584986a56d9e43b9cf7faa9e3a58207a58e3245aab95af18b68a9',1,'cv::detail']]],
   ['wave_5fcorrect_5fvert',['WAVE_CORRECT_VERT',['../d7/d74/group__stitching__rotation.html#gga83b24d4c3e93584986a56d9e43b9cf7fa3d3661394e07da0c7c51ddeb84851212',1,'cv::detail']]],
   ['window_5fautosize',['WINDOW_AUTOSIZE',['../d7/dfc/group__highgui.html#ggabf7d2c5625bc59ac130287f925557ac3acf621ace7a54954cbac01df27e47228f',1,'cv']]],

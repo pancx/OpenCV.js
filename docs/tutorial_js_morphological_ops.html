@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -199,7 +199,7 @@ let anchor = new cv.Point(-1, -1);
 // You can try more different parameters
 cv.erode(src, dst, M, anchor, 1, cv.BORDER_CONSTANT, cv.morphologyDefaultBorderValue());
 cv.imshow("erodeCanvasOutput", dst);
-src.delete(); dst.delete(); M.delete(); 
+src.delete(); dst.delete(); M.delete();
 </textarea>
 <p class="err" id="erodeErr"></p>
 </div>
@@ -265,7 +265,7 @@ let anchor = new cv.Point(-1, -1);
 // You can try more different parameters
 cv.dilate(src, dst, M, anchor, 1, cv.BORDER_CONSTANT, cv.morphologyDefaultBorderValue());
 cv.imshow("dilateCanvasOutput", dst);
-src.delete(); dst.delete(); M.delete(); 
+src.delete(); dst.delete(); M.delete();
 </textarea>
 <p class="err" id="dilateErr"></p>
 </div>
@@ -330,7 +330,7 @@ let anchor = new cv.Point(-1, -1);
 // You can try more different parameters
 cv.morphologyEx(src, dst, cv.MORPH_OPEN, M, anchor, 1, cv.BORDER_CONSTANT, cv.morphologyDefaultBorderValue());
 cv.imshow("openingCanvasOutput", dst);
-src.delete(); dst.delete(); M.delete(); 
+src.delete(); dst.delete(); M.delete();
 </textarea>
 <p class="err" id="openingErr"></p>
 </div>
@@ -381,7 +381,7 @@ let M = cv.Mat.ones(5, 5, cv.CV_8U);
 // You can try more different parameters
 cv.morphologyEx(src, dst, cv.MORPH_CLOSE, M);
 cv.imshow("closingCanvasOutput", dst);
-src.delete(); dst.delete(); M.delete(); 
+src.delete(); dst.delete(); M.delete();
 </textarea>
 <p class="err" id="closingErr"></p>
 </div>
@@ -538,7 +538,7 @@ let M = cv.Mat.ones(53, 53, cv.CV_8U);
 // You can try more different parameters
 cv.morphologyEx(src, dst, cv.MORPH_BLACKHAT, M);
 cv.imshow("blackHatCanvasOutput", dst);
-src.delete(); dst.delete(); M.delete(); 
+src.delete(); dst.delete(); M.delete();
 </textarea>
 <p class="err" id="blackHatErr"></p>
 </div>
@@ -600,7 +600,7 @@ let ksize = new cv.Size(5, 5);
 M = cv.getStructuringElement(cv.MORPH_CROSS, ksize);
 cv.morphologyEx(src, dst, cv.MORPH_GRADIENT, M);
 cv.imshow("getStructuringElementCanvasOutput", dst);
-src.delete(); dst.delete(); M.delete(); 
+src.delete(); dst.delete(); M.delete();
 </textarea>
 <p class="err" id="getStructuringElementErr"></p>
 </div>
@@ -651,7 +651,7 @@ if (typeof cv !== 'undefined') {
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -705,7 +705,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

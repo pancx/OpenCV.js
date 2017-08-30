@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -307,7 +307,7 @@ Enumerations</h2></td></tr>
 <p>unsupported function </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa7b0d3c58f05aaf8e1b7ffc71a6c972f0"></a>StsNoConv&#160;</td><td class="fielddoc">
-<p>iter. didn't converge </p>
+<p>iteration didn't converge </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa123b92bc9c5061fc5ee3c83063ae96b0"></a>StsAutoTrace&#160;</td><td class="fielddoc">
 <p>tracing </p>
@@ -324,30 +324,38 @@ Enumerations</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaaf49499ab4f1e708a6941d1004dc921fa"></a>BadDataPtr&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa1670338df3460d0f954d03d0b4fa086c"></a>BadStep&#160;</td><td class="fielddoc">
+<p>image step is wrong, this may happen for a non-continuous matrix. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa240fc71ed7eb33afca8539bd54cd123d"></a>BadModelOrChSeq&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa4f9030381646764be3834aae87e35c96"></a>BadNumChannels&#160;</td><td class="fielddoc">
+<p>bad number of channels, for example, some functions accept only single channel matrices. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa1014713da7b6b749328fc00334e398d7"></a>BadNumChannel1U&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa0352ae733e9b76f6ad0162d49b3b6b25"></a>BadDepth&#160;</td><td class="fielddoc">
+<p>input image depth is not supported by the function </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaaa495f4437e1fd9a14c7af9d9d4ffcdc9"></a>BadAlphaChannel&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaae0136e2f3a80eca1972e709ce9994d0f"></a>BadOrder&#160;</td><td class="fielddoc">
+<p>number of dimensions is out of range </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaacca368a2e009bedaa1a6af07c9d75abc"></a>BadOrigin&#160;</td><td class="fielddoc">
+<p>incorrect input origin </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa622e509f5cbc6a96ae23205cb9dd3c97"></a>BadAlign&#160;</td><td class="fielddoc">
+<p>incorrect input align </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaaf4ed2495bb6938c88e39f98395139244"></a>BadCallBack&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa747d53bc704c519b9a81cc412ddf5d0f"></a>BadTileSize&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa76945d22fdcd44f361e444bc59a8337f"></a>BadCOI&#160;</td><td class="fielddoc">
+<p>input COI is not supported </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa7e8ca355c1299aa378f588b15e9b2a0c"></a>BadROISize&#160;</td><td class="fielddoc">
+<p>incorrect input roi </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa9a2b6e0d80053fdd4909ef6cf80326d8"></a>MaskIsTiled&#160;</td><td class="fielddoc">
 </td></tr>
@@ -358,10 +366,10 @@ Enumerations</h2></td></tr>
 <p>incorrect vector length </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa5359a20eee5a4850c267cf9f30a116f8"></a>StsFilterStructContentErr&#160;</td><td class="fielddoc">
-<p>incorr. filter structure content </p>
+<p>incorrect filter structure content </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa365707f9d2d6fe1d470e9d5b88795bf4"></a>StsKernelStructContentErr&#160;</td><td class="fielddoc">
-<p>incorr. transform kernel content </p>
+<p>incorrect transform kernel content </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa4f2340a0c03c1f55a5d2c40b3451d8a5"></a>StsFilterOffsetErr&#160;</td><td class="fielddoc">
 <p>incorrect filter offset value </p>
@@ -412,18 +420,24 @@ Enumerations</h2></td></tr>
 <p>assertion failed </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa98a4374ad27d41a85f3fe5b229d0ed0f"></a>GpuNotSupported&#160;</td><td class="fielddoc">
+<p>no CUDA support </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa7819e5297da9b94b2aeabed2aa73578a"></a>GpuApiCallError&#160;</td><td class="fielddoc">
+<p>GPU API call error. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaaf236f11d402e491ba469756c7062b418"></a>OpenGlNotSupported&#160;</td><td class="fielddoc">
+<p>no OpenGL support </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa9f71b79f0b0cb60879173bd9cef8c639"></a>OpenGlApiCallError&#160;</td><td class="fielddoc">
+<p>OpenGL API call error. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa9bef3bdb9825b3eb17f43e20980bd651"></a>OpenCLApiCallError&#160;</td><td class="fielddoc">
+<p>OpenCL API call error. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa1968883aa9ea7c47509d657bf802aea5"></a>OpenCLDoubleNotSupported&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa4c2ce87013f9b175a293ff2f0bcbc00f"></a>OpenCLInitError&#160;</td><td class="fielddoc">
+<p>OpenCL initialization error. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="a759fa1af92f7aa7377c76ffb142abccaa5d99510b10d71eadc2e42f19f4d8c088"></a>OpenCLNoAMDBlasFft&#160;</td><td class="fielddoc">
 </td></tr>
@@ -435,7 +449,7 @@ Enumerations</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:29 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:46 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -489,7 +503,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

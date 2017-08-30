@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -231,13 +231,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cv::matchTemplate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>templ</em>, </td>
         </tr>
         <tr>
@@ -255,7 +255,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -275,18 +275,19 @@ Functions</h2></td></tr>
     <tr><td class="paramname">templ</td><td>Searched template. It must be not greater than the source image and have the same data type. </td></tr>
     <tr><td class="paramname">result</td><td>Map of comparison results. It must be single-channel 32-bit floating-point. If image is \(W \times H\) and templ is \(w \times h\) , then result is \((W-w+1) \times (H-h+1)\) . </td></tr>
     <tr><td class="paramname">method</td><td>Parameter specifying the comparison method, see <a class="el" href="../../df/dfb/group__imgproc__object.html#ga3a7850640f1fe1f58fe91a2d7583695d" title="type of the template matching operation ">cv::TemplateMatchModes</a> </td></tr>
-    <tr><td class="paramname">mask</td><td>Mask of searched template. It must have the same datatype and size with templ. It is not set by default. </td></tr>
+    <tr><td class="paramname">mask</td><td>Mask of searched template. It must have the same datatype and size with templ. It is not set by default. Currently, only the TM_SQDIFF and TM_CCORR_NORMED methods are supported. </td></tr>
   </table>
   </dd>
 </dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../da/d53/MatchTemplate_Demo_8cpp-example.html#a15">MatchTemplate_Demo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -340,7 +341,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

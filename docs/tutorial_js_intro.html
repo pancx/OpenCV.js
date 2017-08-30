@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -149,12 +149,12 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="contents">
 <div class="textblock"><h2>OpenCV </h2>
 <p>OpenCV was created at Intel in 1999 by <b>Gary Bradski</b>. The first release came out in 2000. <b>Vadim Pisarevsky</b> joined Gary Bradski to manage Intel's Russian software OpenCV team. In 2005, OpenCV was used on Stanley; the vehicle that won the 2005 DARPA Grand Challenge. Later, its active development continued under the support of Willow Garage, with Gary Bradski and Vadim Pisarevsky leading the project. OpenCV now supports a multitude of algorithms related to Computer Vision and Machine Learning and is expanding day by day.</p>
-<p>OpenCV supports a wide variety of programming languages such as C++, Python, Java, and JavaScript, and is available on different platforms including Windows, Linux, OS X, Android, iOS and web browsers. Interfaces for high-speed GPU operations based on CUDA and OpenCL are also under active development.</p>
-<h2>OpenCV.js </h2>
-<p>Web is the most ubiquitous open computing platform. With HTML5 standards implemented in every browser, web applications are able to render online video with HTML5 video tags, capture webcam video via WebRTC API, and access each pixel of a video frame via canvas API. With these such a wide variety of multimedia available for use online, web developers are in need of a wide array of image and vision processing algorithms in JavaScript to build innovative applications, such as facial detection in live WebRTC streaming. This requirement is even more essential for emerging usages on web, such as Web Virtual Reality and Augmented Reality (WebVR). All of these use cases demand efficient implementations of computer-intensive vision kernels on web.</p>
-<p><a href="http://kripken.github.io/emscripten-site">Emscripten</a> is an LLVM-to-JavaScript compiler. It takes LLVM bitcode - which can be generated from C/C++ using clang, and compiles that into asm.js, a subset of JavaScript. Asm.js is an intermediate programming language designed to allow computer software written in languages such as C to be run as web applications. Asm.js maintains performance characteristics considerably better than standard JavaScript, the typical language used for such applications. The performance of asm.js is improved by limiting language features of JavaScript to those amenable to ahead-of-time optimization and other performance improvements.</p>
-<p>OpenCV.js is a JavaScript binding for a subset of OpenCV. It allows emerging web applications with multimedia processing to benefit from the wide variety of vision functions available in OpenCV. OpenCV.js leverages Emscripten, compiles OpenCV functions' implementation into asm.js, and exposes JavaScript APIs for web application use. The future version will support WebAssembly and other acceleration APIs available on Web.</p>
-<p>OpenCV.js was created in Parallel Architectures and Systems Group at University of California Irvine (UCI) as a research project funded by Intel Corporation. OpenCV.js was improved and integrated into the OpenCV project as part of Google Summer of Code 2017 projects.</p>
+<p>OpenCV supports a wide variety of programming languages such as C++, Python, and Java, and is available on different platforms including Windows, Linux, OS X, Android, and iOS. Interfaces for high-speed GPU operations based on CUDA and OpenCL are also under active development. OpenCV.js brings OpenCV to the open web platform and makes it available to the JavaScript programmer.</p>
+<h2>OpenCV.js: OpenCV for the JavaScript programmer </h2>
+<p>Web is the most ubiquitous open computing platform. With HTML5 standards implemented in every browser, web applications are able to render online video with HTML5 video tags, capture webcam video via WebRTC API, and access each pixel of a video frame via canvas API. With abundance of available multimedia content, web developers are in need of a wide array of image and vision processing algorithms in JavaScript to build innovative applications. This requirement is even more essential for emerging applications on the web, such as Web Virtual Reality (WebVR) and Augmented Reality (WebAR). All of these use cases demand efficient implementations of computation-intensive vision kernels on web.</p>
+<p><a href="http://kripken.github.io/emscripten-site">Emscripten</a> is an LLVM-to-JavaScript compiler. It takes LLVM bitcode - which can be generated from C/C++ using clang, and compiles that into asm.js or WebAssembly that can execute directly inside the web browsers. . Asm.js is a highly optimizable, low-level subset of JavaScript. Asm.js enables ahead-of-time compilation and optimization in JavaScript engine that provide near-to-native execution speed. WebAssembly is a new portable, size- and load-time-efficient binary format suitable for compilation to the web. WebAssembly aims to execute at native speed. WebAssembly is currently being designed as an open standard by W3C.</p>
+<p>OpenCV.js is a JavaScript binding for selected subset of OpenCV functions for the web platform. It allows emerging web applications with multimedia processing to benefit from the wide variety of vision functions available in OpenCV. OpenCV.js leverages Emscripten to compile OpenCV functions into asm.js or WebAssembly targets, and provides a JavaScript APIs for web application to access them. The future versions of the library will take advantage of acceleration APIs that are available on the Web such as SIMD and multi-threaded execution.</p>
+<p>OpenCV.js was initially created in Parallel Architectures and Systems Group at University of California Irvine (UCI) as a research project funded by Intel Corporation. OpenCV.js was further improved and integrated into the OpenCV project as part of Google Summer of Code 2017 program.</p>
 <h2>OpenCV.js Tutorials </h2>
 <p>OpenCV introduces a new set of tutorials that will guide you through various functions available in OpenCV.js. <b>This guide is mainly focused on OpenCV 3.x version</b>.</p>
 <p>The purpose of OpenCV.js tutorials is to:</p><ol type="1">
@@ -165,19 +165,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Prior knowledge of JavaScript and web application development is recommended to understand this guide.</p>
 <h2>Contributors </h2>
 <p>Below is the list of contributors of OpenCV.js bindings and tutorials.</p>
-<ol type="1">
-<li>Sajjad Taheri (Google Summer of Code 2017 mentor, University of California, Irvine)</li>
-<li>Congxiang Pan (Google Summer of Code 2017 intern, Shanghai Jiao Tong University)</li>
-<li>Gang Song (Google Summer of Code 2017 intern, Shanghai Jiao Tong University)</li>
-<li>Wenyao Gan (Shanghai Jiao Tong University)</li>
-<li>Mohammad Reza Haghighat (Intel Corporation)</li>
-<li>Ningxin Hu (Intel Corporation) </li>
-</ol>
+<ul>
+<li>Sajjad Taheri (Architect of the initial version and GSoC mentor, University of California, Irvine)</li>
+<li>Congxiang Pan (GSoC student, Shanghai Jiao Tong University)</li>
+<li>Gang Song (GSoC student, Shanghai Jiao Tong University)</li>
+<li>Wenyao Gan (Student intern, Shanghai Jiao Tong University)</li>
+<li>Mohammad Reza Haghighat (Project initiator &amp; sponsor, Intel Corporation)</li>
+<li>Ningxin Hu (Students' supervisor, Intel Corporation) </li>
+</ul>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -231,7 +231,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

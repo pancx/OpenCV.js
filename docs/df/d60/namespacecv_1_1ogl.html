@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -207,7 +207,7 @@ Functions</h2></td></tr>
 <tr class="memitem:gad2a559f1b93a89fa4936948f4c4c4bb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/group__core__opengl.html#gad2a559f1b93a89fa4936948f4c4c4bb2">convertFromGLTexture2D</a> (const <a class="el" href="../../d5/ddf/classcv_1_1ogl_1_1Texture2D.html">Texture2D</a> &amp;texture, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> dst)</td></tr>
 <tr class="memdesc:gad2a559f1b93a89fa4936948f4c4c4bb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts <a class="el" href="../../d5/ddf/classcv_1_1ogl_1_1Texture2D.html" title="Smart pointer for OpenGL 2D texture memory with reference counting. ">Texture2D</a> object to OutputArray.  <a href="../../d2/d3c/group__core__opengl.html#gad2a559f1b93a89fa4936948f4c4c4bb2">More...</a><br /></td></tr>
 <tr class="separator:gad2a559f1b93a89fa4936948f4c4c4bb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga5ab4018bf271aecf8b7144e46ff363e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/group__core__opengl.html#ga5ab4018bf271aecf8b7144e46ff363e9">convertToGLTexture2D</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> src, <a class="el" href="../../d5/ddf/classcv_1_1ogl_1_1Texture2D.html">Texture2D</a> &amp;texture)</td></tr>
+<tr class="memitem:ga5ab4018bf271aecf8b7144e46ff363e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/group__core__opengl.html#ga5ab4018bf271aecf8b7144e46ff363e9">convertToGLTexture2D</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> src, <a class="el" href="../../d5/ddf/classcv_1_1ogl_1_1Texture2D.html">Texture2D</a> &amp;texture)</td></tr>
 <tr class="memdesc:ga5ab4018bf271aecf8b7144e46ff363e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Converts InputArray to <a class="el" href="../../d5/ddf/classcv_1_1ogl_1_1Texture2D.html" title="Smart pointer for OpenGL 2D texture memory with reference counting. ">Texture2D</a> object.  <a href="../../d2/d3c/group__core__opengl.html#ga5ab4018bf271aecf8b7144e46ff363e9">More...</a><br /></td></tr>
 <tr class="separator:ga5ab4018bf271aecf8b7144e46ff363e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaa7595c713e3a7c389b84f0f8f2827d4b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d7/d45/classcv_1_1UMat.html">UMat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/group__core__opengl.html#gaa7595c713e3a7c389b84f0f8f2827d4b">mapGLBuffer</a> (const <a class="el" href="../../d3/d68/classcv_1_1ogl_1_1Buffer.html">Buffer</a> &amp;buffer, int accessFlags=<a class="el" href="../../dc/d84/group__core__basic.html#gga399140175919325d93e19dc058339ec8a39d5f615d02cac084ab1dd0cb4f7c221">ACCESS_READ</a>|<a class="el" href="../../dc/d84/group__core__basic.html#gga399140175919325d93e19dc058339ec8afcb8f7013ace1726cd1bbeea800bc7b6">ACCESS_WRITE</a>)</td></tr>
@@ -218,7 +218,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga64c7a6323ba1b978f2f9142a4bad5ca1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga0f86b878c8b65fe081fd4f7ac1e62110"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/group__core__opengl.html#ga0f86b878c8b65fe081fd4f7ac1e62110">render</a> (const <a class="el" href="../../d6/d53/classcv_1_1ogl_1_1Arrays.html">Arrays</a> &amp;arr, int mode=<a class="el" href="../../d2/d3c/group__core__opengl.html#ggaf53526c205a92260f356fe6589460aaba8b467f66c33c13df37f24aa3f1196f14">POINTS</a>, <a class="el" href="../../dc/d84/group__core__basic.html#ga599fe92e910c027be274233eccad7beb">Scalar</a> color=<a class="el" href="../../d1/da0/classcv_1_1Scalar__.html#ac1509a4b8454fe7fe29db069e13a2e6f">Scalar::all</a>(255))</td></tr>
 <tr class="separator:ga0f86b878c8b65fe081fd4f7ac1e62110"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga090c1f371c37a575dea8b5c6371aec70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/group__core__opengl.html#ga090c1f371c37a575dea8b5c6371aec70">render</a> (const <a class="el" href="../../d6/d53/classcv_1_1ogl_1_1Arrays.html">Arrays</a> &amp;arr, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> indices, int mode=<a class="el" href="../../d2/d3c/group__core__opengl.html#ggaf53526c205a92260f356fe6589460aaba8b467f66c33c13df37f24aa3f1196f14">POINTS</a>, <a class="el" href="../../dc/d84/group__core__basic.html#ga599fe92e910c027be274233eccad7beb">Scalar</a> color=<a class="el" href="../../d1/da0/classcv_1_1Scalar__.html#ac1509a4b8454fe7fe29db069e13a2e6f">Scalar::all</a>(255))</td></tr>
+<tr class="memitem:ga090c1f371c37a575dea8b5c6371aec70"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/group__core__opengl.html#ga090c1f371c37a575dea8b5c6371aec70">render</a> (const <a class="el" href="../../d6/d53/classcv_1_1ogl_1_1Arrays.html">Arrays</a> &amp;arr, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> indices, int mode=<a class="el" href="../../d2/d3c/group__core__opengl.html#ggaf53526c205a92260f356fe6589460aaba8b467f66c33c13df37f24aa3f1196f14">POINTS</a>, <a class="el" href="../../dc/d84/group__core__basic.html#ga599fe92e910c027be274233eccad7beb">Scalar</a> color=<a class="el" href="../../d1/da0/classcv_1_1Scalar__.html#ac1509a4b8454fe7fe29db069e13a2e6f">Scalar::all</a>(255))</td></tr>
 <tr class="separator:ga090c1f371c37a575dea8b5c6371aec70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga7503c23aabed6fbe4f20b500bb921e71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d3c/group__core__opengl.html#ga7503c23aabed6fbe4f20b500bb921e71">unmapGLBuffer</a> (<a class="el" href="../../d7/d45/classcv_1_1UMat.html">UMat</a> &amp;u)</td></tr>
 <tr class="memdesc:ga7503c23aabed6fbe4f20b500bb921e71"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unmaps <a class="el" href="../../d3/d68/classcv_1_1ogl_1_1Buffer.html" title="Smart pointer for OpenGL buffer object with reference counting. ">Buffer</a> object (releases <a class="el" href="../../d7/d45/classcv_1_1UMat.html">UMat</a>, previously mapped from <a class="el" href="../../d3/d68/classcv_1_1ogl_1_1Buffer.html" title="Smart pointer for OpenGL buffer object with reference counting. ">Buffer</a>).  <a href="../../d2/d3c/group__core__opengl.html#ga7503c23aabed6fbe4f20b500bb921e71">More...</a><br /></td></tr>
@@ -228,7 +228,7 @@ Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:29 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:46 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -282,7 +282,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

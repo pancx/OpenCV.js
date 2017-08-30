@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -144,7 +144,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><dl class="reflist">
-<dt><a class="anchor" id="_todo000013"></a>Page <a class="el" href="imgproc_color_conversions.html">Color conversions</a>  </dt>
+<dt><a class="anchor" id="_todo000014"></a>Page <a class="el" href="imgproc_color_conversions.html">Color conversions</a>  </dt>
 <dd>document other conversion modes </dd>
 <dt><a class="anchor" id="_todo000001"></a>Class <a class="el" href="dd/d99/classcv_1_1Affine3.html">cv::Affine3&lt; T &gt;</a>  </dt>
 <dd>document  </dd>
@@ -152,6 +152,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dd>document  </dd>
 <dt><a class="anchor" id="_todo000005"></a>Member <a class="el" href="d2/de8/group__core__array.html#gae6ffa9354633f984246945d52823165d">cv::calcCovarMatrix</a>  (const <a class="el" href="d3/d63/classcv_1_1Mat.html" title="n-dimensional dense array class ">Mat</a> *samples, int nsamples, <a class="el" href="d3/d63/classcv_1_1Mat.html" title="n-dimensional dense array class ">Mat</a> &amp;covar, <a class="el" href="d3/d63/classcv_1_1Mat.html" title="n-dimensional dense array class ">Mat</a> &amp;mean, int flags, int ctype=CV_64F)</dt>
 <dd>InputArrayOfArrays  </dd>
+<dt><a class="anchor" id="_todo000013"></a>Class <a class="el" href="d4/db3/structcv_1_1dnn_1_1DictValue.html">cv::dnn::DictValue</a>  </dt>
+<dd>Maybe int64 is useless because double type exactly stores at least 2^52 integers.  </dd>
 <dt><a class="anchor" id="_todo000008"></a>Class <a class="el" href="d4/df3/classcv_1_1Formatted.html">cv::Formatted</a>  </dt>
 <dd>document  </dd>
 <dt><a class="anchor" id="_todo000009"></a>Class <a class="el" href="d3/da1/classcv_1_1Formatter.html">cv::Formatter</a>  </dt>
@@ -170,16 +172,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <dd>document  </dd>
 <dt><a class="anchor" id="_todo000002"></a>Class <a class="el" href="d7/d45/classcv_1_1UMat.html">cv::UMat</a>  </dt>
 <dd>document  </dd>
-<dt><a class="anchor" id="_todo000015"></a>Page <a class="el" href="tutorial_O4A_SDK.html">OpenCV4Android SDK</a>  </dt>
+<dt><a class="anchor" id="_todo000016"></a>Page <a class="el" href="tutorial_O4A_SDK.html">OpenCV4Android SDK</a>  </dt>
 <dd>I'm not sure that this is the best place to talk about OpenCV Manager </dd>
-<dt><a class="anchor" id="_todo000014"></a>Page <a class="el" href="tutorial_gpu_basics_similarity.html">Similarity check (PNSR and SSIM) on the GPU</a>  </dt>
+<dt><a class="anchor" id="_todo000015"></a>Page <a class="el" href="tutorial_gpu_basics_similarity.html">Similarity check (PNSR and SSIM) on the GPU</a>  </dt>
 <dd>update this tutorial</dd>
 </dl>
 </div></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -233,7 +235,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

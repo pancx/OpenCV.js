@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -179,6 +179,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1b82b1080c112828ae845f19f1432b12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37a1a47f0ec16f3aa088c8283e5f89de"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d3/d63/classcv_1_1Mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dec/classcv_1_1videostab_1_1KeypointBasedMotionEstimator.html#a37a1a47f0ec16f3aa088c8283e5f89de">estimate</a> (const <a class="el" href="../../d3/d63/classcv_1_1Mat.html">Mat</a> &amp;frame0, const <a class="el" href="../../d3/d63/classcv_1_1Mat.html">Mat</a> &amp;frame1, bool *ok=0)</td></tr>
 <tr class="separator:a37a1a47f0ec16f3aa088c8283e5f89de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3852d2f99345896839dd1efab0898a0e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d63/classcv_1_1Mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dec/classcv_1_1videostab_1_1KeypointBasedMotionEstimator.html#a3852d2f99345896839dd1efab0898a0e">estimate</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> frame0, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> frame1, bool *ok=0)</td></tr>
+<tr class="separator:a3852d2f99345896839dd1efab0898a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa269b9d57fb085cb03e1dfc326f8dd1e"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../d4/d2c/group__videostab__motion.html#gac61e59db30b7d13983885d3ad3116ce1">MotionModel</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dec/classcv_1_1videostab_1_1KeypointBasedMotionEstimator.html#aa269b9d57fb085cb03e1dfc326f8dd1e">motionModel</a> () const </td></tr>
 <tr class="separator:aa269b9d57fb085cb03e1dfc326f8dd1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa290c25d34d364b1f5e13d0a8566337b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d0/de7/structcv_1_1Ptr.html">Ptr</a>&lt; <a class="el" href="../../df/de2/classcv_1_1videostab_1_1ISparseOptFlowEstimator.html">ISparseOptFlowEstimator</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/dec/classcv_1_1videostab_1_1KeypointBasedMotionEstimator.html#aa290c25d34d364b1f5e13d0a8566337b">opticalFlowEstimator</a> () const </td></tr>
@@ -285,6 +287,38 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Implements <a class="el" href="../../d4/dd1/classcv_1_1videostab_1_1ImageMotionEstimatorBase.html#ad00c9820ae28ce5a00edcfc5df526ea2">cv::videostab::ImageMotionEstimatorBase</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a3852d2f99345896839dd1efab0898a0e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d3/d63/classcv_1_1Mat.html">Mat</a> cv::videostab::KeypointBasedMotionEstimator::estimate </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
+          <td class="paramname"><em>frame0</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
+          <td class="paramname"><em>frame1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool *&#160;</td>
+          <td class="paramname"><em>ok</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -464,7 +498,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:29 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:46 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -518,7 +552,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

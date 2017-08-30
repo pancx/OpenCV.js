@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -149,13 +149,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/d81/classcv_1_1detail_1_1BlocksGainCompensator.html">cv::detail::BlocksGainCompensator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposure compensator which tries to remove exposure related artifacts by adjusting image block intensities, see <a class="el" href="../../d0/de3/citelist.html#CITEREF_UES01">[83]</a> for details.  <a href="../../d7/d81/classcv_1_1detail_1_1BlocksGainCompensator.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposure compensator which tries to remove exposure related artifacts by adjusting image block intensities, see <a class="el" href="../../d0/de3/citelist.html#CITEREF_UES01">[84]</a> for details.  <a href="../../d7/d81/classcv_1_1detail_1_1BlocksGainCompensator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d37/classcv_1_1detail_1_1ExposureCompensator.html">cv::detail::ExposureCompensator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Base class for all exposure compensators.  <a href="../../d2/d37/classcv_1_1detail_1_1ExposureCompensator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/de1/classcv_1_1detail_1_1GainCompensator.html">cv::detail::GainCompensator</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities, see <a class="el" href="../../d0/de3/citelist.html#CITEREF_BL07">[11]</a> and <a class="el" href="../../d0/de3/citelist.html#CITEREF_WJ10">[91]</a> for details.  <a href="../../d0/de1/classcv_1_1detail_1_1GainCompensator.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Exposure compensator which tries to remove exposure related artifacts by adjusting image intensities, see <a class="el" href="../../d0/de3/citelist.html#CITEREF_BL07">[11]</a> and <a class="el" href="../../d0/de3/citelist.html#CITEREF_WJ10">[92]</a> for details.  <a href="../../d0/de1/classcv_1_1detail_1_1GainCompensator.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/dc1/classcv_1_1detail_1_1NoExposureCompensator.html">cv::detail::NoExposureCompensator</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stub exposure compensator which does nothing.  <a href="../../d2/dc1/classcv_1_1detail_1_1NoExposureCompensator.html#details">More...</a><br /></td></tr>
@@ -166,7 +166,7 @@ Classes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -220,7 +220,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

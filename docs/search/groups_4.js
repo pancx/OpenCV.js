@@ -9,6 +9,7 @@ var searchData=
   ['cholesky_20matrix_20decomposition',['Cholesky matrix decomposition',['../d8/d0e/group__core__hal__interface__decomp__cholesky.html',1,'']]],
   ['channel_20merge',['Channel merge',['../df/d2e/group__core__hal__interface__merge.html',1,'']]],
   ['channel_20split',['Channel split',['../df/df2/group__core__hal__interface__split.html',1,'']]],
+  ['core_5flogging',['Core_logging',['../d3/dcb/group__core__logging.html',1,'']]],
   ['cuda_2daccelerated_20computer_20vision',['CUDA-accelerated Computer Vision',['../d1/d1e/group__cuda.html',1,'']]],
   ['core_20operations_20on_20matrices',['Core Operations on Matrices',['../de/d09/group__cudaarithm__core.html',1,'']]],
   ['core_20part',['Core part',['../d7/d05/group__cudacore.html',1,'']]],

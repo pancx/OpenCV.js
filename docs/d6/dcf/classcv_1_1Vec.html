@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -500,7 +500,7 @@ class cv::Vec&lt; _Tp, cn &gt;</h3>
 <li>v1 == v2, v1 != v2</li>
 <li>norm(v1) (euclidean norm) The <a class="el" href="../../d6/dcf/classcv_1_1Vec.html" title="Template class for short numerical vectors, a partial case of Matx. ">Vec</a> class is commonly used to describe pixel types of multi-channel arrays. See <a class="el" href="../../d3/d63/classcv_1_1Mat.html" title="n-dimensional dense array class ">Mat</a> for details. </li>
 </ul>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d7/d5d/houghcircles_8cpp-example.html#_a12">houghcircles.cpp</a>, <a class="el" href="../../d2/d7b/houghlines_8cpp-example.html#_a12">houghlines.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#_a37">watershed.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#_a44">camshiftdemo.cpp</a>, <a class="el" href="../../d7/d5d/houghcircles_8cpp-example.html#_a12">houghcircles.cpp</a>, <a class="el" href="../../d2/d7b/houghlines_8cpp-example.html#_a13">houghlines.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#_a37">watershed.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="adca5e5fb1c491d3f253c9110777969aa"></a>
 <div class="memitem">
@@ -2285,7 +2285,7 @@ template&lt;typename _Tp , int cn&gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -2339,7 +2339,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

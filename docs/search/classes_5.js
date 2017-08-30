@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['eltwiselayer',['EltwiseLayer',['../d6/d6a/classcv_1_1dnn_1_1EltwiseLayer.html',1,'cv::dnn']]],
+  ['elulayer',['ELULayer',['../df/da5/classcv_1_1dnn_1_1ELULayer.html',1,'cv::dnn']]],
   ['em',['EM',['../d1/dfb/classcv_1_1ml_1_1EM.html',1,'cv::ml']]],
   ['emdhistogramcostextractor',['EMDHistogramCostExtractor',['../d0/d1c/classcv_1_1EMDHistogramCostExtractor.html',1,'cv']]],
   ['emdl1histogramcostextractor',['EMDL1HistogramCostExtractor',['../da/d8e/classcv_1_1EMDL1HistogramCostExtractor.html',1,'cv']]],

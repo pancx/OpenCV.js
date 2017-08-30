@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -157,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <p>This is the complete list of members for <a class="el" href="../../de/d41/structcv_1_1cudev_1_1VecTraits_3_01uint1_01_4.html">cv::cudev::VecTraits&lt; uint1 &gt;</a>, including all inherited members.</p>
 <table class="directory">
   <tr class="even"><td class="entry"><a class="el" href="../../de/d41/structcv_1_1cudev_1_1VecTraits_3_01uint1_01_4.html#a6299d51c5215c26bd4277ed7a341ee27">all</a>(uint v)</td><td class="entry"><a class="el" href="../../de/d41/structcv_1_1cudev_1_1VecTraits_3_01uint1_01_4.html">cv::cudev::VecTraits&lt; uint1 &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="../../de/d41/structcv_1_1cudev_1_1VecTraits_3_01uint1_01_4.html#ab7365e8d5afa6c2e91714dd0f2f0b52ba6ca4aec6b9dea7ce42752e17110cd801">cn</a> enum value</td><td class="entry"><a class="el" href="../../de/d41/structcv_1_1cudev_1_1VecTraits_3_01uint1_01_4.html">cv::cudev::VecTraits&lt; uint1 &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="../../de/d41/structcv_1_1cudev_1_1VecTraits_3_01uint1_01_4.html#a013a084b9802e52a292df61b8da9ca66a6ca4aec6b9dea7ce42752e17110cd801">cn</a> enum value</td><td class="entry"><a class="el" href="../../de/d41/structcv_1_1cudev_1_1VecTraits_3_01uint1_01_4.html">cv::cudev::VecTraits&lt; uint1 &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../de/d41/structcv_1_1cudev_1_1VecTraits_3_01uint1_01_4.html#ac0f81c1abf342ce9bb097884a6c469cb">elem_type</a> typedef</td><td class="entry"><a class="el" href="../../de/d41/structcv_1_1cudev_1_1VecTraits_3_01uint1_01_4.html">cv::cudev::VecTraits&lt; uint1 &gt;</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="../../de/d41/structcv_1_1cudev_1_1VecTraits_3_01uint1_01_4.html#a7f165769d1f3dc021b0999219945884d">make</a>(uint x)</td><td class="entry"><a class="el" href="../../de/d41/structcv_1_1cudev_1_1VecTraits_3_01uint1_01_4.html">cv::cudev::VecTraits&lt; uint1 &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../de/d41/structcv_1_1cudev_1_1VecTraits_3_01uint1_01_4.html#ad2e78ffeb04cceb91c46074b238204e1">make</a>(const uint *v)</td><td class="entry"><a class="el" href="../../de/d41/structcv_1_1cudev_1_1VecTraits_3_01uint1_01_4.html">cv::cudev::VecTraits&lt; uint1 &gt;</a></td><td class="entry"><span class="mlabel">inline</span><span class="mlabel">static</span></td></tr>
@@ -165,7 +165,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:28 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:45 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -219,7 +219,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

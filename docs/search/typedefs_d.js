@@ -1,16 +1,7 @@
 var searchData=
 [
-  ['parameter_5ftype',['parameter_type',['../d7/d97/structcv_1_1cudev_1_1TypeTraits.html#a348b7e31dc03183136269b9be4aaacf9',1,'cv::cudev::TypeTraits']]],
-  ['point',['Point',['../dc/d84/group__core__basic.html#ga1e83eafb2d26b3c93f09e8338bcab192',1,'cv']]],
-  ['point2d',['Point2d',['../dc/d84/group__core__basic.html#ga32986d8c6fd05949688352abd112509f',1,'cv']]],
-  ['point2f',['Point2f',['../dc/d84/group__core__basic.html#ga7d080aa40de011e4410bca63385ffe2a',1,'cv']]],
-  ['point2i',['Point2i',['../dc/d84/group__core__basic.html#ga0f70b52f0c0b119f7ed2448ffebdc144',1,'cv']]],
-  ['point2l',['Point2l',['../dc/d84/group__core__basic.html#ga2f6c21f7cbd3a08bfc6467fd20df2f7e',1,'cv']]],
-  ['point3d',['Point3d',['../dc/d84/group__core__basic.html#ga17f8af95b76535bd387f4909850c8810',1,'cv']]],
-  ['point3f',['Point3f',['../dc/d84/group__core__basic.html#ga3d79ceeb4419bccd0308dfdf1cd31435',1,'cv']]],
-  ['point3i',['Point3i',['../dc/d84/group__core__basic.html#gac4ae8f2fb37ecb4b5d9268f17e46a18e',1,'cv']]],
-  ['pointee_5ftype',['pointee_type',['../d7/d97/structcv_1_1cudev_1_1TypeTraits.html#a7c679319f03206bc9c7f9a9561f01a2c',1,'cv::cudev::TypeTraits']]],
-  ['pointer',['pointer',['../d3/d3f/classcv_1_1Allocator.html#ae28c6dc959d3f3480d71ada0165045ed',1,'cv::Allocator::pointer()'],['../d1/d8f/classcv_1_1String.html#a395421c2a2b9612bb497c85acaab30dd',1,'cv::String::pointer()'],['../d7/dcf/classcv_1_1MatConstIterator.html#abcc6516506c2198b43fad771c492b82d',1,'cv::MatConstIterator::pointer()'],['../d1/de0/classcv_1_1MatConstIterator__.html#a60653ac7f1a885697abe8da0b5cb040b',1,'cv::MatConstIterator_::pointer()'],['../d4/dfe/classcv_1_1MatIterator__.html#aa81cd9de718ad0ea55fa6bda0d66485c',1,'cv::MatIterator_::pointer()']]],
-  ['ptr_5fsz_5ftype',['ptr_sz_type',['../df/db4/structcv_1_1cudev_1_1PtrTraits_3_01Expr_3_01Body_01_4_01_4.html#a2142fd05d4bd4693e794548b00c27c37',1,'cv::cudev::PtrTraits&lt; Expr&lt; Body &gt; &gt;::ptr_sz_type()'],['../db/d3c/structcv_1_1cudev_1_1PtrTraitsBase.html#a3dcbbadd8cb9063cdc8bef2e74db0e0c',1,'cv::cudev::PtrTraitsBase::ptr_sz_type()']]],
-  ['ptr_5ftype',['ptr_type',['../df/db4/structcv_1_1cudev_1_1PtrTraits_3_01Expr_3_01Body_01_4_01_4.html#a87f756f1d9b9d4bbfdbd595b872a4623',1,'cv::cudev::PtrTraits&lt; Expr&lt; Body &gt; &gt;::ptr_type()'],['../db/d3c/structcv_1_1cudev_1_1PtrTraitsBase.html#a4d4d22ee2ec49598d5f9f651b11485cf',1,'cv::cudev::PtrTraitsBase::ptr_type()']]]
+  ['opengldrawcallback',['OpenGlDrawCallback',['../d7/dfc/group__highgui.html#ga8bed4feb08f866e81514a31fdacaceee',1,'cv']]],
+  ['other',['other',['../d1/d1d/structcv_1_1cudev_1_1Sum_1_1rebind.html#aaae743f5deb12eaeced97003dc51616c',1,'cv::cudev::Sum::rebind::other()'],['../d3/dd1/structcv_1_1cudev_1_1Avg_1_1rebind.html#a30a46b30d73c26c6ad3786ef2ad8f3df',1,'cv::cudev::Avg::rebind::other()'],['../d2/dff/structcv_1_1cudev_1_1Min_1_1rebind.html#acfe7a9701bc3ba064c760d28f8947775',1,'cv::cudev::Min::rebind::other()'],['../d1/d7c/structcv_1_1cudev_1_1Max_1_1rebind.html#a2baa5b57935c857e51bd95ff22e667f6',1,'cv::cudev::Max::rebind::other()']]],
+  ['outputarray',['OutputArray',['../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0',1,'cv']]],
+  ['outputarrayofarrays',['OutputArrayOfArrays',['../dc/d84/group__core__basic.html#ga889a09549b98223016170d9b613715de',1,'cv']]]
 ];

@@ -72,6 +72,7 @@ var searchData=
   ['maximum_3c_20uchar_20_3e',['maximum&lt; uchar &gt;',['../dc/d84/structcv_1_1cudev_1_1maximum_3_01uchar_01_4.html',1,'cv::cudev']]],
   ['maximum_3c_20uint_20_3e',['maximum&lt; uint &gt;',['../d8/dfa/structcv_1_1cudev_1_1maximum_3_01uint_01_4.html',1,'cv::cudev']]],
   ['maximum_3c_20ushort_20_3e',['maximum&lt; ushort &gt;',['../d0/dac/structcv_1_1cudev_1_1maximum_3_01ushort_01_4.html',1,'cv::cudev']]],
+  ['maxunpoollayer',['MaxUnpoolLayer',['../d1/d59/classcv_1_1dnn_1_1MaxUnpoolLayer.html',1,'cv::dnn']]],
   ['mercatorprojector',['MercatorProjector',['../d1/daa/structcv_1_1detail_1_1MercatorProjector.html',1,'cv::detail']]],
   ['mercatorwarper',['MercatorWarper',['../dc/d7a/classcv_1_1detail_1_1MercatorWarper.html',1,'cv::detail']]],
   ['mercatorwarper',['MercatorWarper',['../de/d04/classcv_1_1MercatorWarper.html',1,'cv']]],
@@ -106,5 +107,6 @@ var searchData=
   ['mser',['MSER',['../d3/d28/classcv_1_1MSER.html',1,'cv']]],
   ['multibandblender',['MultiBandBlender',['../d5/d4b/classcv_1_1detail_1_1MultiBandBlender.html',1,'cv::detail']]],
   ['multiplies',['multiplies',['../d3/da3/structcv_1_1cudev_1_1multiplies.html',1,'cv::cudev']]],
-  ['mutex',['Mutex',['../d6/d5e/classcv_1_1Mutex.html',1,'cv']]]
+  ['mutex',['Mutex',['../d6/d5e/classcv_1_1Mutex.html',1,'cv']]],
+  ['mvnlayer',['MVNLayer',['../d4/db5/classcv_1_1dnn_1_1MVNLayer.html',1,'cv::dnn']]]
 ];

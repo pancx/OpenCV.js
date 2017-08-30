@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -5452,8 +5452,9 @@ Graph</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="../../d2/df8/group__core__c.html#gad8807dac71fcde9e625288ff3d237c2d">CV_TREE_NODE_FIELDS</a>(<a class="code" href="../../d6/dde/structCvSeq.html">CvSeq</a>);                                           \</div><div class="line">    int       total;            \</div><div class="line">    int       elem_size;        <a class="code" href="../../d1/d1b/group__core__hal__interface.html#ga0fd9ce9d735064461bebfe6037026093">\</a></div><div class="line"><a class="code" href="../../d1/d1b/group__core__hal__interface.html#ga0fd9ce9d735064461bebfe6037026093">    schar</a>*    block_max;        <a class="code" href="../../d1/d1b/group__core__hal__interface.html#ga0fd9ce9d735064461bebfe6037026093">\</a></div><div class="line"><a class="code" href="../../d1/d1b/group__core__hal__interface.html#ga0fd9ce9d735064461bebfe6037026093">    schar</a>*    ptr;              \</div><div class="line">    int       delta_elems;      \</div><div class="line">    CvMemStorage* storage;      \</div><div class="line">    CvSeqBlock* free_blocks;    \</div><div class="line">    CvSeqBlock* first;</div><div class="ttc" id="group__core__c_html_gad8807dac71fcde9e625288ff3d237c2d"><div class="ttname"><a href="../../d2/df8/group__core__c.html#gad8807dac71fcde9e625288ff3d237c2d">CV_TREE_NODE_FIELDS</a></div><div class="ttdeci">#define CV_TREE_NODE_FIELDS(node_type)</div><div class="ttdef"><b>Definition:</b> types_c.h:1227</div></div>
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="../../d2/df8/group__core__c.html#gad8807dac71fcde9e625288ff3d237c2d">CV_TREE_NODE_FIELDS</a>(<a class="code" href="../../d6/dde/structCvSeq.html">CvSeq</a>);                                           \</div><div class="line">    int       <a class="code" href="../../df/d57/namespacecv_1_1dnn.html#a65ad6cf1b64a572bf78d696d2014b0e6">total</a>;            \</div><div class="line">    int       elem_size;        <a class="code" href="../../d1/d1b/group__core__hal__interface.html#ga0fd9ce9d735064461bebfe6037026093">\</a></div><div class="line"><a class="code" href="../../d1/d1b/group__core__hal__interface.html#ga0fd9ce9d735064461bebfe6037026093">    schar</a>*    block_max;        <a class="code" href="../../d1/d1b/group__core__hal__interface.html#ga0fd9ce9d735064461bebfe6037026093">\</a></div><div class="line"><a class="code" href="../../d1/d1b/group__core__hal__interface.html#ga0fd9ce9d735064461bebfe6037026093">    schar</a>*    ptr;              \</div><div class="line">    int       delta_elems;      \</div><div class="line">    CvMemStorage* storage;      \</div><div class="line">    CvSeqBlock* free_blocks;    \</div><div class="line">    CvSeqBlock* first;</div><div class="ttc" id="group__core__c_html_gad8807dac71fcde9e625288ff3d237c2d"><div class="ttname"><a href="../../d2/df8/group__core__c.html#gad8807dac71fcde9e625288ff3d237c2d">CV_TREE_NODE_FIELDS</a></div><div class="ttdeci">#define CV_TREE_NODE_FIELDS(node_type)</div><div class="ttdef"><b>Definition:</b> types_c.h:1227</div></div>
 <div class="ttc" id="group__core__hal__interface_html_ga0fd9ce9d735064461bebfe6037026093"><div class="ttname"><a href="../../d1/d1b/group__core__hal__interface.html#ga0fd9ce9d735064461bebfe6037026093">schar</a></div><div class="ttdeci">signed char schar</div><div class="ttdef"><b>Definition:</b> interface.h:44</div></div>
+<div class="ttc" id="namespacecv_1_1dnn_html_a65ad6cf1b64a572bf78d696d2014b0e6"><div class="ttname"><a href="../../df/d57/namespacecv_1_1dnn.html#a65ad6cf1b64a572bf78d696d2014b0e6">cv::dnn::total</a></div><div class="ttdeci">static int total(const MatShape &amp;shape, int start=-1, int end=-1)</div><div class="ttdef"><b>Definition:</b> shape_utils.hpp:149</div></div>
 <div class="ttc" id="structCvSeq_html"><div class="ttname"><a href="../../d6/dde/structCvSeq.html">CvSeq</a></div><div class="ttdef"><b>Definition:</b> types_c.h:1265</div></div>
 </div><!-- fragment --><p>Read/Write sequence. Elements can be dynamically inserted to or deleted from the sequence.Pointer to the first sequence block. </p>
 
@@ -7426,30 +7427,38 @@ Graph</h2></td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a68f0f622cde7ec9c17efe23ede12f0da"></a>CV_BadDataPtr&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603af39c734895f539907ab8af04d2a3b3f4"></a>CV_BadStep&#160;</td><td class="fielddoc">
+<p>image step is wrong, this may happen for a non-continuous matrix </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a29cfb9b47321e9727265a70e4d8bb9f3"></a>CV_BadModelOrChSeq&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a727bd07ede2ff2187497658772525b4c"></a>CV_BadNumChannels&#160;</td><td class="fielddoc">
+<p>bad number of channels, for example, some functions accept only single channel matrices </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a5d6a6677b770988e2bbee7d50a7f3f81"></a>CV_BadNumChannel1U&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a3e456fa8b6e0c7d77a58b3630b8402e3"></a>CV_BadDepth&#160;</td><td class="fielddoc">
+<p>input image depth is not supported by the function </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a8b84f19d2ded1d37ac51c229c97ca2fc"></a>CV_BadAlphaChannel&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603ad53327b3e187afe04ae198c1bc5b2451"></a>CV_BadOrder&#160;</td><td class="fielddoc">
+<p>number of dimensions is out of range </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a0d4e443657a9ddc42c42cd394b7a6a19"></a>CV_BadOrigin&#160;</td><td class="fielddoc">
+<p>incorrect input origin </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a361b7d0220f620646a713f7e33371376"></a>CV_BadAlign&#160;</td><td class="fielddoc">
+<p>incorrect input align </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603adab8c7b979b4224c1575ad1d9cc10ac1"></a>CV_BadCallBack&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a56667df52700c25cc525b3e4ff869fd5"></a>CV_BadTileSize&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603aa38e34f81122bf59f91515978df56fbc"></a>CV_BadCOI&#160;</td><td class="fielddoc">
+<p>input COI is not supported </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603ac37daadbe254a10c83b1908b347d6ebf"></a>CV_BadROISize&#160;</td><td class="fielddoc">
+<p>incorrect input roi </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603aee7b922f84ce6df5cecb499d2938d730"></a>CV_MaskIsTiled&#160;</td><td class="fielddoc">
 </td></tr>
@@ -7460,10 +7469,10 @@ Graph</h2></td></tr>
 <p>incorrect vector length </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a5970531d95d445badbcf8e02eb852dda"></a>CV_StsFilterStructContentErr&#160;</td><td class="fielddoc">
-<p>incorr. filter structure content </p>
+<p>incorrect filter structure content </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603aea67edac99dd67c92dabb19d29a376ec"></a>CV_StsKernelStructContentErr&#160;</td><td class="fielddoc">
-<p>incorr. transform kernel content </p>
+<p>incorrect transform kernel content </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a79148baa150a313db97f2bdd132186ff"></a>CV_StsFilterOffsetErr&#160;</td><td class="fielddoc">
 <p>incorrect filter offset value </p>
@@ -7514,18 +7523,24 @@ Graph</h2></td></tr>
 <p>assertion failed </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a54f2ac578e6f36c639d0061a7d36c298"></a>CV_GpuNotSupported&#160;</td><td class="fielddoc">
+<p>no CUDA support </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a917e1fffd8f1aa665bfc1423f0707beb"></a>CV_GpuApiCallError&#160;</td><td class="fielddoc">
+<p>GPU API call error </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a388fee90cf64c0d80b7f99cb1541546b"></a>CV_OpenGlNotSupported&#160;</td><td class="fielddoc">
+<p>no OpenGL support </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a8973800826c581b79010ad51037a3f17"></a>CV_OpenGlApiCallError&#160;</td><td class="fielddoc">
+<p>OpenGL API call error </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a4d840c47d35f2b1f80512045fb704fed"></a>CV_OpenCLApiCallError&#160;</td><td class="fielddoc">
+<p>OpenCL API call error </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603aca411b97fac136bca4e7117c8b1f8bb5"></a>CV_OpenCLDoubleNotSupported&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a9b8d02530927e3a4d585220425fc62cf"></a>CV_OpenCLInitError&#160;</td><td class="fielddoc">
+<p>OpenCL initialization error </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggaedcf2109f459315e1a7f2af73ec9b603a873fd00696adbccb26349f4ff4ef8b57"></a>CV_OpenCLNoAMDBlasFft&#160;</td><td class="fielddoc">
 </td></tr>
@@ -13448,7 +13463,8 @@ Graph</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>constructs <a class="el" href="../../dc/dd1/structCvPoint.html">CvPoint</a> structure. </p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a42">facedetect.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga78331196175b5b22c43a1ad59e3c9bad"></a>
@@ -18284,7 +18300,7 @@ Graph</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -18338,7 +18354,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vx_5fdbgthrow',['VX_DbgThrow',['../de/d03/ovx__defs_8hpp.html#a8b81da75b50f9fae9c72d6ad91cb78f9',1,'ovx_defs.hpp']]]
+  ['use_5funordered_5fmap',['USE_UNORDERED_MAP',['../d6/db3/lsh__table_8h.html#ab69ecda56acf8670f9ca31ab0afcbce5',1,'lsh_table.h']]]
 ];

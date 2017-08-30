@@ -9,7 +9,7 @@ var searchData=
   ['read_5fwrite',['READ_WRITE',['../d3/d17/classcv_1_1ocl_1_1KernelArg.html#ade583bd114c69c541035b657074160e7a7077dbb41d7964d5f68d9e033dcabfa3',1,'cv::ocl::KernelArg::READ_WRITE()'],['../d2/d3c/group__core__opengl.html#gga6b2a295dc840db8b6728db2f3a439d6eaf254a35e198177eff9ecb1992ecf3e26',1,'cv::ogl::Buffer::READ_WRITE()']]],
   ['read_5fwrite_5fcache',['READ_WRITE_CACHE',['../d7/d9f/classcv_1_1ocl_1_1Device.html#aca63cc0ae2c74b404e140a4fe8207059a8928cd5a8ec36e26d1c5239d6bfb2917',1,'cv::ocl::Device']]],
   ['real',['REAL',['../de/dd9/classcv_1_1FileNode.html#a8fe1d2aa050e6909b978f4df3529066ea6742683e1af0c25240191f756e278c29',1,'cv::FileNode::REAL()'],['../de/d95/structcv_1_1Param.html#afc16cdd95c1836f161f3808100df4105aa45007ca686d4e4c50026806884fd785',1,'cv::Param::REAL()'],['../d6/d7a/classcv_1_1ml_1_1Boost.html#a22a5db4ceb750ca68782ddb32f44562fa0643d2e20c5cb3a4120349e069db7232',1,'cv::ml::Boost::REAL()']]],
-  ['recurs_5ffilter',['RECURS_FILTER',['../d1/d0d/group__photo.html#ggac007e35ce97fe229513dbfd407d605e3a54c35da37a520d619d8a149d9b463d73',1,'cv']]],
+  ['recurs_5ffilter',['RECURS_FILTER',['../d1/d0d/group__photo.html#gga8636b17e2e1e035eebd296f0dc354292a54c35da37a520d619d8a149d9b463d73',1,'cv']]],
   ['reduce_5favg',['REDUCE_AVG',['../d0/de1/group__core.html#gga14cdedf2933367eb9395ec16798af994a85f039992a454ca367bc190529766c7e',1,'cv']]],
   ['reduce_5fmax',['REDUCE_MAX',['../d0/de1/group__core.html#gga14cdedf2933367eb9395ec16798af994a928b4c3eb0a038ea41b61d122c0495ee',1,'cv']]],
   ['reduce_5fmin',['REDUCE_MIN',['../d0/de1/group__core.html#gga14cdedf2933367eb9395ec16798af994a1f40a2ed66c8a8b8198186da47ec7b76',1,'cv']]],
@@ -22,7 +22,7 @@ var searchData=
   ['representation_5fpoints',['REPRESENTATION_POINTS',['../dc/d5c/group__viz__widget.html#gga4b33d8c74317eb777b20accb8fe2ce4caa96f1fac6585f2154df245cd9be07e78',1,'cv::viz']]],
   ['representation_5fsurface',['REPRESENTATION_SURFACE',['../dc/d5c/group__viz__widget.html#gga4b33d8c74317eb777b20accb8fe2ce4ca5d5672bade6a20e704b087cb19c5009a',1,'cv::viz']]],
   ['representation_5fwireframe',['REPRESENTATION_WIREFRAME',['../dc/d5c/group__viz__widget.html#gga4b33d8c74317eb777b20accb8fe2ce4cad9e6a89e8d3a8e2c7d4d0af09047e07d',1,'cv::viz']]],
-  ['response_5frow',['RESPONSE_ROW',['../d4/d6a/classcv_1_1cuda_1_1FastFeatureDetector.html#a2399d61fbfd3e240372a0da6cbe07b71ac4a2d78827d6e080f4aee42b566bce28',1,'cv::cuda::FastFeatureDetector::RESPONSE_ROW()'],['../da/d44/classcv_1_1cuda_1_1ORB.html#aad76b631f556ca55aef5b65576b2cb85a272f42a60a96246c3ee4b0e6076ffe63',1,'cv::cuda::ORB::RESPONSE_ROW()']]],
+  ['response_5frow',['RESPONSE_ROW',['../d4/d6a/classcv_1_1cuda_1_1FastFeatureDetector.html#ae672cb4f99eafd24c2d4d25077c252bbac4a2d78827d6e080f4aee42b566bce28',1,'cv::cuda::FastFeatureDetector::RESPONSE_ROW()'],['../da/d44/classcv_1_1cuda_1_1ORB.html#aef6971911267941170e797ab291c9c1ba272f42a60a96246c3ee4b0e6076ffe63',1,'cv::cuda::ORB::RESPONSE_ROW()']]],
   ['retr_5fccomp',['RETR_CCOMP',['../d3/dc0/group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71a7d1d4b509fb2a9a8dc2f960357748752',1,'cv']]],
   ['retr_5fexternal',['RETR_EXTERNAL',['../d3/dc0/group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71aa7adc6d6608609fd84650f71b954b981',1,'cv']]],
   ['retr_5ffloodfill',['RETR_FLOODFILL',['../d3/dc0/group__imgproc__shape.html#gga819779b9857cc2f8601e6526a3a5bc71acc80715d6a2a51855cb3a9a8093a9352',1,'cv']]],
@@ -37,6 +37,6 @@ var searchData=
   ['rotate_5f90_5fcounterclockwise',['ROTATE_90_COUNTERCLOCKWISE',['../d2/de8/group__core__array.html#gga6f45d55c0b1cc9d97f5353a7c8a7aac2a15ff5052b63aa43a334c865ebd8bb2fd',1,'cv']]],
   ['row_5fsample',['ROW_SAMPLE',['../dd/ded/group__ml.html#gga9c57a2b823008dda53d2c7f7059a8710ab8565ac2eb79152a4e3c80b0e9c9fd4c',1,'cv::ml']]],
   ['rows',['rows',['../de/de1/classcv_1_1Matx.html#a1828fc4421f037a80fdb750eeedcb60ca883ccff445b70d8c5673612fcea63374',1,'cv::Matx']]],
-  ['rows_5fcount',['ROWS_COUNT',['../d4/d6a/classcv_1_1cuda_1_1FastFeatureDetector.html#a2399d61fbfd3e240372a0da6cbe07b71ab22577b7e931f955fc5a4cf8202c1e77',1,'cv::cuda::FastFeatureDetector::ROWS_COUNT()'],['../da/d44/classcv_1_1cuda_1_1ORB.html#aad76b631f556ca55aef5b65576b2cb85ae281809a3c5de7f95411081e5eb97396',1,'cv::cuda::ORB::ROWS_COUNT()']]],
+  ['rows_5fcount',['ROWS_COUNT',['../d4/d6a/classcv_1_1cuda_1_1FastFeatureDetector.html#ae672cb4f99eafd24c2d4d25077c252bbab22577b7e931f955fc5a4cf8202c1e77',1,'cv::cuda::FastFeatureDetector::ROWS_COUNT()'],['../da/d44/classcv_1_1cuda_1_1ORB.html#aef6971911267941170e797ab291c9c1bae281809a3c5de7f95411081e5eb97396',1,'cv::cuda::ORB::ROWS_COUNT()']]],
   ['rprop',['RPROP',['../d0/dce/classcv_1_1ml_1_1ANN__MLP.html#a012b34ee340b5d4d11b6844e12816181aded0d171ce651e6701a3426e192e04c9',1,'cv::ml::ANN_MLP']]]
 ];

@@ -151,7 +151,7 @@ var searchData=
   ['hal_5fni_5fxor8u',['hal_ni_xor8u',['../d2/d18/group__core__hal__interface__logical.html#gad531f2b142319e9b75e7334f76893d7d',1,'hal_replacement.hpp']]],
   ['halffpconfig',['halfFPConfig',['../d7/d9f/classcv_1_1ocl_1_1Device.html#adf54f07f4a4c668b85e22c36e8475e03',1,'cv::ocl::Device']]],
   ['handle',['handle',['../d7/d45/classcv_1_1UMat.html#a760163d76c3c5a87421edf48a1f740fe',1,'cv::UMat']]],
-  ['has',['has',['../d9/dee/classcv_1_1cuda_1_1TargetArchs.html#a92318c6f6c8c00014a2b96bfec73b807',1,'cv::cuda::TargetArchs::has()'],['../d0/d2e/classcv_1_1CommandLineParser.html#a3136cd8a4da764026bebd67b4d70d270',1,'cv::CommandLineParser::has()']]],
+  ['has',['has',['../d9/dee/classcv_1_1cuda_1_1TargetArchs.html#a92318c6f6c8c00014a2b96bfec73b807',1,'cv::cuda::TargetArchs::has()'],['../d0/d2e/classcv_1_1CommandLineParser.html#a3136cd8a4da764026bebd67b4d70d270',1,'cv::CommandLineParser::has()'],['../d9/d2b/classcv_1_1dnn_1_1Dict.html#ade0a4dfcec21e273a108eb60824c6ae0',1,'cv::dnn::Dict::has()']]],
   ['has_5ftype',['has_type',['../d6/d59/structcvflann_1_1any.html#a4ef5cda72c6a25e1f0ddd926966e639c',1,'cvflann::any']]],
   ['hasbin',['hasBin',['../d9/dee/classcv_1_1cuda_1_1TargetArchs.html#acd8bdf9a176c8cef258e705fa334cc00',1,'cv::cuda::TargetArchs']]],
   ['hasequalorgreater',['hasEqualOrGreater',['../d9/dee/classcv_1_1cuda_1_1TargetArchs.html#abfd5b40917f200ac637b6f091e288871',1,'cv::cuda::TargetArchs']]],

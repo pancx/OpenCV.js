@@ -1,9 +1,9 @@
 var searchData=
 [
   ['false',['False',['../db/d3e/classcvflann_1_1False.html',1,'cvflann']]],
-  ['farnebackopticalflow',['FarnebackOpticalFlow',['../de/d9e/classcv_1_1FarnebackOpticalFlow.html',1,'cv']]],
   ['farnebackopticalflow',['FarnebackOpticalFlow',['../dd/d00/classcv_1_1superres_1_1FarnebackOpticalFlow.html',1,'cv::superres']]],
   ['farnebackopticalflow',['FarnebackOpticalFlow',['../d9/d30/classcv_1_1cuda_1_1FarnebackOpticalFlow.html',1,'cv::cuda']]],
+  ['farnebackopticalflow',['FarnebackOpticalFlow',['../de/d9e/classcv_1_1FarnebackOpticalFlow.html',1,'cv']]],
   ['fastfeaturedetector',['FastFeatureDetector',['../d4/d6a/classcv_1_1cuda_1_1FastFeatureDetector.html',1,'cv::cuda']]],
   ['fastfeaturedetector',['FastFeatureDetector',['../df/d74/classcv_1_1FastFeatureDetector.html',1,'cv']]],
   ['fastmarchingmethod',['FastMarchingMethod',['../d3/dea/classcv_1_1videostab_1_1FastMarchingMethod.html',1,'cv::videostab']]],
@@ -22,10 +22,11 @@ var searchData=
   ['findminmaxvalexprbody',['FindMinMaxValExprBody',['../dd/db3/structcv_1_1cudev_1_1FindMinMaxValExprBody.html',1,'cv::cudev']]],
   ['findminvalexprbody',['FindMinValExprBody',['../df/d82/structcv_1_1cudev_1_1FindMinValExprBody.html',1,'cv::cudev']]],
   ['fisheyeprojector',['FisheyeProjector',['../d9/de9/structcv_1_1detail_1_1FisheyeProjector.html',1,'cv::detail']]],
-  ['fisheyewarper',['FisheyeWarper',['../d9/dac/classcv_1_1detail_1_1FisheyeWarper.html',1,'cv::detail']]],
   ['fisheyewarper',['FisheyeWarper',['../d5/d30/classcv_1_1FisheyeWarper.html',1,'cv']]],
+  ['fisheyewarper',['FisheyeWarper',['../d9/dac/classcv_1_1detail_1_1FisheyeWarper.html',1,'cv::detail']]],
   ['flannbasedmatcher',['FlannBasedMatcher',['../dc/de2/classcv_1_1FlannBasedMatcher.html',1,'cv']]],
   ['flannexception',['FLANNException',['../d4/d2e/classcvflann_1_1FLANNException.html',1,'cvflann']]],
+  ['flattenlayer',['FlattenLayer',['../d4/da3/classcv_1_1dnn_1_1FlattenLayer.html',1,'cv::dnn']]],
   ['floattype',['FloatType',['../d8/d4e/structcv_1_1cudev_1_1functional__detail_1_1FloatType.html',1,'cv::cudev::functional_detail']]],
   ['formatinfo',['FormatInfo',['../d8/db6/structcv_1_1cudacodec_1_1FormatInfo.html',1,'cv::cudacodec']]],
   ['formatted',['Formatted',['../d4/df3/classcv_1_1Formatted.html',1,'cv']]],

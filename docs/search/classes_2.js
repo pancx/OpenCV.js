@@ -1,5 +1,7 @@
 var searchData=
 [
+  ['backendnode',['BackendNode',['../d2/dbb/classcv_1_1dnn_1_1BackendNode.html',1,'cv::dnn']]],
+  ['backendwrapper',['BackendWrapper',['../df/d7b/classcv_1_1dnn_1_1BackendWrapper.html',1,'cv::dnn']]],
   ['backgroundsubtractor',['BackgroundSubtractor',['../d7/df6/classcv_1_1BackgroundSubtractor.html',1,'cv']]],
   ['backgroundsubtractorfgd',['BackgroundSubtractorFGD',['../d3/dd2/classcv_1_1cuda_1_1BackgroundSubtractorFGD.html',1,'cv::cuda']]],
   ['backgroundsubtractorgmg',['BackgroundSubtractorGMG',['../d5/df2/classcv_1_1cuda_1_1BackgroundSubtractorGMG.html',1,'cv::cuda']]],
@@ -10,6 +12,8 @@ var searchData=
   ['bad_5fany_5fcast',['bad_any_cast',['../da/d73/structcvflann_1_1anyimpl_1_1bad__any__cast.html',1,'cvflann::anyimpl']]],
   ['base_5fany_5fpolicy',['base_any_policy',['../df/dca/structcvflann_1_1anyimpl_1_1base__any__policy.html',1,'cvflann::anyimpl']]],
   ['basecascadeclassifier',['BaseCascadeClassifier',['../da/dd5/classcv_1_1BaseCascadeClassifier.html',1,'cv']]],
+  ['baseconvolutionlayer',['BaseConvolutionLayer',['../d5/d1f/classcv_1_1dnn_1_1BaseConvolutionLayer.html',1,'cv::dnn']]],
+  ['batchnormlayer',['BatchNormLayer',['../d4/dd2/classcv_1_1dnn_1_1BatchNormLayer.html',1,'cv::dnn']]],
   ['bestof2nearestmatcher',['BestOf2NearestMatcher',['../d4/d26/classcv_1_1detail_1_1BestOf2NearestMatcher.html',1,'cv::detail']]],
   ['bestof2nearestrangematcher',['BestOf2NearestRangeMatcher',['../d8/d72/classcv_1_1detail_1_1BestOf2NearestRangeMatcher.html',1,'cv::detail']]],
   ['bfmatcher',['BFMatcher',['../d3/da1/classcv_1_1BFMatcher.html',1,'cv']]],
@@ -108,9 +112,11 @@ var searchData=
   ['bit_5for',['bit_or',['../dd/d1c/structcv_1_1cudev_1_1bit__or.html',1,'cv::cudev']]],
   ['bit_5frshift',['bit_rshift',['../d4/d2a/structcv_1_1cudev_1_1bit__rshift.html',1,'cv::cudev']]],
   ['bit_5fxor',['bit_xor',['../df/d44/structcv_1_1cudev_1_1bit__xor.html',1,'cv::cudev']]],
+  ['blanklayer',['BlankLayer',['../d8/d2d/classcv_1_1dnn_1_1BlankLayer.html',1,'cv::dnn']]],
   ['blender',['Blender',['../d6/d4a/classcv_1_1detail_1_1Blender.html',1,'cv::detail']]],
   ['block',['Block',['../d3/d6c/structcv_1_1cudev_1_1Block.html',1,'cv::cudev']]],
   ['blocksgaincompensator',['BlocksGainCompensator',['../d7/d81/classcv_1_1detail_1_1BlocksGainCompensator.html',1,'cv::detail']]],
+  ['bnlllayer',['BNLLLayer',['../d0/d87/classcv_1_1dnn_1_1BNLLLayer.html',1,'cv::dnn']]],
   ['boost',['Boost',['../d6/d7a/classcv_1_1ml_1_1Boost.html',1,'cv::ml']]],
   ['bowimgdescriptorextractor',['BOWImgDescriptorExtractor',['../d2/d6b/classcv_1_1BOWImgDescriptorExtractor.html',1,'cv']]],
   ['bowkmeanstrainer',['BOWKMeansTrainer',['../d4/d72/classcv_1_1BOWKMeansTrainer.html',1,'cv']]],

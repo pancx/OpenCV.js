@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -188,7 +188,7 @@ class cv::MatCommaInitializer_&lt; _Tp &gt;</h3>
 <p>Comma-separated Matrix Initializer. </p>
 <p>The class instances are usually not created explicitly. Instead, they are created on "matrix &lt;&lt; firstValue" operator.</p>
 <p>The sample below initializes 2x2 rotation matrix:</p>
-<div class="fragment"><div class="line"><span class="keywordtype">double</span> angle = 30, a = <a class="code" href="../../df/dfc/group__cudev.html#ga2591489e47c1cb227d235872e4b5e433">cos</a>(angle*<a class="code" href="../../db/de0/group__core__utils.html#ga677b89fae9308b340ddaebf0dba8455f">CV_PI</a>/180), b = <a class="code" href="../../df/dfc/group__cudev.html#gaa65ebb1958aa6daaacb7e0b94810ff87">sin</a>(angle*<a class="code" href="../../db/de0/group__core__utils.html#ga677b89fae9308b340ddaebf0dba8455f">CV_PI</a>/180);</div><div class="line">Mat R = (Mat_&lt;double&gt;(2,2) &lt;&lt; a, -b, b, a);</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<div class="fragment"><div class="line"><span class="keywordtype">double</span> angle = 30, a = <a class="code" href="../../d7/dcc/group__core__utils__softfloat.html#ga164d580371866184ddc96fa7aaf47085">cos</a>(angle*<a class="code" href="../../db/de0/group__core__utils.html#ga677b89fae9308b340ddaebf0dba8455f">CV_PI</a>/180), b = <a class="code" href="../../d7/dcc/group__core__utils__softfloat.html#gad7c879b58f79ccd980f4ce13fe3db49a">sin</a>(angle*<a class="code" href="../../db/de0/group__core__utils.html#ga677b89fae9308b340ddaebf0dba8455f">CV_PI</a>/180);</div><div class="line">Mat R = (Mat_&lt;double&gt;(2,2) &lt;&lt; a, -b, b, a);</div></div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4feb484303b5f8d2a6198caed71d8841"></a>
 <div class="memitem">
 <div class="memproto">
@@ -281,7 +281,7 @@ template&lt;typename _Tp&gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:26 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:43 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -335,7 +335,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

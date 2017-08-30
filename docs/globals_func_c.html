@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -639,6 +639,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>cvCeil()
 : <a class="el" href="db/de0/group__core__utils.html#ga2938a33996791626f9f122e054ed34c4">fast_math.hpp</a>
+, <a class="el" href="db/d2e/softfloat_8hpp.html#a58fbebab61655657cb781059452e1e10">softfloat.hpp</a>
 </li>
 <li>cvChangeSeqBlock()
 : <a class="el" href="d2/df8/group__core__c.html#ga066b6631851a8a0f4e894b94b651b6c7">core_c.h</a>
@@ -1027,6 +1028,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>cvFloor()
 : <a class="el" href="db/de0/group__core__utils.html#ga1c4500a953c96901f87178f098c781af">fast_math.hpp</a>
+, <a class="el" href="db/d2e/softfloat_8hpp.html#a06e2d2056d78bb352331218da876b004">softfloat.hpp</a>
 </li>
 <li>cvFlushSeqWriter()
 : <a class="el" href="d2/df8/group__core__c.html#ga27b522a14c46915bc0aa41d9381ea834">core_c.h</a>
@@ -1759,6 +1761,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>cvRound()
 : <a class="el" href="db/de0/group__core__utils.html#ga085eca238176984a0b72df2818598d85">fast_math.hpp</a>
+, <a class="el" href="db/d2e/softfloat_8hpp.html#ac78db640183b31da362d6f2779742a94">softfloat.hpp</a>
+, <a class="el" href="db/de0/group__core__utils.html#ga977608301213682f12e68dcf1f77c288">fast_math.hpp</a>
+, <a class="el" href="db/d2e/softfloat_8hpp.html#ae245291974d54bc8134fc0237e1666ac">softfloat.hpp</a>
 </li>
 <li>cvRQDecomp3x3()
 : <a class="el" href="d5/db8/group__calib3d__c.html#ga5c3632544dfca9bd325f693b4b769b87">calib3d_c.h</a>
@@ -2078,6 +2083,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>cvTriangulatePoints()
 : <a class="el" href="d5/db8/group__calib3d__c.html#gab47a2e255a71bac4af286c4ff8beda92">calib3d_c.h</a>
 </li>
+<li>cvTrunc()
+: <a class="el" href="db/d2e/softfloat_8hpp.html#ae20bc8ac572edf03bff97a6b25c7394d">softfloat.hpp</a>
+</li>
 <li>cvTypeOf()
 : <a class="el" href="d2/df8/group__core__c.html#ga40e01b6d1565e162492bea8c7ea0a356">core_c.h</a>
 </li>
@@ -2152,7 +2160,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:30 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:47 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -2206,7 +2214,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

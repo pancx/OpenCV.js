@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -175,23 +175,23 @@ Inheritance diagram for cv::cuda::HOG:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a3afae10b25cb5e83ccf10448a3d6ebfe"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
-&#160;&#160;<a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#a3afae10b25cb5e83ccf10448a3d6ebfea88c1545b814a6a68929e210d1b5c2ac2">DESCR_FORMAT_ROW_BY_ROW</a>, 
+<tr class="memitem:a7c46ff20a466e4aa277b61fd2d325ef2"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <br />
+&#160;&#160;<a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#a7c46ff20a466e4aa277b61fd2d325ef2a88c1545b814a6a68929e210d1b5c2ac2">DESCR_FORMAT_ROW_BY_ROW</a>, 
 <br />
-&#160;&#160;<a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#a3afae10b25cb5e83ccf10448a3d6ebfea1ca635c6c784693307131fc4f4735b2b">DESCR_FORMAT_COL_BY_COL</a>
+&#160;&#160;<a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#a7c46ff20a466e4aa277b61fd2d325ef2a1ca635c6c784693307131fc4f4735b2b">DESCR_FORMAT_COL_BY_COL</a>
 <br />
  }</td></tr>
-<tr class="separator:a3afae10b25cb5e83ccf10448a3d6ebfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:a7c46ff20a466e4aa277b61fd2d325ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab4287267081959ec77c01269dbfcd373"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#ab4287267081959ec77c01269dbfcd373">compute</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> img, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> descriptors, <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())=0</td></tr>
+<tr class="memitem:ab4287267081959ec77c01269dbfcd373"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#ab4287267081959ec77c01269dbfcd373">compute</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> img, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> descriptors, <a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html">Stream</a> &amp;stream=<a class="el" href="../../d9/df3/classcv_1_1cuda_1_1Stream.html#a680af5adfeeb1cdaa5b7b13f680c0131">Stream::Null</a>())=0</td></tr>
 <tr class="memdesc:ab4287267081959ec77c01269dbfcd373"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns block descriptors computed for the whole image.  <a href="#ab4287267081959ec77c01269dbfcd373">More...</a><br /></td></tr>
 <tr class="separator:ab4287267081959ec77c01269dbfcd373"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6673d9c05926ea11e0070c8ee4145664"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#a6673d9c05926ea11e0070c8ee4145664">detect</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> img, std::vector&lt; <a class="el" href="../../dc/d84/group__core__basic.html#ga1e83eafb2d26b3c93f09e8338bcab192">Point</a> &gt; &amp;found_locations, std::vector&lt; double &gt; *confidences=NULL)=0</td></tr>
+<tr class="memitem:a6673d9c05926ea11e0070c8ee4145664"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#a6673d9c05926ea11e0070c8ee4145664">detect</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> img, std::vector&lt; <a class="el" href="../../dc/d84/group__core__basic.html#ga1e83eafb2d26b3c93f09e8338bcab192">Point</a> &gt; &amp;found_locations, std::vector&lt; double &gt; *confidences=NULL)=0</td></tr>
 <tr class="memdesc:a6673d9c05926ea11e0070c8ee4145664"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs object detection without a multi-scale window.  <a href="#a6673d9c05926ea11e0070c8ee4145664">More...</a><br /></td></tr>
 <tr class="separator:a6673d9c05926ea11e0070c8ee4145664"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af4a3bf27a5a04817c6d584d9108f50b7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#af4a3bf27a5a04817c6d584d9108f50b7">detectMultiScale</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> img, std::vector&lt; <a class="el" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">Rect</a> &gt; &amp;found_locations, std::vector&lt; double &gt; *confidences=NULL)=0</td></tr>
+<tr class="memitem:af4a3bf27a5a04817c6d584d9108f50b7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#af4a3bf27a5a04817c6d584d9108f50b7">detectMultiScale</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> img, std::vector&lt; <a class="el" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">Rect</a> &gt; &amp;found_locations, std::vector&lt; double &gt; *confidences=NULL)=0</td></tr>
 <tr class="memdesc:af4a3bf27a5a04817c6d584d9108f50b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs object detection with a multi-scale window.  <a href="#af4a3bf27a5a04817c6d584d9108f50b7">More...</a><br /></td></tr>
 <tr class="separator:af4a3bf27a5a04817c6d584d9108f50b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91cfda4bf995d20aae02594d020a7305"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../da/d06/autogenerated_2opencl__core_8hpp.html#a6ff403ead16f7faa1f7228274eb6b01d">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#a91cfda4bf995d20aae02594d020a7305">getBlockHistogramSize</a> () const =0</td></tr>
@@ -239,7 +239,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a21dc5e3dc6272030694d52e83352b337"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#a21dc5e3dc6272030694d52e83352b337">setScaleFactor</a> (double scale0)=0</td></tr>
 <tr class="memdesc:a21dc5e3dc6272030694d52e83352b337"><td class="mdescLeft">&#160;</td><td class="mdescRight">Coefficient of the detection window increase.  <a href="#a21dc5e3dc6272030694d52e83352b337">More...</a><br /></td></tr>
 <tr class="separator:a21dc5e3dc6272030694d52e83352b337"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d12db2277b7c3c849d75258eec8d1d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#a5d12db2277b7c3c849d75258eec8d1d4">setSVMDetector</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> detector)=0</td></tr>
+<tr class="memitem:a5d12db2277b7c3c849d75258eec8d1d4"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#a5d12db2277b7c3c849d75258eec8d1d4">setSVMDetector</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> detector)=0</td></tr>
 <tr class="memdesc:a5d12db2277b7c3c849d75258eec8d1d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets coefficients for the linear SVM classifier.  <a href="#a5d12db2277b7c3c849d75258eec8d1d4">More...</a><br /></td></tr>
 <tr class="separator:a5d12db2277b7c3c849d75258eec8d1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab291779ff8ac649174b102f64c5f9012"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/da6/classcv_1_1cuda_1_1HOG.html#ab291779ff8ac649174b102f64c5f9012">setWinSigma</a> (double win_sigma)=0</td></tr>
@@ -304,7 +304,7 @@ Additional Inherited Members</h2></td></tr>
 </ul>
 </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a class="anchor" id="a3afae10b25cb5e83ccf10448a3d6ebfe"></a>
+<a class="anchor" id="a7c46ff20a466e4aa277b61fd2d325ef2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -314,9 +314,9 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a3afae10b25cb5e83ccf10448a3d6ebfea88c1545b814a6a68929e210d1b5c2ac2"></a>DESCR_FORMAT_ROW_BY_ROW&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="a7c46ff20a466e4aa277b61fd2d325ef2a88c1545b814a6a68929e210d1b5c2ac2"></a>DESCR_FORMAT_ROW_BY_ROW&#160;</td><td class="fielddoc">
 </td></tr>
-<tr><td class="fieldname"><a class="anchor" id="a3afae10b25cb5e83ccf10448a3d6ebfea1ca635c6c784693307131fc4f4735b2b"></a>DESCR_FORMAT_COL_BY_COL&#160;</td><td class="fielddoc">
+<tr><td class="fieldname"><a class="anchor" id="a7c46ff20a466e4aa277b61fd2d325ef2a1ca635c6c784693307131fc4f4735b2b"></a>DESCR_FORMAT_COL_BY_COL&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -333,7 +333,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::HOG::compute </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
@@ -447,7 +447,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::HOG::detect </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
@@ -497,7 +497,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::HOG::detectMultiScale </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
@@ -1011,7 +1011,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::cuda::HOG::setSVMDetector </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>detector</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1086,7 +1086,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -1140,7 +1140,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

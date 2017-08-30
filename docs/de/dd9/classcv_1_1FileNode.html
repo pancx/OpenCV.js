@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -307,6 +307,8 @@ Related Functions</h2></td></tr>
 <tr class="separator:a9827a4c7674d30c00dd95099a663c402"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a812395846d5e2c0353de9987299e2531"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd9/classcv_1_1FileNode.html#a812395846d5e2c0353de9987299e2531">read</a> (const <a class="el" href="../../de/dd9/classcv_1_1FileNode.html">FileNode</a> &amp;<a class="el" href="../../de/dd9/classcv_1_1FileNode.html#a74fb8e70f8923348714cfa495101c038">node</a>, <a class="el" href="../../d1/d8f/classcv_1_1String.html">String</a> &amp;value, const <a class="el" href="../../d1/d8f/classcv_1_1String.html">String</a> &amp;default_value)</td></tr>
 <tr class="separator:a812395846d5e2c0353de9987299e2531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af37d1783df83ede65e0bff01a2f3f450"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd9/classcv_1_1FileNode.html#af37d1783df83ede65e0bff01a2f3f450">read</a> (const <a class="el" href="../../de/dd9/classcv_1_1FileNode.html">FileNode</a> &amp;<a class="el" href="../../de/dd9/classcv_1_1FileNode.html#a74fb8e70f8923348714cfa495101c038">node</a>, std::string &amp;value, const std::string &amp;default_value)</td></tr>
+<tr class="separator:af37d1783df83ede65e0bff01a2f3f450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aaa102983844a5b4a43e12bee7703b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd9/classcv_1_1FileNode.html#a0aaa102983844a5b4a43e12bee7703b3">read</a> (const <a class="el" href="../../de/dd9/classcv_1_1FileNode.html">FileNode</a> &amp;<a class="el" href="../../de/dd9/classcv_1_1FileNode.html#a74fb8e70f8923348714cfa495101c038">node</a>, <a class="el" href="../../d3/d63/classcv_1_1Mat.html">Mat</a> &amp;<a class="el" href="../../de/dd9/classcv_1_1FileNode.html#ad630eb57d3387462cbabea4aac5f0be3">mat</a>, const <a class="el" href="../../d3/d63/classcv_1_1Mat.html">Mat</a> &amp;default_mat=<a class="el" href="../../d3/d63/classcv_1_1Mat.html">Mat</a>())</td></tr>
 <tr class="separator:a0aaa102983844a5b4a43e12bee7703b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa667d34b449dd325150d41ca3cf2294c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../de/dd9/classcv_1_1FileNode.html#aa667d34b449dd325150d41ca3cf2294c">read</a> (const <a class="el" href="../../de/dd9/classcv_1_1FileNode.html">FileNode</a> &amp;<a class="el" href="../../de/dd9/classcv_1_1FileNode.html#a74fb8e70f8923348714cfa495101c038">node</a>, <a class="el" href="../../dd/da9/classcv_1_1SparseMat.html">SparseMat</a> &amp;<a class="el" href="../../de/dd9/classcv_1_1FileNode.html#ad630eb57d3387462cbabea4aac5f0be3">mat</a>, const <a class="el" href="../../dd/da9/classcv_1_1SparseMat.html">SparseMat</a> &amp;default_mat=<a class="el" href="../../dd/da9/classcv_1_1SparseMat.html">SparseMat</a>())</td></tr>
@@ -381,7 +383,7 @@ Related Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>File Storage <a class="el" href="../../d3/de3/classcv_1_1Node.html">Node</a> class. </p>
-<p>The node is used to store each and every element of the file storage opened for reading. When XML/YAML file is read, it is first parsed and stored in the memory as a hierarchical collection of nodes. Each node can be a “leaf” that is contain a single number or a string, or be a collection of other nodes. There can be named collections (mappings) where each element has a name and it is accessed by a name, and ordered collections (sequences) where elements do not have names but rather accessed by index. Type of the file node can be determined using <a class="el" href="../../de/dd9/classcv_1_1FileNode.html#a90548d0e17285e833df3626dbfffb023" title="Returns type of the node. ">FileNode::type</a> method.</p>
+<p>The node is used to store each and every element of the file storage opened for reading. When XML/YAML file is read, it is first parsed and stored in the memory as a hierarchical collection of nodes. Each node can be a "leaf" that is contain a single number or a string, or be a collection of other nodes. There can be named collections (mappings) where each element has a name and it is accessed by a name, and ordered collections (sequences) where elements do not have names but rather accessed by index. Type of the file node can be determined using <a class="el" href="../../de/dd9/classcv_1_1FileNode.html#a90548d0e17285e833df3626dbfffb023" title="Returns type of the node. ">FileNode::type</a> method.</p>
 <p>Note that file nodes are only used for navigating file storages opened for reading. When a file storage is opened for writing, no data is stored in memory after it is written. </p>
 <dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d6/d03/filestorage_8cpp-example.html#_a2">filestorage.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -1399,6 +1401,46 @@ template&lt;typename _Tp &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="af37d1783df83ede65e0bff01a2f3f450"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void read </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../de/dd9/classcv_1_1FileNode.html">FileNode</a> &amp;&#160;</td>
+          <td class="paramname"><em>node</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string &amp;&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>default_value</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">related</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="a0aaa102983844a5b4a43e12bee7703b3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2277,7 +2319,7 @@ template&lt;typename _Tp &gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:26 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:43 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -2331,7 +2373,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

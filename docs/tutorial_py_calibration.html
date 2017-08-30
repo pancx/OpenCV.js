@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -205,7 +205,7 @@ image</div></div>
 <p> You can see in the result that all the edges are straight.</p>
 <p>Now you can store the camera matrix and distortion coefficients using write functions in Numpy (np.savez, np.savetxt etc) for future uses.</p>
 <h2>Re-projection Error </h2>
-<p>Re-projection error gives a good estimation of just how exact is the found parameters. This should be as close to zero as possible. Given the intrinsic, distortion, rotation and translation matrices, we first transform the object point to image point using <b><a class="el" href="d9/d0c/group__calib3d.html#ga1019495a2c8d1743ed5cc23fa0daff8c" title="Projects 3D points to an image plane. ">cv2.projectPoints()</a></b>. Then we calculate the absolute norm between what we got with our transformation and the corner finding algorithm. To find the average error we calculate the arithmetical mean of the errors calculate for all the calibration images. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;mean_error = 0</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keywordflow">for</span> i <span class="keywordflow">in</span> xrange(len(objpoints)):</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    imgpoints2, _ = cv2.projectPoints(objpoints[i], rvecs[i], tvecs[i], mtx, dist)</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    error = cv2.norm(imgpoints[i], imgpoints2, cv2.NORM_L2)/len(imgpoints2)</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    mean_error += error</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keywordflow">print</span> <span class="stringliteral">&quot;total error: &quot;</span>, mean_error/len(objpoints)</div></div><!-- fragment --> <h2>Additional Resources </h2>
+<p>Re-projection error gives a good estimation of just how exact is the found parameters. This should be as close to zero as possible. Given the intrinsic, distortion, rotation and translation matrices, we first transform the object point to image point using <b><a class="el" href="d9/d0c/group__calib3d.html#ga1019495a2c8d1743ed5cc23fa0daff8c" title="Projects 3D points to an image plane. ">cv2.projectPoints()</a></b>. Then we calculate the absolute norm between what we got with our transformation and the corner finding algorithm. To find the average error we calculate the arithmetical mean of the errors calculate for all the calibration images. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;mean_error = 0</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keywordflow">for</span> i <span class="keywordflow">in</span> xrange(len(objpoints)):</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;    imgpoints2, _ = cv2.projectPoints(objpoints[i], rvecs[i], tvecs[i], mtx, dist)</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;    error = cv2.norm(imgpoints[i], imgpoints2, cv2.NORM_L2)/len(imgpoints2)</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;    mean_error += error</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<a class="code" href="df/d57/namespacecv_1_1dnn.html#aa2ef06a8c0c2880c51d5f3e4e86abe4b">print</a>( <span class="stringliteral">&quot;total error: {}&quot;</span>.<a class="code" href="db/de0/group__core__utils.html#ga0cccdb2f73859309b0611cf70b1b9409">format</a>(mean_error/len(objpoints)) )</div></div><!-- fragment --> <h2>Additional Resources </h2>
 <h2>Exercises </h2>
 <ol type="1">
 <li>Try camera calibration with circular grid. </li>
@@ -214,7 +214,7 @@ image</div></div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -268,7 +268,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

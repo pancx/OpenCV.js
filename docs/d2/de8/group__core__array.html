@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -770,7 +770,7 @@ Functions</h2></td></tr>
 </p>
 </li>
 <li>Relative norm for two arrays <p class="formulaDsp">
-\[norm = \forkthree{\frac{\|\texttt{src1}-\texttt{src2}\|_{L_{\infty}} }{\|\texttt{src2}\|_{L_{\infty}} }}{if \(\texttt{normType} = \texttt{NORM_RELATIVE_INF}\) } { \frac{\|\texttt{src1}-\texttt{src2}\|_{L_1} }{\|\texttt{src2}\|_{L_1}} }{if \(\texttt{normType} = \texttt{NORM_RELATIVE_L1}\) } { \frac{\|\texttt{src1}-\texttt{src2}\|_{L_2} }{\|\texttt{src2}\|_{L_2}} }{if \(\texttt{normType} = \texttt{NORM_RELATIVE_L2}\) }\]
+\[norm = \forkthree{\frac{\|\texttt{src1}-\texttt{src2}\|_{L_{\infty}} }{\|\texttt{src2}\|_{L_{\infty}} }}{if \(\texttt{normType} = \texttt{NORM_RELATIVE | NORM_INF}\) } { \frac{\|\texttt{src1}-\texttt{src2}\|_{L_1} }{\|\texttt{src2}\|_{L_1}} }{if \(\texttt{normType} = \texttt{NORM_RELATIVE | NORM_L1}\) } { \frac{\|\texttt{src1}-\texttt{src2}\|_{L_2} }{\|\texttt{src2}\|_{L_2}} }{if \(\texttt{normType} = \texttt{NORM_RELATIVE | NORM_L2}\) }\]
 </p>
 </li>
 </ul>
@@ -837,13 +837,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::absdiff </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -890,13 +890,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::add </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -908,7 +908,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>, </td>
         </tr>
         <tr>
@@ -952,7 +952,8 @@ Graphs for the different norm functions from the above example</div></div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#gaa0f00d98b4b5edeaeb7b8333b2de353b" title="Calculates the per-element difference between two arrays or array and a scalar. ">subtract</a>, <a class="el" href="../../d2/de8/group__core__array.html#gafafb2513349db3bcff51f54ee5592a19" title="Calculates the weighted sum of two arrays. ">addWeighted</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga9e0845db4135f55dcf20227402f00d98" title="Calculates the sum of a scaled array and another array. ">scaleAdd</a>, <a class="el" href="../../d3/d63/classcv_1_1Mat.html#a3f356665bb0ca452e7d7723ccac9a810" title="Converts an array to another data type with optional scaling. ">Mat::convertTo</a> </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../da/d72/shape_example_8cpp-example.html#a4">shape_example.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="gafafb2513349db3bcff51f54ee5592a19"></a>
@@ -962,7 +963,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::addWeighted </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
@@ -974,7 +975,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -1027,7 +1028,8 @@ Graphs for the different norm functions from the above example</div></div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#ga10ac1bfb180e2cfda1701d06c24fdbd6" title="Calculates the per-element sum of two arrays or an array and a scalar. ">add</a>, <a class="el" href="../../d2/de8/group__core__array.html#gaa0f00d98b4b5edeaeb7b8333b2de353b" title="Calculates the per-element difference between two arrays or array and a scalar. ">subtract</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga9e0845db4135f55dcf20227402f00d98" title="Calculates the sum of a scaled array and another array. ">scaleAdd</a>, <a class="el" href="../../d3/d63/classcv_1_1Mat.html#a3f356665bb0ca452e7d7723ccac9a810" title="Converts an array to another data type with optional scaling. ">Mat::convertTo</a> </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../da/d9c/AddingImagesTrackbar_8cpp-example.html#a1">AddingImagesTrackbar.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga4ba778a1c57f83233b1d851c83f5a622"></a>
@@ -1037,13 +1039,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::batchDistance </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -1079,7 +1081,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>, </td>
         </tr>
         <tr>
@@ -1114,13 +1116,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::bitwise_and </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -1132,7 +1134,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -1172,7 +1174,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::bitwise_not </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1184,7 +1186,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -1207,7 +1209,8 @@ Graphs for the different norm functions from the above example</div></div>
   </table>
   </dd>
 </dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a61">camshiftdemo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="gab85523db362a4e26ff0c703793a719b4"></a>
@@ -1217,13 +1220,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::bitwise_or </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -1235,7 +1238,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -1275,13 +1278,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::bitwise_xor </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -1293,7 +1296,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -1441,7 +1444,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::calcCovarMatrix </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>samples</em>, </td>
         </tr>
         <tr>
@@ -1496,13 +1499,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::cartToPolar </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
@@ -1556,7 +1559,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">bool cv::checkRange </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
@@ -1612,13 +1615,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::compare </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -1660,7 +1663,7 @@ Graphs for the different norm functions from the above example</div></div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#ga2bd19d89cae59361416736f87e3c7a64" title="Checks every element of an input array for invalid values. ">checkRange</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga9af368f182ee76d0463d0d8d5330b764" title="Calculates per-element minimum of two arrays or an array and a scalar. ">min</a>, <a class="el" href="../../d2/de8/group__core__array.html#gacc40fa15eac0fb83f8ca70b7cc0b588d" title="Calculates per-element maximum of two arrays or an array and a scalar. ">max</a>, <a class="el" href="../../d7/d1b/group__imgproc__misc.html#gae8a4a146d1ca78c626a53577199e9c57" title="Applies a fixed-level threshold to each array element. ">threshold</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#ga2bd19d89cae59361416736f87e3c7a64" title="Checks every element of an input array for invalid values. ">checkRange</a>, <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#gac48df53b8fd34b87e7b121fa8fd4c379" title="Min and Max functions. ">min</a>, <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga78f988f6cfa6223610298cbd4f86ec66">max</a>, <a class="el" href="../../d7/d1b/group__imgproc__misc.html#gae8a4a146d1ca78c626a53577199e9c57" title="Applies a fixed-level threshold to each array element. ">threshold</a> </dd></dl>
 
 </div>
 </div>
@@ -1707,7 +1710,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::convertFp16 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1743,7 +1746,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::convertScaleAbs </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1797,7 +1800,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::copyMakeBorder </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1868,7 +1871,8 @@ Graphs for the different norm functions from the above example</div></div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#ga247f571aa6244827d3d798f13892da58" title="Computes the source location of an extrapolated pixel. ">borderInterpolate</a> </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d3/d2e/copyMakeBorder_demo_8cpp-example.html#a15">copyMakeBorder_demo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="gaa4b89393263bb4d604e0fe5986723914"></a>
@@ -1878,7 +1882,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">int cv::countNonZero </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1906,7 +1910,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::dct </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1977,7 +1981,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">double cv::determinant </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mtx</em></td><td>)</td>
           <td></td>
         </tr>
@@ -2003,7 +2007,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::dft </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -2067,7 +2071,7 @@ Graphs for the different norm functions from the above example</div></div>
 </ul>
 <p>If DFT_SCALE is set, the scaling is done after the transformation.</p>
 <p>Unlike dct , the function supports arrays of arbitrary size. But only those arrays are processed efficiently, whose sizes can be factorized in a product of small prime numbers (2, 3, and 5 in the current implementation). Such an efficient DFT size can be calculated using the getOptimalDFTSize method.</p>
-<p>The sample below illustrates how to calculate a DFT-based convolution of two 2D real arrays: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> convolveDFT(<a class="code" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> A, <a class="code" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> B, <a class="code" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> C)</div><div class="line">{</div><div class="line">    <span class="comment">// reallocate the output array if needed</span></div><div class="line">    C.create(<a class="code" href="../../d2/d75/namespacecv.html#af6df65b17fb11af6d34634b6dfa44683">abs</a>(A.rows - B.rows)+1, <a class="code" href="../../d2/d75/namespacecv.html#af6df65b17fb11af6d34634b6dfa44683">abs</a>(A.cols - B.cols)+1, A.type());</div><div class="line">    <a class="code" href="../../dc/d84/group__core__basic.html#ga346f563897249351a34549137c8532a0">Size</a> dftSize;</div><div class="line">    <span class="comment">// calculate the size of DFT transform</span></div><div class="line">    dftSize.<a class="code" href="../../d6/d50/classcv_1_1Size__.html#abfe0367b32c407ddccf5ddf92667c73d">width</a> = <a class="code" href="../../d2/de8/group__core__array.html#ga6577a2e59968936ae02eb2edde5de299">getOptimalDFTSize</a>(A.cols + B.cols - 1);</div><div class="line">    dftSize.height = <a class="code" href="../../d2/de8/group__core__array.html#ga6577a2e59968936ae02eb2edde5de299">getOptimalDFTSize</a>(A.rows + B.rows - 1);</div><div class="line"></div><div class="line">    <span class="comment">// allocate temporary buffers and initialize them with 0&#39;s</span></div><div class="line">    Mat tempA(dftSize, A.type(), <a class="code" href="../../d1/da0/classcv_1_1Scalar__.html#ac1509a4b8454fe7fe29db069e13a2e6f">Scalar::all</a>(0));</div><div class="line">    Mat tempB(dftSize, B.type(), <a class="code" href="../../d1/da0/classcv_1_1Scalar__.html#ac1509a4b8454fe7fe29db069e13a2e6f">Scalar::all</a>(0));</div><div class="line"></div><div class="line">    <span class="comment">// copy A and B to the top-left corners of tempA and tempB, respectively</span></div><div class="line">    Mat roiA(tempA, <a class="code" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">Rect</a>(0,0,A.cols,A.rows));</div><div class="line">    A.copyTo(roiA);</div><div class="line">    Mat roiB(tempB, <a class="code" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">Rect</a>(0,0,B.cols,B.rows));</div><div class="line">    B.copyTo(roiB);</div><div class="line"></div><div class="line">    <span class="comment">// now transform the padded A &amp; B in-place;</span></div><div class="line">    <span class="comment">// use &quot;nonzeroRows&quot; hint for faster processing</span></div><div class="line">    <a class="code" href="../../d2/de8/group__core__array.html#gadd6cf9baf2b8b704a11b5f04aaf4f39d">dft</a>(tempA, tempA, 0, A.rows);</div><div class="line">    <a class="code" href="../../d2/de8/group__core__array.html#gadd6cf9baf2b8b704a11b5f04aaf4f39d">dft</a>(tempB, tempB, 0, B.rows);</div><div class="line"></div><div class="line">    <span class="comment">// multiply the spectrums;</span></div><div class="line">    <span class="comment">// the function handles packed spectrum representations well</span></div><div class="line">    <a class="code" href="../../d2/de8/group__core__array.html#ga3ab38646463c59bf0ce962a9d51db64f">mulSpectrums</a>(tempA, tempB, tempA);</div><div class="line"></div><div class="line">    <span class="comment">// transform the product back from the frequency domain.</span></div><div class="line">    <span class="comment">// Even though all the result rows will be non-zero,</span></div><div class="line">    <span class="comment">// you need only the first C.rows of them, and thus you</span></div><div class="line">    <span class="comment">// pass nonzeroRows == C.rows</span></div><div class="line">    <a class="code" href="../../d2/de8/group__core__array.html#gadd6cf9baf2b8b704a11b5f04aaf4f39d">dft</a>(tempA, tempA, <a class="code" href="../../d2/de8/group__core__array.html#ggaf4dde112b483b38175621befedda1f1ca4e01d7e91cae1dbb68a26767d7b636be">DFT_INVERSE</a> + <a class="code" href="../../d2/de8/group__core__array.html#ggaf4dde112b483b38175621befedda1f1ca74746fb171aa4bfc08ace28d73f52375">DFT_SCALE</a>, C.rows);</div><div class="line"></div><div class="line">    <span class="comment">// now copy the result back to C.</span></div><div class="line">    tempA(<a class="code" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">Rect</a>(0, 0, C.cols, C.rows)).copyTo(C);</div><div class="line"></div><div class="line">    <span class="comment">// all the temporary buffers will be deallocated automatically</span></div><div class="line">}</div></div><!-- fragment --><p> To optimize this sample, consider the following approaches:</p><ul>
+<p>The sample below illustrates how to calculate a DFT-based convolution of two 2D real arrays: </p><div class="fragment"><div class="line"><span class="keywordtype">void</span> convolveDFT(<a class="code" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> A, <a class="code" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> B, <a class="code" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> C)</div><div class="line">{</div><div class="line">    <span class="comment">// reallocate the output array if needed</span></div><div class="line">    C.create(<a class="code" href="../../d2/d75/namespacecv.html#af6df65b17fb11af6d34634b6dfa44683">abs</a>(A.rows - B.rows)+1, <a class="code" href="../../d2/d75/namespacecv.html#af6df65b17fb11af6d34634b6dfa44683">abs</a>(A.cols - B.cols)+1, A.type());</div><div class="line">    <a class="code" href="../../dc/d84/group__core__basic.html#ga346f563897249351a34549137c8532a0">Size</a> dftSize;</div><div class="line">    <span class="comment">// calculate the size of DFT transform</span></div><div class="line">    dftSize.<a class="code" href="../../d6/d50/classcv_1_1Size__.html#abfe0367b32c407ddccf5ddf92667c73d">width</a> = <a class="code" href="../../d2/de8/group__core__array.html#ga6577a2e59968936ae02eb2edde5de299">getOptimalDFTSize</a>(A.cols + B.cols - 1);</div><div class="line">    dftSize.height = <a class="code" href="../../d2/de8/group__core__array.html#ga6577a2e59968936ae02eb2edde5de299">getOptimalDFTSize</a>(A.rows + B.rows - 1);</div><div class="line"></div><div class="line">    <span class="comment">// allocate temporary buffers and initialize them with 0&#39;s</span></div><div class="line">    Mat tempA(dftSize, A.type(), <a class="code" href="../../d1/da0/classcv_1_1Scalar__.html#ac1509a4b8454fe7fe29db069e13a2e6f">Scalar::all</a>(0));</div><div class="line">    Mat tempB(dftSize, B.type(), <a class="code" href="../../d1/da0/classcv_1_1Scalar__.html#ac1509a4b8454fe7fe29db069e13a2e6f">Scalar::all</a>(0));</div><div class="line"></div><div class="line">    <span class="comment">// copy A and B to the top-left corners of tempA and tempB, respectively</span></div><div class="line">    Mat roiA(tempA, <a class="code" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">Rect</a>(0,0,A.cols,A.rows));</div><div class="line">    A.copyTo(roiA);</div><div class="line">    Mat roiB(tempB, <a class="code" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">Rect</a>(0,0,B.cols,B.rows));</div><div class="line">    B.copyTo(roiB);</div><div class="line"></div><div class="line">    <span class="comment">// now transform the padded A &amp; B in-place;</span></div><div class="line">    <span class="comment">// use &quot;nonzeroRows&quot; hint for faster processing</span></div><div class="line">    <a class="code" href="../../d2/de8/group__core__array.html#gadd6cf9baf2b8b704a11b5f04aaf4f39d">dft</a>(tempA, tempA, 0, A.rows);</div><div class="line">    <a class="code" href="../../d2/de8/group__core__array.html#gadd6cf9baf2b8b704a11b5f04aaf4f39d">dft</a>(tempB, tempB, 0, B.rows);</div><div class="line"></div><div class="line">    <span class="comment">// multiply the spectrums;</span></div><div class="line">    <span class="comment">// the function handles packed spectrum representations well</span></div><div class="line">    <a class="code" href="../../d2/de8/group__core__array.html#ga3ab38646463c59bf0ce962a9d51db64f">mulSpectrums</a>(tempA, tempB, tempA);</div><div class="line"></div><div class="line">    <span class="comment">// transform the product back from the frequency domain.</span></div><div class="line">    <span class="comment">// Even though all the result rows will be non-zero,</span></div><div class="line">    <span class="comment">// you need only the first C.rows of them, and thus you</span></div><div class="line">    <span class="comment">// pass nonzeroRows == C.rows</span></div><div class="line">    <a class="code" href="../../d2/de8/group__core__array.html#gadd6cf9baf2b8b704a11b5f04aaf4f39d">dft</a>(tempA, tempA, <a class="code" href="../../d2/de8/group__core__array.html#ggaf4dde112b483b38175621befedda1f1ca4e01d7e91cae1dbb68a26767d7b636be">DFT_INVERSE</a> + <a class="code" href="../../d2/de8/group__core__array.html#ggaf4dde112b483b38175621befedda1f1ca74746fb171aa4bfc08ace28d73f52375">DFT_SCALE</a>, C.rows);</div><div class="line"></div><div class="line">    <span class="comment">// now copy the result back to C.</span></div><div class="line">    tempA(<a class="code" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">Rect</a>(0, 0, C.cols, C.rows)).copyTo(C);</div><div class="line"></div><div class="line">    <span class="comment">// all the temporary buffers will be deallocated automatically</span></div><div class="line">}</div></div><!-- fragment --><p> To optimize this sample, consider the following approaches:</p><ul>
 <li>Since nonzeroRows != 0 is passed to the forward transform calls and since A and B are copied to the top-left corners of tempA and tempB, respectively, it is not necessary to clear the whole tempA and tempB. It is only necessary to clear the tempA.cols - A.cols ( tempB.cols - B.cols) rightmost columns of the matrices.</li>
 <li>This DFT-based convolution does not have to be applied to the whole big arrays, especially if B is significantly smaller than A or vice versa. Instead, you can calculate convolution by parts. To do this, you need to split the output array C into multiple tiles. For each tile, estimate which parts of A and B are required to calculate convolution in this tile. If the tiles in C are too small, the speed will decrease a lot because of repeated work. In the ultimate case, when each tile in C is a single pixel, the algorithm becomes equivalent to the naive convolution algorithm. If the tiles are too big, the temporary arrays tempA and tempB become too big and there is also a slowdown because of bad cache locality. So, there is an optimal tile size somewhere in the middle.</li>
 <li>If different tiles in C can be calculated in parallel and, thus, the convolution is done by parts, the loop can be threaded.</li>
@@ -2098,13 +2102,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::divide </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -2169,7 +2173,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -2202,7 +2206,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">bool cv::eigen </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -2246,7 +2250,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::exp </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -2264,7 +2268,7 @@ Graphs for the different norm functions from the above example</div></div>
 </div><div class="memdoc">
 
 <p>Calculates the exponent of every array element. </p>
-<p>The function <a class="el" href="../../d2/de8/group__core__array.html#ga3e10108e2162c338f1b848af619f39e5" title="Calculates the exponent of every array element. ">cv::exp</a> calculates the exponent of every element of the input array: </p><p class="formulaDsp">
+<p>The function <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga1eb07a682abff20e0864104599c06fbc" title="Exponent. ">cv::exp</a> calculates the exponent of every element of the input array: </p><p class="formulaDsp">
 \[\texttt{dst} [I] = e^{ src(I) }\]
 </p>
 <p>The maximum relative error is about 7e-6 for single-precision input and less than 1e-10 for double-precision input. Currently, the function converts denormalized values to zeros on output. Special values (NaN, Inf) are not handled. </p><dl class="params"><dt>Parameters</dt><dd>
@@ -2274,7 +2278,7 @@ Graphs for the different norm functions from the above example</div></div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#ga937ecdce4679a77168730830a955bea7" title="Calculates the natural logarithm of every array element. ">log</a> , <a class="el" href="../../d2/de8/group__core__array.html#gac5f92f48ec32cacf5275969c33ee837d" title="Calculates the magnitude and angle of 2D vectors. ">cartToPolar</a> , <a class="el" href="../../d2/de8/group__core__array.html#ga581ff9d44201de2dd1b40a50db93d665" title="Calculates x and y coordinates of 2D vectors from their magnitude and angle. ">polarToCart</a> , <a class="el" href="../../d2/de8/group__core__array.html#ga9db9ca9b4d81c3bde5677b8f64dc0137" title="Calculates the rotation angle of 2D vectors. ">phase</a> , <a class="el" href="../../d2/de8/group__core__array.html#gaf0d056b5bd1dc92500d6f6cf6bac41ef" title="Raises every array element to a power. ">pow</a> , <a class="el" href="../../d2/de8/group__core__array.html#ga186222c3919657890f88df5a1f64a7d7" title="Calculates a square root of array elements. ">sqrt</a> , <a class="el" href="../../d2/de8/group__core__array.html#ga6d3b097586bca4409873d64a90fe64c3" title="Calculates the magnitude of 2D vectors. ">magnitude</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#gae5de78ee278fe88405c6dbc38502f7c1" title="Natural logarithm. ">log</a> , <a class="el" href="../../d2/de8/group__core__array.html#gac5f92f48ec32cacf5275969c33ee837d" title="Calculates the magnitude and angle of 2D vectors. ">cartToPolar</a> , <a class="el" href="../../d2/de8/group__core__array.html#ga581ff9d44201de2dd1b40a50db93d665" title="Calculates x and y coordinates of 2D vectors from their magnitude and angle. ">polarToCart</a> , <a class="el" href="../../d2/de8/group__core__array.html#ga9db9ca9b4d81c3bde5677b8f64dc0137" title="Calculates the rotation angle of 2D vectors. ">phase</a> , <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga8bc36646a43b82baa15f151a973fb0c5" title="Raising to the power. ">pow</a> , <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga682082a1892db64a2856403ec17ba297" title="Square root. ">sqrt</a> , <a class="el" href="../../d2/de8/group__core__array.html#ga6d3b097586bca4409873d64a90fe64c3" title="Calculates the magnitude of 2D vectors. ">magnitude</a> </dd></dl>
 
 </div>
 </div>
@@ -2285,7 +2289,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::extractChannel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -2328,7 +2332,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::findNonZero </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -2363,7 +2367,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::flip </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -2399,7 +2403,8 @@ Graphs for the different norm functions from the above example</div></div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#ga46630ed6c0ea6254a35f447289bd7404" title="Transposes a matrix. ">transpose</a> , <a class="el" href="../../d2/de8/group__core__array.html#ga496c3860f3ac44c40b48811333cfda2d" title="Fills the output array with repeated copies of the input array. ">repeat</a> , <a class="el" href="../../d2/de8/group__core__array.html#gaa9d88dcd0e54b6d1af38d41f2a3e3d25" title="Copies the lower or the upper half of a square matrix to another half. ">completeSymm</a> </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a27">facedetect.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="gacb6e64071dffe36434e1e7ee79e7cb35"></a>
@@ -2409,13 +2414,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::gemm </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -2427,7 +2432,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src3</em>, </td>
         </tr>
         <tr>
@@ -2474,7 +2479,8 @@ Graphs for the different norm functions from the above example</div></div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#gadc4e49f8f7a155044e3be1b9e3b270ab" title="Calculates the product of a matrix and its transposition. ">mulTransposed</a> , <a class="el" href="../../d2/de8/group__core__array.html#ga393164aa54bb9169ce0a8cc44e08ff22" title="Performs the matrix transformation of every array element. ">transform</a> </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d7f/image_alignment_8cpp-example.html#a12">image_alignment.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga6577a2e59968936ae02eb2edde5de299"></a>
@@ -2559,13 +2565,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::hconcat </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -2632,7 +2638,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::idct </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -2675,7 +2681,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::idft </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -2726,19 +2732,19 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::inRange </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>lowerb</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>upperb</em>, </td>
         </tr>
         <tr>
@@ -2777,7 +2783,8 @@ Graphs for the different norm functions from the above example</div></div>
   </table>
   </dd>
 </dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a32">camshiftdemo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga1d4bd886d35b00ec0b764cb4ce6eb515"></a>
@@ -2787,7 +2794,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::insertChannel </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -2830,7 +2837,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">double cv::invert </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -2877,7 +2884,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::log </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -2895,7 +2902,7 @@ Graphs for the different norm functions from the above example</div></div>
 </div><div class="memdoc">
 
 <p>Calculates the natural logarithm of every array element. </p>
-<p>The function <a class="el" href="../../d2/de8/group__core__array.html#ga937ecdce4679a77168730830a955bea7" title="Calculates the natural logarithm of every array element. ">cv::log</a> calculates the natural logarithm of every element of the input array: </p><p class="formulaDsp">
+<p>The function <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#gae5de78ee278fe88405c6dbc38502f7c1" title="Natural logarithm. ">cv::log</a> calculates the natural logarithm of every element of the input array: </p><p class="formulaDsp">
 \[\texttt{dst} (I) = \log (\texttt{src}(I)) \]
 </p>
 <p>Output on zero, negative and special (NaN, Inf) values is undefined.</p>
@@ -2906,9 +2913,8 @@ Graphs for the different norm functions from the above example</div></div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#ga3e10108e2162c338f1b848af619f39e5" title="Calculates the exponent of every array element. ">exp</a>, <a class="el" href="../../d2/de8/group__core__array.html#gac5f92f48ec32cacf5275969c33ee837d" title="Calculates the magnitude and angle of 2D vectors. ">cartToPolar</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga581ff9d44201de2dd1b40a50db93d665" title="Calculates x and y coordinates of 2D vectors from their magnitude and angle. ">polarToCart</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga9db9ca9b4d81c3bde5677b8f64dc0137" title="Calculates the rotation angle of 2D vectors. ">phase</a>, <a class="el" href="../../d2/de8/group__core__array.html#gaf0d056b5bd1dc92500d6f6cf6bac41ef" title="Raises every array element to a power. ">pow</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga186222c3919657890f88df5a1f64a7d7" title="Calculates a square root of array elements. ">sqrt</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga6d3b097586bca4409873d64a90fe64c3" title="Calculates the magnitude of 2D vectors. ">magnitude</a> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a10">polar_transforms.cpp</a>.</dd>
-</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga1eb07a682abff20e0864104599c06fbc" title="Exponent. ">exp</a>, <a class="el" href="../../d2/de8/group__core__array.html#gac5f92f48ec32cacf5275969c33ee837d" title="Calculates the magnitude and angle of 2D vectors. ">cartToPolar</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga581ff9d44201de2dd1b40a50db93d665" title="Calculates x and y coordinates of 2D vectors from their magnitude and angle. ">polarToCart</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga9db9ca9b4d81c3bde5677b8f64dc0137" title="Calculates the rotation angle of 2D vectors. ">phase</a>, <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga8bc36646a43b82baa15f151a973fb0c5" title="Raising to the power. ">pow</a>, <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga682082a1892db64a2856403ec17ba297" title="Square root. ">sqrt</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga6d3b097586bca4409873d64a90fe64c3" title="Calculates the magnitude of 2D vectors. ">magnitude</a> </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="gab55b8d062b7f5587720ede032d34156f"></a>
@@ -2918,13 +2924,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::LUT </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>lut</em>, </td>
         </tr>
         <tr>
@@ -2967,13 +2973,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::magnitude </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
@@ -3002,7 +3008,7 @@ Graphs for the different norm functions from the above example</div></div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#gac5f92f48ec32cacf5275969c33ee837d" title="Calculates the magnitude and angle of 2D vectors. ">cartToPolar</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga581ff9d44201de2dd1b40a50db93d665" title="Calculates x and y coordinates of 2D vectors from their magnitude and angle. ">polarToCart</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga9db9ca9b4d81c3bde5677b8f64dc0137" title="Calculates the rotation angle of 2D vectors. ">phase</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga186222c3919657890f88df5a1f64a7d7" title="Calculates a square root of array elements. ">sqrt</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#gac5f92f48ec32cacf5275969c33ee837d" title="Calculates the magnitude and angle of 2D vectors. ">cartToPolar</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga581ff9d44201de2dd1b40a50db93d665" title="Calculates x and y coordinates of 2D vectors from their magnitude and angle. ">polarToCart</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga9db9ca9b4d81c3bde5677b8f64dc0137" title="Calculates the rotation angle of 2D vectors. ">phase</a>, <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga682082a1892db64a2856403ec17ba297" title="Square root. ">sqrt</a> </dd></dl>
 
 </div>
 </div>
@@ -3013,19 +3019,19 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">double cv::Mahalanobis </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>v1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>v2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>icovar</em>&#160;</td>
         </tr>
         <tr>
@@ -3058,13 +3064,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::max </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -3082,7 +3088,7 @@ Graphs for the different norm functions from the above example</div></div>
 </div><div class="memdoc">
 
 <p>Calculates per-element maximum of two arrays or an array and a scalar. </p>
-<p>The function <a class="el" href="../../d2/de8/group__core__array.html#gacc40fa15eac0fb83f8ca70b7cc0b588d" title="Calculates per-element maximum of two arrays or an array and a scalar. ">cv::max</a> calculates the per-element maximum of two arrays: </p><p class="formulaDsp">
+<p>The function <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga78f988f6cfa6223610298cbd4f86ec66">cv::max</a> calculates the per-element maximum of two arrays: </p><p class="formulaDsp">
 \[\texttt{dst} (I)= \max ( \texttt{src1} (I), \texttt{src2} (I))\]
 </p>
 <p> or array and a scalar: </p><p class="formulaDsp">
@@ -3096,9 +3102,8 @@ Graphs for the different norm functions from the above example</div></div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#ga9af368f182ee76d0463d0d8d5330b764" title="Calculates per-element minimum of two arrays or an array and a scalar. ">min</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga303cfb72acf8cbb36d884650c09a3a97" title="Performs the per-element comparison of two arrays or an array and scalar value. ">compare</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga48af0ab51e36436c5d04340e036ce981" title="Checks if array elements lie between the elements of two other arrays. ">inRange</a>, <a class="el" href="../../d2/de8/group__core__array.html#gab473bf2eb6d14ff97e89b355dac20707" title="Finds the global minimum and maximum in an array. ">minMaxLoc</a>, <a class="el" href="../../d1/d10/classcv_1_1MatExpr.html#MatrixExpressions">MatrixExpressions</a> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a23">grabcut.cpp</a>.</dd>
-</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#gac48df53b8fd34b87e7b121fa8fd4c379" title="Min and Max functions. ">min</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga303cfb72acf8cbb36d884650c09a3a97" title="Performs the per-element comparison of two arrays or an array and scalar value. ">compare</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga48af0ab51e36436c5d04340e036ce981" title="Checks if array elements lie between the elements of two other arrays. ">inRange</a>, <a class="el" href="../../d2/de8/group__core__array.html#gab473bf2eb6d14ff97e89b355dac20707" title="Finds the global minimum and maximum in an array. ">minMaxLoc</a>, <a class="el" href="../../d1/d10/classcv_1_1MatExpr.html#MatrixExpressions">MatrixExpressions</a> </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="gad81c37ed0b0fd23ede0cefadbf04af44"></a>
@@ -3174,13 +3179,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">Scalar cv::mean </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -3213,7 +3218,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::meanStdDev </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -3231,7 +3236,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -3344,13 +3349,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::min </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -3368,7 +3373,7 @@ Graphs for the different norm functions from the above example</div></div>
 </div><div class="memdoc">
 
 <p>Calculates per-element minimum of two arrays or an array and a scalar. </p>
-<p>The function <a class="el" href="../../d2/de8/group__core__array.html#ga9af368f182ee76d0463d0d8d5330b764" title="Calculates per-element minimum of two arrays or an array and a scalar. ">cv::min</a> calculates the per-element minimum of two arrays: </p><p class="formulaDsp">
+<p>The function <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#gac48df53b8fd34b87e7b121fa8fd4c379" title="Min and Max functions. ">cv::min</a> calculates the per-element minimum of two arrays: </p><p class="formulaDsp">
 \[\texttt{dst} (I)= \min ( \texttt{src1} (I), \texttt{src2} (I))\]
 </p>
 <p> or array and a scalar: </p><p class="formulaDsp">
@@ -3382,9 +3387,8 @@ Graphs for the different norm functions from the above example</div></div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#gacc40fa15eac0fb83f8ca70b7cc0b588d" title="Calculates per-element maximum of two arrays or an array and a scalar. ">max</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga303cfb72acf8cbb36d884650c09a3a97" title="Performs the per-element comparison of two arrays or an array and scalar value. ">compare</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga48af0ab51e36436c5d04340e036ce981" title="Checks if array elements lie between the elements of two other arrays. ">inRange</a>, <a class="el" href="../../d2/de8/group__core__array.html#gab473bf2eb6d14ff97e89b355dac20707" title="Finds the global minimum and maximum in an array. ">minMaxLoc</a> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a24">grabcut.cpp</a>.</dd>
-</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga78f988f6cfa6223610298cbd4f86ec66">max</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga303cfb72acf8cbb36d884650c09a3a97" title="Performs the per-element comparison of two arrays or an array and scalar value. ">compare</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga48af0ab51e36436c5d04340e036ce981" title="Checks if array elements lie between the elements of two other arrays. ">inRange</a>, <a class="el" href="../../d2/de8/group__core__array.html#gab473bf2eb6d14ff97e89b355dac20707" title="Finds the global minimum and maximum in an array. ">minMaxLoc</a> </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ga0b8852cd1a92366860e390e8abbe78dc"></a>
@@ -3460,7 +3464,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::minMaxIdx </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -3490,7 +3494,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -3524,7 +3528,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::minMaxLoc </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -3554,7 +3558,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -3578,8 +3582,9 @@ Graphs for the different norm functions from the above example</div></div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#gacc40fa15eac0fb83f8ca70b7cc0b588d" title="Calculates per-element maximum of two arrays or an array and a scalar. ">max</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga9af368f182ee76d0463d0d8d5330b764" title="Calculates per-element minimum of two arrays or an array and a scalar. ">min</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga303cfb72acf8cbb36d884650c09a3a97" title="Performs the per-element comparison of two arrays or an array and scalar value. ">compare</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga48af0ab51e36436c5d04340e036ce981" title="Checks if array elements lie between the elements of two other arrays. ">inRange</a>, <a class="el" href="../../d8/dd7/group__core__c__glue.html#gad621f7c669ba2dbe9f2fb75bf15c94fe" title="extracts Channel of Interest from CvMat or IplImage and makes cv::Mat out of it. ">extractImageCOI</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga51d768c270a1cdd3497255017c4504be" title="Copies specified channels from input arrays to the specified channels of output arrays. ">mixChannels</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga0547c7fed86152d7e9d0096029c8518a" title="Divides a multi-channel array into several single-channel arrays. ">split</a>, <a class="el" href="../../d3/d63/classcv_1_1Mat.html#abca74fa43163dba52b70af4b48c69f62" title="Changes the shape and/or the number of channels of a 2D matrix without copying the data...">Mat::reshape</a> </dd></dl>
-
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga78f988f6cfa6223610298cbd4f86ec66">max</a>, <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#gac48df53b8fd34b87e7b121fa8fd4c379" title="Min and Max functions. ">min</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga303cfb72acf8cbb36d884650c09a3a97" title="Performs the per-element comparison of two arrays or an array and scalar value. ">compare</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga48af0ab51e36436c5d04340e036ce981" title="Checks if array elements lie between the elements of two other arrays. ">inRange</a>, <a class="el" href="../../d8/dd7/group__core__c__glue.html#gad621f7c669ba2dbe9f2fb75bf15c94fe" title="extracts Channel of Interest from CvMat or IplImage and makes cv::Mat out of it. ">extractImageCOI</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga51d768c270a1cdd3497255017c4504be" title="Copies specified channels from input arrays to the specified channels of output arrays. ">mixChannels</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga0547c7fed86152d7e9d0096029c8518a" title="Divides a multi-channel array into several single-channel arrays. ">split</a>, <a class="el" href="../../d3/d63/classcv_1_1Mat.html#abca74fa43163dba52b70af4b48c69f62" title="Changes the shape and/or the number of channels of a 2D matrix without copying the data...">Mat::reshape</a> </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d7f/image_alignment_8cpp-example.html#a47">image_alignment.cpp</a>, and <a class="el" href="../../da/d53/MatchTemplate_Demo_8cpp-example.html#a19">MatchTemplate_Demo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga8873b86a29c5af51cafdcee82f8150a7"></a>
@@ -3700,7 +3705,8 @@ Graphs for the different norm functions from the above example</div></div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#ga0547c7fed86152d7e9d0096029c8518a" title="Divides a multi-channel array into several single-channel arrays. ">split</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga7d7b4d6c6ee504b30a20b1680029c7b4" title="Creates one multi-channel array out of several single-channel ones. ">merge</a>, <a class="el" href="../../d2/de8/group__core__array.html#gacc6158574aa1f0281878c955bcf35642" title="Extracts a single channel from src (coi is 0-based index) ">extractChannel</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga1d4bd886d35b00ec0b764cb4ce6eb515" title="Inserts a single channel to dst (coi is 0-based index) ">insertChannel</a>, <a class="el" href="../../d7/d1b/group__imgproc__misc.html#ga397ae87e1288a81d2363b61574eb8cab" title="Converts an image from one color space to another. ">cvtColor</a> </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a38">camshiftdemo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga89dd05fd8fe54f5b7b5d89bca21153a1"></a>
@@ -3797,13 +3803,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::mulSpectrums </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -3854,13 +3860,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::multiply </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -3918,7 +3924,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::mulTransposed </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -3936,7 +3942,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>delta</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>, </td>
         </tr>
         <tr>
@@ -3988,7 +3994,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">double cv::norm </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
@@ -4000,7 +4006,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -4022,7 +4028,7 @@ Graphs for the different norm functions from the above example</div></div>
 </p>
 <p>or</p>
 <p class="formulaDsp">
-\[norm = \forkthree{\frac{\|\texttt{src1}-\texttt{src2}\|_{L_{\infty}} }{\|\texttt{src2}\|_{L_{\infty}} }}{if \(\texttt{normType} = \texttt{NORM_RELATIVE_INF}\) } { \frac{\|\texttt{src1}-\texttt{src2}\|_{L_1} }{\|\texttt{src2}\|_{L_1}} }{if \(\texttt{normType} = \texttt{NORM_RELATIVE_L1}\) } { \frac{\|\texttt{src1}-\texttt{src2}\|_{L_2} }{\|\texttt{src2}\|_{L_2}} }{if \(\texttt{normType} = \texttt{NORM_RELATIVE_L2}\) }\]
+\[norm = \forkthree{\frac{\|\texttt{src1}-\texttt{src2}\|_{L_{\infty}} }{\|\texttt{src2}\|_{L_{\infty}} }}{if \(\texttt{normType} = \texttt{NORM_RELATIVE | NORM_INF}\) } { \frac{\|\texttt{src1}-\texttt{src2}\|_{L_1} }{\|\texttt{src2}\|_{L_1}} }{if \(\texttt{normType} = \texttt{NORM_RELATIVE | NORM_L1}\) } { \frac{\|\texttt{src1}-\texttt{src2}\|_{L_2} }{\|\texttt{src2}\|_{L_2}} }{if \(\texttt{normType} = \texttt{NORM_RELATIVE | NORM_L2}\) }\]
 </p>
 <p>The function <a class="el" href="../../dc/d84/group__core__basic.html#ga4e556cb8ad35a643a1ea66e035711bb9">cv::norm</a> returns the calculated norm.</p>
 <p>When the mask parameter is specified and it is not empty, the norm is calculated only over the region specified by the mask.</p>
@@ -4045,13 +4051,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">double cv::norm </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -4063,7 +4069,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -4125,7 +4131,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::normalize </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -4161,7 +4167,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
         </tr>
         <tr>
@@ -4279,19 +4285,19 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::PCABackProject </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mean</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>eigenvectors</em>, </td>
         </tr>
         <tr>
@@ -4318,7 +4324,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::PCACompute </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -4357,7 +4363,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::PCACompute </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
@@ -4396,19 +4402,19 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::PCAProject </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mean</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>eigenvectors</em>, </td>
         </tr>
         <tr>
@@ -4435,7 +4441,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::perspectiveTransform </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -4447,7 +4453,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>m</em>&#160;</td>
         </tr>
         <tr>
@@ -4489,13 +4495,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::phase </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>x</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>y</em>, </td>
         </tr>
         <tr>
@@ -4541,13 +4547,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::polarToCart </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>magnitude</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>angle</em>, </td>
         </tr>
         <tr>
@@ -4590,7 +4596,7 @@ Graphs for the different norm functions from the above example</div></div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#gac5f92f48ec32cacf5275969c33ee837d" title="Calculates the magnitude and angle of 2D vectors. ">cartToPolar</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga6d3b097586bca4409873d64a90fe64c3" title="Calculates the magnitude of 2D vectors. ">magnitude</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga9db9ca9b4d81c3bde5677b8f64dc0137" title="Calculates the rotation angle of 2D vectors. ">phase</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga3e10108e2162c338f1b848af619f39e5" title="Calculates the exponent of every array element. ">exp</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga937ecdce4679a77168730830a955bea7" title="Calculates the natural logarithm of every array element. ">log</a>, <a class="el" href="../../d2/de8/group__core__array.html#gaf0d056b5bd1dc92500d6f6cf6bac41ef" title="Raises every array element to a power. ">pow</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga186222c3919657890f88df5a1f64a7d7" title="Calculates a square root of array elements. ">sqrt</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#gac5f92f48ec32cacf5275969c33ee837d" title="Calculates the magnitude and angle of 2D vectors. ">cartToPolar</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga6d3b097586bca4409873d64a90fe64c3" title="Calculates the magnitude of 2D vectors. ">magnitude</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga9db9ca9b4d81c3bde5677b8f64dc0137" title="Calculates the rotation angle of 2D vectors. ">phase</a>, <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga1eb07a682abff20e0864104599c06fbc" title="Exponent. ">exp</a>, <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#gae5de78ee278fe88405c6dbc38502f7c1" title="Natural logarithm. ">log</a>, <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga8bc36646a43b82baa15f151a973fb0c5" title="Raising to the power. ">pow</a>, <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga682082a1892db64a2856403ec17ba297" title="Square root. ">sqrt</a> </dd></dl>
 
 </div>
 </div>
@@ -4601,7 +4607,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::pow </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -4625,10 +4631,10 @@ Graphs for the different norm functions from the above example</div></div>
 </div><div class="memdoc">
 
 <p>Raises every array element to a power. </p>
-<p>The function <a class="el" href="../../d2/de8/group__core__array.html#gaf0d056b5bd1dc92500d6f6cf6bac41ef" title="Raises every array element to a power. ">cv::pow</a> raises every element of the input array to power : </p><p class="formulaDsp">
+<p>The function <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga8bc36646a43b82baa15f151a973fb0c5" title="Raising to the power. ">cv::pow</a> raises every element of the input array to power : </p><p class="formulaDsp">
 \[\texttt{dst} (I) = \fork{\texttt{src}(I)^{power}}{if \(\texttt{power}\) is integer}{|\texttt{src}(I)|^{power}}{otherwise}\]
 </p>
-<p>So, for a non-integer power exponent, the absolute values of input array elements are used. However, it is possible to get true values for negative values using some extra operations. In the example below, computing the 5th root of array src shows: </p><div class="fragment"><div class="line">Mat mask = src &lt; 0;</div><div class="line"><a class="code" href="../../d2/de8/group__core__array.html#gaf0d056b5bd1dc92500d6f6cf6bac41ef">pow</a>(src, 1./5, dst);</div><div class="line"><a class="code" href="../../d2/de8/group__core__array.html#gaa0f00d98b4b5edeaeb7b8333b2de353b">subtract</a>(<a class="code" href="../../d1/da0/classcv_1_1Scalar__.html#ac1509a4b8454fe7fe29db069e13a2e6f">Scalar::all</a>(0), dst, dst, mask);</div></div><!-- fragment --><p> For some values of power, such as integer values, 0.5 and -0.5, specialized faster algorithms are used.</p>
+<p>So, for a non-integer power exponent, the absolute values of input array elements are used. However, it is possible to get true values for negative values using some extra operations. In the example below, computing the 5th root of array src shows: </p><div class="fragment"><div class="line">Mat mask = src &lt; 0;</div><div class="line"><a class="code" href="../../d7/dcc/group__core__utils__softfloat.html#ga8bc36646a43b82baa15f151a973fb0c5">pow</a>(src, 1./5, dst);</div><div class="line"><a class="code" href="../../d2/de8/group__core__array.html#gaa0f00d98b4b5edeaeb7b8333b2de353b">subtract</a>(<a class="code" href="../../d1/da0/classcv_1_1Scalar__.html#ac1509a4b8454fe7fe29db069e13a2e6f">Scalar::all</a>(0), dst, dst, mask);</div></div><!-- fragment --><p> For some values of power, such as integer values, 0.5 and -0.5, specialized faster algorithms are used.</p>
 <p>Special values (NaN, Inf) are not handled. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">src</td><td>input array. </td></tr>
@@ -4637,9 +4643,8 @@ Graphs for the different norm functions from the above example</div></div>
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#ga186222c3919657890f88df5a1f64a7d7" title="Calculates a square root of array elements. ">sqrt</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga3e10108e2162c338f1b848af619f39e5" title="Calculates the exponent of every array element. ">exp</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga937ecdce4679a77168730830a955bea7" title="Calculates the natural logarithm of every array element. ">log</a>, <a class="el" href="../../d2/de8/group__core__array.html#gac5f92f48ec32cacf5275969c33ee837d" title="Calculates the magnitude and angle of 2D vectors. ">cartToPolar</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga581ff9d44201de2dd1b40a50db93d665" title="Calculates x and y coordinates of 2D vectors from their magnitude and angle. ">polarToCart</a> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d4/d11/distrans_8cpp-example.html#a7">distrans.cpp</a>.</dd>
-</dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga682082a1892db64a2856403ec17ba297" title="Square root. ">sqrt</a>, <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga1eb07a682abff20e0864104599c06fbc" title="Exponent. ">exp</a>, <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#gae5de78ee278fe88405c6dbc38502f7c1" title="Natural logarithm. ">log</a>, <a class="el" href="../../d2/de8/group__core__array.html#gac5f92f48ec32cacf5275969c33ee837d" title="Calculates the magnitude and angle of 2D vectors. ">cartToPolar</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga581ff9d44201de2dd1b40a50db93d665" title="Calculates x and y coordinates of 2D vectors from their magnitude and angle. ">polarToCart</a> </dd></dl>
+
 </div>
 </div>
 <a class="anchor" id="ga07aaf34ae31d226b1b847d8bcff3698f"></a>
@@ -4649,13 +4654,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">double cv::PSNR </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>&#160;</td>
         </tr>
         <tr>
@@ -4684,13 +4689,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mean</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>stddev</em>&#160;</td>
         </tr>
         <tr>
@@ -4711,7 +4716,8 @@ Graphs for the different norm functions from the above example</div></div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d1/dd6/classcv_1_1RNG.html" title="Random Number Generator. ">RNG</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga1ba1026dca0807b27057ba6a49d258c0" title="Generates a single uniformly-distributed random number or an array of random numbers. ">randu</a> </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d1/da2/kalman_8cpp-example.html#a10">kalman.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga6a789c8a5cb56c6dd62506179808f763"></a>
@@ -4771,13 +4777,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>low</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>high</em>&#160;</td>
         </tr>
         <tr>
@@ -4812,7 +4818,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::reduce </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -4869,7 +4875,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::repeat </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -4962,7 +4968,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::rotate </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -5005,7 +5011,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::scaleAdd </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
@@ -5017,7 +5023,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -5087,7 +5093,8 @@ Graphs for the different norm functions from the above example</div></div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d3/d63/classcv_1_1Mat.html#a0b57b6a326c8876d944d188a46e0f556" title="Returns a zero array of the specified size and type. ">Mat::zeros</a>, <a class="el" href="../../d3/d63/classcv_1_1Mat.html#a69ae0402d116fc9c71908d8508dc2f09" title="Returns an array of all 1&#39;s of the specified size and type. ">Mat::ones</a>, <a class="el" href="../../d3/d63/classcv_1_1Mat.html#a0440e2a164c0b0d8462fb1e487be9876" title="Sets all or some of the array elements to the specified value. ">Mat::setTo</a>, <a class="el" href="../../d3/d63/classcv_1_1Mat.html#aed1f81fe7efaacc2bd95149cdfa34302" title="assignment operators ">Mat::operator=</a> </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d1/da2/kalman_8cpp-example.html#a14">kalman.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga757e657c037410d9e19e819569e7de0f"></a>
@@ -5122,13 +5129,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">bool cv::solve </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -5177,7 +5184,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">int cv::solveCubic </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>coeffs</em>, </td>
         </tr>
         <tr>
@@ -5222,7 +5229,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">double cv::solvePoly </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>coeffs</em>, </td>
         </tr>
         <tr>
@@ -5267,7 +5274,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::sort </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -5311,7 +5318,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::sortIdx </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -5393,7 +5400,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::split </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>m</em>, </td>
         </tr>
         <tr>
@@ -5426,7 +5433,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::sqrt </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -5444,7 +5451,7 @@ Graphs for the different norm functions from the above example</div></div>
 </div><div class="memdoc">
 
 <p>Calculates a square root of array elements. </p>
-<p>The function <a class="el" href="../../d2/de8/group__core__array.html#ga186222c3919657890f88df5a1f64a7d7" title="Calculates a square root of array elements. ">cv::sqrt</a> calculates a square root of each input array element. In case of multi-channel arrays, each channel is processed independently. The accuracy is approximately the same as of the built-in std::sqrt . </p><dl class="params"><dt>Parameters</dt><dd>
+<p>The function <a class="el" href="../../d7/dcc/group__core__utils__softfloat.html#ga682082a1892db64a2856403ec17ba297" title="Square root. ">cv::sqrt</a> calculates a square root of each input array element. In case of multi-channel arrays, each channel is processed independently. The accuracy is approximately the same as of the built-in std::sqrt . </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">src</td><td>input floating-point array. </td></tr>
     <tr><td class="paramname">dst</td><td>output array of the same size and type as src. </td></tr>
@@ -5461,13 +5468,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::subtract </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -5479,7 +5486,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>, </td>
         </tr>
         <tr>
@@ -5527,7 +5534,8 @@ Graphs for the different norm functions from the above example</div></div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#ga10ac1bfb180e2cfda1701d06c24fdbd6" title="Calculates the per-element sum of two arrays or an array and a scalar. ">add</a>, <a class="el" href="../../d2/de8/group__core__array.html#gafafb2513349db3bcff51f54ee5592a19" title="Calculates the weighted sum of two arrays. ">addWeighted</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga9e0845db4135f55dcf20227402f00d98" title="Calculates the sum of a scaled array and another array. ">scaleAdd</a>, <a class="el" href="../../d3/d63/classcv_1_1Mat.html#a3f356665bb0ca452e7d7723ccac9a810" title="Converts an array to another data type with optional scaling. ">Mat::convertTo</a> </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d7f/image_alignment_8cpp-example.html#a46">image_alignment.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga716e10a2dd9e228e4d3c95818f106722"></a>
@@ -5537,7 +5545,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">Scalar cv::sum </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em></td><td>)</td>
           <td></td>
         </tr>
@@ -5562,25 +5570,25 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::SVBackSubst </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>w</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>u</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>vt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>rhs</em>, </td>
         </tr>
         <tr>
@@ -5607,7 +5615,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::SVDecomp </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -5660,7 +5668,7 @@ Graphs for the different norm functions from the above example</div></div>
 
 <p>Returns the default random number generator. </p>
 <p>The function <a class="el" href="../../d2/de8/group__core__array.html#ga75843061d150ad6564b5447e38e57722" title="Returns the default random number generator. ">cv::theRNG</a> returns the default random number generator. For each thread, there is a separate random number generator, so you can use the function safely in multi-thread environments. If you just need to get a single random number using this generator or initialize an array, you can use randu or randn instead. But if you are going to generate many random numbers inside a loop, it is much faster to use this function to retrieve the generator and then use RNG::operator _Tp() . </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d1/dd6/classcv_1_1RNG.html" title="Random Number Generator. ">RNG</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga1ba1026dca0807b27057ba6a49d258c0" title="Generates a single uniformly-distributed random number or an array of random numbers. ">randu</a>, <a class="el" href="../../d2/de8/group__core__array.html#gaeff1f61e972d133a04ce3a5f81cf6808" title="Fills the array with normally distributed random numbers. ">randn</a> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d7a/convexhull_8cpp-example.html#a5">convexhull.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a5">ffilldemo.cpp</a>, <a class="el" href="../../d4/d32/minarea_8cpp-example.html#a4">minarea.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a29">watershed.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d7a/convexhull_8cpp-example.html#a5">convexhull.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a5">ffilldemo.cpp</a>, <a class="el" href="../../d1/da2/kalman_8cpp-example.html#a27">kalman.cpp</a>, <a class="el" href="../../d4/d32/minarea_8cpp-example.html#a4">minarea.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a29">watershed.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -5671,7 +5679,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">Scalar cv::trace </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mtx</em></td><td>)</td>
           <td></td>
         </tr>
@@ -5698,7 +5706,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::transform </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -5710,7 +5718,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>m</em>&#160;</td>
         </tr>
         <tr>
@@ -5749,7 +5757,7 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::transpose </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -5835,13 +5843,13 @@ Graphs for the different norm functions from the above example</div></div>
         <tr>
           <td class="memname">void cv::vconcat </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src2</em>, </td>
         </tr>
         <tr>
@@ -5905,7 +5913,7 @@ Graphs for the different norm functions from the above example</div></div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -5959,7 +5967,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

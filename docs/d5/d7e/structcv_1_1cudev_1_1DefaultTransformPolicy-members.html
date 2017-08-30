@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -156,14 +156,14 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 
 <p>This is the complete list of members for <a class="el" href="../../db/db3/structcv_1_1cudev_1_1DefaultTransformPolicy.html">cv::cudev::DefaultTransformPolicy</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="../../db/db3/structcv_1_1cudev_1_1DefaultTransformPolicy.html#a1fb6ad4f0fa0870c9cc01b2239a711f8a84b40dc5871a4dbb02ccf4fb196813d1">block_size_x</a> enum value</td><td class="entry"><a class="el" href="../../db/db3/structcv_1_1cudev_1_1DefaultTransformPolicy.html">cv::cudev::DefaultTransformPolicy</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="../../db/db3/structcv_1_1cudev_1_1DefaultTransformPolicy.html#a1fb6ad4f0fa0870c9cc01b2239a711f8a108871bd16e9cf0d5444bf838a40ffc3">block_size_y</a> enum value</td><td class="entry"><a class="el" href="../../db/db3/structcv_1_1cudev_1_1DefaultTransformPolicy.html">cv::cudev::DefaultTransformPolicy</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="../../db/db3/structcv_1_1cudev_1_1DefaultTransformPolicy.html#a1fb6ad4f0fa0870c9cc01b2239a711f8a12c995c60f73304ca07f58848b12f8e6">shift</a> enum value</td><td class="entry"><a class="el" href="../../db/db3/structcv_1_1cudev_1_1DefaultTransformPolicy.html">cv::cudev::DefaultTransformPolicy</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../db/db3/structcv_1_1cudev_1_1DefaultTransformPolicy.html#aaa7d25c907ec43125ead3f0497e89292a84b40dc5871a4dbb02ccf4fb196813d1">block_size_x</a> enum value</td><td class="entry"><a class="el" href="../../db/db3/structcv_1_1cudev_1_1DefaultTransformPolicy.html">cv::cudev::DefaultTransformPolicy</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="../../db/db3/structcv_1_1cudev_1_1DefaultTransformPolicy.html#aaa7d25c907ec43125ead3f0497e89292a108871bd16e9cf0d5444bf838a40ffc3">block_size_y</a> enum value</td><td class="entry"><a class="el" href="../../db/db3/structcv_1_1cudev_1_1DefaultTransformPolicy.html">cv::cudev::DefaultTransformPolicy</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="../../db/db3/structcv_1_1cudev_1_1DefaultTransformPolicy.html#aaa7d25c907ec43125ead3f0497e89292a12c995c60f73304ca07f58848b12f8e6">shift</a> enum value</td><td class="entry"><a class="el" href="../../db/db3/structcv_1_1cudev_1_1DefaultTransformPolicy.html">cv::cudev::DefaultTransformPolicy</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -217,7 +217,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

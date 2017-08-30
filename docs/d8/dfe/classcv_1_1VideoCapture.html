@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -238,7 +238,7 @@ Protected Attributes</h2></td></tr>
 <li>(Python) VideoCapture sample showcasing some features of the Video4Linux2 backend <code>OPENCV_SOURCE_CODE/samples/python/video_v4l2.py</code> </li>
 </ul>
 </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../de/db2/laplace_8cpp-example.html#_a0">laplace.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#_a0">polar_transforms.cpp</a>, and <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#_a14">segment_objects.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#_a17">camshiftdemo.cpp</a>, <a class="el" href="../../db/d3a/facedetect_8cpp-example.html#_a3">facedetect.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#_a0">laplace.cpp</a>, <a class="el" href="../../d2/d0a/lkdemo_8cpp-example.html#_a4">lkdemo.cpp</a>, <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#_a24">peopledetect.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#_a0">polar_transforms.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#_a14">segment_objects.cpp</a>, and <a class="el" href="../../d5/d57/videowriter_basic_8cpp-example.html#_a1">videowriter_basic.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a57c0e81e83e60f36c83027dc2a188e80"></a>
 <div class="memitem">
@@ -400,8 +400,8 @@ Protected Attributes</h2></td></tr>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Value for the specified property. Value 0 is returned when querying a property that is not supported by the backend used by the <a class="el" href="../../d8/dfe/classcv_1_1VideoCapture.html" title="Class for video capturing from video files, image sequences or cameras. ">VideoCapture</a> instance.</dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Reading / writing properties involves many layers. Some unexpected result might happens along this chain. <div class="fragment"><div class="line">`<a class="code" href="../../d8/dfe/classcv_1_1VideoCapture.html#a57c0e81e83e60f36c83027dc2a188e80">VideoCapture</a> -&gt; API Backend -&gt; Operating System -&gt; Device Driver -&gt; Device Hardware`</div></div><!-- fragment --> The returned value might be different from what really used by the device or it could be encoded using device dependant rules (eg. steps or percentage). Effective behaviour depends from device driver and API Backend </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../de/db2/laplace_8cpp-example.html#a6">laplace.cpp</a>.</dd>
+<dl class="section note"><dt>Note</dt><dd>Reading / writing properties involves many layers. Some unexpected result might happens along this chain. <div class="fragment"><div class="line">`<a class="code" href="../../d8/dfe/classcv_1_1VideoCapture.html#a57c0e81e83e60f36c83027dc2a188e80">VideoCapture</a> -&gt; API <a class="code" href="../../d6/d0f/group__dnn.html#ga186f7d9bfacac8b0ff2e26e2eab02625">Backend</a> -&gt; Operating System -&gt; Device Driver -&gt; Device Hardware`</div></div><!-- fragment --> The returned value might be different from what really used by the device or it could be encoded using device dependant rules (eg. steps or percentage). Effective behaviour depends from device driver and API Backend </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../de/db2/laplace_8cpp-example.html#a5">laplace.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -458,7 +458,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Returns true if video capturing has been initialized already. </p>
 <p>If the previous call to <a class="el" href="../../d8/dfe/classcv_1_1VideoCapture.html" title="Class for video capturing from video files, image sequences or cameras. ">VideoCapture</a> constructor or <a class="el" href="../../d8/dfe/classcv_1_1VideoCapture.html#ab5b7391cd5ec50e7237e575a758f6f05" title="Open video file or a capturing device or a IP video stream for video capturing. ">VideoCapture::open()</a> succeeded, the method returns true. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../de/db2/laplace_8cpp-example.html#a5">laplace.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a5">polar_transforms.cpp</a>, and <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#a19">segment_objects.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a22">camshiftdemo.cpp</a>, <a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a13">facedetect.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a4">laplace.cpp</a>, <a class="el" href="../../d2/d0a/lkdemo_8cpp-example.html#a12">lkdemo.cpp</a>, <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a28">peopledetect.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a5">polar_transforms.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#a19">segment_objects.cpp</a>, and <a class="el" href="../../d5/d57/videowriter_basic_8cpp-example.html#a2">videowriter_basic.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -488,7 +488,7 @@ Protected Attributes</h2></td></tr>
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts.</p>
 <p>Parameters are same as the constructor <a class="el" href="../../d8/dfe/classcv_1_1VideoCapture.html#a949d90b766ba42a6a93fe23a67785951" title="Open video file or a capturing device or a IP video stream for video capturing. ">VideoCapture(const String&amp; filename)</a> </p><dl class="section return"><dt>Returns</dt><dd><code>true</code> if the file has been successfully opened</dd></dl>
 <p>The method first calls <a class="el" href="../../d8/dfe/classcv_1_1VideoCapture.html#afb4ab689e553ba2c8f0fec41b9344ae6" title="Closes video file or capturing device. ">VideoCapture::release</a> to close the already opened file or camera. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../de/db2/laplace_8cpp-example.html#a4">laplace.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a4">polar_transforms.cpp</a>, and <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#a18">segment_objects.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a21">camshiftdemo.cpp</a>, <a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a10">facedetect.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a3">laplace.cpp</a>, <a class="el" href="../../d2/d0a/lkdemo_8cpp-example.html#a11">lkdemo.cpp</a>, <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a27">peopledetect.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a4">polar_transforms.cpp</a>, and <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#a18">segment_objects.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -674,7 +674,8 @@ Protected Attributes</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd><code>false</code> if no frames has been grabbed</dd></dl>
 <p>The method/function combines <a class="el" href="../../d8/dfe/classcv_1_1VideoCapture.html#ae38c2a053d39d6b20c9c649e08ff0146" title="Grabs the next frame from video file or capturing device. ">VideoCapture::grab()</a> and <a class="el" href="../../d8/dfe/classcv_1_1VideoCapture.html#a9ac7f4b1cdfe624663478568486e6712" title="Decodes and returns the grabbed video frame. ">VideoCapture::retrieve()</a> in one call. This is the most convenient method for reading video files or capturing data from decode and returns the just grabbed frame. If no frames has been grabbed (camera has been disconnected, or there are no more frames in video file), the method returns false and the function returns empty image (with cv::Mat, test it with <a class="el" href="../../d3/d63/classcv_1_1Mat.html#a17d0777aef52a7cfbdb8d04d189fa5c3" title="Returns true if the array has no elements. ">Mat::empty()</a>).</p>
 <dl class="section note"><dt>Note</dt><dd>In <a class="el" href="../../dd/d01/group__videoio__c.html">C API</a>, functions <a class="el" href="../../dd/d01/group__videoio__c.html#ga15224db88623fc748c4c4fa56c5751db" title="get the frame grabbed with cvGrabFrame(..) ">cvRetrieveFrame()</a> and cv.RetrieveFrame() return image stored inside the video capturing structure. It is not allowed to modify or release the image! You can copy the frame using :ocvcvCloneImage and then do whatever you want with the copy. </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/d57/videowriter_basic_8cpp-example.html#a8">videowriter_basic.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="afb4ab689e553ba2c8f0fec41b9344ae6"></a>
@@ -845,7 +846,7 @@ Protected Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -899,7 +900,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

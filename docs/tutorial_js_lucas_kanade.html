@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -303,10 +303,10 @@ lkofLoopIndex = setInterval(
             p0.data32F[i*2] = goodNew[i].x;
             p0.data32F[i*2+1] = goodNew[i].y;
         }
-    }, 33); 
+    }, 33);
 </textarea>
 <p class="err" id="lkofErr"></p>
-</div> 
+</div>
 <div id="contentarea">
     <button id="lkofStartup" disabled="true" onclick="lkofStartup()">try it</button>
     <button id="lkofStop" disabled="true" onclick="lkofStopVideo()">stop</button><br>
@@ -353,7 +353,7 @@ function lkofStartup() {
         document.getElementById("lkofErr").innerHTML = " ";
     } catch(err) {
         document.getElementById("lkofErr").innerHTML = err;
-    }   
+    }
     document.getElementById("lkofStartup").disabled = true;
 }
 
@@ -485,7 +485,7 @@ dofLoopIndex = setInterval(
         cv.cvtColor(hsv, rgb, cv.COLOR_HSV2RGB);
         cv.imshow("dofCanvasOutput", rgb);
         next.copyTo(prvs);
-    }, 33);    
+    }, 33);
 </textarea>
 <p class="err" id="dofErr"></p>
 </div>
@@ -519,18 +519,16 @@ let mag = null;
 let ang = null;
 let rgb = null;
 
-// dofVideo.oncanplay = function() {
-//     dofVideo.setAttribute("height", dofVideo.videoHeight/dofVideo.videoWidth*dofVideo.width);
-//     dofHeight = dofVideo.height;
-// };
+dofVideo.oncanplay = function() {
+    dofVideo.setAttribute("height", dofVideo.videoHeight/dofVideo.videoWidth*dofVideo.width);
+    dofHeight = dofVideo.height;
+};
 
 dofVideo.onended = dofStopVideo;
 
 function dofStartup() {
     if(dofVideo.readyState !== 4)
         dofVideo.load();
-    dofVideo.height = dofVideo.videoHeight/dofVideo.videoWidth*dofVideo.width;
-    dofHeight = dofVideo.height;
     dofVideo.play();
     dofStop.disabled = false;
     let dofTestCode = document.getElementById("dofTestCode").value;
@@ -621,7 +619,7 @@ if (typeof cv !== 'undefined') {
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -675,7 +673,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

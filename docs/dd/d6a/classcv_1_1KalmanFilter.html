@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -166,7 +166,6 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac0799f0611baee9e7e558f016e4a7b40"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6a/classcv_1_1KalmanFilter.html#ac0799f0611baee9e7e558f016e4a7b40">KalmanFilter</a> ()</td></tr>
-<tr class="memdesc:ac0799f0611baee9e7e558f016e4a7b40"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructors.  <a href="#ac0799f0611baee9e7e558f016e4a7b40">More...</a><br /></td></tr>
 <tr class="separator:ac0799f0611baee9e7e558f016e4a7b40"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abac82ecfa530611a163255bc7d91c088"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dd/d6a/classcv_1_1KalmanFilter.html#abac82ecfa530611a163255bc7d91c088">KalmanFilter</a> (int dynamParams, int measureParams, int controlParams=0, int type=<a class="el" href="../../d1/d1b/group__core__hal__interface.html#ga4a3def5d72b74bed31f5f8ab7676099c">CV_32F</a>)</td></tr>
 <tr class="separator:abac82ecfa530611a163255bc7d91c088"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,12 +224,9 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Kalman filter class. </p>
-<p>The class implements a standard Kalman filter <a href="http://en.wikipedia.org/wiki/Kalman_filter">http://en.wikipedia.org/wiki/Kalman_filter</a>, <a class="el" href="../../d0/de3/citelist.html#CITEREF_Welch95">[90]</a> . However, you can modify transitionMatrix, controlMatrix, and measurementMatrix to get an extended Kalman filter functionality. See the OpenCV sample kalman.cpp.</p>
-<dl class="section note"><dt>Note</dt><dd></dd></dl>
-<ul>
-<li>An example using the standard Kalman filter can be found at opencv_source_code/samples/cpp/kalman.cpp </li>
-</ul>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<p>The class implements a standard Kalman filter <a href="http://en.wikipedia.org/wiki/Kalman_filter">http://en.wikipedia.org/wiki/Kalman_filter</a>, <a class="el" href="../../d0/de3/citelist.html#CITEREF_Welch95">[91]</a> . However, you can modify transitionMatrix, controlMatrix, and measurementMatrix to get an extended Kalman filter functionality. </p><dl class="section note"><dt>Note</dt><dd>In C API when CvKalman* kalmanFilter structure is not needed anymore, it should be released with cvReleaseKalman(&amp;kalmanFilter) </dd></dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d1/da2/kalman_8cpp-example.html#_a7">kalman.cpp</a>.</dd>
+</dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ac0799f0611baee9e7e558f016e4a7b40"></a>
 <div class="memitem">
 <div class="memproto">
@@ -243,9 +239,6 @@ Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-<p>The constructors. </p>
-<dl class="section note"><dt>Note</dt><dd>In C API when CvKalman* kalmanFilter structure is not needed anymore, it should be released with cvReleaseKalman(&amp;kalmanFilter) </dd></dl>
 
 </div>
 </div>
@@ -318,7 +311,8 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d1/da2/kalman_8cpp-example.html#a28">kalman.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="a4f136c39c016d3530c7c5801dd1ddb3b"></a>
@@ -391,7 +385,8 @@ Public Attributes</h2></td></tr>
   </table>
   </dd>
 </dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d1/da2/kalman_8cpp-example.html#a23">kalman.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -420,7 +415,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>posteriori error estimate covariance matrix (P(k)): P(k)=(I-K(k)*H)*P'(k) </p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d1/da2/kalman_8cpp-example.html#a18">kalman.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ae1bd3a86f10753d723e7174d570d9ac1"></a>
@@ -462,7 +458,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>measurement matrix (H) </p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d1/da2/kalman_8cpp-example.html#a15">kalman.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="a828d051035ba807966ad65edf288a08e"></a>
@@ -476,7 +473,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>measurement noise covariance matrix (R) </p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d1/da2/kalman_8cpp-example.html#a17">kalman.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="af19be9c0630d0f658bdbaea409a35cda"></a>
@@ -490,7 +488,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>process noise covariance matrix (Q) </p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d1/da2/kalman_8cpp-example.html#a16">kalman.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="add8fb5ac9c04b4600b679698dcb0447d"></a>
@@ -504,7 +503,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>corrected state (x(k)): x(k)=x'(k)+K(k)*(z(k)-H*x'(k)) </p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d1/da2/kalman_8cpp-example.html#a19">kalman.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="a926dece64b4e0e28c3f58af8b7793669"></a>
@@ -592,7 +592,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>state transition matrix (A) </p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d1/da2/kalman_8cpp-example.html#a12">kalman.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -602,7 +603,7 @@ Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:26 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:43 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -656,7 +657,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

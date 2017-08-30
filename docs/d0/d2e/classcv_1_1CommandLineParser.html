@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -199,7 +199,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a1b7982e6ea32e8653ae0543ff0a81354"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator.  <a href="#a1b7982e6ea32e8653ae0543ff0a81354">More...</a><br /></td></tr>
 <tr class="separator:a1b7982e6ea32e8653ae0543ff0a81354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2dfd78bcc9dfae2250fedf5d8c9a3857"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2e/classcv_1_1CommandLineParser.html#a2dfd78bcc9dfae2250fedf5d8c9a3857">printErrors</a> () const </td></tr>
-<tr class="memdesc:a2dfd78bcc9dfae2250fedf5d8c9a3857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print list of errors occured.  <a href="#a2dfd78bcc9dfae2250fedf5d8c9a3857">More...</a><br /></td></tr>
+<tr class="memdesc:a2dfd78bcc9dfae2250fedf5d8c9a3857"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print list of errors occurred.  <a href="#a2dfd78bcc9dfae2250fedf5d8c9a3857">More...</a><br /></td></tr>
 <tr class="separator:a2dfd78bcc9dfae2250fedf5d8c9a3857"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab085b9041afecf30f623a18fd60d38ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d0/d2e/classcv_1_1CommandLineParser.html#ab085b9041afecf30f623a18fd60d38ad">printMessage</a> () const </td></tr>
 <tr class="memdesc:ab085b9041afecf30f623a18fd60d38ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print help message.  <a href="#ab085b9041afecf30f623a18fd60d38ad">More...</a><br /></td></tr>
@@ -231,7 +231,7 @@ Protected Attributes</h2></td></tr>
 <p><a class="el" href="../../d1/d8f/classcv_1_1String.html">String</a> keys like <code>get&lt;<a class="el" href="../../d1/d8f/classcv_1_1String.html">String</a>&gt;("\@image1")</code> return the empty string <code>""</code> by default - even with an empty default value. Use the special <code>&lt;none&gt;</code> default value to enforce that the returned string must not be empty. (like in <code>get&lt;<a class="el" href="../../d1/d8f/classcv_1_1String.html">String</a>&gt;("\@image2")</code>)</p>
 <h3>Usage</h3>
 <p>For the described keys:</p>
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;# Good call (3 positional parameters: image1, image2 and repeat; N is 200, ts is true)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;$ ./app -N=200 1.png 2.jpg 19 -ts</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;# Bad call</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;$ ./app -fps=aaa</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;ERRORS:</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;Parameter &#39;fps&#39;: can not convert: [aaa] to [double]</div></div><!-- fragment --> <dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d2a/contours2_8cpp-example.html#_a8">contours2.cpp</a>, <a class="el" href="../../d0/d7a/convexhull_8cpp-example.html#_a0">convexhull.cpp</a>, <a class="el" href="../../dc/d16/cout_mat_8cpp-example.html#_a0">cout_mat.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#_a17">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#_a16">distrans.cpp</a>, <a class="el" href="../../d3/d63/edge_8cpp-example.html#_a9">edge.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#_a13">ffilldemo.cpp</a>, <a class="el" href="../../d6/d03/filestorage_8cpp-example.html#_a5">filestorage.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#_a1">fitellipse.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#_a37">grabcut.cpp</a>, <a class="el" href="../../d7/d5d/houghcircles_8cpp-example.html#_a0">houghcircles.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#_a1">laplace.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#_a0">lsd_lines.cpp</a>, <a class="el" href="../../d8/dc0/morphology2_8cpp-example.html#_a11">morphology2.cpp</a>, <a class="el" href="../../d2/dc0/pca_8cpp-example.html#_a18">pca.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#_a2">polar_transforms.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#_a15">segment_objects.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#_a13">watershed.cpp</a>.</dd>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;# Good call (3 positional parameters: image1, image2 and repeat; N is 200, ts is true)</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;$ ./app -N=200 1.png 2.jpg 19 -ts</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;# Bad call</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;$ ./app -fps=aaa</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;ERRORS:</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;Parameter &#39;fps&#39;: can not convert: [aaa] to [double]</div></div><!-- fragment --> <dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#_a18">camshiftdemo.cpp</a>, <a class="el" href="../../d0/d2a/contours2_8cpp-example.html#_a8">contours2.cpp</a>, <a class="el" href="../../d0/d7a/convexhull_8cpp-example.html#_a0">convexhull.cpp</a>, <a class="el" href="../../dc/d16/cout_mat_8cpp-example.html#_a0">cout_mat.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#_a17">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#_a16">distrans.cpp</a>, <a class="el" href="../../d3/d63/edge_8cpp-example.html#_a9">edge.cpp</a>, <a class="el" href="../../db/d3a/facedetect_8cpp-example.html#_a4">facedetect.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#_a13">ffilldemo.cpp</a>, <a class="el" href="../../d6/d03/filestorage_8cpp-example.html#_a5">filestorage.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#_a1">fitellipse.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#_a37">grabcut.cpp</a>, <a class="el" href="../../d7/d5d/houghcircles_8cpp-example.html#_a0">houghcircles.cpp</a>, <a class="el" href="../../d0/d7f/image_alignment_8cpp-example.html#_a17">image_alignment.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#_a1">laplace.cpp</a>, <a class="el" href="../../d2/d0a/lkdemo_8cpp-example.html#_a9">lkdemo.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#_a0">lsd_lines.cpp</a>, <a class="el" href="../../d8/dc0/morphology2_8cpp-example.html#_a11">morphology2.cpp</a>, <a class="el" href="../../d2/dc0/pca_8cpp-example.html#_a17">pca.cpp</a>, <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#_a16">peopledetect.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#_a2">polar_transforms.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#_a15">segment_objects.cpp</a>, <a class="el" href="../../da/d72/shape_example_8cpp-example.html#_a5">shape_example.cpp</a>, <a class="el" href="../../d5/dfc/warpPerspective_demo_8cpp-example.html#_a4">warpPerspective_demo.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#_a13">watershed.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ad0bb71c0bc9800e90bfdc44ff406293e"></a>
 <div class="memitem">
@@ -346,7 +346,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Check for parsing errors. </p>
 <p>Returns true if error occurred while accessing the parameters (bad conversion, missing arguments, etc.). Call <a class="el" href="../../d0/d2e/classcv_1_1CommandLineParser.html#a2dfd78bcc9dfae2250fedf5d8c9a3857">printErrors</a> to print error messages list. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../de/db2/laplace_8cpp-example.html#a10">laplace.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a7">facedetect.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a10">laplace.cpp</a>, and <a class="el" href="../../da/d72/shape_example_8cpp-example.html#a8">shape_example.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -400,7 +400,7 @@ template&lt;typename T &gt; </div>
   </dd>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>You can access positional arguments by their <code>@</code>-prefixed name: <div class="fragment"><div class="line">parser.get&lt;String&gt;(<span class="stringliteral">&quot;@image&quot;</span>);</div></div><!-- fragment --> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a19">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#a18">distrans.cpp</a>, <a class="el" href="../../d3/d63/edge_8cpp-example.html#a11">edge.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a16">ffilldemo.cpp</a>, <a class="el" href="../../d6/d03/filestorage_8cpp-example.html#a7">filestorage.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a3">fitellipse.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a39">grabcut.cpp</a>, <a class="el" href="../../d7/d5d/houghcircles_8cpp-example.html#a2">houghcircles.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a3">laplace.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#a3">lsd_lines.cpp</a>, <a class="el" href="../../d8/dc0/morphology2_8cpp-example.html#a13">morphology2.cpp</a>, <a class="el" href="../../d2/dc0/pca_8cpp-example.html#a21">pca.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a3">polar_transforms.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#a17">segment_objects.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a15">watershed.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a20">camshiftdemo.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a19">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#a18">distrans.cpp</a>, <a class="el" href="../../d3/d63/edge_8cpp-example.html#a10">edge.cpp</a>, <a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a6">facedetect.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a16">ffilldemo.cpp</a>, <a class="el" href="../../d6/d03/filestorage_8cpp-example.html#a7">filestorage.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a3">fitellipse.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a38">grabcut.cpp</a>, <a class="el" href="../../d7/d5d/houghcircles_8cpp-example.html#a2">houghcircles.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a2">laplace.cpp</a>, <a class="el" href="../../d2/d0a/lkdemo_8cpp-example.html#a10">lkdemo.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#a3">lsd_lines.cpp</a>, <a class="el" href="../../d8/dc0/morphology2_8cpp-example.html#a13">morphology2.cpp</a>, <a class="el" href="../../d2/dc0/pca_8cpp-example.html#a20">pca.cpp</a>, <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a23">peopledetect.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a3">polar_transforms.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#a17">segment_objects.cpp</a>, <a class="el" href="../../da/d72/shape_example_8cpp-example.html#a7">shape_example.cpp</a>, <a class="el" href="../../d5/dfc/warpPerspective_demo_8cpp-example.html#a5">warpPerspective_demo.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a15">watershed.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -563,7 +563,7 @@ template&lt;typename T &gt; </div>
 
 <p>Returns application path. </p>
 <p>This method returns the path to the executable from the command line (<code>argv[0]</code>).</p>
-<p>For example, if the application has been started with such command: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ ./bin/my-executable</div></div><!-- fragment --><p> this method will return <code>./bin</code>. </p>
+<p>For example, if the application has been started with such a command: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;$ ./bin/my-executable</div></div><!-- fragment --><p> this method will return <code>./bin</code>. </p>
 
 </div>
 </div>
@@ -588,7 +588,7 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d2a/contours2_8cpp-example.html#a9">contours2.cpp</a>, <a class="el" href="../../d0/d7a/convexhull_8cpp-example.html#a1">convexhull.cpp</a>, <a class="el" href="../../dc/d16/cout_mat_8cpp-example.html#a1">cout_mat.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a18">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#a17">distrans.cpp</a>, <a class="el" href="../../d3/d63/edge_8cpp-example.html#a10">edge.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a14">ffilldemo.cpp</a>, <a class="el" href="../../d6/d03/filestorage_8cpp-example.html#a6">filestorage.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a2">fitellipse.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a38">grabcut.cpp</a>, <a class="el" href="../../d7/d5d/houghcircles_8cpp-example.html#a1">houghcircles.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a2">laplace.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#a1">lsd_lines.cpp</a>, <a class="el" href="../../d8/dc0/morphology2_8cpp-example.html#a12">morphology2.cpp</a>, <a class="el" href="../../d2/dc0/pca_8cpp-example.html#a19">pca.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#a16">segment_objects.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a14">watershed.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a19">camshiftdemo.cpp</a>, <a class="el" href="../../d0/d2a/contours2_8cpp-example.html#a9">contours2.cpp</a>, <a class="el" href="../../d0/d7a/convexhull_8cpp-example.html#a1">convexhull.cpp</a>, <a class="el" href="../../dc/d16/cout_mat_8cpp-example.html#a1">cout_mat.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a18">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#a17">distrans.cpp</a>, <a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a5">facedetect.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a14">ffilldemo.cpp</a>, <a class="el" href="../../d6/d03/filestorage_8cpp-example.html#a6">filestorage.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a2">fitellipse.cpp</a>, <a class="el" href="../../d7/d5d/houghcircles_8cpp-example.html#a1">houghcircles.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a9">laplace.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#a1">lsd_lines.cpp</a>, <a class="el" href="../../d8/dc0/morphology2_8cpp-example.html#a12">morphology2.cpp</a>, <a class="el" href="../../d2/dc0/pca_8cpp-example.html#a18">pca.cpp</a>, <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a17">peopledetect.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#a16">segment_objects.cpp</a>, <a class="el" href="../../da/d72/shape_example_8cpp-example.html#a6">shape_example.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a14">watershed.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -623,9 +623,9 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 
-<p>Print list of errors occured. </p>
+<p>Print list of errors occurred. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d2e/classcv_1_1CommandLineParser.html#aa34782c6162f4e5289ed9b2f8da459f1" title="Check for parsing errors. ">check</a> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../de/db2/laplace_8cpp-example.html#a11">laplace.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a8">facedetect.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a11">laplace.cpp</a>, and <a class="el" href="../../da/d72/shape_example_8cpp-example.html#a9">shape_example.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -645,7 +645,7 @@ template&lt;typename T &gt; </div>
 <p>Print help message. </p>
 <p>This method will print standard help message containing the about message and arguments description.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d0/d2e/classcv_1_1CommandLineParser.html#a2e11e779047efded23f75d9c5c5dd82e" title="Set the about message. ">about</a> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a15">ffilldemo.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#a2">lsd_lines.cpp</a>, and <a class="el" href="../../d2/dc0/pca_8cpp-example.html#a20">pca.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a23">camshiftdemo.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a15">ffilldemo.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#a2">lsd_lines.cpp</a>, <a class="el" href="../../d2/dc0/pca_8cpp-example.html#a19">pca.cpp</a>, and <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a18">peopledetect.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -677,7 +677,7 @@ template&lt;typename T &gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:26 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:43 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -731,7 +731,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

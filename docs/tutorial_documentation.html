@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -207,6 +207,7 @@ Generate documentation </h2>
 <li>Run cmake (assuming you put sources to <em>opencv</em> folder): <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cmake ../opencv</div></div><!-- fragment --> Or if you get contrib sources too: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cmake -DOPENCV_EXTRA_MODULES_PATH=../opencv_contrib/modules ../opencv</div></div><!-- fragment --></li>
 <li>Run make: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;make doxygen</div></div><!-- fragment --></li>
 <li>Open <em>doc/doxygen/html/index.html</em> file in your favorite browser</li>
+<li>Test your Python code: <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;make check_pylint</div></div><!-- fragment --></li>
 </ul>
 <h1><a class="anchor" id="tutorial_documentation_quick_start"></a>
 Quick start </h1>
@@ -456,7 +457,7 @@ Toggle buttons inclusion commands</h3>
 
 @end_toggle</pre><p>Result looks like this:</p>
 <h3>Buttons Example</h3>
-<p>Text for C++ button </p><div class="fragment"><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Hello World!&quot;</span>;</div></div><!-- fragment --> <p>Text for Java button </p><div class="fragment"><div class="line">        System.out.println (<span class="stringliteral">&quot;Hello World!&quot;</span>);</div></div><!-- fragment --> <p>Text for Python button </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;print(<span class="stringliteral">&#39;Hello world!&#39;</span>)</div></div><!-- fragment --> <p>As you can see, the buttons are added automatically under the previous heading.</p>
+<p>Text for C++ button </p><div class="fragment"><div class="line">    std::cout &lt;&lt; <span class="stringliteral">&quot;Hello World!&quot;</span>;</div></div><!-- fragment --> <p>Text for Java button </p><div class="fragment"><div class="line">        System.out.println (<span class="stringliteral">&quot;Hello World!&quot;</span>);</div></div><!-- fragment --> <p>Text for Python button </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<a class="code" href="df/d57/namespacecv_1_1dnn.html#aa2ef06a8c0c2880c51d5f3e4e86abe4b">print</a>(<span class="stringliteral">&#39;Hello world!&#39;</span>)</div></div><!-- fragment --> <p>As you can see, the buttons are added automatically under the previous heading.</p>
 <h3><a class="anchor" id="tutorial_documentation_commands_group"></a>
 Grouping commands</h3>
 <p>All code entities should be put into named groups representing OpenCV modules and their internal structure, thus each module should be associated with a group with the same name. Good place to define groups and subgroups is the main header file for this module: <em>"&lt;module&gt;/include/opencv2/&lt;module&gt;.hpp"</em>.</p>
@@ -513,6 +514,7 @@ Document the function </h2>
 <li><em>Optional</em>: describe return value of the function using the <em>returns</em> command.</li>
 <li><em>Optional</em>: add "See also" section with links to similar functions or classes</li>
 <li><em>Optional</em>: add bibliographic reference if any.</li>
+<li>Test your code. (Python: "make check_pylint")</li>
 <li>Generate doxygen documentation and verify results.</li>
 </ol>
 <h2><a class="anchor" id="tutorial_documentation_steps_tutorial"></a>
@@ -569,7 +571,7 @@ References </h1>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:24 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:41 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -623,7 +625,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

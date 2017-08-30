@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -191,7 +191,11 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9aa51f13248282b8778003b9a4cf8ac07e">cv::SOLVEPNP_DLS</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9a2859c9ce1430662096d3cc3b5462847f">cv::SOLVEPNP_UPNP</a> = 4
+&#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9a2859c9ce1430662096d3cc3b5462847f">cv::SOLVEPNP_UPNP</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9a8d48dece2da6492d91fa2de0a04679f9">cv::SOLVEPNP_AP3P</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9a628c2ffc59c556afd75ddf8302df2baf">cv::SOLVEPNP_MAX_COUNT</a>
 <br />
  }</td></tr>
 <tr class="separator:gad992e8239ec2871d59eed666ac8418f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -249,6 +253,8 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#gga46db002545a3b6c1904b7a0a8694b66aa2c39f08cc098e2a79b13dfbad4e59317">cv::CALIB_FIX_TAUX_TAUY</a> = 0x80000, 
 <br />
 &#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#gga46db002545a3b6c1904b7a0a8694b66aa6ee40ef8d871782b8d966eaf9ad29763">cv::CALIB_USE_QR</a> = 0x100000, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#gga46db002545a3b6c1904b7a0a8694b66aa69529599f6c9d237a38dcf9872887b05">cv::CALIB_FIX_TANGENT_DIST</a> = 0x200000, 
 <br />
 &#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#gga46db002545a3b6c1904b7a0a8694b66aa51df9c05343c61ddb18324ded0fab86a">cv::CALIB_FIX_INTRINSIC</a> = 0x00100, 
 <br />
@@ -388,6 +394,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gacbba2ee98258ca81d352a31faa15a021"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0c/group__calib3d.html#gacbba2ee98258ca81d352a31faa15a021">cv::sampsonDistance</a> (InputArray pt1, InputArray pt2, InputArray F)</td></tr>
 <tr class="memdesc:gacbba2ee98258ca81d352a31faa15a021"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the Sampson Distance between two points.  <a href="../../d9/d0c/group__calib3d.html#gacbba2ee98258ca81d352a31faa15a021">More...</a><br /></td></tr>
 <tr class="separator:gacbba2ee98258ca81d352a31faa15a021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5af86788e99948d40b39a03f6acf623"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0c/group__calib3d.html#gae5af86788e99948d40b39a03f6acf623">cv::solveP3P</a> (InputArray objectPoints, InputArray imagePoints, InputArray cameraMatrix, InputArray distCoeffs, OutputArrayOfArrays rvecs, OutputArrayOfArrays tvecs, int flags)</td></tr>
+<tr class="memdesc:gae5af86788e99948d40b39a03f6acf623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an object pose from 3 3D-2D point correspondences.  <a href="../../d9/d0c/group__calib3d.html#gae5af86788e99948d40b39a03f6acf623">More...</a><br /></td></tr>
+<tr class="separator:gae5af86788e99948d40b39a03f6acf623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga549c2075fac14829ff4a58bc931c033d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0c/group__calib3d.html#ga549c2075fac14829ff4a58bc931c033d">cv::solvePnP</a> (InputArray objectPoints, InputArray imagePoints, InputArray cameraMatrix, InputArray distCoeffs, OutputArray rvec, OutputArray tvec, bool useExtrinsicGuess=false, int flags=SOLVEPNP_ITERATIVE)</td></tr>
 <tr class="memdesc:ga549c2075fac14829ff4a58bc931c033d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an object pose from 3D-2D point correspondences.  <a href="../../d9/d0c/group__calib3d.html#ga549c2075fac14829ff4a58bc931c033d">More...</a><br /></td></tr>
 <tr class="separator:ga549c2075fac14829ff4a58bc931c033d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -445,7 +454,7 @@ Pinhole camera model</div></div>
 <div class="image">
 <img src="../../distortion_examples.png" alt="distortion_examples.png"/>
 </div>
-<p>In some cases the image sensor may be tilted in order to focus an oblique plane in front of the camera (Scheimpfug condition). This can be useful for particle image velocimetry (PIV) or triangulation with a laser fan. The tilt causes a perspective distortion of \(x&#39;&#39;\) and \(y&#39;&#39;\). This distortion can be modelled in the following way, see e.g. <a class="el" href="../../d0/de3/citelist.html#CITEREF_Louhichi07">[49]</a>.</p>
+<p>In some cases the image sensor may be tilted in order to focus an oblique plane in front of the camera (Scheimpfug condition). This can be useful for particle image velocimetry (PIV) or triangulation with a laser fan. The tilt causes a perspective distortion of \(x&#39;&#39;\) and \(y&#39;&#39;\). This distortion can be modelled in the following way, see e.g. <a class="el" href="../../d0/de3/citelist.html#CITEREF_Louhichi07">[50]</a>.</p>
 <p class="formulaDsp">
 \[\begin{array}{l} s\vecthree{x&#39;&#39;&#39;}{y&#39;&#39;&#39;}{1} = \vecthreethree{R_{33}(\tau_x, \tau_y)}{0}{-R_{13}(\tau_x, \tau_y)} {0}{R_{33}(\tau_x, \tau_y)}{-R_{23}(\tau_x, \tau_y)} {0}{0}{1} R(\tau_x, \tau_y) \vecthree{x&#39;&#39;}{y&#39;&#39;}{1}\\ u = f_x*x&#39;&#39;&#39; + c_x \\ v = f_y*y&#39;&#39;&#39; + c_y \end{array}\]
 </p>
@@ -516,7 +525,7 @@ Pinhole camera model</div></div>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="ggad992e8239ec2871d59eed666ac8418f9a9f589872a7f7d687dc58294e01ea33a5"></a>SOLVEPNP_ITERATIVE&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggad992e8239ec2871d59eed666ac8418f9ae25763f5155defc67ef0f68b74d6c074"></a>SOLVEPNP_EPNP&#160;</td><td class="fielddoc">
-<p>EPnP: Efficient Perspective-n-Point Camera Pose Estimation <a class="el" href="../../d0/de3/citelist.html#CITEREF_lepetit2009epnp">[44]</a>. </p>
+<p>EPnP: Efficient Perspective-n-Point Camera Pose Estimation <a class="el" href="../../d0/de3/citelist.html#CITEREF_lepetit2009epnp">[45]</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggad992e8239ec2871d59eed666ac8418f9af33a85ca698777ff9bd1de916bf5959a"></a>SOLVEPNP_P3P&#160;</td><td class="fielddoc">
 <p>Complete Solution Classification for the Perspective-Three-Point Problem <a class="el" href="../../d0/de3/citelist.html#CITEREF_gao2003complete">[30]</a>. </p>
@@ -525,7 +534,13 @@ Pinhole camera model</div></div>
 <p>A Direct Least-Squares (DLS) Method for PnP <a class="el" href="../../d0/de3/citelist.html#CITEREF_hesch2011direct">[38]</a>. </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="ggad992e8239ec2871d59eed666ac8418f9a2859c9ce1430662096d3cc3b5462847f"></a>SOLVEPNP_UPNP&#160;</td><td class="fielddoc">
-<p>Exhaustive Linearization for Robust Camera Pose and Focal Length Estimation <a class="el" href="../../d0/de3/citelist.html#CITEREF_penate2013exhaustive">[64]</a>. </p>
+<p>Exhaustive Linearization for Robust Camera Pose and Focal Length Estimation <a class="el" href="../../d0/de3/citelist.html#CITEREF_penate2013exhaustive">[65]</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggad992e8239ec2871d59eed666ac8418f9a8d48dece2da6492d91fa2de0a04679f9"></a>SOLVEPNP_AP3P&#160;</td><td class="fielddoc">
+<p>An Efficient Algebraic Solution to the Perspective-Three-Point Problem <a class="el" href="../../d0/de3/citelist.html#CITEREF_Ke17">[42]</a>. </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="ggad992e8239ec2871d59eed666ac8418f9a628c2ffc59c556afd75ddf8302df2baf"></a>SOLVEPNP_MAX_COUNT&#160;</td><td class="fielddoc">
+<p>Used for count. </p>
 </td></tr>
 </table>
 
@@ -617,6 +632,8 @@ Pinhole camera model</div></div>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga46db002545a3b6c1904b7a0a8694b66aa6ee40ef8d871782b8d966eaf9ad29763"></a>CALIB_USE_QR&#160;</td><td class="fielddoc">
 <p>use QR instead of <a class="el" href="../../df/df7/classcv_1_1SVD.html" title="Singular Value Decomposition. ">SVD</a> decomposition for solving. Faster but potentially less precise </p>
+</td></tr>
+<tr><td class="fieldname"><a class="anchor" id="gga46db002545a3b6c1904b7a0a8694b66aa69529599f6c9d237a38dcf9872887b05"></a>CALIB_FIX_TANGENT_DIST&#160;</td><td class="fielddoc">
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga46db002545a3b6c1904b7a0a8694b66aa51df9c05343c61ddb18324ded0fab86a"></a>CALIB_FIX_INTRINSIC&#160;</td><td class="fielddoc">
 </td></tr>
@@ -750,7 +767,7 @@ Pinhole camera model</div></div>
     <tr><td class="paramname">objectPoints</td><td>In the new interface it is a vector of vectors of calibration pattern points in the calibration pattern coordinate space (e.g. std::vector&lt;std::vector&lt;cv::Vec3f&gt;&gt;). The outer vector contains as many elements as the number of the pattern views. If the same calibration pattern is shown in each view and it is fully visible, all the vectors will be the same. Although, it is possible to use partially occluded patterns, or even different patterns in different views. Then, the vectors will be different. The points are 3D, but since they are in a pattern coordinate system, then, if the rig is planar, it may make sense to put the model to a XY coordinate plane so that Z-coordinate of each input object point is 0. In the old interface all the vectors of object points from different views are concatenated together. </td></tr>
     <tr><td class="paramname">imagePoints</td><td>In the new interface it is a vector of vectors of the projections of calibration pattern points (e.g. std::vector&lt;std::vector&lt;cv::Vec2f&gt;&gt;). imagePoints.size() and objectPoints.size() and imagePoints[i].size() must be equal to objectPoints[i].size() for each i. In the old interface all the vectors of object points from different views are concatenated together. </td></tr>
     <tr><td class="paramname">imageSize</td><td>Size of the image used only to initialize the intrinsic camera matrix. </td></tr>
-    <tr><td class="paramname">cameraMatrix</td><td>Output 3x3 floating-point camera matrix \(A = \vecthreethree{f_x}{0}{c_x}{0}{f_y}{c_y}{0}{0}{1}\) . If CV_CALIB_USE_INTRINSIC_GUESS and/or CV_CALIB_FIX_ASPECT_RATIO are specified, some or all of fx, fy, cx, cy must be initialized before calling the function. </td></tr>
+    <tr><td class="paramname">cameraMatrix</td><td>Output 3x3 floating-point camera matrix \(A = \vecthreethree{f_x}{0}{c_x}{0}{f_y}{c_y}{0}{0}{1}\) . If CV_CALIB_USE_INTRINSIC_GUESS and/or CALIB_FIX_ASPECT_RATIO are specified, some or all of fx, fy, cx, cy must be initialized before calling the function. </td></tr>
     <tr><td class="paramname">distCoeffs</td><td>Output vector of distortion coefficients \((k_1, k_2, p_1, p_2[, k_3[, k_4, k_5, k_6 [, s_1, s_2, s_3, s_4[, \tau_x, \tau_y]]]])\) of 4, 5, 8, 12 or 14 elements. </td></tr>
     <tr><td class="paramname">rvecs</td><td>Output vector of rotation vectors (see Rodrigues ) estimated for each pattern view (e.g. std::vector&lt;cv::Mat&gt;&gt;). That is, each k-th rotation vector together with the corresponding k-th translation vector (see the next output parameter description) brings the calibration pattern from the model coordinate space (in which object points are specified) to the world coordinate space, that is, a real position of the calibration pattern in the k-th pattern view (k=0.. <em>M</em> -1). </td></tr>
     <tr><td class="paramname">tvecs</td><td>Output vector of translation vectors estimated for each pattern view. </td></tr>
@@ -758,16 +775,16 @@ Pinhole camera model</div></div>
     <tr><td class="paramname">stdDeviationsExtrinsics</td><td>Output vector of standard deviations estimated for extrinsic parameters. Order of deviations values: \((R_1, T_1, \dotsc , R_M, T_M)\) where M is number of pattern views, \(R_i, T_i\) are concatenated 1x3 vectors. </td></tr>
     <tr><td class="paramname">perViewErrors</td><td>Output vector of the RMS re-projection error estimated for each pattern view. </td></tr>
     <tr><td class="paramname">flags</td><td>Different flags that may be zero or a combination of the following values:<ul>
-<li><b>CV_CALIB_USE_INTRINSIC_GUESS</b> cameraMatrix contains valid initial values of fx, fy, cx, cy that are optimized further. Otherwise, (cx, cy) is initially set to the image center ( imageSize is used), and focal distances are computed in a least-squares fashion. Note, that if intrinsic parameters are known, there is no need to use this function just to estimate extrinsic parameters. Use solvePnP instead.</li>
-<li><b>CV_CALIB_FIX_PRINCIPAL_POINT</b> The principal point is not changed during the global optimization. It stays at the center or at a different location specified when CV_CALIB_USE_INTRINSIC_GUESS is set too.</li>
-<li><b>CV_CALIB_FIX_ASPECT_RATIO</b> The functions considers only fy as a free parameter. The ratio fx/fy stays the same as in the input cameraMatrix . When CV_CALIB_USE_INTRINSIC_GUESS is not set, the actual input values of fx and fy are ignored, only their ratio is computed and used further.</li>
-<li><b>CV_CALIB_ZERO_TANGENT_DIST</b> Tangential distortion coefficients \((p_1, p_2)\) are set to zeros and stay zero.</li>
-<li><b>CV_CALIB_FIX_K1,...,CV_CALIB_FIX_K6</b> The corresponding radial distortion coefficient is not changed during the optimization. If CV_CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used. Otherwise, it is set to 0.</li>
-<li><b>CV_CALIB_RATIONAL_MODEL</b> Coefficients k4, k5, and k6 are enabled. To provide the backward compatibility, this extra flag should be explicitly specified to make the calibration function use the rational model and return 8 coefficients. If the flag is not set, the function computes and returns only 5 distortion coefficients.</li>
+<li><b>CALIB_USE_INTRINSIC_GUESS</b> cameraMatrix contains valid initial values of fx, fy, cx, cy that are optimized further. Otherwise, (cx, cy) is initially set to the image center ( imageSize is used), and focal distances are computed in a least-squares fashion. Note, that if intrinsic parameters are known, there is no need to use this function just to estimate extrinsic parameters. Use solvePnP instead.</li>
+<li><b>CALIB_FIX_PRINCIPAL_POINT</b> The principal point is not changed during the global optimization. It stays at the center or at a different location specified when CALIB_USE_INTRINSIC_GUESS is set too.</li>
+<li><b>CALIB_FIX_ASPECT_RATIO</b> The functions considers only fy as a free parameter. The ratio fx/fy stays the same as in the input cameraMatrix . When CALIB_USE_INTRINSIC_GUESS is not set, the actual input values of fx and fy are ignored, only their ratio is computed and used further.</li>
+<li><b>CALIB_ZERO_TANGENT_DIST</b> Tangential distortion coefficients \((p_1, p_2)\) are set to zeros and stay zero.</li>
+<li><b>CALIB_FIX_K1,...,CALIB_FIX_K6</b> The corresponding radial distortion coefficient is not changed during the optimization. If CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used. Otherwise, it is set to 0.</li>
+<li><b>CALIB_RATIONAL_MODEL</b> Coefficients k4, k5, and k6 are enabled. To provide the backward compatibility, this extra flag should be explicitly specified to make the calibration function use the rational model and return 8 coefficients. If the flag is not set, the function computes and returns only 5 distortion coefficients.</li>
 <li><b>CALIB_THIN_PRISM_MODEL</b> Coefficients s1, s2, s3 and s4 are enabled. To provide the backward compatibility, this extra flag should be explicitly specified to make the calibration function use the thin prism model and return 12 coefficients. If the flag is not set, the function computes and returns only 5 distortion coefficients.</li>
-<li><b>CALIB_FIX_S1_S2_S3_S4</b> The thin prism distortion coefficients are not changed during the optimization. If CV_CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used. Otherwise, it is set to 0.</li>
+<li><b>CALIB_FIX_S1_S2_S3_S4</b> The thin prism distortion coefficients are not changed during the optimization. If CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used. Otherwise, it is set to 0.</li>
 <li><b>CALIB_TILTED_MODEL</b> Coefficients tauX and tauY are enabled. To provide the backward compatibility, this extra flag should be explicitly specified to make the calibration function use the tilted sensor model and return 14 coefficients. If the flag is not set, the function computes and returns only 5 distortion coefficients.</li>
-<li><b>CALIB_FIX_TAUX_TAUY</b> The coefficients of the tilted sensor model are not changed during the optimization. If CV_CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used. Otherwise, it is set to 0. </li>
+<li><b>CALIB_FIX_TAUX_TAUY</b> The coefficients of the tilted sensor model are not changed during the optimization. If CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used. Otherwise, it is set to 0. </li>
 </ul>
 </td></tr>
     <tr><td class="paramname">criteria</td><td>Termination criteria for the iterative optimization algorithm.</td></tr>
@@ -775,10 +792,10 @@ Pinhole camera model</div></div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the overall RMS re-projection error.</dd></dl>
-<p>The function estimates the intrinsic camera parameters and extrinsic parameters for each of the views. The algorithm is based on <a class="el" href="../../d0/de3/citelist.html#CITEREF_Zhang2000">[95]</a> and <a class="el" href="../../d0/de3/citelist.html#CITEREF_BouguetMCT">[8]</a> . The coordinates of 3D object points and their corresponding 2D projections in each view must be specified. That may be achieved by using an object with a known geometry and easily detectable feature points. Such an object is called a calibration rig or calibration pattern, and OpenCV has built-in support for a chessboard as a calibration rig (see findChessboardCorners ). Currently, initialization of intrinsic parameters (when CV_CALIB_USE_INTRINSIC_GUESS is not set) is only implemented for planar calibration patterns (where Z-coordinates of the object points must be all zeros). 3D calibration rigs can also be used as long as initial cameraMatrix is provided.</p>
+<p>The function estimates the intrinsic camera parameters and extrinsic parameters for each of the views. The algorithm is based on <a class="el" href="../../d0/de3/citelist.html#CITEREF_Zhang2000">[96]</a> and <a class="el" href="../../d0/de3/citelist.html#CITEREF_BouguetMCT">[8]</a> . The coordinates of 3D object points and their corresponding 2D projections in each view must be specified. That may be achieved by using an object with a known geometry and easily detectable feature points. Such an object is called a calibration rig or calibration pattern, and OpenCV has built-in support for a chessboard as a calibration rig (see findChessboardCorners ). Currently, initialization of intrinsic parameters (when CALIB_USE_INTRINSIC_GUESS is not set) is only implemented for planar calibration patterns (where Z-coordinates of the object points must be all zeros). 3D calibration rigs can also be used as long as initial cameraMatrix is provided.</p>
 <p>The algorithm performs the following steps:</p>
 <ul>
-<li>Compute the initial intrinsic parameters (the option only available for planar calibration patterns) or read them from the input parameters. The distortion coefficients are all set to zeros initially unless some of CV_CALIB_FIX_K? are specified.</li>
+<li>Compute the initial intrinsic parameters (the option only available for planar calibration patterns) or read them from the input parameters. The distortion coefficients are all set to zeros initially unless some of CALIB_FIX_K? are specified.</li>
 <li>Estimate the initial camera pose as if the intrinsic parameters have been already known. This is done using solvePnP .</li>
 <li>Run the global Levenberg-Marquardt optimization algorithm to minimize the reprojection error, that is, the total sum of squared distances between the observed feature points imagePoints and the projected (using the current estimates for camera parameters and the poses) object points objectPoints. See projectPoints for details.</li>
 </ul>
@@ -862,7 +879,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">void cv::calibrationMatrixValues </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cameraMatrix</em>, </td>
         </tr>
         <tr>
@@ -948,25 +965,25 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">void cv::composeRT </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>rvec1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>tvec1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>rvec2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>tvec2</em>, </td>
         </tr>
         <tr>
@@ -1073,7 +1090,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">void cv::computeCorrespondEpilines </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points</em>, </td>
         </tr>
         <tr>
@@ -1085,7 +1102,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>F</em>, </td>
         </tr>
         <tr>
@@ -1132,7 +1149,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">void cv::convertPointsFromHomogeneous </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1168,7 +1185,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">void cv::convertPointsHomogeneous </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1205,7 +1222,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">void cv::convertPointsToHomogeneous </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -1241,19 +1258,19 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">void cv::correctMatches </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>F</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points2</em>, </td>
         </tr>
         <tr>
@@ -1298,7 +1315,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">void cv::decomposeEssentialMat </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>E</em>, </td>
         </tr>
         <tr>
@@ -1348,13 +1365,13 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">int cv::decomposeHomographyMat </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>H</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>K</em>, </td>
         </tr>
         <tr>
@@ -1394,7 +1411,7 @@ Pinhole camera model</div></div>
   </table>
   </dd>
 </dl>
-<p>This function extracts relative camera motion between two views observing a planar object from the homography H induced by the plane. The intrinsic camera matrix K must also be provided. The function may return up to four mathematical solution sets. At least two of the solutions may further be invalidated if point correspondences are available by applying positive depth constraint (all points must be in front of the camera). The decomposition method is described in detail in <a class="el" href="../../d0/de3/citelist.html#CITEREF_Malis">[52]</a> . </p>
+<p>This function extracts relative camera motion between two views observing a planar object from the homography H induced by the plane. The intrinsic camera matrix K must also be provided. The function may return up to four mathematical solution sets. At least two of the solutions may further be invalidated if point correspondences are available by applying positive depth constraint (all points must be in front of the camera). The decomposition method is described in detail in <a class="el" href="../../d0/de3/citelist.html#CITEREF_Malis">[53]</a> . </p>
 
 </div>
 </div>
@@ -1405,7 +1422,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">void cv::decomposeProjectionMatrix </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>projMatrix</em>, </td>
         </tr>
         <tr>
@@ -1473,7 +1490,7 @@ Pinhole camera model</div></div>
   </dd>
 </dl>
 <p>The function computes a decomposition of a projection matrix into a calibration and a rotation matrix and the position of a camera.</p>
-<p>It optionally returns three rotation matrices, one for each axis, and three Euler angles that could be used in OpenGL. Note, there is always more than one sequence of rotations about the three principal axes that results in the same orientation of an object, eg. see <a class="el" href="../../d0/de3/citelist.html#CITEREF_Slabaugh">[77]</a> . Returned tree rotation matrices and corresponding three Euler angules are only one of the possible solutions.</p>
+<p>It optionally returns three rotation matrices, one for each axis, and three Euler angles that could be used in OpenGL. Note, there is always more than one sequence of rotations about the three principal axes that results in the same orientation of an object, eg. see <a class="el" href="../../d0/de3/citelist.html#CITEREF_Slabaugh">[78]</a> . Returned tree rotation matrices and corresponding three Euler angules are only one of the possible solutions.</p>
 <p>The function is based on RQDecomp3x3 . </p>
 
 </div>
@@ -1497,7 +1514,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>corners</em>, </td>
         </tr>
         <tr>
@@ -1535,13 +1552,13 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname"><a class="el" href="../../d3/d63/classcv_1_1Mat.html">cv::Mat</a> cv::estimateAffine2D </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>from</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>to</em>, </td>
         </tr>
         <tr>
@@ -1621,13 +1638,13 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">int cv::estimateAffine3D </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
@@ -1685,13 +1702,13 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname"><a class="el" href="../../d3/d63/classcv_1_1Mat.html">cv::Mat</a> cv::estimateAffinePartial2D </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>from</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>to</em>, </td>
         </tr>
         <tr>
@@ -1831,7 +1848,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">bool cv::find4QuadCornerSubpix </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>img</em>, </td>
         </tr>
         <tr>
@@ -1865,7 +1882,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">bool cv::findChessboardCorners </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
@@ -1901,9 +1918,9 @@ Pinhole camera model</div></div>
     <tr><td class="paramname">patternSize</td><td>Number of inner corners per a chessboard row and column ( patternSize = cvSize(points_per_row,points_per_colum) = cvSize(columns,rows) ). </td></tr>
     <tr><td class="paramname">corners</td><td>Output array of detected corners. </td></tr>
     <tr><td class="paramname">flags</td><td>Various operation flags that can be zero or a combination of the following values:<ul>
-<li><b>CV_CALIB_CB_ADAPTIVE_THRESH</b> Use adaptive thresholding to convert the image to black and white, rather than a fixed threshold level (computed from the average image brightness).</li>
-<li><b>CV_CALIB_CB_NORMALIZE_IMAGE</b> Normalize the image gamma with equalizeHist before applying fixed or adaptive thresholding.</li>
-<li><b>CV_CALIB_CB_FILTER_QUADS</b> Use additional criteria (like contour area, perimeter, square-like shape) to filter out false quads extracted at the contour retrieval stage.</li>
+<li><b>CALIB_CB_ADAPTIVE_THRESH</b> Use adaptive thresholding to convert the image to black and white, rather than a fixed threshold level (computed from the average image brightness).</li>
+<li><b>CALIB_CB_NORMALIZE_IMAGE</b> Normalize the image gamma with equalizeHist before applying fixed or adaptive thresholding.</li>
+<li><b>CALIB_CB_FILTER_QUADS</b> Use additional criteria (like contour area, perimeter, square-like shape) to filter out false quads extracted at the contour retrieval stage.</li>
 <li><b>CALIB_CB_FAST_CHECK</b> Run a fast check on the image that looks for chessboard corners, and shortcut the call if none is found. This can drastically speed up the call in the degenerate condition when no chessboard is observed.</li>
 </ul>
 </td></tr>
@@ -1922,7 +1939,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">bool cv::findCirclesGrid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
@@ -1992,7 +2009,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">bool cv::findCirclesGrid </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>image</em>, </td>
         </tr>
         <tr>
@@ -2037,19 +2054,19 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">Mat cv::findEssentialMat </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cameraMatrix</em>, </td>
         </tr>
         <tr>
@@ -2101,7 +2118,7 @@ Pinhole camera model</div></div>
   </table>
   </dd>
 </dl>
-<p>This function estimates essential matrix based on the five-point algorithm solver in <a class="el" href="../../d0/de3/citelist.html#CITEREF_Nister03">[62]</a> . <a class="el" href="../../d0/de3/citelist.html#CITEREF_SteweniusCFS">[78]</a> is also a related. The epipolar geometry is described by the following equation:</p>
+<p>This function estimates essential matrix based on the five-point algorithm solver in <a class="el" href="../../d0/de3/citelist.html#CITEREF_Nister03">[63]</a> . <a class="el" href="../../d0/de3/citelist.html#CITEREF_SteweniusCFS">[79]</a> is also a related. The epipolar geometry is described by the following equation:</p>
 <p class="formulaDsp">
 \[[p_2; 1]^T K^{-T} E K^{-1} [p_1; 1] = 0\]
 </p>
@@ -2116,13 +2133,13 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">Mat cv::findEssentialMat </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points2</em>, </td>
         </tr>
         <tr>
@@ -2199,13 +2216,13 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">Mat cv::findFundamentalMat </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points2</em>, </td>
         </tr>
         <tr>
@@ -2273,13 +2290,13 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">Mat cv::findFundamentalMat </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points2</em>, </td>
         </tr>
         <tr>
@@ -2324,13 +2341,13 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">Mat cv::findHomography </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>srcPoints</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>dstPoints</em>, </td>
         </tr>
         <tr>
@@ -2411,7 +2428,8 @@ Pinhole camera model</div></div>
 <li>A example on calculating a homography for image matching can be found at opencv_source_code/samples/cpp/video_homography.cpp </li>
 </ul>
 </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/dfc/warpPerspective_demo_8cpp-example.html#a25">warpPerspective_demo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="gafd3ef89257e27d5235f4467cbb1b6a63"></a>
@@ -2421,13 +2439,13 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">Mat cv::findHomography </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>srcPoints</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>dstPoints</em>, </td>
         </tr>
         <tr>
@@ -2466,13 +2484,13 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">Mat cv::getOptimalNewCameraMatrix </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cameraMatrix</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>distCoeffs</em>, </td>
         </tr>
         <tr>
@@ -2634,13 +2652,13 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">void cv::matMulDeriv </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>A</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>B</em>, </td>
         </tr>
         <tr>
@@ -2684,31 +2702,31 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">void cv::projectPoints </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>objectPoints</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>rvec</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>tvec</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cameraMatrix</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>distCoeffs</em>, </td>
         </tr>
         <tr>
@@ -2763,25 +2781,25 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">int cv::recoverPose </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>E</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cameraMatrix</em>, </td>
         </tr>
         <tr>
@@ -2819,7 +2837,7 @@ Pinhole camera model</div></div>
     <tr><td class="paramname">cameraMatrix</td><td>Camera matrix \(K = \vecthreethree{f_x}{0}{c_x}{0}{f_y}{c_y}{0}{0}{1}\) . Note that this function assumes that points1 and points2 are feature points from cameras with the same camera matrix. </td></tr>
     <tr><td class="paramname">R</td><td>Recovered relative rotation. </td></tr>
     <tr><td class="paramname">t</td><td>Recoverd relative translation. </td></tr>
-    <tr><td class="paramname">mask</td><td>Input/output mask for inliers in points1 and points2. : If it is not empty, then it marks inliers in points1 and points2 for then given essential matrix E. Only these inliers will be used to recover pose. In the output mask only inliers which pass the cheirality check. This function decomposes an essential matrix using decomposeEssentialMat and then verifies possible pose hypotheses by doing cheirality check. The cheirality check basically means that the triangulated 3D points should have positive depth. Some details can be found in <a class="el" href="../../d0/de3/citelist.html#CITEREF_Nister03">[62]</a> .</td></tr>
+    <tr><td class="paramname">mask</td><td>Input/output mask for inliers in points1 and points2. : If it is not empty, then it marks inliers in points1 and points2 for then given essential matrix E. Only these inliers will be used to recover pose. In the output mask only inliers which pass the cheirality check. This function decomposes an essential matrix using decomposeEssentialMat and then verifies possible pose hypotheses by doing cheirality check. The cheirality check basically means that the triangulated 3D points should have positive depth. Some details can be found in <a class="el" href="../../d0/de3/citelist.html#CITEREF_Nister03">[63]</a> .</td></tr>
   </table>
   </dd>
 </dl>
@@ -2833,19 +2851,19 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">int cv::recoverPose </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>E</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points2</em>, </td>
         </tr>
         <tr>
@@ -2912,25 +2930,25 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">int cv::recoverPose </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>E</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cameraMatrix</em>, </td>
         </tr>
         <tr>
@@ -2994,37 +3012,37 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">float cv::rectify3Collinear </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cameraMatrix1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>distCoeffs1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cameraMatrix2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>distCoeffs2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cameraMatrix3</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>distCoeffs3</em>, </td>
         </tr>
         <tr>
@@ -3048,25 +3066,25 @@ Pinhole camera model</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>R12</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>T12</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>R13</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>T13</em>, </td>
         </tr>
         <tr>
@@ -3160,7 +3178,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">void cv::reprojectImageTo3D </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>disparity</em>, </td>
         </tr>
         <tr>
@@ -3172,7 +3190,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>Q</em>, </td>
         </tr>
         <tr>
@@ -3221,7 +3239,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">void cv::Rodrigues </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -3271,7 +3289,7 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">Vec3d cv::RQDecomp3x3 </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -3325,7 +3343,7 @@ Pinhole camera model</div></div>
   </dd>
 </dl>
 <p>The function computes a RQ decomposition using the given rotations. This function is used in decomposeProjectionMatrix to decompose the left 3x3 submatrix of a projection matrix into a camera and a rotation matrix.</p>
-<p>It optionally returns three rotation matrices, one for each axis, and the three Euler angles in degrees (as the return value) that could be used in OpenGL. Note, there is always more than one sequence of rotations about the three principal axes that results in the same orientation of an object, eg. see <a class="el" href="../../d0/de3/citelist.html#CITEREF_Slabaugh">[77]</a> . Returned tree rotation matrices and corresponding three Euler angules are only one of the possible solutions. </p>
+<p>It optionally returns three rotation matrices, one for each axis, and the three Euler angles in degrees (as the return value) that could be used in OpenGL. Note, there is always more than one sequence of rotations about the three principal axes that results in the same orientation of an object, eg. see <a class="el" href="../../d0/de3/citelist.html#CITEREF_Slabaugh">[78]</a> . Returned tree rotation matrices and corresponding three Euler angules are only one of the possible solutions. </p>
 
 </div>
 </div>
@@ -3336,19 +3354,19 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">double cv::sampsonDistance </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>pt1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>pt2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>F</em>&#160;</td>
         </tr>
         <tr>
@@ -3374,6 +3392,81 @@ Pinhole camera model</div></div>
 
 </div>
 </div>
+<a class="anchor" id="gae5af86788e99948d40b39a03f6acf623"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int cv::solveP3P </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
+          <td class="paramname"><em>objectPoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
+          <td class="paramname"><em>imagePoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
+          <td class="paramname"><em>cameraMatrix</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
+          <td class="paramname"><em>distCoeffs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga889a09549b98223016170d9b613715de">OutputArrayOfArrays</a>&#160;</td>
+          <td class="paramname"><em>rvecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga889a09549b98223016170d9b613715de">OutputArrayOfArrays</a>&#160;</td>
+          <td class="paramname"><em>tvecs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>flags</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Finds an object pose from 3 3D-2D point correspondences. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">objectPoints</td><td>Array of object points in the object coordinate space, 3x3 1-channel or 1x3/3x1 3-channel. vector&lt;Point3f&gt; can be also passed here. </td></tr>
+    <tr><td class="paramname">imagePoints</td><td>Array of corresponding image points, 3x2 1-channel or 1x3/3x1 2-channel. vector&lt;Point2f&gt; can be also passed here. </td></tr>
+    <tr><td class="paramname">cameraMatrix</td><td>Input camera matrix \(A = \vecthreethree{fx}{0}{cx}{0}{fy}{cy}{0}{0}{1}\) . </td></tr>
+    <tr><td class="paramname">distCoeffs</td><td>Input vector of distortion coefficients \((k_1, k_2, p_1, p_2[, k_3[, k_4, k_5, k_6 [, s_1, s_2, s_3, s_4[, \tau_x, \tau_y]]]])\) of 4, 5, 8, 12 or 14 elements. If the vector is NULL/empty, the zero distortion coefficients are assumed. </td></tr>
+    <tr><td class="paramname">rvecs</td><td>Output rotation vectors (see Rodrigues ) that, together with tvecs , brings points from the model coordinate system to the camera coordinate system. A P3P problem has up to 4 solutions. </td></tr>
+    <tr><td class="paramname">tvecs</td><td>Output translation vectors. </td></tr>
+    <tr><td class="paramname">flags</td><td>Method for solving a P3P problem:<ul>
+<li><b>SOLVEPNP_P3P</b> Method is based on the paper of X.S. Gao, X.-R. Hou, J. Tang, H.-F. Chang "Complete Solution Classification for the Perspective-Three-Point Problem".</li>
+<li><b>SOLVEPNP_AP3P</b> Method is based on the paper of Tong Ke and Stergios I. Roumeliotis. "An Efficient Algebraic Solution to the Perspective-Three-Point Problem".</li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>The function estimates the object pose given 3 object points, their corresponding image projections, as well as the camera matrix and the distortion coefficients. </p>
+
+</div>
+</div>
 <a class="anchor" id="ga549c2075fac14829ff4a58bc931c033d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -3381,25 +3474,25 @@ Pinhole camera model</div></div>
         <tr>
           <td class="memname">bool cv::solvePnP </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>objectPoints</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>imagePoints</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cameraMatrix</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>distCoeffs</em>, </td>
         </tr>
         <tr>
@@ -3441,16 +3534,18 @@ Pinhole camera model</div></div>
     <tr><td class="paramname">imagePoints</td><td>Array of corresponding image points, Nx2 1-channel or 1xN/Nx1 2-channel, where N is the number of points. vector&lt;Point2f&gt; can be also passed here. </td></tr>
     <tr><td class="paramname">cameraMatrix</td><td>Input camera matrix \(A = \vecthreethree{fx}{0}{cx}{0}{fy}{cy}{0}{0}{1}\) . </td></tr>
     <tr><td class="paramname">distCoeffs</td><td>Input vector of distortion coefficients \((k_1, k_2, p_1, p_2[, k_3[, k_4, k_5, k_6 [, s_1, s_2, s_3, s_4[, \tau_x, \tau_y]]]])\) of 4, 5, 8, 12 or 14 elements. If the vector is NULL/empty, the zero distortion coefficients are assumed. </td></tr>
-    <tr><td class="paramname">rvec</td><td>Output rotation vector (see Rodrigues ) that, together with tvec , brings points from the model coordinate system to the camera coordinate system. </td></tr>
+    <tr><td class="paramname">rvec</td><td>Output rotation vector (see <a class="el" href="../../d9/d0c/group__calib3d.html#ga61585db663d9da06b68e70cfbf6a1eac">Rodrigues</a> ) that, together with tvec , brings points from the model coordinate system to the camera coordinate system. </td></tr>
     <tr><td class="paramname">tvec</td><td>Output translation vector. </td></tr>
-    <tr><td class="paramname">useExtrinsicGuess</td><td>Parameter used for SOLVEPNP_ITERATIVE. If true (1), the function uses the provided rvec and tvec values as initial approximations of the rotation and translation vectors, respectively, and further optimizes them. </td></tr>
+    <tr><td class="paramname">useExtrinsicGuess</td><td>Parameter used for <a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9a9f589872a7f7d687dc58294e01ea33a5">SOLVEPNP_ITERATIVE</a>. If true (1), the function uses the provided rvec and tvec values as initial approximations of the rotation and translation vectors, respectively, and further optimizes them. </td></tr>
     <tr><td class="paramname">flags</td><td>Method for solving a PnP problem:<ul>
 <li><b>SOLVEPNP_ITERATIVE</b> Iterative method is based on Levenberg-Marquardt optimization. In this case the function finds such a pose that minimizes reprojection error, that is the sum of squared distances between the observed projections imagePoints and the projected (using projectPoints ) objectPoints .</li>
-<li><b>SOLVEPNP_P3P</b> Method is based on the paper of X.S. Gao, X.-R. Hou, J. Tang, H.-F. Chang "Complete Solution Classification for the Perspective-Three-Point Problem". In this case the function requires exactly four object and image points.</li>
-<li><b>SOLVEPNP_EPNP</b> Method has been introduced by F.Moreno-Noguer, V.Lepetit and P.Fua in the paper "EPnP: Efficient Perspective-n-Point Camera Pose Estimation".</li>
-<li><b>SOLVEPNP_DLS</b> Method is based on the paper of Joel A. Hesch and Stergios I. Roumeliotis. "A Direct Least-Squares (DLS) Method for PnP".</li>
+<li><b>SOLVEPNP_P3P</b> Method is based on the paper of X.S. Gao, X.-R. Hou, J. Tang, H.-F. Chang "Complete Solution Classification for the Perspective-Three-Point Problem" (<a class="el" href="../../d0/de3/citelist.html#CITEREF_gao2003complete">[30]</a>). In this case the function requires exactly four object and image points.</li>
+<li><b>SOLVEPNP_AP3P</b> Method is based on the paper of T. Ke, S. Roumeliotis "An Efficient Algebraic Solution to the Perspective-Three-Point Problem" (<a class="el" href="../../d0/de3/citelist.html#CITEREF_Ke17">[42]</a>). In this case the function requires exactly four object and image points.</li>
+<li><b>SOLVEPNP_EPNP</b> Method has been introduced by F.Moreno-Noguer, V.Lepetit and P.Fua in the paper "EPnP: Efficient Perspective-n-Point Camera Pose Estimation" (<a class="el" href="../../d0/de3/citelist.html#CITEREF_lepetit2009epnp">[45]</a>).</li>
+<li><b>SOLVEPNP_DLS</b> Method is based on the paper of Joel A. Hesch and Stergios I. Roumeliotis. "A Direct Least-Squares (DLS) Method for PnP" (<a class="el" href="../../d0/de3/citelist.html#CITEREF_hesch2011direct">[38]</a>).</li>
 <li><b>SOLVEPNP_UPNP</b> Method is based on the paper of A.Penate-Sanchez, J.Andrade-Cetto, F.Moreno-Noguer. "Exhaustive Linearization for Robust Camera Pose and Focal Length
-Estimation". In this case the function also estimates the parameters \(f_x\) and \(f_y\) assuming that both have the same value. Then the cameraMatrix is updated with the estimated focal length.</li>
+Estimation" (<a class="el" href="../../d0/de3/citelist.html#CITEREF_penate2013exhaustive">[65]</a>). In this case the function also estimates the parameters \(f_x\) and \(f_y\) assuming that both have the same value. Then the cameraMatrix is updated with the estimated focal length.</li>
+<li><b>SOLVEPNP_AP3P</b> Method is based on the paper of Tong Ke and Stergios I. Roumeliotis. "An Efficient Algebraic Solution to the Perspective-Three-Point Problem". In this case the function requires exactly four object and image points.</li>
 </ul>
 </td></tr>
   </table>
@@ -3465,7 +3560,8 @@ Estimation". In this case the function also estimates the parameters \(f_x\) and
 <li>Thus, given some data D = np.array(...) where D.shape = (N,M), in order to use a subset of it as, e.g., imagePoints, one must effectively copy it into a new array: imagePoints = np.ascontiguousarray(D[:,:2]).reshape((N,1,2))</li>
 </ul>
 </li>
-<li>The methods <b>SOLVEPNP_DLS</b> and <b>SOLVEPNP_UPNP</b> cannot be used as the current implementations are unstable and sometimes give completly wrong results. If you pass one of these two flags, SOLVEPNP_EPNP** method will be used instead. </li>
+<li>The methods <b>SOLVEPNP_DLS</b> and <b>SOLVEPNP_UPNP</b> cannot be used as the current implementations are unstable and sometimes give completly wrong results. If you pass one of these two flags, <b>SOLVEPNP_EPNP</b> method will be used instead.</li>
+<li>The minimum number of points is 4. In the case of <b>SOLVEPNP_P3P</b> and <b>SOLVEPNP_AP3P</b> methods, it is required to use exactly 4 points (the first 3 points are used to estimate all the solutions of the P3P problem, the last one is used to retain the best solution that minimizes the reprojection error). </li>
 </ul>
 </dd></dl>
 
@@ -3478,25 +3574,25 @@ Estimation". In this case the function also estimates the parameters \(f_x\) and
         <tr>
           <td class="memname">bool cv::solvePnPRansac </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>objectPoints</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>imagePoints</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cameraMatrix</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>distCoeffs</em>, </td>
         </tr>
         <tr>
@@ -3575,7 +3671,13 @@ Estimation". In this case the function also estimates the parameters \(f_x\) and
 </dl>
 <p>The function estimates an object pose given a set of object points, their corresponding image projections, as well as the camera matrix and the distortion coefficients. This function finds such a pose that minimizes reprojection error, that is, the sum of squared distances between the observed projections imagePoints and the projected (using projectPoints ) objectPoints. The use of RANSAC makes the function resistant to outliers.</p>
 <dl class="section note"><dt>Note</dt><dd><ul>
-<li>An example of how to use solvePNPRansac for object detection can be found at opencv_source_code/samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/ </li>
+<li>An example of how to use solvePNPRansac for object detection can be found at opencv_source_code/samples/cpp/tutorial_code/calib3d/real_time_pose_estimation/</li>
+<li>The default method used to estimate the camera pose for the Minimal Sample Sets step is <a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9ae25763f5155defc67ef0f68b74d6c074" title="EPnP: Efficient Perspective-n-Point Camera Pose Estimation . ">SOLVEPNP_EPNP</a>. Exceptions are:<ul>
+<li>if you choose <a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9af33a85ca698777ff9bd1de916bf5959a" title="Complete Solution Classification for the Perspective-Three-Point Problem . ">SOLVEPNP_P3P</a> or <a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9a8d48dece2da6492d91fa2de0a04679f9" title="An Efficient Algebraic Solution to the Perspective-Three-Point Problem . ">SOLVEPNP_AP3P</a>, these methods will be used.</li>
+<li>if the number of input points is equal to 4, <a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9af33a85ca698777ff9bd1de916bf5959a" title="Complete Solution Classification for the Perspective-Three-Point Problem . ">SOLVEPNP_P3P</a> is used.</li>
+</ul>
+</li>
+<li>The method used to estimate the camera pose using all the inliers is defined by the flags parameters unless it is equal to <a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9af33a85ca698777ff9bd1de916bf5959a" title="Complete Solution Classification for the Perspective-Three-Point Problem . ">SOLVEPNP_P3P</a> or <a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9a8d48dece2da6492d91fa2de0a04679f9" title="An Efficient Algebraic Solution to the Perspective-Three-Point Problem . ">SOLVEPNP_AP3P</a>. In this case, the method <a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9ae25763f5155defc67ef0f68b74d6c074" title="EPnP: Efficient Perspective-n-Point Camera Pose Estimation . ">SOLVEPNP_EPNP</a> will be used instead. </li>
 </ul>
 </dd></dl>
 
@@ -3683,7 +3785,7 @@ Estimation". In this case the function also estimates the parameters \(f_x\) and
     <tr><td class="paramname">objectPoints</td><td>Vector of vectors of the calibration pattern points. </td></tr>
     <tr><td class="paramname">imagePoints1</td><td>Vector of vectors of the projections of the calibration pattern points, observed by the first camera. </td></tr>
     <tr><td class="paramname">imagePoints2</td><td>Vector of vectors of the projections of the calibration pattern points, observed by the second camera. </td></tr>
-    <tr><td class="paramname">cameraMatrix1</td><td>Input/output first camera matrix: \(\vecthreethree{f_x^{(j)}}{0}{c_x^{(j)}}{0}{f_y^{(j)}}{c_y^{(j)}}{0}{0}{1}\) , \(j = 0,\, 1\) . If any of CV_CALIB_USE_INTRINSIC_GUESS , CV_CALIB_FIX_ASPECT_RATIO , CV_CALIB_FIX_INTRINSIC , or CV_CALIB_FIX_FOCAL_LENGTH are specified, some or all of the matrix components must be initialized. See the flags description for details. </td></tr>
+    <tr><td class="paramname">cameraMatrix1</td><td>Input/output first camera matrix: \(\vecthreethree{f_x^{(j)}}{0}{c_x^{(j)}}{0}{f_y^{(j)}}{c_y^{(j)}}{0}{0}{1}\) , \(j = 0,\, 1\) . If any of CALIB_USE_INTRINSIC_GUESS , CALIB_FIX_ASPECT_RATIO , CALIB_FIX_INTRINSIC , or CALIB_FIX_FOCAL_LENGTH are specified, some or all of the matrix components must be initialized. See the flags description for details. </td></tr>
     <tr><td class="paramname">distCoeffs1</td><td>Input/output vector of distortion coefficients \((k_1, k_2, p_1, p_2[, k_3[, k_4, k_5, k_6 [, s_1, s_2, s_3, s_4[, \tau_x, \tau_y]]]])\) of 4, 5, 8, 12 or 14 elements. The output vector length depends on the flags. </td></tr>
     <tr><td class="paramname">cameraMatrix2</td><td>Input/output second camera matrix. The parameter is similar to cameraMatrix1 </td></tr>
     <tr><td class="paramname">distCoeffs2</td><td>Input/output lens distortion coefficients for the second camera. The parameter is similar to distCoeffs1 . </td></tr>
@@ -3693,21 +3795,21 @@ Estimation". In this case the function also estimates the parameters \(f_x\) and
     <tr><td class="paramname">E</td><td>Output essential matrix. </td></tr>
     <tr><td class="paramname">F</td><td>Output fundamental matrix. </td></tr>
     <tr><td class="paramname">flags</td><td>Different flags that may be zero or a combination of the following values:<ul>
-<li><b>CV_CALIB_FIX_INTRINSIC</b> Fix cameraMatrix? and distCoeffs? so that only R, T, E , and F matrices are estimated.</li>
-<li><b>CV_CALIB_USE_INTRINSIC_GUESS</b> Optimize some or all of the intrinsic parameters according to the specified flags. Initial values are provided by the user.</li>
-<li><b>CV_CALIB_FIX_PRINCIPAL_POINT</b> Fix the principal points during the optimization.</li>
-<li><b>CV_CALIB_FIX_FOCAL_LENGTH</b> Fix \(f^{(j)}_x\) and \(f^{(j)}_y\) .</li>
-<li><b>CV_CALIB_FIX_ASPECT_RATIO</b> Optimize \(f^{(j)}_y\) . Fix the ratio \(f^{(j)}_x/f^{(j)}_y\)</li>
+<li><b>CALIB_FIX_INTRINSIC</b> Fix cameraMatrix? and distCoeffs? so that only R, T, E , and F matrices are estimated.</li>
+<li><b>CALIB_USE_INTRINSIC_GUESS</b> Optimize some or all of the intrinsic parameters according to the specified flags. Initial values are provided by the user.</li>
+<li><b>CALIB_FIX_PRINCIPAL_POINT</b> Fix the principal points during the optimization.</li>
+<li><b>CALIB_FIX_FOCAL_LENGTH</b> Fix \(f^{(j)}_x\) and \(f^{(j)}_y\) .</li>
+<li><b>CALIB_FIX_ASPECT_RATIO</b> Optimize \(f^{(j)}_y\) . Fix the ratio \(f^{(j)}_x/f^{(j)}_y\)</li>
 </ul>
 <ul>
-<li><b>CV_CALIB_SAME_FOCAL_LENGTH</b> Enforce \(f^{(0)}_x=f^{(1)}_x\) and \(f^{(0)}_y=f^{(1)}_y\) .</li>
-<li><b>CV_CALIB_ZERO_TANGENT_DIST</b> Set tangential distortion coefficients for each camera to zeros and fix there.</li>
-<li><b>CV_CALIB_FIX_K1,...,CV_CALIB_FIX_K6</b> Do not change the corresponding radial distortion coefficient during the optimization. If CV_CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used. Otherwise, it is set to 0.</li>
-<li><b>CV_CALIB_RATIONAL_MODEL</b> Enable coefficients k4, k5, and k6. To provide the backward compatibility, this extra flag should be explicitly specified to make the calibration function use the rational model and return 8 coefficients. If the flag is not set, the function computes and returns only 5 distortion coefficients.</li>
+<li><b>CALIB_SAME_FOCAL_LENGTH</b> Enforce \(f^{(0)}_x=f^{(1)}_x\) and \(f^{(0)}_y=f^{(1)}_y\) .</li>
+<li><b>CALIB_ZERO_TANGENT_DIST</b> Set tangential distortion coefficients for each camera to zeros and fix there.</li>
+<li><b>CALIB_FIX_K1,...,CALIB_FIX_K6</b> Do not change the corresponding radial distortion coefficient during the optimization. If CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used. Otherwise, it is set to 0.</li>
+<li><b>CALIB_RATIONAL_MODEL</b> Enable coefficients k4, k5, and k6. To provide the backward compatibility, this extra flag should be explicitly specified to make the calibration function use the rational model and return 8 coefficients. If the flag is not set, the function computes and returns only 5 distortion coefficients.</li>
 <li><b>CALIB_THIN_PRISM_MODEL</b> Coefficients s1, s2, s3 and s4 are enabled. To provide the backward compatibility, this extra flag should be explicitly specified to make the calibration function use the thin prism model and return 12 coefficients. If the flag is not set, the function computes and returns only 5 distortion coefficients.</li>
-<li><b>CALIB_FIX_S1_S2_S3_S4</b> The thin prism distortion coefficients are not changed during the optimization. If CV_CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used. Otherwise, it is set to 0.</li>
+<li><b>CALIB_FIX_S1_S2_S3_S4</b> The thin prism distortion coefficients are not changed during the optimization. If CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used. Otherwise, it is set to 0.</li>
 <li><b>CALIB_TILTED_MODEL</b> Coefficients tauX and tauY are enabled. To provide the backward compatibility, this extra flag should be explicitly specified to make the calibration function use the tilted sensor model and return 14 coefficients. If the flag is not set, the function computes and returns only 5 distortion coefficients.</li>
-<li><b>CALIB_FIX_TAUX_TAUY</b> The coefficients of the tilted sensor model are not changed during the optimization. If CV_CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used. Otherwise, it is set to 0. </li>
+<li><b>CALIB_FIX_TAUX_TAUY</b> The coefficients of the tilted sensor model are not changed during the optimization. If CALIB_USE_INTRINSIC_GUESS is set, the coefficient from the supplied distCoeffs matrix is used. Otherwise, it is set to 0. </li>
 </ul>
 </td></tr>
     <tr><td class="paramname">criteria</td><td>Termination criteria for the iterative optimization algorithm.</td></tr>
@@ -3729,7 +3831,7 @@ Estimation". In this case the function also estimates the parameters \(f_x\) and
 <p class="formulaDsp">
 \[F = cameraMatrix2^{-T} E cameraMatrix1^{-1}\]
 </p>
-<p>Besides the stereo-related information, the function can also perform a full calibration of each of two cameras. However, due to the high dimensionality of the parameter space and noise in the input data, the function can diverge from the correct solution. If the intrinsic parameters can be estimated with high accuracy for each of the cameras individually (for example, using calibrateCamera ), you are recommended to do so and then pass CV_CALIB_FIX_INTRINSIC flag to the function along with the computed intrinsic parameters. Otherwise, if all the parameters are estimated at once, it makes sense to restrict some parameters, for example, pass CV_CALIB_SAME_FOCAL_LENGTH and CV_CALIB_ZERO_TANGENT_DIST flags, which is usually a reasonable assumption.</p>
+<p>Besides the stereo-related information, the function can also perform a full calibration of each of two cameras. However, due to the high dimensionality of the parameter space and noise in the input data, the function can diverge from the correct solution. If the intrinsic parameters can be estimated with high accuracy for each of the cameras individually (for example, using calibrateCamera ), you are recommended to do so and then pass CALIB_FIX_INTRINSIC flag to the function along with the computed intrinsic parameters. Otherwise, if all the parameters are estimated at once, it makes sense to restrict some parameters, for example, pass CALIB_SAME_FOCAL_LENGTH and CALIB_ZERO_TANGENT_DIST flags, which is usually a reasonable assumption.</p>
 <p>Similarly to calibrateCamera , the function minimizes the total re-projection error for all the points in all the available views from both cameras. The function returns the final value of the re-projection error. </p>
 
 </div>
@@ -3741,25 +3843,25 @@ Estimation". In this case the function also estimates the parameters \(f_x\) and
         <tr>
           <td class="memname">void cv::stereoRectify </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cameraMatrix1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>distCoeffs1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cameraMatrix2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>distCoeffs2</em>, </td>
         </tr>
         <tr>
@@ -3771,13 +3873,13 @@ Estimation". In this case the function also estimates the parameters \(f_x\) and
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>T</em>, </td>
         </tr>
         <tr>
@@ -3863,7 +3965,7 @@ Estimation". In this case the function also estimates the parameters \(f_x\) and
     <tr><td class="paramname">P1</td><td>Output 3x4 projection matrix in the new (rectified) coordinate systems for the first camera. </td></tr>
     <tr><td class="paramname">P2</td><td>Output 3x4 projection matrix in the new (rectified) coordinate systems for the second camera. </td></tr>
     <tr><td class="paramname">Q</td><td>Output \(4 \times 4\) disparity-to-depth mapping matrix (see reprojectImageTo3D ). </td></tr>
-    <tr><td class="paramname">flags</td><td>Operation flags that may be zero or CV_CALIB_ZERO_DISPARITY . If the flag is set, the function makes the principal points of each camera have the same pixel coordinates in the rectified views. And if the flag is not set, the function may still shift the images in the horizontal or vertical direction (depending on the orientation of epipolar lines) to maximize the useful image area. </td></tr>
+    <tr><td class="paramname">flags</td><td>Operation flags that may be zero or CALIB_ZERO_DISPARITY . If the flag is set, the function makes the principal points of each camera have the same pixel coordinates in the rectified views. And if the flag is not set, the function may still shift the images in the horizontal or vertical direction (depending on the orientation of epipolar lines) to maximize the useful image area. </td></tr>
     <tr><td class="paramname">alpha</td><td>Free scaling parameter. If it is -1 or absent, the function performs the default scaling. Otherwise, the parameter should be between 0 and 1. alpha=0 means that the rectified images are zoomed and shifted so that only valid pixels are visible (no black areas after rectification). alpha=1 means that the rectified image is decimated and shifted so that all the pixels from the original images from the cameras are retained in the rectified images (no source image pixels are lost). Obviously, any intermediate value yields an intermediate result between those two extreme cases. </td></tr>
     <tr><td class="paramname">newImageSize</td><td>New image resolution after rectification. The same size should be passed to initUndistortRectifyMap (see the stereo_calib.cpp sample in OpenCV samples directory). When (0,0) is passed (default), it is set to the original imageSize . Setting it to larger value can help you preserve details in the original image, especially when there is a big radial distortion. </td></tr>
     <tr><td class="paramname">validPixROI1</td><td>Optional output rectangles inside the rectified images where all the pixels are valid. If alpha=0 , the ROIs cover the whole images. Otherwise, they are likely to be smaller (see the picture below). </td></tr>
@@ -3880,7 +3982,7 @@ Estimation". In this case the function also estimates the parameters \(f_x\) and
 <p class="formulaDsp">
 \[\texttt{P2} = \begin{bmatrix} f &amp; 0 &amp; cx_2 &amp; T_x*f \\ 0 &amp; f &amp; cy &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; 0 \end{bmatrix} ,\]
 </p>
-<p class="startli">where \(T_x\) is a horizontal shift between the cameras and \(cx_1=cx_2\) if CV_CALIB_ZERO_DISPARITY is set.</p>
+<p class="startli">where \(T_x\) is a horizontal shift between the cameras and \(cx_1=cx_2\) if CALIB_ZERO_DISPARITY is set.</p>
 </li>
 <li><p class="startli"><b>Vertical stereo</b>: the first and the second camera views are shifted relative to each other mainly in vertical direction (and probably a bit in the horizontal direction too). The epipolar lines in the rectified images are vertical and have the same x-coordinate. P1 and P2 look like:</p>
 <p class="formulaDsp">
@@ -3908,19 +4010,19 @@ image</div></div>
         <tr>
           <td class="memname">bool cv::stereoRectifyUncalibrated </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>points2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>F</em>, </td>
         </tr>
         <tr>
@@ -3980,25 +4082,25 @@ image</div></div>
         <tr>
           <td class="memname">void cv::triangulatePoints </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>projMatr1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>projMatr2</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>projPoints1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>projPoints2</em>, </td>
         </tr>
         <tr>
@@ -4045,7 +4147,7 @@ image</div></div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cost</em>, </td>
         </tr>
         <tr>
@@ -4082,7 +4184,7 @@ image</div></div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -4136,7 +4238,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -163,11 +163,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="fragment"><div class="line">let src = <a class="code" href="d2/d75/namespacecv.html">cv</a>.imread(<span class="stringliteral">&quot;canvasInput&quot;</span>);</div><div class="line">console.<a class="code" href="d8/d46/classstd_1_1log.html">log</a>(<span class="stringliteral">&#39;image width: &#39;</span> + src.cols + <span class="charliteral">&#39;\n&#39;</span> +</div><div class="line">            <span class="stringliteral">&#39;image height: &#39;</span> + src.rows + <span class="charliteral">&#39;\n&#39;</span> +</div><div class="line">            <span class="stringliteral">&#39;image size: &#39;</span> + src.size().width + <span class="charliteral">&#39;*&#39;</span> src.size().height + <span class="charliteral">&#39;\n&#39;</span> +</div><div class="line">            <span class="stringliteral">&#39;image depth: &#39;</span> + src.depth() + <span class="charliteral">&#39;\n&#39;</span> +</div><div class="line">            <span class="stringliteral">&#39;image channels &#39;</span> + src.channels() + <span class="charliteral">&#39;\n&#39;</span> +</div><div class="line">            <span class="stringliteral">&#39;image type: &#39;</span> + src.type() + <span class="charliteral">&#39;\n&#39;</span>);</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>src.type() is very important while debugging because a large number of errors in OpenCV.js code are caused by invalid data type.</dd></dl>
 <h2>How to construct Mat </h2>
 <p>There are 4 basic constructors:</p>
-<div class="fragment"><div class="line"><span class="comment">// 1. default constructor</span></div><div class="line">let mat = <span class="keyword">new</span> <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>();           </div><div class="line"><span class="comment">// 2. two-dimensional arrays by size and type                       </span></div><div class="line">let mat = <span class="keyword">new</span> <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>(size, type);           </div><div class="line"><span class="comment">// 3. two-dimensional arrays by rows, cols, and type             </span></div><div class="line">let mat = <span class="keyword">new</span> <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>(rows, cols, type);              </div><div class="line"><span class="comment">// 4. two-dimensional arrays by rows, cols, and type with initialization value    </span></div><div class="line">let mat = <span class="keyword">new</span> <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>(rows, cols, type, <span class="keyword">new</span> <a class="code" href="d2/d75/namespacecv.html">cv</a>.Scalar()); </div></div><!-- fragment --><p>There are 3 static functions:</p>
-<div class="fragment"><div class="line"><span class="comment">// 1. Create a Mat which is full of zeros </span></div><div class="line">let mat = <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html#a0b57b6a326c8876d944d188a46e0f556">zeros</a>(rows, cols, type);  </div><div class="line"><span class="comment">// 2. Create a Mat which is full of ones        </span></div><div class="line">let mat = <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html#a69ae0402d116fc9c71908d8508dc2f09">ones</a>(rows, cols, type);   </div><div class="line"><span class="comment">// 3. Create a Mat which is an identity matrix   </span></div><div class="line">let mat = <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html#a2cf9b9acde7a9852542bbc20ef851ed2">eye</a>(rows, cols, type);    </div></div><!-- fragment --><p>There are 2 factory functions: </p><div class="fragment"><div class="line"><span class="comment">// 1. Use JS array to construct a mat. </span></div><div class="line"><span class="comment">// For example: let mat = cv.matFromArray(2, 2, cv.CV_8UC1, [1, 2, 3, 4]);</span></div><div class="line">let mat = <a class="code" href="d2/d75/namespacecv.html">cv</a>.matFromArray(rows, cols, type, array); </div><div class="line"><span class="comment">// 2. Use imgData to construct a mat </span></div><div class="line">let ctx = canvas.getContext(<span class="stringliteral">&quot;2d&quot;</span>);</div><div class="line">let imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);</div><div class="line">let mat = <a class="code" href="d2/d75/namespacecv.html">cv</a>.matFromImageData(imgData);   </div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Don't forget to delete <a class="el" href="d3/d63/classcv_1_1Mat.html" title="n-dimensional dense array class ">cv.Mat</a> when you don't want to use it any more.</dd></dl>
+<div class="fragment"><div class="line"><span class="comment">// 1. default constructor</span></div><div class="line">let mat = <span class="keyword">new</span> <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>();</div><div class="line"><span class="comment">// 2. two-dimensional arrays by size and type</span></div><div class="line">let mat = <span class="keyword">new</span> <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>(size, type);</div><div class="line"><span class="comment">// 3. two-dimensional arrays by rows, cols, and type</span></div><div class="line">let mat = <span class="keyword">new</span> <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>(rows, cols, type);</div><div class="line"><span class="comment">// 4. two-dimensional arrays by rows, cols, and type with initialization value</span></div><div class="line">let mat = <span class="keyword">new</span> <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>(rows, cols, type, <span class="keyword">new</span> <a class="code" href="d2/d75/namespacecv.html">cv</a>.Scalar());</div></div><!-- fragment --><p>There are 3 static functions:</p>
+<div class="fragment"><div class="line"><span class="comment">// 1. Create a Mat which is full of zeros</span></div><div class="line">let mat = <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html#a0b57b6a326c8876d944d188a46e0f556">zeros</a>(rows, cols, type);</div><div class="line"><span class="comment">// 2. Create a Mat which is full of ones</span></div><div class="line">let mat = <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html#a69ae0402d116fc9c71908d8508dc2f09">ones</a>(rows, cols, type);</div><div class="line"><span class="comment">// 3. Create a Mat which is an identity matrix</span></div><div class="line">let mat = <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html#a2cf9b9acde7a9852542bbc20ef851ed2">eye</a>(rows, cols, type);</div></div><!-- fragment --><p>There are 2 factory functions: </p><div class="fragment"><div class="line"><span class="comment">// 1. Use JS array to construct a mat.</span></div><div class="line"><span class="comment">// For example: let mat = cv.matFromArray(2, 2, cv.CV_8UC1, [1, 2, 3, 4]);</span></div><div class="line">let mat = <a class="code" href="d2/d75/namespacecv.html">cv</a>.matFromArray(rows, cols, type, array);</div><div class="line"><span class="comment">// 2. Use imgData to construct a mat</span></div><div class="line">let ctx = canvas.getContext(<span class="stringliteral">&quot;2d&quot;</span>);</div><div class="line">let imgData = ctx.getImageData(0, 0, canvas.width, canvas.height);</div><div class="line">let mat = <a class="code" href="d2/d75/namespacecv.html">cv</a>.matFromImageData(imgData);</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Don't forget to delete <a class="el" href="d3/d63/classcv_1_1Mat.html" title="n-dimensional dense array class ">cv.Mat</a> when you don't want to use it any more.</dd></dl>
 <h2>How to copy Mat </h2>
 <p>There are 2 ways to copy a Mat:</p>
-<div class="fragment"><div class="line"><span class="comment">// 1. Clone </span></div><div class="line">let dst = src.<a class="code" href="d3/d63/classcv_1_1Mat.html#afb01ff6b2231b72f55618bfb66a5326b">clone</a>();</div><div class="line"><span class="comment">// 2. CopyTo(only entries indicated in the mask are copied)</span></div><div class="line">src.<a class="code" href="d3/d63/classcv_1_1Mat.html#a4331fa88593a9a9c14c0998574695ebb">copyTo</a>(dst, mask);     </div></div><!-- fragment --><h2>How to convert the type of Mat </h2>
+<div class="fragment"><div class="line"><span class="comment">// 1. Clone</span></div><div class="line">let dst = src.<a class="code" href="d3/d63/classcv_1_1Mat.html#afb01ff6b2231b72f55618bfb66a5326b">clone</a>();</div><div class="line"><span class="comment">// 2. CopyTo(only entries indicated in the mask are copied)</span></div><div class="line">src.<a class="code" href="d3/d63/classcv_1_1Mat.html#a4331fa88593a9a9c14c0998574695ebb">copyTo</a>(dst, mask);</div></div><!-- fragment --><h2>How to convert the type of Mat </h2>
 <p>We use the function: <b>convertTo(m, rtype, alpha = 1, beta = 0)</b> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">m</td><td>output matrix; if it does not have a proper size or type before the operation, it is reallocated. </td></tr>
@@ -177,8 +177,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   </table>
   </dd>
 </dl>
-<div class="fragment"><div class="line">src.convertTo(dst, rtype); </div></div><!-- fragment --><h2>How use MatVector </h2>
-<div class="fragment"><div class="line">let mat = <span class="keyword">new</span> <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>(); </div><div class="line"><span class="comment">// Initialise a MatVector</span></div><div class="line">let matVec = <span class="keyword">new</span> <a class="code" href="d2/d75/namespacecv.html">cv</a>.MatVector();</div><div class="line"><span class="comment">// Push a Mat back into MatVector</span></div><div class="line">matVec.push_back(mat);</div><div class="line"><span class="comment">// Get a Mat fom MatVector</span></div><div class="line">let cnt = matVec.get(0);</div><div class="line">mat.delete(); matVec.delete(); cnt.delete();</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Don't forget to delete <a class="el" href="d3/d63/classcv_1_1Mat.html" title="n-dimensional dense array class ">cv.Mat</a>, cv.MatVector and cnt(the Mat you get from MatVector) when you don't want to use them any more.</dd></dl>
+<div class="fragment"><div class="line">src.convertTo(dst, rtype);</div></div><!-- fragment --><h2>How use MatVector </h2>
+<div class="fragment"><div class="line">let mat = <span class="keyword">new</span> <a class="code" href="d2/d75/namespacecv.html">cv</a>.<a class="code" href="d3/d63/classcv_1_1Mat.html">Mat</a>();</div><div class="line"><span class="comment">// Initialise a MatVector</span></div><div class="line">let matVec = <span class="keyword">new</span> <a class="code" href="d2/d75/namespacecv.html">cv</a>.MatVector();</div><div class="line"><span class="comment">// Push a Mat back into MatVector</span></div><div class="line">matVec.push_back(mat);</div><div class="line"><span class="comment">// Get a Mat fom MatVector</span></div><div class="line">let cnt = matVec.get(0);</div><div class="line">mat.delete(); matVec.delete(); cnt.delete();</div></div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>Don't forget to delete <a class="el" href="d3/d63/classcv_1_1Mat.html" title="n-dimensional dense array class ">cv.Mat</a>, cv.MatVector and cnt(the Mat you get from MatVector) when you don't want to use them any more.</dd></dl>
 <h2>Accessing and Modifying pixel values </h2>
 <p>Firstly, you should know the following type relationship:</p>
 <table class="doxtable">
@@ -243,7 +243,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="fragment"><div class="line">let row = 3, col = 4;</div><div class="line">let src = <a class="code" href="d2/d75/namespacecv.html">cv</a>.imread(<span class="stringliteral">&quot;canvasInput&quot;</span>);</div><div class="line">let pixel = src.ucharPtr(row, col);</div><div class="line">let R = pixel[0];</div><div class="line">let G = pixel[1];</div><div class="line">let B = pixel[2];</div><div class="line">let A = pixel[3];</div></div><!-- fragment --><p>mat.ucharPtr(k) get the k th row of the mat. mat.ucharPtr(i, j) get the i th row and the j th column of the mat.</p>
 <h2>Image ROI </h2>
 <p>Sometimes, you will have to play with certain region of images. For eye detection in images, first face detection is done all over the image and when face is obtained, we select the face region alone and search for eyes inside it instead of searching whole image. It improves accuracy (because eyes are always on faces) and performance (because we search for a small area)</p>
-<p>We use the function: <b>getRoiRect (rect)</b> </p><dl class="params"><dt>Parameters</dt><dd>
+<p>We use the function: <b>roi (rect)</b> </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">rect</td><td>rectangle Region of Interest.</td></tr>
   </table>
@@ -272,9 +272,9 @@ let src = cv.imread("roiCanvasInput");
 let dst = new cv.Mat();
 // You can try more different parameters
 let rect = new cv.Rect(100, 100, 200, 200);
-dst = src.getRoiRect(rect); 
+dst = src.roi(rect);
 cv.imshow("roiCanvasOutput", dst);
-src.delete(); dst.delete(); 
+src.delete(); dst.delete();
 </textarea>
 <p class="err" id="roiErr"></p>
 </div>
@@ -395,7 +395,7 @@ if (typeof cv !== 'undefined') {
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -449,7 +449,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

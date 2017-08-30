@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -158,6 +158,8 @@ Modules</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:d8/d45/group__core__utils__neon"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/d45/group__core__utils__neon.html">NEON utilities</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:d7/dcc/group__core__utils__softfloat"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dcc/group__core__utils__softfloat.html">Softfloat support</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
 Namespaces</h2></td></tr>
@@ -202,8 +204,20 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:gaeafc02a0b798693c56fe860a82151e92"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de0/group__core__utils.html#gaeafc02a0b798693c56fe860a82151e92">__CV_CAT</a>(x,  y)&#160;&#160;&#160;<a class="el" href="../../db/de0/group__core__utils.html#gafd0e78e6713f2803d64939a63244a42f">__CV_CAT_</a>(x, y)</td></tr>
+<tr class="separator:gaeafc02a0b798693c56fe860a82151e92"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafd0e78e6713f2803d64939a63244a42f"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de0/group__core__utils.html#gafd0e78e6713f2803d64939a63244a42f">__CV_CAT_</a>(x,  y)&#160;&#160;&#160;<a class="el" href="../../db/de0/group__core__utils.html#ga2dea0308d694f8811d9f3bc817d3d2e8">__CV_CAT__</a>(x, y)</td></tr>
+<tr class="separator:gafd0e78e6713f2803d64939a63244a42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2dea0308d694f8811d9f3bc817d3d2e8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de0/group__core__utils.html#ga2dea0308d694f8811d9f3bc817d3d2e8">__CV_CAT__</a>(x,  y)&#160;&#160;&#160;x ## y</td></tr>
+<tr class="separator:ga2dea0308d694f8811d9f3bc817d3d2e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga81155a470e691e2a248e98c914dc35ab"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de0/group__core__utils.html#ga81155a470e691e2a248e98c914dc35ab">__CV_EXPAND</a>(x)&#160;&#160;&#160;x</td></tr>
+<tr class="separator:ga81155a470e691e2a248e98c914dc35ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1ff4e987d10b07a31704ff710fda8df8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de0/group__core__utils.html#ga1ff4e987d10b07a31704ff710fda8df8">CV_2PI</a>&#160;&#160;&#160;6.283185307179586476925286766559</td></tr>
 <tr class="separator:ga1ff4e987d10b07a31704ff710fda8df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad557724ee9c07e56906f61c576b19e91"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de0/group__core__utils.html#gad557724ee9c07e56906f61c576b19e91">CV__DEBUG_NS_BEGIN</a></td></tr>
+<tr class="separator:gad557724ee9c07e56906f61c576b19e91"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gaf1094185326a278e77b9dae90a81498a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de0/group__core__utils.html#gaf1094185326a278e77b9dae90a81498a">CV__DEBUG_NS_END</a></td></tr>
+<tr class="separator:gaf1094185326a278e77b9dae90a81498a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf62bcd90f70e275191ab95136d85906b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de0/group__core__utils.html#gaf62bcd90f70e275191ab95136d85906b">CV_Assert</a>(expr)&#160;&#160;&#160;if(!!(expr)) ; else <a class="el" href="../../db/de0/group__core__utils.html#gacbd081fdb20423a63cf731569ba70b2b">cv::error</a>( <a class="el" href="../../d1/d0d/namespacecv_1_1Error.html#a759fa1af92f7aa7377c76ffb142abccaaad9981b6501b20252ca09e719fd260e3">cv::Error::StsAssert</a>, #expr, <a class="el" href="../../db/de0/group__core__utils.html#ga41df7094eff07ba50594b833797da1cc">CV_Func</a>, __FILE__, __LINE__ )</td></tr>
 <tr class="memdesc:gaf62bcd90f70e275191ab95136d85906b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks a condition at runtime and throws exception if it fails.  <a href="#gaf62bcd90f70e275191ab95136d85906b">More...</a><br /></td></tr>
 <tr class="separator:gaf62bcd90f70e275191ab95136d85906b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -468,6 +482,11 @@ Functions</h2></td></tr>
 <tr class="separator:ga977608301213682f12e68dcf1f77c288"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga47ead185bfeefb70d09e90d8fe8afde7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de0/group__core__utils.html#ga47ead185bfeefb70d09e90d8fe8afde7">cvRound</a> (int value)</td></tr>
 <tr class="separator:ga47ead185bfeefb70d09e90d8fe8afde7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga52d39d0a7310cba0cf526bc9dbda5404"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de0/group__core__utils.html#ga52d39d0a7310cba0cf526bc9dbda5404">cv::divUp</a> (int a, unsigned int b)</td></tr>
+<tr class="memdesc:ga52d39d0a7310cba0cf526bc9dbda5404"><td class="mdescLeft">&#160;</td><td class="mdescRight">Integer division with result round up.  <a href="../../db/de0/group__core__utils.html#ga52d39d0a7310cba0cf526bc9dbda5404">More...</a><br /></td></tr>
+<tr class="separator:ga52d39d0a7310cba0cf526bc9dbda5404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga783150b042a28904f7df9e74788981e6"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="../../da/d06/autogenerated_2opencl__core_8hpp.html#a6ff403ead16f7faa1f7228274eb6b01d">size_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de0/group__core__utils.html#ga783150b042a28904f7df9e74788981e6">cv::divUp</a> (<a class="el" href="../../da/d06/autogenerated_2opencl__core_8hpp.html#a6ff403ead16f7faa1f7228274eb6b01d">size_t</a> a, unsigned int b)</td></tr>
+<tr class="separator:ga783150b042a28904f7df9e74788981e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4910d7f86336cd4eff9dd05575667e41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/de0/group__core__utils.html#ga4910d7f86336cd4eff9dd05575667e41">cv::error</a> (const Exception &amp;exc)</td></tr>
 <tr class="memdesc:ga4910d7f86336cd4eff9dd05575667e41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Signals an error and raises the exception.  <a href="../../db/de0/group__core__utils.html#ga4910d7f86336cd4eff9dd05575667e41">More...</a><br /></td></tr>
 <tr class="separator:ga4910d7f86336cd4eff9dd05575667e41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -706,12 +725,130 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Macro Definition Documentation</h2>
+<a class="anchor" id="gaeafc02a0b798693c56fe860a82151e92"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __CV_CAT</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="../../db/de0/group__core__utils.html#gafd0e78e6713f2803d64939a63244a42f">__CV_CAT_</a>(x, y)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gafd0e78e6713f2803d64939a63244a42f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __CV_CAT_</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;<a class="el" href="../../db/de0/group__core__utils.html#ga2dea0308d694f8811d9f3bc817d3d2e8">__CV_CAT__</a>(x, y)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga2dea0308d694f8811d9f3bc817d3d2e8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __CV_CAT__</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">y&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td>&#160;&#160;&#160;x ## y</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="ga81155a470e691e2a248e98c914dc35ab"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define __CV_EXPAND</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">x</td><td>)</td>
+          <td>&#160;&#160;&#160;x</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ga1ff4e987d10b07a31704ff710fda8df8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">#define CV_2PI&#160;&#160;&#160;6.283185307179586476925286766559</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gad557724ee9c07e56906f61c576b19e91"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CV__DEBUG_NS_BEGIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="gaf1094185326a278e77b9dae90a81498a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CV__DEBUG_NS_END</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -734,7 +871,7 @@ Functions</h2></td></tr>
 
 <p>Checks a condition at runtime and throws exception if it fails. </p>
 <p>The macros CV_Assert (and <a class="el" href="../../db/de0/group__core__utils.html#gafbcb487cba05bd288dbe18c433de4f6f">CV_DbgAssert(expr)</a>) evaluate the specified expression. If it is 0, the macros raise an error (see <a class="el" href="../../db/de0/group__core__utils.html#gacbd081fdb20423a63cf731569ba70b2b" title="Signals an error and raises the exception. ">cv::error</a>). The macro CV_Assert checks the condition in both Debug and Release configurations while CV_DbgAssert is only retained in the Debug configuration. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a22">grabcut.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a22">grabcut.cpp</a>, and <a class="el" href="../../d0/d7f/image_alignment_8cpp-example.html#a1">image_alignment.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1500,7 +1637,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d2a/contours2_8cpp-example.html#a12">contours2.cpp</a>, <a class="el" href="../../dc/d16/cout_mat_8cpp-example.html#a5">cout_mat.cpp</a>, <a class="el" href="../../d6/d03/filestorage_8cpp-example.html#a0">filestorage.cpp</a>, and <a class="el" href="../../d2/d7b/houghlines_8cpp-example.html#a10">houghlines.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d2a/contours2_8cpp-example.html#a12">contours2.cpp</a>, <a class="el" href="../../dc/d16/cout_mat_8cpp-example.html#a5">cout_mat.cpp</a>, <a class="el" href="../../d6/d03/filestorage_8cpp-example.html#a0">filestorage.cpp</a>, <a class="el" href="../../d2/d7b/houghlines_8cpp-example.html#a11">houghlines.cpp</a>, and <a class="el" href="../../d0/d7f/image_alignment_8cpp-example.html#a32">image_alignment.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1603,7 +1740,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a19">fitellipse.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a34">camshiftdemo.cpp</a>, <a class="el" href="../../df/daf/Drawing_2_8cpp-example.html#a14">Drawing_2.cpp</a>, and <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a19">fitellipse.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1630,7 +1767,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a23">fitellipse.cpp</a>, and <a class="el" href="../../de/d63/kmeans_8cpp-example.html#a7">kmeans.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a4">camshiftdemo.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a23">fitellipse.cpp</a>, and <a class="el" href="../../de/d63/kmeans_8cpp-example.html#a7">kmeans.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1840,7 +1977,7 @@ template&lt;typename _Tp &gt; </div>
 </div><div class="memdoc">
 
 <p>Aligns a buffer size to the specified number of bytes. </p>
-<p>The function returns the minimum number that is greater or equal to sz and is divisible by n : </p><p class="formulaDsp">
+<p>The function returns the minimum number that is greater than or equal to sz and is divisible by n : </p><p class="formulaDsp">
 \[\texttt{(sz + n-1) &amp; -n}\]
 </p>
  <dl class="params"><dt>Parameters</dt><dd>
@@ -2378,7 +2515,7 @@ template&lt;typename _Tp &gt; </div>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d2a/contours2_8cpp-example.html#a15">contours2.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a11">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#a13">distrans.cpp</a>, and <a class="el" href="../../d4/d32/minarea_8cpp-example.html#a23">minarea.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d2a/contours2_8cpp-example.html#a15">contours2.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a11">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#a13">distrans.cpp</a>, <a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a36">facedetect.cpp</a>, <a class="el" href="../../d4/d32/minarea_8cpp-example.html#a23">minarea.cpp</a>, <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a8">peopledetect.cpp</a>, and <a class="el" href="../../d5/dfc/warpPerspective_demo_8cpp-example.html#a24">warpPerspective_demo.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -2411,6 +2548,79 @@ template&lt;typename _Tp &gt; </div>
           <td></td>
         </tr>
       </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga52d39d0a7310cba0cf526bc9dbda5404"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static int cv::divUp </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Integer division with result round up. </p>
+<p>Use this function instead of <code>ceil((float)a / b)</code> expressions.</p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/de0/group__core__utils.html#gaf2ff8f837e7a44f288b050765492f800" title="Aligns a buffer size to the specified number of bytes. ">alignSize</a> </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga783150b042a28904f7df9e74788981e6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="../../da/d06/autogenerated_2opencl__core_8hpp.html#a6ff403ead16f7faa1f7228274eb6b01d">size_t</a> cv::divUp </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../da/d06/autogenerated_2opencl__core_8hpp.html#a6ff403ead16f7faa1f7228274eb6b01d">size_t</a>&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramname"><em>b</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
 
@@ -2781,11 +2991,11 @@ template&lt;typename _Tp , typename Functor &gt; </div>
 <p>Returns the number of threads used by OpenCV for parallel regions. </p>
 <p>Always returns 1 if OpenCV is built without threading support.</p>
 <p>The exact meaning of return value depends on the threading framework used by OpenCV library:</p><ul>
-<li><code>TBB</code> – The number of threads, that OpenCV will try to use for parallel regions. If there is any tbb::thread_scheduler_init in user code conflicting with OpenCV, then function returns default number of threads used by TBB library.</li>
-<li><code>OpenMP</code> – An upper bound on the number of threads that could be used to form a new team.</li>
-<li><code>Concurrency</code> – The number of threads, that OpenCV will try to use for parallel regions.</li>
-<li><code>GCD</code> – Unsupported; returns the GCD thread pool limit (512) for compatibility.</li>
-<li><code>C=</code> – The number of threads, that OpenCV will try to use for parallel regions, if before called setNumThreads with threads &gt; 0, otherwise returns the number of logical CPUs, available for the process. <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/de0/group__core__utils.html#gae78625c3c2aa9e0b83ed31b73c6549c0" title="OpenCV will try to set the number of threads for the next parallel region. ">setNumThreads</a>, <a class="el" href="../../db/de0/group__core__utils.html#gaf9cc0cb10097686a9da60f6c587e5774" title="Returns the index of the currently executed thread within the current parallel region. Always returns 0 if called outside of parallel region. ">getThreadNum</a> </dd></dl>
+<li><code>TBB</code> - The number of threads, that OpenCV will try to use for parallel regions. If there is any tbb::thread_scheduler_init in user code conflicting with OpenCV, then function returns default number of threads used by TBB library.</li>
+<li><code>OpenMP</code> - An upper bound on the number of threads that could be used to form a new team.</li>
+<li><code>Concurrency</code> - The number of threads, that OpenCV will try to use for parallel regions.</li>
+<li><code>GCD</code> - Unsupported; returns the GCD thread pool limit (512) for compatibility.</li>
+<li><code>C=</code> - The number of threads, that OpenCV will try to use for parallel regions, if before called setNumThreads with threads &gt; 0, otherwise returns the number of logical CPUs, available for the process. <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/de0/group__core__utils.html#gae78625c3c2aa9e0b83ed31b73c6549c0" title="OpenCV will try to set the number of threads for the next parallel region. ">setNumThreads</a>, <a class="el" href="../../db/de0/group__core__utils.html#gaf9cc0cb10097686a9da60f6c587e5774" title="Returns the index of the currently executed thread within the current parallel region. Always returns 0 if called outside of parallel region. ">getThreadNum</a> </dd></dl>
 </li>
 </ul>
 
@@ -2805,12 +3015,12 @@ template&lt;typename _Tp , typename Functor &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the index of the currently executed thread within the current parallel region. Always returns 0 if called outside of parallel region. </p>
-<p>The exact meaning of return value depends on the threading framework used by OpenCV library:</p><ul>
-<li><code>TBB</code> – Unsupported with current 4.1 TBB release. Maybe will be supported in future.</li>
-<li><code>OpenMP</code> – The thread number, within the current team, of the calling thread.</li>
-<li><code>Concurrency</code> – An ID for the virtual processor that the current context is executing on (0 for master thread and unique number for others, but not necessary 1,2,3,...).</li>
-<li><code>GCD</code> – System calling thread's ID. Never returns 0 inside parallel region.</li>
-<li><code>C=</code> – The index of the current parallel task. <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/de0/group__core__utils.html#gae78625c3c2aa9e0b83ed31b73c6549c0" title="OpenCV will try to set the number of threads for the next parallel region. ">setNumThreads</a>, <a class="el" href="../../db/de0/group__core__utils.html#ga2db334ec41d98da3129ef4a2342fc4d4" title="Returns the number of threads used by OpenCV for parallel regions. ">getNumThreads</a> </dd></dl>
+<p>The exact meaning of the return value depends on the threading framework used by OpenCV library:</p><ul>
+<li><code>TBB</code> - Unsupported with current 4.1 TBB release. Maybe will be supported in future.</li>
+<li><code>OpenMP</code> - The thread number, within the current team, of the calling thread.</li>
+<li><code>Concurrency</code> - An ID for the virtual processor that the current context is executing on (0 for master thread and unique number for others, but not necessary 1,2,3,...).</li>
+<li><code>GCD</code> - System calling thread's ID. Never returns 0 inside parallel region.</li>
+<li><code>C=</code> - The index of the current parallel task. <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/de0/group__core__utils.html#gae78625c3c2aa9e0b83ed31b73c6549c0" title="OpenCV will try to set the number of threads for the next parallel region. ">setNumThreads</a>, <a class="el" href="../../db/de0/group__core__utils.html#ga2db334ec41d98da3129ef4a2342fc4d4" title="Returns the number of threads used by OpenCV for parallel regions. ">getNumThreads</a> </dd></dl>
 </li>
 </ul>
 
@@ -2831,7 +3041,7 @@ template&lt;typename _Tp , typename Functor &gt; </div>
 
 <p>Returns the number of ticks. </p>
 <p>The function returns the number of ticks after the certain event (for example, when the machine was turned on). It can be used to initialize <a class="el" href="../../d1/dd6/classcv_1_1RNG.html" title="Random Number Generator. ">RNG</a> or to measure a function execution time by reading the tick count before and after the function call. </p><dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/de0/group__core__utils.html#ga705441a9ef01f47acdc55d87fbe5090c" title="Returns the number of ticks per second. ">getTickFrequency</a>, <a class="el" href="../../d9/d6f/classcv_1_1TickMeter.html" title="a Class to measure passing time. ">TickMeter</a> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/d7b/houghlines_8cpp-example.html#a8">houghlines.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#a12">lsd_lines.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a32">watershed.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a24">facedetect.cpp</a>, <a class="el" href="../../d2/d7b/houghlines_8cpp-example.html#a9">houghlines.cpp</a>, <a class="el" href="../../d0/d7f/image_alignment_8cpp-example.html#a27">image_alignment.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#a12">lsd_lines.cpp</a>, <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a2">peopledetect.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a32">watershed.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -2850,7 +3060,7 @@ template&lt;typename _Tp , typename Functor &gt; </div>
 
 <p>Returns the number of ticks per second. </p>
 <p>The function returns the number of ticks per second. That is, the following code computes the execution time in seconds: </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> t = (double)<a class="code" href="../../db/de0/group__core__utils.html#gae73f58000611a1af25dd36d496bf4487">getTickCount</a>();</div><div class="line"><span class="comment">// do something ...</span></div><div class="line">t = ((double)<a class="code" href="../../db/de0/group__core__utils.html#gae73f58000611a1af25dd36d496bf4487">getTickCount</a>() - t)/<a class="code" href="../../db/de0/group__core__utils.html#ga705441a9ef01f47acdc55d87fbe5090c">getTickFrequency</a>();</div></div><!-- fragment --> <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../db/de0/group__core__utils.html#gae73f58000611a1af25dd36d496bf4487" title="Returns the number of ticks. ">getTickCount</a>, <a class="el" href="../../d9/d6f/classcv_1_1TickMeter.html" title="a Class to measure passing time. ">TickMeter</a> </dd></dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/d7b/houghlines_8cpp-example.html#a11">houghlines.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#a14">lsd_lines.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a34">watershed.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a30">facedetect.cpp</a>, <a class="el" href="../../d2/d7b/houghlines_8cpp-example.html#a12">houghlines.cpp</a>, <a class="el" href="../../d0/d7f/image_alignment_8cpp-example.html#a40">image_alignment.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#a14">lsd_lines.cpp</a>, <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a5">peopledetect.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a34">watershed.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -2883,7 +3093,8 @@ template&lt;typename _Tp , typename Functor &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a26">peopledetect.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga6caa4b9c6213b619c6e6f7523dc520fb"></a>
@@ -3491,7 +3702,8 @@ template&lt;typename _Tp &gt; </div>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d2/de8/group__core__array.html#ga10ac1bfb180e2cfda1701d06c24fdbd6" title="Calculates the per-element sum of two arrays or an array and a scalar. ">add</a>, <a class="el" href="../../d2/de8/group__core__array.html#gaa0f00d98b4b5edeaeb7b8333b2de353b" title="Calculates the per-element difference between two arrays or array and a scalar. ">subtract</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga979d898a58d7f61c53003e162e7ad89f" title="Calculates the per-element scaled product of two arrays. ">multiply</a>, <a class="el" href="../../d2/de8/group__core__array.html#ga6db555d30115642fedae0cda05604874" title="Performs per-element division of two arrays or a scalar by an array. ">divide</a>, <a class="el" href="../../d3/d63/classcv_1_1Mat.html#a3f356665bb0ca452e7d7723ccac9a810" title="Converts an array to another data type with optional scaling. ">Mat::convertTo</a> </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a48">camshiftdemo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga01c0a05cb440634930ee867e52588281"></a>
@@ -4176,7 +4388,8 @@ template&lt;&gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a46">camshiftdemo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="gad5146ed5f6911e421712048dc8152937"></a>
@@ -4683,12 +4896,12 @@ template&lt;&gt; </div>
 
 <p>OpenCV will try to set the number of threads for the next parallel region. </p>
 <p>If threads == 0, OpenCV will disable threading optimizations and run all it's functions sequentially. Passing threads &lt; 0 will reset threads number to system default. This function must be called outside of parallel region.</p>
-<p>OpenCV will try to run it's functions with specified threads number, but some behaviour differs from framework:</p><ul>
-<li><code>TBB</code> – User-defined parallel constructions will run with the same threads number, if another does not specified. If later on user creates own scheduler, OpenCV will use it.</li>
-<li><code>OpenMP</code> – No special defined behaviour.</li>
-<li><code>Concurrency</code> – If threads == 1, OpenCV will disable threading optimizations and run it's functions sequentially.</li>
-<li><code>GCD</code> – Supports only values &lt;= 0.</li>
-<li><code>C=</code> – No special defined behaviour. <dl class="params"><dt>Parameters</dt><dd>
+<p>OpenCV will try to run its functions with specified threads number, but some behaviour differs from framework:</p><ul>
+<li><code>TBB</code> - User-defined parallel constructions will run with the same threads number, if another is not specified. If later on user creates his own scheduler, OpenCV will use it.</li>
+<li><code>OpenMP</code> - No special defined behaviour.</li>
+<li><code>Concurrency</code> - If threads == 1, OpenCV will disable threading optimizations and run its functions sequentially.</li>
+<li><code>GCD</code> - Supports only values &lt;= 0.</li>
+<li><code>C=</code> - No special defined behaviour. <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nthreads</td><td>Number of threads used by OpenCV. </td></tr>
   </table>
@@ -4763,7 +4976,7 @@ template&lt;&gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -4817,7 +5030,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

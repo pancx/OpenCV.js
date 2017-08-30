@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -170,6 +170,7 @@ Inheritance diagram for cv::Scalar_&lt; _Tp &gt;:</div>
   <map id="cv::Scalar_5F_3C_20_5FTp_20_3E_map" name="cv::Scalar_&lt; _Tp &gt;_map">
 <area href="../../d6/dcf/classcv_1_1Vec.html" alt="cv::Vec&lt; _Tp, 4 &gt;" shape="rect" coords="0,56,143,80"/>
 <area href="../../de/de1/classcv_1_1Matx.html" alt="cv::Matx&lt; _Tp, cn, 1 &gt;" shape="rect" coords="0,0,143,24"/>
+<area href="../../d4/dba/classcv_1_1viz_1_1Color.html" title="This class a represents BGR color. " alt="cv::viz::Color" shape="rect" coords="0,168,143,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -423,7 +424,7 @@ Additional Inherited Members</h2></td></tr>
 class cv::Scalar_&lt; _Tp &gt;</h3>
 
 <p>Template class for a 4-element vector derived from <a class="el" href="../../d6/dcf/classcv_1_1Vec.html" title="Template class for short numerical vectors, a partial case of Matx. ">Vec</a>. </p>
-<p>Being derived from <a class="el" href="../../d6/dcf/classcv_1_1Vec.html" title="Template class for short numerical vectors, a partial case of Matx. ">Vec</a>&lt;<em>Tp, 4&gt; , Scalar</em> and Scalar can be used just as typical 4-element vectors. In addition, they can be converted to/from <a class="el" href="../../d6/db3/structCvScalar.html">CvScalar</a> . The type Scalar is widely used in OpenCV to pass pixel values. </p>
+<p>Being derived from <a class="el" href="../../d6/dcf/classcv_1_1Vec.html" title="Template class for short numerical vectors, a partial case of Matx. ">Vec</a>&lt;_Tp, 4&gt; , <a class="el" href="../../d1/da0/classcv_1_1Scalar__.html" title="Template class for a 4-element vector derived from Vec. ">Scalar_</a> and Scalar can be used just as typical 4-element vectors. In addition, they can be converted to/from <a class="el" href="../../d6/db3/structCvScalar.html">CvScalar</a> . The type Scalar is widely used in OpenCV to pass pixel values. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="ae1f585cbf709bbce60762f802c571211"></a>
 <div class="memitem">
@@ -643,7 +644,7 @@ template&lt;typename T2 &gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -697,7 +698,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

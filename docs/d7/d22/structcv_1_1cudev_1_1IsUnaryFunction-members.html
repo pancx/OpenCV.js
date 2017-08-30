@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -159,13 +159,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="../../d6/d82/structcv_1_1cudev_1_1IsUnaryFunction.html#a22f375dd1a1dca82324c69fc60861447">check</a>(unary_function&lt; T, D &gt;)</td><td class="entry"><a class="el" href="../../d6/d82/structcv_1_1cudev_1_1IsUnaryFunction.html">cv::cudev::IsUnaryFunction&lt; F &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d6/d82/structcv_1_1cudev_1_1IsUnaryFunction.html#a6941577791fd0617b7a50bfe7cf4b7b2">check</a>(...)</td><td class="entry"><a class="el" href="../../d6/d82/structcv_1_1cudev_1_1IsUnaryFunction.html">cv::cudev::IsUnaryFunction&lt; F &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d6/d82/structcv_1_1cudev_1_1IsUnaryFunction.html#aeb79c48c2fbf3868e1f743785803eedc">makeF</a>()</td><td class="entry"><a class="el" href="../../d6/d82/structcv_1_1cudev_1_1IsUnaryFunction.html">cv::cudev::IsUnaryFunction&lt; F &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d6/d82/structcv_1_1cudev_1_1IsUnaryFunction.html#ae8992e66abc7787b9f378113e90ebcbda15389267bc101f4e4513f9be55c7a7bc">value</a> enum value</td><td class="entry"><a class="el" href="../../d6/d82/structcv_1_1cudev_1_1IsUnaryFunction.html">cv::cudev::IsUnaryFunction&lt; F &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d6/d82/structcv_1_1cudev_1_1IsUnaryFunction.html#a3dd5b0140f922551855567cbe212fb21a15389267bc101f4e4513f9be55c7a7bc">value</a> enum value</td><td class="entry"><a class="el" href="../../d6/d82/structcv_1_1cudev_1_1IsUnaryFunction.html">cv::cudev::IsUnaryFunction&lt; F &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d6/d82/structcv_1_1cudev_1_1IsUnaryFunction.html#a21b77d2438c26538a9ec849206374d33">Yes</a> typedef</td><td class="entry"><a class="el" href="../../d6/d82/structcv_1_1cudev_1_1IsUnaryFunction.html">cv::cudev::IsUnaryFunction&lt; F &gt;</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:28 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:45 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -219,7 +219,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

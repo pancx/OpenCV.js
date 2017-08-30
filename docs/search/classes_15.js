@@ -50,8 +50,8 @@ var searchData=
   ['videocapture',['VideoCapture',['../d8/dfe/classcv_1_1VideoCapture.html',1,'cv']]],
   ['videofilesource',['VideoFileSource',['../da/d0b/classcv_1_1videostab_1_1VideoFileSource.html',1,'cv::videostab']]],
   ['videoreader',['VideoReader',['../db/ded/classcv_1_1cudacodec_1_1VideoReader.html',1,'cv::cudacodec']]],
-  ['videowriter',['VideoWriter',['../df/dde/classcv_1_1cudacodec_1_1VideoWriter.html',1,'cv::cudacodec']]],
   ['videowriter',['VideoWriter',['../dd/d9e/classcv_1_1VideoWriter.html',1,'cv']]],
+  ['videowriter',['VideoWriter',['../df/dde/classcv_1_1cudacodec_1_1VideoWriter.html',1,'cv::cudacodec']]],
   ['viz3d',['Viz3d',['../d6/d32/classcv_1_1viz_1_1Viz3d.html',1,'cv::viz']]],
   ['voronoiseamfinder',['VoronoiSeamFinder',['../db/d24/classcv_1_1detail_1_1VoronoiSeamFinder.html',1,'cv::detail']]]
 ];

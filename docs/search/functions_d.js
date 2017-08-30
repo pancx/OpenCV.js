@@ -2,6 +2,7 @@ var searchData=
 [
   ['name',['name',['../d7/d7c/classcv_1_1cuda_1_1DeviceInfo.html#abbac3824de50623e107418d025c7b37f',1,'cv::cuda::DeviceInfo::name()'],['../d7/d9f/classcv_1_1ocl_1_1Device.html#a19beead635b57c035f8e6de826fe3876',1,'cv::ocl::Device::name()'],['../d6/d94/classcv_1_1ocl_1_1PlatformInfo.html#a6359e6e90ff2c9712c3846310822492e',1,'cv::ocl::PlatformInfo::name()'],['../de/dd9/classcv_1_1FileNode.html#a2100aad4d0bf6c70cf73e5a2e32ac1ba',1,'cv::FileNode::name()']]],
   ['namedwindow',['namedWindow',['../d7/dfc/group__highgui.html#ga5afdf8410934fd099df85c75b2e0888b',1,'cv']]],
+  ['nan',['nan',['../d7/dcc/group__core__utils__softfloat.html#ga96ac1a9a3b8ed51b3ec606b2374b0cba',1,'cv::softfloat::nan()'],['../d7/dcc/group__core__utils__softfloat.html#gaf4177737a51195afed3c96b008c479b5',1,'cv::softdouble::nan()']]],
   ['narymatiterator',['NAryMatIterator',['../d5/dd2/classcv_1_1NAryMatIterator.html#ade2ae0a6205c67696666441ea85d1eea',1,'cv::NAryMatIterator::NAryMatIterator()'],['../d5/dd2/classcv_1_1NAryMatIterator.html#aa0a0a7e2c68c1de614e73c7fcaa63f2f',1,'cv::NAryMatIterator::NAryMatIterator(const Mat **arrays, uchar **ptrs, int narrays=-1)'],['../d5/dd2/classcv_1_1NAryMatIterator.html#acbc0100414fe60ab212553a67dd788b6',1,'cv::NAryMatIterator::NAryMatIterator(const Mat **arrays, Mat *planes, int narrays=-1)']]],
   ['nativevectorwidthchar',['nativeVectorWidthChar',['../d7/d9f/classcv_1_1ocl_1_1Device.html#a7fa974924b992a9ad8eae2d7f8e3b1dd',1,'cv::ocl::Device']]],
   ['nativevectorwidthdouble',['nativeVectorWidthDouble',['../d7/d9f/classcv_1_1ocl_1_1Device.html#a496d03cfe9bddafbb167881745deee4b',1,'cv::ocl::Device']]],
@@ -49,6 +50,7 @@ var searchData=
   ['ndevices',['ndevices',['../d1/d45/classcv_1_1ocl_1_1Context.html#a354c605b2d32c7f9e99dbfc939fe9de6',1,'cv::ocl::Context']]],
   ['ndoffset',['ndoffset',['../d7/d45/classcv_1_1UMat.html#a17b41aa4fa8728f770ff612c466b6da9',1,'cv::UMat']]],
   ['needed',['needed',['../d2/d9e/classcv_1_1__OutputArray.html#aa46cba8c48475cd94d42c5fec8ac2be0',1,'cv::_OutputArray']]],
+  ['net',['Net',['../db/d30/classcv_1_1dnn_1_1Net.html#a82eb4d60b3c396cb85c79d267516cf15',1,'cv::dnn::Net']]],
   ['newedge',['newEdge',['../df/dbf/classcv_1_1Subdiv2D.html#a2ccf33004b2db5407e238d2077d725be',1,'cv::Subdiv2D']]],
   ['newnode',['newNode',['../dd/da9/classcv_1_1SparseMat.html#acfbf3c27ab6d5f90e4d37b1654f90f0a',1,'cv::SparseMat']]],
   ['newpoint',['newPoint',['../df/dbf/classcv_1_1Subdiv2D.html#ac88046997ef2bf96d72fafa3633bc0ca',1,'cv::Subdiv2D']]],

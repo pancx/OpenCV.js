@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -1324,6 +1324,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>CV_8UC4
 : <a class="el" href="d1/d1b/group__core__hal__interface.html#ga4519ad2827f771db8260c61207b782df">interface.h</a>
 </li>
+<li>CV__DEBUG_NS_BEGIN
+: <a class="el" href="db/de0/group__core__utils.html#gad557724ee9c07e56906f61c576b19e91">cvdef.h</a>
+</li>
+<li>CV__DEBUG_NS_END
+: <a class="el" href="db/de0/group__core__utils.html#gaf1094185326a278e77b9dae90a81498a">cvdef.h</a>
+</li>
+<li>CV__DNN_EXPERIMENTAL_NS_BEGIN
+: <a class="el" href="db/ddc/dnn_2dnn_8hpp.html#ad4058d38e75929fb0316e4bb5f882ce9">dnn.hpp</a>
+</li>
+<li>CV__DNN_EXPERIMENTAL_NS_END
+: <a class="el" href="db/ddc/dnn_2dnn_8hpp.html#a09ea7a959daa939b24b8e514c941627b">dnn.hpp</a>
+</li>
 <li>CV_AA
 : <a class="el" href="df/d4e/group__imgproc__c.html#ga32a38de93cb76391d98a1545d587a8ff">imgproc_c.h</a>
 </li>
@@ -1339,11 +1351,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>CV_ARE_TYPES_EQ
 : <a class="el" href="d2/df8/group__core__c.html#gae15ce671c550b71a1f059829c2f91280">types_c.h</a>
 </li>
-<li>CV_Assert
-: <a class="el" href="db/de0/group__core__utils.html#gaf62bcd90f70e275191ab95136d85906b">base.hpp</a>
-</li>
 <li>CV_ASSERT
 : <a class="el" href="d2/df8/group__core__c.html#ga3fa18df3d3c272116980d2f660f746da">core_c.h</a>
+</li>
+<li>CV_Assert
+: <a class="el" href="db/de0/group__core__utils.html#gaf62bcd90f70e275191ab95136d85906b">base.hpp</a>
 </li>
 <li>CV_AUTO_STEP
 : <a class="el" href="d2/df8/group__core__c.html#gaf8de14381b5764750419cf76b91481db">types_c.h</a>
@@ -1568,40 +1580,43 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="db/de0/group__core__utils.html#ga926510f35fd39ef1adc378139fe71c37">cvdef.h</a>
 </li>
 <li>CV_CPU_CALL_AVX
-: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a8d631751d24e98b909c3a9832a9db2d5">cv_cpu_helper.h</a>
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a76ad3d9f6350fe57173593ea5ab8cac5">cv_cpu_helper.h</a>
 </li>
 <li>CV_CPU_CALL_AVX2
-: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a29dafec99371ead97a55fb3a3a5c3908">cv_cpu_helper.h</a>
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a3f4911028578aba98565743dafe2af9d">cv_cpu_helper.h</a>
+</li>
+<li>CV_CPU_CALL_BASELINE
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#aac34b96b20e964fe8a857f35a7de0b1d">cv_cpu_helper.h</a>
 </li>
 <li>CV_CPU_CALL_FMA3
-: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a8089d44a1998fbcc47dfda6bbc453290">cv_cpu_helper.h</a>
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a362bb355f64a8aa660e83fc2b57e3390">cv_cpu_helper.h</a>
 </li>
 <li>CV_CPU_CALL_FP16
-: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a7484926991fe2b54c54468aac2f9766c">cv_cpu_helper.h</a>
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a9b441b4c3f9e47f6ab3517dbbc2c78e9">cv_cpu_helper.h</a>
 </li>
 <li>CV_CPU_CALL_NEON
-: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a0eb1626e720ff6ff3a5fb72444de1849">cv_cpu_helper.h</a>
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#ab77c9db5239a60a3813f1c10c43a5d29">cv_cpu_helper.h</a>
 </li>
 <li>CV_CPU_CALL_POPCNT
-: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#af44e947a1951ea5a0a223c4504ff3110">cv_cpu_helper.h</a>
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a0e5d1ce764c76824aee8993741d2a50c">cv_cpu_helper.h</a>
 </li>
 <li>CV_CPU_CALL_SSE
-: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#ab29bc2d8b69b529ddc4490b9e7b02c03">cv_cpu_helper.h</a>
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#af3a241d4f19a3154ab842efbe81bb626">cv_cpu_helper.h</a>
 </li>
 <li>CV_CPU_CALL_SSE2
-: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#aa94e3e223f9c548c0de20939c6ebd6d0">cv_cpu_helper.h</a>
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a79f14634b975f15336f71f016f799830">cv_cpu_helper.h</a>
 </li>
 <li>CV_CPU_CALL_SSE3
-: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#ae981746da837a9dd42fd9dfab762ba0a">cv_cpu_helper.h</a>
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#ade0f47c2e2401d165098c789aee011e3">cv_cpu_helper.h</a>
 </li>
 <li>CV_CPU_CALL_SSE4_1
-: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a62a5bf859159a40df98aea1f5df5da1f">cv_cpu_helper.h</a>
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#adbee28364c550288f82fa13f4d79fc2b">cv_cpu_helper.h</a>
 </li>
 <li>CV_CPU_CALL_SSE4_2
-: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a84cda8b517907685ea46fabecc5e0296">cv_cpu_helper.h</a>
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#ae92c99d619e9dbb6d37dd16ab7c0176b">cv_cpu_helper.h</a>
 </li>
 <li>CV_CPU_CALL_SSSE3
-: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a2e0548685860e79662f9a24208dc531b">cv_cpu_helper.h</a>
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a877da908885e638117f612a4e8b0401b">cv_cpu_helper.h</a>
 </li>
 <li>CV_CPU_FMA3
 : <a class="el" href="db/de0/group__core__utils.html#ga9db70f4811a1136f8279069afdb04c47">cvdef.h</a>
@@ -1653,6 +1668,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>CV_CPU_NONE
 : <a class="el" href="db/de0/group__core__utils.html#ga104b95e4b2eec07215d29596064f47cb">cvdef.h</a>
+</li>
+<li>CV_CPU_OPTIMIZATION_DECLARATIONS_ONLY
+: <a class="el" href="d2/d7c/cv__cpu__include__simd__declarations_8hpp.html#a66bb28d5bbb5cd43d7700ca6abb18fb4">cv_cpu_include_simd_declarations.hpp</a>
+</li>
+<li>CV_CPU_OPTIMIZATION_NAMESPACE_BEGIN
+: <a class="el" href="d2/d7c/cv__cpu__include__simd__declarations_8hpp.html#aa4729b8f9a8694dc2e0953561fd6a6f2">cv_cpu_include_simd_declarations.hpp</a>
+</li>
+<li>CV_CPU_OPTIMIZATION_NAMESPACE_END
+: <a class="el" href="d2/d7c/cv__cpu__include__simd__declarations_8hpp.html#a25097f49e52ccec77b2128b6ffadf135">cv_cpu_include_simd_declarations.hpp</a>
 </li>
 <li>CV_CPU_POPCNT
 : <a class="el" href="db/de0/group__core__utils.html#gaa40a6af4861eb57b2424dbf0352aa007">cvdef.h</a>
@@ -1819,6 +1843,18 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>CV_DIFF_L2
 : <a class="el" href="d2/df8/group__core__c.html#gaf7197cf93545895b872eeb5c74fea73e">core_c.h</a>
 </li>
+<li>CV_DNN_REGISTER_LAYER_CLASS
+: <a class="el" href="df/d8c/layer_8details_8hpp.html#a7e8d9c0c5849b6a081ba2a84845f3dac">layer.details.hpp</a>
+</li>
+<li>CV_DNN_REGISTER_LAYER_CLASS_STATIC
+: <a class="el" href="df/d8c/layer_8details_8hpp.html#a3c98e4b6b14774a103dec04734bd8969">layer.details.hpp</a>
+</li>
+<li>CV_DNN_REGISTER_LAYER_FUNC
+: <a class="el" href="df/d8c/layer_8details_8hpp.html#afa35dcd978b74bfeed1f975440d6eb70">layer.details.hpp</a>
+</li>
+<li>CV_DNN_REGISTER_LAYER_FUNC_STATIC
+: <a class="el" href="df/d8c/layer_8details_8hpp.html#a62c5c5390ebe4443027bca32867d5fa6">layer.details.hpp</a>
+</li>
 <li>CV_DXT_FORWARD
 : <a class="el" href="d2/df8/group__core__c.html#ga16693837f2eb58db26a413117cf9a6de">core_c.h</a>
 </li>
@@ -1958,7 +1994,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="dd/d01/group__videoio__c.html#ga5964e4ca5f467fde5624c2d64db8105d">videoio_c.h</a>
 </li>
 <li>CV_FP16
-: <a class="el" href="d4/d31/core_2include_2opencv2_2core_2private_8hpp.html#ad9103ca4e69d3eeff43acb560fb11430">private.hpp</a>
+: <a class="el" href="d1/dac/cv__cpu__dispatch_8h.html#ad9103ca4e69d3eeff43acb560fb11430">cv_cpu_dispatch.h</a>
 </li>
 <li>CV_FP16_TYPE
 : <a class="el" href="db/de0/group__core__utils.html#gaf729e3e1d0b8d2d70df8c228bb9c7f61">cvdef.h</a>
@@ -2058,6 +2094,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>CV_HAAR_SCALE_IMAGE
 : <a class="el" href="d9/d31/group__objdetect__c.html#ga812f46d031349fa2ee78a5e7240f5016">objdetect_c.h</a>
+</li>
+<li>CV_HAAR_STAGE_MAX
+: <a class="el" href="d9/d31/group__objdetect__c.html#ga4532e491f9ec8c2f4826357e698bda66">objdetect_c.h</a>
 </li>
 <li>CV_HAL_BORDER_CONSTANT
 : <a class="el" href="d1/d1b/group__core__hal__interface.html#gad23466ede4910ce5c52f76eb512a9b7e">interface.h</a>
@@ -2373,6 +2412,48 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li>CV_LOG2_F
 : <a class="el" href="df/dfc/group__cudev.html#gad962517c00fcc84c074311c5eebed807">common.hpp</a>
+</li>
+<li>CV_LOG_DEBUG
+: <a class="el" href="d6/da3/logger_8hpp.html#a73e198bf918aeddcbf884733793b54d4">logger.hpp</a>
+</li>
+<li>CV_LOG_ERROR
+: <a class="el" href="d6/da3/logger_8hpp.html#a61945c827c7bc921bbabfd415d0f126d">logger.hpp</a>
+</li>
+<li>CV_LOG_FATAL
+: <a class="el" href="d6/da3/logger_8hpp.html#aa45c4b83effbfdd0e8b9edaaf656f803">logger.hpp</a>
+</li>
+<li>CV_LOG_INFO
+: <a class="el" href="d6/da3/logger_8hpp.html#a6c2052511ce6fd604e3a9434b20e0e48">logger.hpp</a>
+</li>
+<li>CV_LOG_LEVEL_DEBUG
+: <a class="el" href="d6/da3/logger_8hpp.html#a3dba372bf949960147916e26697075e0">logger.hpp</a>
+</li>
+<li>CV_LOG_LEVEL_ERROR
+: <a class="el" href="d6/da3/logger_8hpp.html#a72ff12a307fea792b3714bbfe0944fbf">logger.hpp</a>
+</li>
+<li>CV_LOG_LEVEL_FATAL
+: <a class="el" href="d6/da3/logger_8hpp.html#a7625b783f863a37282cca8aadf256d10">logger.hpp</a>
+</li>
+<li>CV_LOG_LEVEL_INFO
+: <a class="el" href="d6/da3/logger_8hpp.html#a21a32deb99c143c4216feebeee8a126e">logger.hpp</a>
+</li>
+<li>CV_LOG_LEVEL_SILENT
+: <a class="el" href="d6/da3/logger_8hpp.html#a3d6e5cd288b2f2baa20dd0bdcd7d6075">logger.hpp</a>
+</li>
+<li>CV_LOG_LEVEL_VERBOSE
+: <a class="el" href="d6/da3/logger_8hpp.html#aa0631ef37bb9f14bd3323bc99853e861">logger.hpp</a>
+</li>
+<li>CV_LOG_LEVEL_WARN
+: <a class="el" href="d6/da3/logger_8hpp.html#aa7b08adac0e86248812e9182e269cdf5">logger.hpp</a>
+</li>
+<li>CV_LOG_STRIP_LEVEL
+: <a class="el" href="d6/da3/logger_8hpp.html#acdd2564ac0f843ae415bd2776eaf1800">logger.hpp</a>
+</li>
+<li>CV_LOG_VERBOSE
+: <a class="el" href="d6/da3/logger_8hpp.html#ae770c4fa93bc10216bb5865ba822cb75">logger.hpp</a>
+</li>
+<li>CV_LOG_WARNING
+: <a class="el" href="d6/da3/logger_8hpp.html#a9a7297e347ba19830270825e5cbb6d0b">logger.hpp</a>
 </li>
 <li>CV_LU
 : <a class="el" href="d2/df8/group__core__c.html#ga541606a93c9f3a95ea999cb7d8cdcd8c">core_c.h</a>
@@ -2811,8 +2892,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 , <a class="el" href="df/d91/group__core__hal__intrin.html#gad953f90887e4eb9a12657e6a1f86d01b">intrin.hpp</a>
 </li>
 <li>CV_SIMD128_64F
-: <a class="el" href="df/d91/group__core__hal__intrin.html#ga51529fa7aa602e84255f9e68efa5ed01">intrin.hpp</a>
-, <a class="el" href="d2/d3c/intrin__sse_8hpp.html#a51529fa7aa602e84255f9e68efa5ed01">intrin_sse.hpp</a>
+: <a class="el" href="d2/d3c/intrin__sse_8hpp.html#a51529fa7aa602e84255f9e68efa5ed01">intrin_sse.hpp</a>
+, <a class="el" href="df/d91/group__core__hal__intrin.html#ga51529fa7aa602e84255f9e68efa5ed01">intrin.hpp</a>
 </li>
 <li>CV_SORT_ASCENDING
 : <a class="el" href="d2/df8/group__core__c.html#ga0831ac12b5e395a8ed79e8f67c8db9b5">core_c.h</a>
@@ -2940,8 +3021,62 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>CV_TERMCRIT_NUMBER
 : <a class="el" href="d2/df8/group__core__c.html#gae86f45404a8ab700a742e8ed95933856">types_c.h</a>
 </li>
+<li>CV_TRACE_ARG
+: <a class="el" href="d4/db9/trace_8hpp.html#a52b7b8e5906254368d4c8bc804a6d8f7">trace.hpp</a>
+</li>
+<li>CV_TRACE_ARG_VALUE
+: <a class="el" href="d4/db9/trace_8hpp.html#aaffc9ef684ff91b6e54a1a689a58ac5f">trace.hpp</a>
+</li>
+<li>CV_TRACE_FUNCTION
+: <a class="el" href="d4/db9/trace_8hpp.html#a9b1e047c2289e857adb155864c798f55">trace.hpp</a>
+</li>
+<li>CV_TRACE_FUNCTION_SKIP_NESTED
+: <a class="el" href="d4/db9/trace_8hpp.html#a178377b37ef07efbb4956a0a64334b26">trace.hpp</a>
+</li>
+<li>CV_TRACE_REGION
+: <a class="el" href="d4/db9/trace_8hpp.html#a94254b4aa6f12aaca7f621f4e58fe773">trace.hpp</a>
+</li>
+<li>CV_TRACE_REGION_NEXT
+: <a class="el" href="d4/db9/trace_8hpp.html#a73621fa9c4826651eb7739bd57616514">trace.hpp</a>
+</li>
 <li>CV_TREE_NODE_FIELDS
 : <a class="el" href="d2/df8/group__core__c.html#gad8807dac71fcde9e625288ff3d237c2d">types_c.h</a>
+</li>
+<li>CV_TRY_AVX
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a7f8bb5a169b928aeca55cf92456aaeb7">cv_cpu_helper.h</a>
+</li>
+<li>CV_TRY_AVX2
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#aca673974eb596e51210a752901e268b5">cv_cpu_helper.h</a>
+</li>
+<li>CV_TRY_FMA3
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a62a583f71913491da3958aa63da4d01a">cv_cpu_helper.h</a>
+</li>
+<li>CV_TRY_FP16
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a7daa5cf70f8f5c1ece5040667233e94c">cv_cpu_helper.h</a>
+</li>
+<li>CV_TRY_NEON
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a8c38c4ee49719b908729d2cc0eab30d5">cv_cpu_helper.h</a>
+</li>
+<li>CV_TRY_POPCNT
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a4629fdc60fa4adf646a6399c12d11e0d">cv_cpu_helper.h</a>
+</li>
+<li>CV_TRY_SSE
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a23a040652cf0f3c099e3edebaf9a601e">cv_cpu_helper.h</a>
+</li>
+<li>CV_TRY_SSE2
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a5fca7650f7bf8a2c81f7ca6f111d93fa">cv_cpu_helper.h</a>
+</li>
+<li>CV_TRY_SSE3
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#af2e41aa61fa62f8fbb130ca4ad5c326b">cv_cpu_helper.h</a>
+</li>
+<li>CV_TRY_SSE4_1
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a4b262df3ac04137a00929dd998c20132">cv_cpu_helper.h</a>
+</li>
+<li>CV_TRY_SSE4_2
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#ae5175901197ec7ecadb18de7fa8066f9">cv_cpu_helper.h</a>
+</li>
+<li>CV_TRY_SSSE3
+: <a class="el" href="d2/d3b/cv__cpu__helper_8h.html#a2852c0bab7a4f8da6362a22ab913e1e7">cv_cpu_helper.h</a>
 </li>
 <li>CV_TURN_ON_IPL_COMPATIBILITY
 : <a class="el" href="d2/df8/group__core__c.html#ga19f3f877176395658850a825d2ef4db4">core_c.h</a>
@@ -3194,7 +3329,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:30 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:47 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -3248,7 +3383,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

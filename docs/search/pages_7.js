@@ -2,7 +2,7 @@ var searchData=
 [
   ['geometric_20transformations_20of_20images',['Geometric Transformations of Images',['../tutorial_js_geometric_transformations.html',1,'tutorial_js_table_of_contents_imgproc']]],
   ['getting_20started_20with_20images',['Getting Started with Images',['../tutorial_js_image_display.html',1,'tutorial_js_table_of_contents_gui']]],
-  ['gui_20features',['Gui Features',['../tutorial_js_table_of_contents_gui.html',1,'tutorial_js_root']]],
+  ['gui_20features',['GUI Features',['../tutorial_js_table_of_contents_gui.html',1,'tutorial_js_root']]],
   ['getting_20started_20with_20videos',['Getting Started with Videos',['../tutorial_js_video_display.html',1,'tutorial_js_table_of_contents_gui']]],
   ['geometric_20transformations_20of_20images',['Geometric Transformations of Images',['../tutorial_py_geometric_transformations.html',1,'tutorial_py_table_of_contents_imgproc']]],
   ['getting_20started_20with_20images',['Getting Started with Images',['../tutorial_py_image_display.html',1,'tutorial_py_table_of_contents_gui']]],

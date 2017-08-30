@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -195,9 +195,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:ga18737c0c27ce8d4fc31acdb7c8f2baad"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../d6/df5/group__photo__hdr.html#gga18737c0c27ce8d4fc31acdb7c8f2baada11377cb33f0a607d50cdc65e529529a1">cv::LDR_SIZE</a> = 256
+<tr class="memitem:ga2801c91cf63592463b2eca074abddd3b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom">{ <a class="el" href="../../d6/df5/group__photo__hdr.html#gga2801c91cf63592463b2eca074abddd3ba11377cb33f0a607d50cdc65e529529a1">cv::LDR_SIZE</a> = 256
  }</td></tr>
-<tr class="separator:ga18737c0c27ce8d4fc31acdb7c8f2baad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ga2801c91cf63592463b2eca074abddd3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -238,7 +238,7 @@ Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p>This section describes high dynamic range imaging algorithms namely tonemapping, exposure alignment, camera calibration with multiple exposures and exposure fusion. </p>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a class="anchor" id="ga18737c0c27ce8d4fc31acdb7c8f2baad"></a>
+<a class="anchor" id="ga2801c91cf63592463b2eca074abddd3b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -248,7 +248,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga18737c0c27ce8d4fc31acdb7c8f2baada11377cb33f0a607d50cdc65e529529a1"></a>LDR_SIZE&#160;</td><td class="fielddoc">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a class="anchor" id="gga2801c91cf63592463b2eca074abddd3ba11377cb33f0a607d50cdc65e529529a1"></a>LDR_SIZE&#160;</td><td class="fielddoc">
 </td></tr>
 </table>
 
@@ -332,7 +332,7 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">samples</td><td>number of pixel locations to use </td></tr>
     <tr><td class="paramname">lambda</td><td>smoothness term weight. Greater values produce smoother results, but can alter the response. </td></tr>
-    <tr><td class="paramname">random</td><td>if true sample pixel locations are chosen at random, otherwise the form a rectangular grid. </td></tr>
+    <tr><td class="paramname">random</td><td>if true sample pixel locations are chosen at random, otherwise they form a rectangular grid. </td></tr>
   </table>
   </dd>
 </dl>
@@ -667,7 +667,7 @@ Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -721,7 +721,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

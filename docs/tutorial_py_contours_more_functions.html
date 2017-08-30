@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -168,7 +168,7 @@ image</div></div>
 <p>For example, we can check the point (50,50) as follows: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;dist = cv2.pointPolygonTest(cnt,(50,50),<span class="keyword">True</span>)</div></div><!-- fragment --><p> In the function, third argument is measureDist. If it is True, it finds the signed distance. If False, it finds whether the point is inside or outside or on the contour (it returns +1, -1, 0 respectively).</p>
 <dl class="section note"><dt>Note</dt><dd>If you don't want to find the distance, make sure third argument is False, because, it is a time consuming process. So, making it False gives about 2-3X speedup.</dd></dl>
 <h3>3. Match Shapes</h3>
-<p>OpenCV comes with a function <b><a class="el" href="d3/dc0/group__imgproc__shape.html#gaadc90cb16e2362c9bd6e7363e6e4c317" title="Compares two shapes. ">cv2.matchShapes()</a></b> which enables us to compare two shapes, or two contours and returns a metric showing the similarity. The lower the result, the better match it is. It is calculated based on the hu-moment values. Different measurement methods are explained in the docs. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> cv2</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;img1 = cv2.imread(<span class="stringliteral">&#39;star.jpg&#39;</span>,0)</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;img2 = cv2.imread(<span class="stringliteral">&#39;star2.jpg&#39;</span>,0)</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;ret, thresh = cv2.threshold(img1, 127, 255,0)</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;ret, thresh2 = cv2.threshold(img2, 127, 255,0)</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;im2,contours,hierarchy = cv2.findContours(thresh,2,1)</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;cnt1 = contours[0]</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;im2,contours,hierarchy = cv2.findContours(thresh2,2,1)</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;cnt2 = contours[0]</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;ret = cv2.matchShapes(cnt1,cnt2,1,0.0)</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordflow">print</span> ret</div></div><!-- fragment --><p> I tried matching shapes with different shapes given below:</p>
+<p>OpenCV comes with a function <b><a class="el" href="d3/dc0/group__imgproc__shape.html#gaadc90cb16e2362c9bd6e7363e6e4c317" title="Compares two shapes. ">cv2.matchShapes()</a></b> which enables us to compare two shapes, or two contours and returns a metric showing the similarity. The lower the result, the better match it is. It is calculated based on the hu-moment values. Different measurement methods are explained in the docs. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> cv2</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;img1 = cv2.imread(<span class="stringliteral">&#39;star.jpg&#39;</span>,0)</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;img2 = cv2.imread(<span class="stringliteral">&#39;star2.jpg&#39;</span>,0)</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;ret, thresh = cv2.threshold(img1, 127, 255,0)</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;ret, thresh2 = cv2.threshold(img2, 127, 255,0)</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;im2,contours,hierarchy = cv2.findContours(thresh,2,1)</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;cnt1 = contours[0]</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;im2,contours,hierarchy = cv2.findContours(thresh2,2,1)</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;cnt2 = contours[0]</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;ret = cv2.matchShapes(cnt1,cnt2,1,0.0)</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<a class="code" href="df/d57/namespacecv_1_1dnn.html#aa2ef06a8c0c2880c51d5f3e4e86abe4b">print</a>( ret )</div></div><!-- fragment --><p> I tried matching shapes with different shapes given below:</p>
 <div class="image">
 <img src="matchshapes.jpg" alt="matchshapes.jpg"/>
 <div class="caption">
@@ -191,7 +191,7 @@ image</div></div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -245,7 +245,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

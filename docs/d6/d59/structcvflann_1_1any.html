@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -207,6 +207,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a21f7f4442898eb3c5fb9971dc9a6d0ba"><td class="memTemplItemLeft" align="right" valign="top"><a class="el" href="../../d6/d59/structcvflann_1_1any.html">any</a> &amp;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d59/structcvflann_1_1any.html#a21f7f4442898eb3c5fb9971dc9a6d0ba">operator=</a> (const T &amp;x)</td></tr>
 <tr class="memdesc:a21f7f4442898eb3c5fb9971dc9a6d0ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator.  <a href="#a21f7f4442898eb3c5fb9971dc9a6d0ba">More...</a><br /></td></tr>
 <tr class="separator:a21f7f4442898eb3c5fb9971dc9a6d0ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cd1710a1a0f500bb9b17b49ed3b816c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d59/structcvflann_1_1any.html">any</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d59/structcvflann_1_1any.html#a2cd1710a1a0f500bb9b17b49ed3b816c">operator=</a> (const <a class="el" href="../../d6/d59/structcvflann_1_1any.html">any</a> &amp;x)</td></tr>
+<tr class="memdesc:a2cd1710a1a0f500bb9b17b49ed3b816c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignment operator. Template-based version above doesn't work as expected. We need regular assignment operator here.  <a href="#a2cd1710a1a0f500bb9b17b49ed3b816c">More...</a><br /></td></tr>
+<tr class="separator:a2cd1710a1a0f500bb9b17b49ed3b816c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5146e87ec22f45b1ca806ec25c98956a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d6/d59/structcvflann_1_1any.html">any</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d59/structcvflann_1_1any.html#a5146e87ec22f45b1ca806ec25c98956a">operator=</a> (const char *x)</td></tr>
 <tr class="separator:a5146e87ec22f45b1ca806ec25c98956a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56cb2ce55b54eaa62cdc88cbd441ef86"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d59/structcvflann_1_1any.html#a56cb2ce55b54eaa62cdc88cbd441ef86">reset</a> ()</td></tr>
@@ -569,6 +572,32 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a2cd1710a1a0f500bb9b17b49ed3b816c"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../d6/d59/structcvflann_1_1any.html">any</a>&amp; cvflann::any::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d6/d59/structcvflann_1_1any.html">any</a> &amp;&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Assignment operator. Template-based version above doesn't work as expected. We need regular assignment operator here. </p>
+
+</div>
+</div>
 <a class="anchor" id="a5146e87ec22f45b1ca806ec25c98956a"></a>
 <div class="memitem">
 <div class="memproto">
@@ -710,7 +739,7 @@ template&lt;typename T &gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:29 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:46 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -764,7 +793,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

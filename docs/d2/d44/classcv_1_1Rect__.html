@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -191,6 +191,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a66b63fc11cc3872ff2dad2603278e10e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d44/classcv_1_1Rect__.html#a66b63fc11cc3872ff2dad2603278e10e">contains</a> (const <a class="el" href="../../db/d4e/classcv_1_1Point__.html">Point_</a>&lt; _Tp &gt; &amp;pt) const </td></tr>
 <tr class="memdesc:a66b63fc11cc3872ff2dad2603278e10e"><td class="mdescLeft">&#160;</td><td class="mdescRight">checks whether the rectangle contains the point  <a href="#a66b63fc11cc3872ff2dad2603278e10e">More...</a><br /></td></tr>
 <tr class="separator:a66b63fc11cc3872ff2dad2603278e10e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3d80c2fc377fa1690dcd048da42bf74"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d2/d44/classcv_1_1Rect__.html#ae3d80c2fc377fa1690dcd048da42bf74">empty</a> () const </td></tr>
+<tr class="memdesc:ae3d80c2fc377fa1690dcd048da42bf74"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if empty  <a href="#ae3d80c2fc377fa1690dcd048da42bf74">More...</a><br /></td></tr>
+<tr class="separator:ae3d80c2fc377fa1690dcd048da42bf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a62c0d39e2e3a2b9009ef63d07ac25277"><td class="memTemplParams" colspan="2">template&lt;typename _Tp2 &gt; </td></tr>
 <tr class="memitem:a62c0d39e2e3a2b9009ef63d07ac25277"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d2/d44/classcv_1_1Rect__.html#a62c0d39e2e3a2b9009ef63d07ac25277">operator Rect_&lt; _Tp2 &gt;</a> () const </td></tr>
 <tr class="memdesc:a62c0d39e2e3a2b9009ef63d07ac25277"><td class="mdescLeft">&#160;</td><td class="mdescRight">conversion to another data type  <a href="#a62c0d39e2e3a2b9009ef63d07ac25277">More...</a><br /></td></tr>
@@ -238,7 +241,7 @@ class cv::Rect_&lt; _Tp &gt;</h3>
 <li>rect == rect1, rect != rect1 (rectangle comparison)</li>
 </ul>
 <p>This is an example how the partial ordering on rectangles can be established (rect1 \(\subseteq\) rect2): </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">typename</span> _Tp&gt; <span class="keyword">inline</span> <span class="keywordtype">bool</span></div><div class="line">operator &lt;= (const Rect_&lt;_Tp&gt;&amp; r1, <span class="keyword">const</span> Rect_&lt;_Tp&gt;&amp; r2)</div><div class="line">{</div><div class="line">    <span class="keywordflow">return</span> (r1 &amp; r2) == r1;</div><div class="line">}</div></div><!-- fragment --><p> For your convenience, the <a class="el" href="../../d2/d44/classcv_1_1Rect__.html" title="Template class for 2D rectangles. ">Rect_</a>&lt;&gt; alias is available: <a class="el" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">cv::Rect</a> </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#_a6">ffilldemo.cpp</a>, and <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#_a15">grabcut.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#_a2">camshiftdemo.cpp</a>, <a class="el" href="../../db/d3a/facedetect_8cpp-example.html#_a31">facedetect.cpp</a>, <a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#_a31">falsecolor.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#_a6">ffilldemo.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#_a15">grabcut.cpp</a>, and <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#_a6">peopledetect.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a4cd2a47bea4cdc776e623625827a1601"></a>
 <div class="memitem">
@@ -405,7 +408,8 @@ template&lt;typename _Tp&gt; </div>
 </div><div class="memdoc">
 
 <p>area (width*height) of the rectangle </p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a57">camshiftdemo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="a7baabb757a7f0cfbf78da01da9f269b9"></a>
@@ -424,7 +428,8 @@ template&lt;typename _Tp&gt; </div>
 </div><div class="memdoc">
 
 <p>the bottom-right corner </p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a14">peopledetect.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="a66b63fc11cc3872ff2dad2603278e10e"></a>
@@ -444,6 +449,25 @@ template&lt;typename _Tp&gt; </div>
 </div><div class="memdoc">
 
 <p>checks whether the rectangle contains the point </p>
+
+</div>
+</div>
+<a class="anchor" id="ae3d80c2fc377fa1690dcd048da42bf74"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Tp&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d2/d44/classcv_1_1Rect__.html">cv::Rect_</a>&lt; _Tp &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>true if empty </p>
 
 </div>
 </div>
@@ -521,7 +545,8 @@ template&lt;typename _Tp&gt; </div>
 </div><div class="memdoc">
 
 <p>the top-left corner </p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a13">peopledetect.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -536,7 +561,8 @@ template&lt;typename _Tp&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a10">camshiftdemo.cpp</a>, <a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a34">facedetect.cpp</a>, and <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a11">peopledetect.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="a6c16a3bce912faa4fe5be42d7f1b53fe"></a>
@@ -550,7 +576,8 @@ template&lt;typename _Tp&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a8">camshiftdemo.cpp</a>, <a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a33">facedetect.cpp</a>, and <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a9">peopledetect.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="a2cadfdc3b4b7dbf8085622b27e044572"></a>
@@ -564,7 +591,8 @@ template&lt;typename _Tp&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a3">camshiftdemo.cpp</a>, <a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a37">facedetect.cpp</a>, and <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a7">peopledetect.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="a6a4860e984df1752623b6ce2a8bde73a"></a>
@@ -578,7 +606,8 @@ template&lt;typename _Tp&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a6">camshiftdemo.cpp</a>, <a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a39">facedetect.cpp</a>, and <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a10">peopledetect.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -588,7 +617,7 @@ template&lt;typename _Tp&gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -642,7 +671,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

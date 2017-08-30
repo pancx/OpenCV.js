@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -212,7 +212,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a92798b785faa75fb7e41c2cee8ac19db"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de3/classcv_1_1ShapeContextDistanceExtractor.html#a92798b785faa75fb7e41c2cee8ac19db">setImageAppearanceWeight</a> (float imageAppearanceWeight)=0</td></tr>
 <tr class="memdesc:a92798b785faa75fb7e41c2cee8ac19db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the weight of the Image Appearance cost in the final value of the shape distance. The image appearance cost is defined as the sum of squared brightness differences in Gaussian windows around corresponding image points. The final value of the shape distance is a user-defined linear combination of the shape context distance, an image appearance distance, and a bending energy. If this value is set to a number different from 0, is mandatory to set the images that correspond to each shape.  <a href="#a92798b785faa75fb7e41c2cee8ac19db">More...</a><br /></td></tr>
 <tr class="separator:a92798b785faa75fb7e41c2cee8ac19db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf94ec647328dcdf648157933f6f32b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de3/classcv_1_1ShapeContextDistanceExtractor.html#abf94ec647328dcdf648157933f6f32b1">setImages</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> image1, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> image2)=0</td></tr>
+<tr class="memitem:abf94ec647328dcdf648157933f6f32b1"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de3/classcv_1_1ShapeContextDistanceExtractor.html#abf94ec647328dcdf648157933f6f32b1">setImages</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> image1, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> image2)=0</td></tr>
 <tr class="memdesc:abf94ec647328dcdf648157933f6f32b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the images that correspond to each shape. This images are used in the calculation of the Image Appearance cost.  <a href="#abf94ec647328dcdf648157933f6f32b1">More...</a><br /></td></tr>
 <tr class="separator:abf94ec647328dcdf648157933f6f32b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b9f6425a00d927f87ba77fb14b240bd"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d8/de3/classcv_1_1ShapeContextDistanceExtractor.html#a1b9f6425a00d927f87ba77fb14b240bd">setInnerRadius</a> (float innerRadius)=0</td></tr>
@@ -238,7 +238,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a537e77faeb22ad21db4c3a45084019ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the algorithm used for aligning the shapes.  <a href="#a537e77faeb22ad21db4c3a45084019ef">More...</a><br /></td></tr>
 <tr class="separator:a537e77faeb22ad21db4c3a45084019ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcv_1_1ShapeDistanceExtractor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcv_1_1ShapeDistanceExtractor')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../dc/dbf/classcv_1_1ShapeDistanceExtractor.html">cv::ShapeDistanceExtractor</a></td></tr>
-<tr class="memitem:aba29b7775eca6bd6c4b4f5e300094097 inherit pub_methods_classcv_1_1ShapeDistanceExtractor"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dbf/classcv_1_1ShapeDistanceExtractor.html#aba29b7775eca6bd6c4b4f5e300094097">computeDistance</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> contour1, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> contour2)=0</td></tr>
+<tr class="memitem:aba29b7775eca6bd6c4b4f5e300094097 inherit pub_methods_classcv_1_1ShapeDistanceExtractor"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/dbf/classcv_1_1ShapeDistanceExtractor.html#aba29b7775eca6bd6c4b4f5e300094097">computeDistance</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> contour1, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> contour2)=0</td></tr>
 <tr class="memdesc:aba29b7775eca6bd6c4b4f5e300094097 inherit pub_methods_classcv_1_1ShapeDistanceExtractor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the shape distance between two shapes defined by its contours.  <a href="#aba29b7775eca6bd6c4b4f5e300094097">More...</a><br /></td></tr>
 <tr class="separator:aba29b7775eca6bd6c4b4f5e300094097 inherit pub_methods_classcv_1_1ShapeDistanceExtractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcv_1_1Algorithm"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcv_1_1Algorithm')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d3/d46/classcv_1_1Algorithm.html">cv::Algorithm</a></td></tr>
@@ -734,13 +734,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::ShapeContextDistanceExtractor::setImages </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>image1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>image2</em>&#160;</td>
         </tr>
         <tr>
@@ -1014,7 +1014,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -1068,7 +1068,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

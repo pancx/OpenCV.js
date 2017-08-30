@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -363,7 +363,9 @@ Related Functions</h2></td></tr>
 <tr class="memitem:ac5156d52b748c8e31e35d6880224ddb3"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/d8f/classcv_1_1String.html#ac5156d52b748c8e31e35d6880224ddb3">operator&gt;=</a> (const <a class="el" href="../../d1/d8f/classcv_1_1String.html">String</a> &amp;lhs, const char *rhs)</td></tr>
 <tr class="separator:ac5156d52b748c8e31e35d6880224ddb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d3/d2e/copyMakeBorder_demo_8cpp-example.html#_a2">copyMakeBorder_demo.cpp</a>, <a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#_a2">falsecolor.cpp</a>, <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#_a25">peopledetect.cpp</a>, and <a class="el" href="../../d5/dfc/warpPerspective_demo_8cpp-example.html#_a3">warpPerspective_demo.cpp</a>.</dd>
+</dl></div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a1ef70fbfbb3d4505577133b8bef710d8"></a>
 <div class="memitem">
 <div class="memproto">
@@ -476,9 +478,6 @@ Related Functions</h2></td></tr>
 <a class="anchor" id="ad43d5c0176c1c9fce373185909d45a96"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">cv::String::String </td>
@@ -487,11 +486,6 @@ Related Functions</h2></td></tr>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -2612,7 +2606,7 @@ template&lt;typename Iterator &gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -2666,7 +2660,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

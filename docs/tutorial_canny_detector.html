@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -192,7 +192,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h2>Code </h2>
 <ol type="1">
 <li><b>What does this program do?</b><ul>
-<li>Asks the user to enter a numerical value to set the lower threshold for our <em>Canny Edge Detector</em> (by means of a Trackbar)</li>
+<li>Asks the user to enter a numerical value to set the lower threshold for our <em>Canny Edge Detector</em> (by means of a Trackbar).</li>
 <li>Applies the <em>Canny Detector</em> and generates a <b>mask</b> (bright lines representing the edges on a black background).</li>
 <li>Applies the mask obtained on the original image and display it in a window.</li>
 </ul>
@@ -202,15 +202,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h2>Explanation </h2>
 <ol type="1">
 <li>Create some needed variables: <div class="fragment"><div class="line">Mat src, src_gray;</div><div class="line">Mat dst, detected_edges;</div><div class="line"></div><div class="line"><span class="keywordtype">int</span> edgeThresh = 1;</div><div class="line"><span class="keywordtype">int</span> lowThreshold;</div><div class="line"><span class="keywordtype">int</span> <span class="keyword">const</span> max_lowThreshold = 100;</div><div class="line"><span class="keywordtype">int</span> ratio = 3;</div><div class="line"><span class="keywordtype">int</span> kernel_size = 3;</div><div class="line"><span class="keyword">const</span> <span class="keywordtype">char</span>* window_name = <span class="stringliteral">&quot;Edge Map&quot;</span>;</div></div><!-- fragment --> Note the following:<ol type="a">
-<li>We establish a ratio of lower:upper threshold of 3:1 (with the variable <em>ratio</em>)</li>
-<li>We set the kernel size of \(3\) (for the Sobel operations to be performed internally by the Canny function)</li>
+<li>We establish a ratio of lower:upper threshold of 3:1 (with the variable <em>ratio</em>).</li>
+<li>We set the kernel size of \(3\) (for the Sobel operations to be performed internally by the Canny function).</li>
 <li>We set a maximum value for the lower Threshold of \(100\).</li>
 </ol>
 </li>
 <li>Loads the source image: <div class="fragment"><div class="line">  src = <a class="code" href="d4/da8/group__imgcodecs.html#ga288b8b3da0892bd651fce07b3bbd3a56">imread</a>( argv[1], <a class="code" href="d4/da8/group__imgcodecs.html#gga61d9b0126a3e57d9277ac48327799c80af660544735200cbe942eea09232eb822">IMREAD_COLOR</a> ); <span class="comment">// Load an image</span></div><div class="line"></div><div class="line">  <span class="keywordflow">if</span>( src.empty() )</div><div class="line">    { <span class="keywordflow">return</span> -1; }</div></div><!-- fragment --></li>
-<li>Create a matrix of the same type and size of <em>src</em> (to be <em>dst</em>) <div class="fragment"><div class="line">  dst.create( src.size(), src.type() );</div></div><!-- fragment --></li>
-<li>Convert the image to grayscale (using the function <a class="el" href="d7/d1b/group__imgproc__misc.html#ga397ae87e1288a81d2363b61574eb8cab">cv::cvtColor</a> : <div class="fragment"><div class="line">  <a class="code" href="d7/d1b/group__imgproc__misc.html#ga397ae87e1288a81d2363b61574eb8cab">cvtColor</a>( src, src_gray, <a class="code" href="d7/d1b/group__imgproc__misc.html#gga4e0972be5de079fed4e3a10e24ef5ef0a353a4b8db9040165db4dacb5bcefb6ea">COLOR_BGR2GRAY</a> );</div></div><!-- fragment --></li>
-<li>Create a window to display the results <div class="fragment"><div class="line">  <a class="code" href="d7/dfc/group__highgui.html#ga5afdf8410934fd099df85c75b2e0888b">namedWindow</a>( window_name, <a class="code" href="d7/dfc/group__highgui.html#ggabf7d2c5625bc59ac130287f925557ac3acf621ace7a54954cbac01df27e47228f">WINDOW_AUTOSIZE</a> );</div></div><!-- fragment --></li>
+<li>Create a matrix of the same type and size of <em>src</em> (to be <em>dst</em>): <div class="fragment"><div class="line">  dst.create( src.size(), src.type() );</div></div><!-- fragment --></li>
+<li>Convert the image to grayscale (using the function <a class="el" href="d7/d1b/group__imgproc__misc.html#ga397ae87e1288a81d2363b61574eb8cab">cv::cvtColor</a> ): <div class="fragment"><div class="line">  <a class="code" href="d7/d1b/group__imgproc__misc.html#ga397ae87e1288a81d2363b61574eb8cab">cvtColor</a>( src, src_gray, <a class="code" href="d7/d1b/group__imgproc__misc.html#gga4e0972be5de079fed4e3a10e24ef5ef0a353a4b8db9040165db4dacb5bcefb6ea">COLOR_BGR2GRAY</a> );</div></div><!-- fragment --></li>
+<li>Create a window to display the results: <div class="fragment"><div class="line">  <a class="code" href="d7/dfc/group__highgui.html#ga5afdf8410934fd099df85c75b2e0888b">namedWindow</a>( window_name, <a class="code" href="d7/dfc/group__highgui.html#ggabf7d2c5625bc59ac130287f925557ac3acf621ace7a54954cbac01df27e47228f">WINDOW_AUTOSIZE</a> );</div></div><!-- fragment --></li>
 <li>Create a Trackbar for the user to enter the lower threshold for our Canny detector: <div class="fragment"><div class="line">  <a class="code" href="d7/dfc/group__highgui.html#gaf78d2155d30b728fc413803745b67a9b">createTrackbar</a>( <span class="stringliteral">&quot;Min Threshold:&quot;</span>, window_name, &amp;lowThreshold, max_lowThreshold, CannyThreshold );</div></div><!-- fragment --> Observe the following:<ol type="a">
 <li>The variable to be controlled by the Trackbar is <em>lowThreshold</em> with a limit of <em>max_lowThreshold</em> (which we set to 100 previously)</li>
 <li>Each time the Trackbar registers an action, the callback function <em>CannyThreshold</em> will be invoked.</li>
@@ -250,7 +250,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:24 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:41 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -304,7 +304,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

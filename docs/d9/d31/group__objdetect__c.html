@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -176,6 +176,8 @@ Macros</h2></td></tr>
 <tr class="separator:gacd8ee8b3cdc5253a300a3b786ff762b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga812f46d031349fa2ee78a5e7240f5016"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d31/group__objdetect__c.html#ga812f46d031349fa2ee78a5e7240f5016">CV_HAAR_SCALE_IMAGE</a>&#160;&#160;&#160;2</td></tr>
 <tr class="separator:ga812f46d031349fa2ee78a5e7240f5016"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga4532e491f9ec8c2f4826357e698bda66"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d31/group__objdetect__c.html#ga4532e491f9ec8c2f4826357e698bda66">CV_HAAR_STAGE_MAX</a>&#160;&#160;&#160;1000</td></tr>
+<tr class="separator:ga4532e491f9ec8c2f4826357e698bda66"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga1d7f2403319efc32466187eaedec6ce7"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d31/group__objdetect__c.html#ga1d7f2403319efc32466187eaedec6ce7">CV_IS_HAAR_CLASSIFIER</a>(haar)</td></tr>
 <tr class="separator:ga1d7f2403319efc32466187eaedec6ce7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga895619ab5b7eb5cd3e4a27a7f2dffc67"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d31/group__objdetect__c.html#ga895619ab5b7eb5cd3e4a27a7f2dffc67">CV_TYPE_NAME_HAAR</a>&#160;&#160;&#160;&quot;opencv-haar-classifier&quot;</td></tr>
@@ -273,6 +275,18 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga4532e491f9ec8c2f4826357e698bda66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define CV_HAAR_STAGE_MAX&#160;&#160;&#160;1000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a class="anchor" id="ga1d7f2403319efc32466187eaedec6ce7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -288,7 +302,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 <b>Value:</b><div class="fragment"><div class="line">((haar) != NULL &amp;&amp;                                                                   \</div><div class="line">    (((<span class="keyword">const</span> <a class="code" href="../../d6/d3d/structCvHaarClassifierCascade.html">CvHaarClassifierCascade</a>*)(haar))-&gt;flags &amp; <a class="code" href="../../d2/df8/group__core__c.html#ga320032e1a96ce9fedee4021b8e388d03">CV_MAGIC_MASK</a>)==<a class="code" href="../../d9/d31/group__objdetect__c.html#gacd8ee8b3cdc5253a300a3b786ff762b0">CV_HAAR_MAGIC_VAL</a>)</div><div class="ttc" id="group__objdetect__c_html_gacd8ee8b3cdc5253a300a3b786ff762b0"><div class="ttname"><a href="../../d9/d31/group__objdetect__c.html#gacd8ee8b3cdc5253a300a3b786ff762b0">CV_HAAR_MAGIC_VAL</a></div><div class="ttdeci">#define CV_HAAR_MAGIC_VAL</div><div class="ttdef"><b>Definition:</b> objdetect_c.h:64</div></div>
 <div class="ttc" id="group__core__c_html_ga320032e1a96ce9fedee4021b8e388d03"><div class="ttname"><a href="../../d2/df8/group__core__c.html#ga320032e1a96ce9fedee4021b8e388d03">CV_MAGIC_MASK</a></div><div class="ttdeci">#define CV_MAGIC_MASK</div><div class="ttdef"><b>Definition:</b> types_c.h:408</div></div>
-<div class="ttc" id="structCvHaarClassifierCascade_html"><div class="ttname"><a href="../../d6/d3d/structCvHaarClassifierCascade.html">CvHaarClassifierCascade</a></div><div class="ttdef"><b>Definition:</b> objdetect_c.h:106</div></div>
+<div class="ttc" id="structCvHaarClassifierCascade_html"><div class="ttname"><a href="../../d6/d3d/structCvHaarClassifierCascade.html">CvHaarClassifierCascade</a></div><div class="ttdef"><b>Definition:</b> objdetect_c.h:107</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -502,7 +516,7 @@ Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -556,7 +570,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

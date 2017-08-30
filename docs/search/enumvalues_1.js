@@ -24,14 +24,16 @@ var searchData=
   ['alpha_5fpremul',['ALPHA_PREMUL',['../db/d8c/group__cudaimgproc__color.html#gga320de8db3b0d8624e9b92fc6b117b694a58f446076264b432bd4dbf90eeac74d2',1,'cv::cuda']]],
   ['alpha_5fxor',['ALPHA_XOR',['../db/d8c/group__cudaimgproc__color.html#gga320de8db3b0d8624e9b92fc6b117b694a5f2df452a2f9ecf4153d8f2ff0cdf18b',1,'cv::cuda']]],
   ['alpha_5fxor_5fpremul',['ALPHA_XOR_PREMUL',['../db/d8c/group__cudaimgproc__color.html#gga320de8db3b0d8624e9b92fc6b117b694afba1dd6df9231630810091dba1ba1c9a',1,'cv::cuda']]],
-  ['alt',['ALT',['../d3/d06/classcv_1_1viz_1_1KeyboardEvent.html#ae220465cdee72945c3874f0c04245f29afd9ab1f5c695ae44e49a8a932431dc61',1,'cv::viz::KeyboardEvent']]],
+  ['alt',['ALT',['../d3/d06/classcv_1_1viz_1_1KeyboardEvent.html#a416e3a1cce65e4978fcc1e9b08cdba4dafd9ab1f5c695ae44e49a8a932431dc61',1,'cv::viz::KeyboardEvent']]],
   ['ambient',['AMBIENT',['../dc/d5c/group__viz__widget.html#ggae4df8152c2d8639b915eccd0bb90f8acac8a6d0b96e27a89f2b240c0c867a44d7',1,'cv::viz']]],
-  ['angle_5frow',['ANGLE_ROW',['../da/d44/classcv_1_1cuda_1_1ORB.html#aad76b631f556ca55aef5b65576b2cb85a92280808a23b5c7bc9434f5521780a96',1,'cv::cuda::ORB']]],
+  ['angle_5frow',['ANGLE_ROW',['../da/d44/classcv_1_1cuda_1_1ORB.html#aef6971911267941170e797ab291c9c1ba92280808a23b5c7bc9434f5521780a96',1,'cv::cuda::ORB']]],
   ['append',['APPEND',['../da/d56/classcv_1_1FileStorage.html#a973e41cb75ef6230412a567723b7482da049591e6d1749b29bb206909c70b2470',1,'cv::FileStorage']]],
   ['array_5fbuffer',['ARRAY_BUFFER',['../d2/d3c/group__core__opengl.html#gga830568a629457171cb07918537ec66bea62a4126c42da95e41facc4f84475f44a',1,'cv::ogl::Buffer']]],
-  ['as_5fis',['AS_IS',['../dd/dac/classcv_1_1detail_1_1Timelapser.html#ae27f8b6b05e5d19a0c9863959ddb105ba3aa37e46f04bc8e707fca72d592023eb',1,'cv::detail::Timelapser']]],
+  ['as_5fis',['AS_IS',['../dd/dac/classcv_1_1detail_1_1Timelapser.html#ab69ff4f46571e9b1c95d3336c9aea576a3aa37e46f04bc8e707fca72d592023eb',1,'cv::detail::Timelapser']]],
   ['asgd',['ASGD',['../de/d54/classcv_1_1ml_1_1SVMSGD.html#ab028695cc8ec1491888d8d03f80bc8c2abb41d794ce113aa2123f45120e8354af',1,'cv::ml::SVMSGD']]],
   ['asymmetric_5fgrid',['ASYMMETRIC_GRID',['../d2/dd1/structcv_1_1CirclesGridFinderParameters.html#ad83bbd88c4d01f670638e8ef4ffa6240a228f5c800931e5548a6eb45cd86cb0df',1,'cv::CirclesGridFinderParameters']]],
+  ['async_5fcleanup',['ASYNC_CLEANUP',['../db/d58/structcv_1_1UMatData.html#a1c33edc9b09e07331e74ed057385a54caccd8af313f75caee034b5f3ed25027a5',1,'cv::UMatData']]],
   ['auto_5fstep',['AUTO_STEP',['../d3/d63/classcv_1_1Mat.html#acb0821facd341e5c9c94a22f6ca6acb8a1c147538fd896f4f9abce9eaea9727e3',1,'cv::Mat::AUTO_STEP()'],['../d7/d45/classcv_1_1UMat.html#a1faa83c1ccf9f716023204586bb770b4a10741a8eaf539b2cb513c134641c940f',1,'cv::UMat::AUTO_STEP()']]],
-  ['autotuned',['AUTOTUNED',['../dc/d8c/namespacecvflann.html#a4e3e6c98d774ea77fd7f0045c9bc7817aef8622927b8a938976f6da27a7dcffdb',1,'cvflann']]]
+  ['autotuned',['AUTOTUNED',['../dc/d8c/namespacecvflann.html#a4e3e6c98d774ea77fd7f0045c9bc7817aef8622927b8a938976f6da27a7dcffdb',1,'cvflann']]],
+  ['ave',['AVE',['../de/d7d/classcv_1_1dnn_1_1PoolingLayer.html#a717ccab21e525f7951aa9c4d8f532fdca7f793fc0703e50e17d68a83dbf7f6257',1,'cv::dnn::PoolingLayer']]]
 ];

@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -195,7 +195,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li><code>samples</code> folder contains sample applications projects and their prebuilt packages (APK). Import them into Eclipse workspace (like described below) and browse the code to learn possible ways of OpenCV use on Android.</li>
 <li><code>doc</code> folder contains various OpenCV documentation in PDF format. It's also available online at <a href="http://docs.opencv.org">http://docs.opencv.org</a>. <dl class="section note"><dt>Note</dt><dd>The most recent docs (nightly build) are at <a href="http://docs.opencv.org/2.4">http://docs.opencv.org/2.4</a>. Generally, it's more up-to-date, but can refer to not-yet-released functionality. </dd></dl>
-<dl class="todo"><dt><b><a class="el" href="dd/da0/todo.html#_todo000015">Todo:</a></b></dt><dd>I'm not sure that this is the best place to talk about OpenCV Manager</dd></dl>
+<dl class="todo"><dt><b><a class="el" href="dd/da0/todo.html#_todo000016">Todo:</a></b></dt><dd>I'm not sure that this is the best place to talk about OpenCV Manager</dd></dl>
 </li>
 </ul>
 <p>Starting from version 2.4.3 OpenCV4Android SDK uses OpenCV Manager API for library initialization. OpenCV Manager is an Android service based solution providing the following benefits for OpenCV applications developers:</p>
@@ -313,7 +313,7 @@ You may also see section <code>Manager Selection</code> for details.</dd></dl>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:24 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:41 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -367,7 +367,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

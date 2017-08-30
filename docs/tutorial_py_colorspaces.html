@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -156,7 +156,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h2>Changing Color-space </h2>
 <p>There are more than 150 color-space conversion methods available in OpenCV. But we will look into only two which are most widely used ones, BGR \(\leftrightarrow\) Gray and BGR \(\leftrightarrow\) HSV.</p>
 <p>For color conversion, we use the function cv2.cvtColor(input_image, flag) where flag determines the type of conversion.</p>
-<p>For BGR \(\rightarrow\) Gray conversion we use the flags cv2.COLOR_BGR2GRAY. Similarly for BGR \(\rightarrow\) HSV, we use the flag cv2.COLOR_BGR2HSV. To get other flags, just run following commands in your Python terminal : </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&gt;&gt;&gt; <span class="keyword">import</span> cv2</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&gt;&gt;&gt; flags = [i <span class="keywordflow">for</span> i <span class="keywordflow">in</span> dir(cv2) <span class="keywordflow">if</span> i.startswith(<span class="stringliteral">&#39;COLOR_&#39;</span>)]</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&gt;&gt;&gt; <span class="keywordflow">print</span> flags</div></div><!-- fragment --> <dl class="section note"><dt>Note</dt><dd>For HSV, Hue range is [0,179], Saturation range is [0,255] and Value range is [0,255]. Different softwares use different scales. So if you are comparing OpenCV values with them, you need to normalize these ranges.</dd></dl>
+<p>For BGR \(\rightarrow\) Gray conversion we use the flags cv2.COLOR_BGR2GRAY. Similarly for BGR \(\rightarrow\) HSV, we use the flag cv2.COLOR_BGR2HSV. To get other flags, just run following commands in your Python terminal : </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&gt;&gt;&gt; <span class="keyword">import</span> cv2</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&gt;&gt;&gt; flags = [i <span class="keywordflow">for</span> i <span class="keywordflow">in</span> dir(cv2) <span class="keywordflow">if</span> i.startswith(<span class="stringliteral">&#39;COLOR_&#39;</span>)]</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&gt;&gt;&gt; <a class="code" href="df/d57/namespacecv_1_1dnn.html#aa2ef06a8c0c2880c51d5f3e4e86abe4b">print</a>( flags )</div></div><!-- fragment --> <dl class="section note"><dt>Note</dt><dd>For HSV, Hue range is [0,179], Saturation range is [0,255] and Value range is [0,255]. Different softwares use different scales. So if you are comparing OpenCV values with them, you need to normalize these ranges.</dd></dl>
 <h2>Object Tracking </h2>
 <p>Now we know how to convert BGR image to HSV, we can use this to extract a colored object. In HSV, it is more easier to represent a color than in BGR color-space. In our application, we will try to extract a blue colored object. So here is the method:</p>
 <ul>
@@ -174,7 +174,7 @@ image</div></div>
 <dd>
 This is the simplest method in object tracking. Once you learn functions of contours, you can do plenty of things like find centroid of this object and use it to track the object, draw diagrams just by moving your hand in front of camera and many other funny stuffs.</dd></dl>
 <h2>How to find HSV values to track? </h2>
-<p>This is a common question found in <a href="http://www.stackoverflow.com">stackoverflow.com</a>. It is very simple and you can use the same function, <a class="el" href="d7/d1b/group__imgproc__misc.html#ga397ae87e1288a81d2363b61574eb8cab" title="Converts an image from one color space to another. ">cv2.cvtColor()</a>. Instead of passing an image, you just pass the BGR values you want. For example, to find the HSV value of Green, try following commands in Python terminal: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&gt;&gt;&gt; green = np.uint8([[[0,255,0 ]]])</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&gt;&gt;&gt; hsv_green = cv2.cvtColor(green,cv2.COLOR_BGR2HSV)</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&gt;&gt;&gt; <span class="keywordflow">print</span> hsv_green</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;[[[ 60 255 255]]]</div></div><!-- fragment --><p> Now you take [H-10, 100,100] and [H+10, 255, 255] as lower bound and upper bound respectively. Apart from this method, you can use any image editing tools like GIMP or any online converters to find these values, but don't forget to adjust the HSV ranges.</p>
+<p>This is a common question found in <a href="http://www.stackoverflow.com">stackoverflow.com</a>. It is very simple and you can use the same function, <a class="el" href="d7/d1b/group__imgproc__misc.html#ga397ae87e1288a81d2363b61574eb8cab" title="Converts an image from one color space to another. ">cv2.cvtColor()</a>. Instead of passing an image, you just pass the BGR values you want. For example, to find the HSV value of Green, try following commands in Python terminal: </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&gt;&gt;&gt; green = np.uint8([[[0,255,0 ]]])</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&gt;&gt;&gt; hsv_green = cv2.cvtColor(green,cv2.COLOR_BGR2HSV)</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;&gt;&gt;&gt; <a class="code" href="df/d57/namespacecv_1_1dnn.html#aa2ef06a8c0c2880c51d5f3e4e86abe4b">print</a>( hsv_green )</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;[[[ 60 255 255]]]</div></div><!-- fragment --><p> Now you take [H-10, 100,100] and [H+10, 255, 255] as lower bound and upper bound respectively. Apart from this method, you can use any image editing tools like GIMP or any online converters to find these values, but don't forget to adjust the HSV ranges.</p>
 <h2>Additional Resources </h2>
 <h2>Exercises </h2>
 <ol type="1">
@@ -184,7 +184,7 @@ This is the simplest method in object tracking. Once you learn functions of cont
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -238,7 +238,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

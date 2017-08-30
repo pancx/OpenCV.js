@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -395,7 +395,7 @@ Related Functions</h2></td></tr>
 class cv::Matx&lt; _Tp, m, n &gt;</h3>
 
 <p>Template class for small matrices whose type and size are known at compilation time. </p>
-<p>If you need a more flexible type, use <a class="el" href="../../d3/d63/classcv_1_1Mat.html" title="n-dimensional dense array class ">Mat</a> . The elements of the matrix M are accessible using the M(i,j) notation. Most of the common matrix operations (see also <a class="el" href="../../d1/d10/classcv_1_1MatExpr.html#MatrixExpressions">MatrixExpressions</a> ) are available. To do an operation on <a class="el" href="../../de/de1/classcv_1_1Matx.html" title="Template class for small matrices whose type and size are known at compilation time. ">Matx</a> that is not implemented, you can easily convert the matrix to <a class="el" href="../../d3/d63/classcv_1_1Mat.html" title="n-dimensional dense array class ">Mat</a> and backwards: </p><div class="fragment"><div class="line"><a class="code" href="../../dc/d84/group__core__basic.html#ga118a383f60581636c7c8ab180cbb155e">Matx33f</a> m(1, 2, 3,</div><div class="line">          4, 5, 6,</div><div class="line">          7, 8, 9);</div><div class="line">cout &lt;&lt; <a class="code" href="../../d2/de8/group__core__array.html#ga716e10a2dd9e228e4d3c95818f106722">sum</a>(Mat(m*m.t())) &lt;&lt; endl;</div></div><!-- fragment --> </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<p>If you need a more flexible type, use <a class="el" href="../../d3/d63/classcv_1_1Mat.html" title="n-dimensional dense array class ">Mat</a> . The elements of the matrix M are accessible using the M(i,j) notation. Most of the common matrix operations (see also <a class="el" href="../../d1/d10/classcv_1_1MatExpr.html#MatrixExpressions">MatrixExpressions</a> ) are available. To do an operation on <a class="el" href="../../de/de1/classcv_1_1Matx.html" title="Template class for small matrices whose type and size are known at compilation time. ">Matx</a> that is not implemented, you can easily convert the matrix to <a class="el" href="../../d3/d63/classcv_1_1Mat.html" title="n-dimensional dense array class ">Mat</a> and backwards: </p><div class="fragment"><div class="line"><a class="code" href="../../dc/d84/group__core__basic.html#ga118a383f60581636c7c8ab180cbb155e">Matx33f</a> m(1, 2, 3,</div><div class="line">          4, 5, 6,</div><div class="line">          7, 8, 9);</div><div class="line">cout &lt;&lt; <a class="code" href="../../d2/de8/group__core__array.html#ga716e10a2dd9e228e4d3c95818f106722">sum</a>(Mat(m*m.t())) &lt;&lt; endl;</div></div><!-- fragment --><p> Except of the plain constructor which takes a list of elements, <a class="el" href="../../de/de1/classcv_1_1Matx.html" title="Template class for small matrices whose type and size are known at compilation time. ">Matx</a> can be initialized from a C-array: </p><div class="fragment"><div class="line"><span class="keywordtype">float</span> values[] = { 1, 2, 3};</div><div class="line"><a class="code" href="../../dc/d84/group__core__basic.html#ga1625ab2c70d7f06d259f245cb5f5f4f8">Matx31f</a> m(values);</div></div><!-- fragment --><p> In case if C++11 features are avaliable, std::initializer_list can be also used to initizlize <a class="el" href="../../de/de1/classcv_1_1Matx.html" title="Template class for small matrices whose type and size are known at compilation time. ">Matx</a>: </p><div class="fragment"><div class="line"><a class="code" href="../../dc/d84/group__core__basic.html#ga1625ab2c70d7f06d259f245cb5f5f4f8">Matx31f</a> m = { 1, 2, 3};</div></div><!-- fragment --> </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a6ecf9ed18e29806025b5febbabcbeb9b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -2842,7 +2842,7 @@ template&lt;typename _Tp, int m, int n&gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:26 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:43 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -2896,7 +2896,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

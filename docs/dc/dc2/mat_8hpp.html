@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -154,7 +154,8 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <a href="#namespaces">Namespaces</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#enum-members">Enumerations</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">mat.hpp File Reference</div>  </div>
 </div><!--header-->
@@ -244,8 +245,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga353a9de602fe76c709e12074a6f362ba"><td class="memItemLeft" align="right" valign="top">typedef const _InputArray &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">cv::InputArray</a></td></tr>
-<tr class="separator:ga353a9de602fe76c709e12074a6f362ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga606feabe3b50ab6838f1ba89727aa07a"><td class="memItemLeft" align="right" valign="top">typedef InputArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d84/group__core__basic.html#ga606feabe3b50ab6838f1ba89727aa07a">cv::InputArrayOfArrays</a></td></tr>
 <tr class="separator:ga606feabe3b50ab6838f1ba89727aa07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gaf77c9a14ef956c50c1efd4547f444e63"><td class="memItemLeft" align="right" valign="top">typedef const _InputOutputArray &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d84/group__core__basic.html#gaf77c9a14ef956c50c1efd4547f444e63">cv::InputOutputArray</a></td></tr>
@@ -339,12 +338,17 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:gad9287b23bba2fed753b36ef561ae7346"><td class="memItemLeft" align="right" valign="top">InputOutputArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">cv::noArray</a> ()</td></tr>
 <tr class="separator:gad9287b23bba2fed753b36ef561ae7346"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:gab1371a23c90d5f4725ea98240377d7a1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/de0/group__core__utils.html#gaf1094185326a278e77b9dae90a81498a">CV__DEBUG_NS_END</a> typedef const _InputArray &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">cv::InputArray</a></td></tr>
+<tr class="separator:gab1371a23c90d5f4725ea98240377d7a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:24 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:41 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -398,7 +402,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

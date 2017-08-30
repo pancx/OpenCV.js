@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['gain',['GAIN',['../d2/d37/classcv_1_1detail_1_1ExposureCompensator.html#abecbd49761f0612f19c57e6f1e6325cda6ba7b5295c631d353f070e1e471d8cee',1,'cv::detail::ExposureCompensator']]],
-  ['gain_5fblocks',['GAIN_BLOCKS',['../d2/d37/classcv_1_1detail_1_1ExposureCompensator.html#abecbd49761f0612f19c57e6f1e6325cdac165e2abfe45df8b7216509597a833e8',1,'cv::detail::ExposureCompensator']]],
+  ['gain',['GAIN',['../d2/d37/classcv_1_1detail_1_1ExposureCompensator.html#a80a99625d5df2035763ec5363d680edaa6ba7b5295c631d353f070e1e471d8cee',1,'cv::detail::ExposureCompensator']]],
+  ['gain_5fblocks',['GAIN_BLOCKS',['../d2/d37/classcv_1_1detail_1_1ExposureCompensator.html#a80a99625d5df2035763ec5363d680edaac165e2abfe45df8b7216509597a833e8',1,'cv::detail::ExposureCompensator']]],
   ['gamma',['GAMMA',['../d1/d2d/classcv_1_1ml_1_1SVM.html#a32d2e8d21aaa4f58cdf9c27c102becf3a9b81805a0cd06dc59c354b0ad6fc9e9a',1,'cv::ml::SVM']]],
   ['gaussian',['GAUSSIAN',['../d0/dce/classcv_1_1ml_1_1ANN__MLP.html#ade71470ec8814021728f8b31b09773b0ae3d886f16c8018eebf26d8d75a90dd7e',1,'cv::ml::ANN_MLP']]],
   ['gc_5fbgd',['GC_BGD',['../d7/d1b/group__imgproc__misc.html#ggad43d3e4208d3cf025d8304156b02ba38a889f1ce109543e8aed80a7abbc6dcb39',1,'cv']]],

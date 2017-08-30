@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -212,7 +212,7 @@ cv.Sobel(src, dsty, cv.CV_8U, 0, 1, 3, 1, 0, cv.BORDER_DEFAULT);
 // cv.Scharr(src, dstx, cv.CV_8U, 1, 0, 1, 0, cv.BORDER_DEFAULT);
 // cv.Scharr(src, dsty, cv.CV_8U, 0, 1, 1, 0, cv.BORDER_DEFAULT);
 cv.imshow("SobelCanvasOutputX", dstx);
-cv.imshow("SobelCanvasOutputY", dsty); 
+cv.imshow("SobelCanvasOutputY", dsty);
 src.delete(); dstx.delete(); dsty.delete();
 </textarea>
 <p class="err" id="SobelErr"></p>
@@ -222,7 +222,7 @@ src.delete(); dstx.delete(); dsty.delete();
         <p>Original</p>
         <canvas id="SobelCanvasInput"></canvas>
         <input type="file" id="SobelInput" name="file" />
-    </div>       
+    </div>
     <div>
         <p>Sobel X</p>
         <canvas id="SobelCanvasOutputX"></canvas>
@@ -353,7 +353,7 @@ cv.Sobel(src, dstx, cv.CV_8U, 1, 0, 3, 1, 0, cv.BORDER_DEFAULT);
 cv.Sobel(src, absDstx, cv.CV_64F, 1, 0, 3, 1, 0, cv.BORDER_DEFAULT);
 cv.convertScaleAbs(absDstx, absDstx, 1, 0);
 cv.imshow("absSobelCanvasOutput8U", dstx);
-cv.imshow("absSobelCanvasOutput64F", absDstx); 
+cv.imshow("absSobelCanvasOutput64F", absDstx);
 src.delete(); dstx.delete(); absDstx.delete();
 </textarea>
 <p class="err" id="absSobelErr"></p>
@@ -363,7 +363,7 @@ src.delete(); dstx.delete(); absDstx.delete();
         <p>Original</p>
         <canvas id="absSobelCanvasInput"></canvas>
         <input type="file" id="absSobelInput" name="file" />
-    </div>       
+    </div>
     <div>
         <p>Sobel X(cv.CV_8U)</p>
         <canvas id="absSobelCanvasOutput8U"></canvas>
@@ -409,7 +409,7 @@ if (typeof cv !== 'undefined') {
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -463,7 +463,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

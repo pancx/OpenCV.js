@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -155,17 +155,17 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h2>Installing OpenCV from prebuilt binaries </h2>
 <ol type="1">
 <li>Below Python packages are to be downloaded and installed to their default locations.<ol type="a">
-<li><a href="http://python.org/ftp/python/2.7.5/python-2.7.5.msi">Python-2.7.x</a>.</li>
-<li><a href="http://sourceforge.net/projects/numpy/files/NumPy/1.7.1/numpy-1.7.1-win32-superpack-python2.7.exe/download">Numpy</a>.</li>
-<li><a href="https://downloads.sourceforge.net/project/matplotlib/matplotlib/matplotlib-1.3.0/matplotlib-1.3.0.win32-py2.7.exe">Matplotlib</a> (<em>Matplotlib is optional, but recommended since we use it a lot in our tutorials</em>).</li>
+<li><a href="http://www.python.org/ftp/python/2.7.13/python-2.7.13.msi">Python-2.7.x</a>.</li>
+<li><a href="https://sourceforge.net/projects/numpy/files/NumPy/1.10.2/numpy-1.10.2-win32-superpack-python2.7.exe/download">Numpy</a>.</li>
+<li><a href="https://sourceforge.net/projects/matplotlib/files/matplotlib/matplotlib-1.5.0/windows/matplotlib-1.5.0.win32-py2.7.exe/download">Matplotlib</a> (<em>Matplotlib is optional, but recommended since we use it a lot in our tutorials</em>).</li>
 </ol>
 </li>
 <li>Install all packages into their default locations. Python will be installed to <code>C:/Python27/</code>.</li>
-<li>After installation, open Python IDLE. Enter import numpy and make sure Numpy is working fine.</li>
+<li>After installation, open Python IDLE. Enter <b>import numpy</b> and make sure Numpy is working fine.</li>
 <li>Download latest OpenCV release from <a href="http://sourceforge.net/projects/opencvlibrary/files/opencv-win/2.4.6/OpenCV-2.4.6.0.exe/download">sourceforge site</a> and double-click to extract it.</li>
 <li>Goto <b>opencv/build/python/2.7</b> folder.</li>
 <li>Copy <b>cv2.pyd</b> to <b>C:/Python27/lib/site-packages</b>.</li>
-<li>Open Python IDLE and type following codes in Python terminal. <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&gt;&gt;&gt; import cv2</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&gt;&gt;&gt; print cv2.__version__</div></div><!-- fragment --></li>
+<li>Open Python IDLE and type following codes in Python terminal. <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;&gt;&gt;&gt; import cv2</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;&gt;&gt;&gt; print( cv2.__version__ )</div></div><!-- fragment --></li>
 </ol>
 <p>If the results are printed out without any errors, congratulations !!! You have installed OpenCV-Python successfully.</p>
 <h2>Building OpenCV from source </h2>
@@ -256,7 +256,7 @@ image</div></div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -310,7 +310,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

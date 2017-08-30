@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -189,23 +189,23 @@ Inheritance diagram for cv::detail::RotationWarper:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a1ae345a2e77c4afe0175215c791334d2"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcv_1_1detail_1_1RotationWarper.html#a1ae345a2e77c4afe0175215c791334d2">~RotationWarper</a> ()</td></tr>
 <tr class="separator:a1ae345a2e77c4afe0175215c791334d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab0ff96c239a3d7d8f11818d19d6f8033"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcv_1_1detail_1_1RotationWarper.html#ab0ff96c239a3d7d8f11818d19d6f8033">buildMaps</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga346f563897249351a34549137c8532a0">Size</a> src_size, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> K, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> R, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> xmap, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> ymap)=0</td></tr>
+<tr class="memitem:ab0ff96c239a3d7d8f11818d19d6f8033"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcv_1_1detail_1_1RotationWarper.html#ab0ff96c239a3d7d8f11818d19d6f8033">buildMaps</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga346f563897249351a34549137c8532a0">Size</a> src_size, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> K, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> R, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> xmap, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> ymap)=0</td></tr>
 <tr class="memdesc:ab0ff96c239a3d7d8f11818d19d6f8033"><td class="mdescLeft">&#160;</td><td class="mdescRight">Builds the projection maps according to the given camera data.  <a href="#ab0ff96c239a3d7d8f11818d19d6f8033">More...</a><br /></td></tr>
 <tr class="separator:ab0ff96c239a3d7d8f11818d19d6f8033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfb5d4043a3303d988b677281bc85406"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcv_1_1detail_1_1RotationWarper.html#adfb5d4043a3303d988b677281bc85406">getScale</a> () const </td></tr>
 <tr class="separator:adfb5d4043a3303d988b677281bc85406"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04686ebbe20736e23702e43ec0acf074"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcv_1_1detail_1_1RotationWarper.html#a04686ebbe20736e23702e43ec0acf074">setScale</a> (float)</td></tr>
 <tr class="separator:a04686ebbe20736e23702e43ec0acf074"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3494b411fc7ff3ce23792b871972846d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dc/d84/group__core__basic.html#ga1e83eafb2d26b3c93f09e8338bcab192">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcv_1_1detail_1_1RotationWarper.html#a3494b411fc7ff3ce23792b871972846d">warp</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> src, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> K, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> R, int interp_mode, int border_mode, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> dst)=0</td></tr>
+<tr class="memitem:a3494b411fc7ff3ce23792b871972846d"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dc/d84/group__core__basic.html#ga1e83eafb2d26b3c93f09e8338bcab192">Point</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcv_1_1detail_1_1RotationWarper.html#a3494b411fc7ff3ce23792b871972846d">warp</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> src, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> K, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> R, int interp_mode, int border_mode, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> dst)=0</td></tr>
 <tr class="memdesc:a3494b411fc7ff3ce23792b871972846d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projects the image.  <a href="#a3494b411fc7ff3ce23792b871972846d">More...</a><br /></td></tr>
 <tr class="separator:a3494b411fc7ff3ce23792b871972846d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d88beb2c14580ddf9162d6e7dcd3be0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcv_1_1detail_1_1RotationWarper.html#a3d88beb2c14580ddf9162d6e7dcd3be0">warpBackward</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> src, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> K, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> R, int interp_mode, int border_mode, <a class="el" href="../../dc/d84/group__core__basic.html#ga346f563897249351a34549137c8532a0">Size</a> dst_size, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> dst)=0</td></tr>
+<tr class="memitem:a3d88beb2c14580ddf9162d6e7dcd3be0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcv_1_1detail_1_1RotationWarper.html#a3d88beb2c14580ddf9162d6e7dcd3be0">warpBackward</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> src, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> K, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> R, int interp_mode, int border_mode, <a class="el" href="../../dc/d84/group__core__basic.html#ga346f563897249351a34549137c8532a0">Size</a> dst_size, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> dst)=0</td></tr>
 <tr class="memdesc:a3d88beb2c14580ddf9162d6e7dcd3be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projects the image backward.  <a href="#a3d88beb2c14580ddf9162d6e7dcd3be0">More...</a><br /></td></tr>
 <tr class="separator:a3d88beb2c14580ddf9162d6e7dcd3be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6264673f55297685343f6cd1ceaaa93"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dc/d84/group__core__basic.html#ga7d080aa40de011e4410bca63385ffe2a">Point2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcv_1_1detail_1_1RotationWarper.html#ad6264673f55297685343f6cd1ceaaa93">warpPoint</a> (const <a class="el" href="../../dc/d84/group__core__basic.html#ga7d080aa40de011e4410bca63385ffe2a">Point2f</a> &amp;pt, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> K, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> R)=0</td></tr>
+<tr class="memitem:ad6264673f55297685343f6cd1ceaaa93"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dc/d84/group__core__basic.html#ga7d080aa40de011e4410bca63385ffe2a">Point2f</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcv_1_1detail_1_1RotationWarper.html#ad6264673f55297685343f6cd1ceaaa93">warpPoint</a> (const <a class="el" href="../../dc/d84/group__core__basic.html#ga7d080aa40de011e4410bca63385ffe2a">Point2f</a> &amp;pt, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> K, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> R)=0</td></tr>
 <tr class="memdesc:ad6264673f55297685343f6cd1ceaaa93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Projects the image point.  <a href="#ad6264673f55297685343f6cd1ceaaa93">More...</a><br /></td></tr>
 <tr class="separator:ad6264673f55297685343f6cd1ceaaa93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a674efcb1aa88f48c208ef895237a45b9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcv_1_1detail_1_1RotationWarper.html#a674efcb1aa88f48c208ef895237a45b9">warpRoi</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga346f563897249351a34549137c8532a0">Size</a> src_size, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> K, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> R)=0</td></tr>
+<tr class="memitem:a674efcb1aa88f48c208ef895237a45b9"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">Rect</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../da/db8/classcv_1_1detail_1_1RotationWarper.html#a674efcb1aa88f48c208ef895237a45b9">warpRoi</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga346f563897249351a34549137c8532a0">Size</a> src_size, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> K, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> R)=0</td></tr>
 <tr class="separator:a674efcb1aa88f48c208ef895237a45b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -251,13 +251,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>K</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
         <tr>
@@ -363,19 +363,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual <a class="el" href="../../dc/d84/group__core__basic.html#ga1e83eafb2d26b3c93f09e8338bcab192">Point</a> cv::detail::RotationWarper::warp </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>K</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
         <tr>
@@ -437,19 +437,19 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">virtual void cv::detail::RotationWarper::warpBackward </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>K</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>R</em>, </td>
         </tr>
         <tr>
@@ -523,13 +523,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>K</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>R</em>&#160;</td>
         </tr>
         <tr>
@@ -576,13 +576,13 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>K</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>R</em>&#160;</td>
         </tr>
         <tr>
@@ -618,7 +618,7 @@ Public Member Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:29 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:46 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -672,7 +672,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

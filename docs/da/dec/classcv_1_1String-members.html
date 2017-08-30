@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -231,7 +231,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html#a1b9cacf4f3c5a1f2614696dcd26866d9">rfind</a>(const char *s, size_t pos=npos) const </td><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html">cv::String</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html#a1551d16babd2b0b790b59d4e53652b21">size</a>() const </td><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html">cv::String</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html#ad3fe3b72278078d02b8811a77df32657">size_type</a> typedef</td><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html">cv::String</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html#ad43d5c0176c1c9fce373185909d45a96">String</a>()</td><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html">cv::String</a></td><td class="entry"><span class="mlabel">explicit</span></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html#ad43d5c0176c1c9fce373185909d45a96">String</a>()</td><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html">cv::String</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html#a55732d035800622be628f227738c96e9">String</a>(const String &amp;str)</td><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html">cv::String</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html#a199068b74e5875ba7182730452c09757">String</a>(const String &amp;str, size_t pos, size_t len=npos)</td><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html">cv::String</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html#a3fcfff8db840709e39cd770100f2d886">String</a>(const char *s)</td><td class="entry"><a class="el" href="../../d1/d8f/classcv_1_1String.html">cv::String</a></td><td class="entry"></td></tr>
@@ -251,7 +251,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -305,7 +305,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

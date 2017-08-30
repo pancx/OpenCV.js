@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -268,7 +268,7 @@ cv.log(mag, mag);
 
 // crop the spectrum, if it has an odd number of rows or columns
 let rect = new cv.Rect(0, 0, mag.cols & -2, mag.rows & -2);
-mag = mag.getRoiRect(rect);
+mag = mag.roi(rect);
 
 // rearrange the quadrants of Fourier image
 // so that the origin is at the image center
@@ -281,10 +281,10 @@ let rect1 = new cv.Rect(cx, 0, cx, cy);
 let rect2 = new cv.Rect(0, cy, cx, cy);
 let rect3 = new cv.Rect(cx, cy, cx, cy);
 
-let q0 = mag.getRoiRect(rect0);
-let q1 = mag.getRoiRect(rect1);
-let q2 = mag.getRoiRect(rect2);
-let q3 = mag.getRoiRect(rect3);
+let q0 = mag.roi(rect0);
+let q1 = mag.roi(rect1);
+let q2 = mag.roi(rect2);
+let q3 = mag.roi(rect3);
 
 // exchange 1 and 4 quadrants
 q0.copyTo(tmp);
@@ -300,7 +300,7 @@ tmp.copyTo(q2);
 cv.normalize(mag, mag, 0, 1, cv.NORM_MINMAX);
 
 cv.imshow("dftCanvasOutput", mag);
-src.delete(); padded.delete(); planes.delete(); complexI.delete(); m1.delete(); tmp.delete(); 
+src.delete(); padded.delete(); planes.delete(); complexI.delete(); m1.delete(); tmp.delete();
 </textarea>
 <p class="err" id="dftErr"></p>
 </div>
@@ -347,7 +347,7 @@ if (typeof cv !== 'undefined') {
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -401,7 +401,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

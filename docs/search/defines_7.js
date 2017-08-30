@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['use_5funordered_5fmap',['USE_UNORDERED_MAP',['../d6/db3/lsh__table_8h.html#ab69ecda56acf8670f9ca31ab0afcbce5',1,'lsh_table.h']]]
+  ['thrust_5fdebug',['THRUST_DEBUG',['../d2/d22/core_2include_2opencv2_2core_2cuda_2reduce_8hpp.html#a307edaa487e6e39fcca95bd1250ec1f9',1,'reduce.hpp']]]
 ];

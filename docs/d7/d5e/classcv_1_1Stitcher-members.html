@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -181,7 +181,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html#a6e0c664d5db5567d4c6b385e464d466f">matchingMask</a>() const </td><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html">cv::Stitcher</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html#a114713924ec05a0309f4df7e918c0324">Mode</a> enum name</td><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html">cv::Stitcher</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html#a507409ce9435dd89857469d12ec06b45afc04343b65c6780b62b684ed14e26586">OK</a> enum value</td><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html">cv::Stitcher</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html#a1fdd71244ab2618bced437c46f7eb44aac77eedc34a400551e89e12818f8bec63">ORIG_RESOL</a> enum value</td><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html">cv::Stitcher</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html#a5d14957a63e6ba6cfea06c80e88f9a7cac77eedc34a400551e89e12818f8bec63">ORIG_RESOL</a> enum value</td><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html">cv::Stitcher</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html#ab6ec8350126054a7538b262729abf53c">panoConfidenceThresh</a>() const </td><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html">cv::Stitcher</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html#a114713924ec05a0309f4df7e918c0324a67810f8a77e48cadc3134972ed7f99fd">PANORAMA</a> enum value</td><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html">cv::Stitcher</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html#a8aaec9b43e082f501a6792f7d398e79b">registrationResol</a>() const </td><td class="entry"><a class="el" href="../../d2/d8d/classcv_1_1Stitcher.html">cv::Stitcher</a></td><td class="entry"><span class="mlabel">inline</span></td></tr>
@@ -215,7 +215,7 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -269,7 +269,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

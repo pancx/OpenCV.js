@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -447,6 +447,9 @@ Functions</h2></td></tr>
 <tr class="memitem:ga38ffc32658e008a149f259b1637cb0be"><td class="memTemplItemLeft" align="right" valign="top">V_TypeTraits&lt; _Tp &gt;::sum_type&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d91/group__core__hal__intrin.html#ga38ffc32658e008a149f259b1637cb0be">cv::v_reduce_sum</a> (const v_reg&lt; _Tp, n &gt; &amp;a)</td></tr>
 <tr class="memdesc:ga38ffc32658e008a149f259b1637cb0be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sum packed values.  <a href="../../df/d91/group__core__hal__intrin.html#ga38ffc32658e008a149f259b1637cb0be">More...</a><br /></td></tr>
 <tr class="separator:ga38ffc32658e008a149f259b1637cb0be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gafec4c6d20a68eba604ec1a480f457f34"><td class="memItemLeft" align="right" valign="top">v_float32x4&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/d91/group__core__hal__intrin.html#gafec4c6d20a68eba604ec1a480f457f34">cv::v_reduce_sum4</a> (const v_float32x4 &amp;a, const v_float32x4 &amp;b, const v_float32x4 &amp;c, const v_float32x4 &amp;d)</td></tr>
+<tr class="memdesc:gafec4c6d20a68eba604ec1a480f457f34"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sums all elements of each input vector, returns the vector of sums.  <a href="../../df/d91/group__core__hal__intrin.html#gafec4c6d20a68eba604ec1a480f457f34">More...</a><br /></td></tr>
+<tr class="separator:gafec4c6d20a68eba604ec1a480f457f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4cfd2e478d7c585fc77c64cc4fde66ae"><td class="memTemplParams" colspan="2">template&lt;typename _Tp , int n&gt; </td></tr>
 <tr class="memitem:ga4cfd2e478d7c585fc77c64cc4fde66ae"><td class="memTemplItemLeft" align="right" valign="top">v_reg&lt; int, n &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../df/d91/group__core__hal__intrin.html#ga4cfd2e478d7c585fc77c64cc4fde66ae">cv::v_round</a> (const v_reg&lt; _Tp, n &gt; &amp;a)</td></tr>
 <tr class="memdesc:ga4cfd2e478d7c585fc77c64cc4fde66ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Round elements.  <a href="../../df/d91/group__core__hal__intrin.html#ga4cfd2e478d7c585fc77c64cc4fde66ae">More...</a><br /></td></tr>
@@ -3181,7 +3184,7 @@ template&lt;typename _Tp , int n&gt; </div>
 </div><div class="memdoc">
 
 <p>Choose max values for each pair. </p>
-<p>Scheme: </p><div class="fragment"><div class="line">{A1 A2 ...}</div><div class="line">{B1 B2 ...}</div><div class="line">--------------</div><div class="line">{<a class="code" href="../../d2/de8/group__core__array.html#gacc40fa15eac0fb83f8ca70b7cc0b588d">max</a>(A1,B1) <a class="code" href="../../d2/de8/group__core__array.html#gacc40fa15eac0fb83f8ca70b7cc0b588d">max</a>(A2,B2) ...}</div></div><!-- fragment --><p> For all types except 64-bit integer. </p>
+<p>Scheme: </p><div class="fragment"><div class="line">{A1 A2 ...}</div><div class="line">{B1 B2 ...}</div><div class="line">--------------</div><div class="line">{<a class="code" href="../../d7/dcc/group__core__utils__softfloat.html#ga78f988f6cfa6223610298cbd4f86ec66">max</a>(A1,B1) <a class="code" href="../../d7/dcc/group__core__utils__softfloat.html#ga78f988f6cfa6223610298cbd4f86ec66">max</a>(A2,B2) ...}</div></div><!-- fragment --><p> For all types except 64-bit integer. </p>
 
 </div>
 </div>
@@ -3220,7 +3223,7 @@ template&lt;typename _Tp , int n&gt; </div>
 </div><div class="memdoc">
 
 <p>Choose min values for each pair. </p>
-<p>Scheme: </p><div class="fragment"><div class="line">{A1 A2 ...}</div><div class="line">{B1 B2 ...}</div><div class="line">--------------</div><div class="line">{<a class="code" href="../../d2/de8/group__core__array.html#ga9af368f182ee76d0463d0d8d5330b764">min</a>(A1,B1) <a class="code" href="../../d2/de8/group__core__array.html#ga9af368f182ee76d0463d0d8d5330b764">min</a>(A2,B2) ...}</div></div><!-- fragment --><p> For all types except 64-bit integer. </p>
+<p>Scheme: </p><div class="fragment"><div class="line">{A1 A2 ...}</div><div class="line">{B1 B2 ...}</div><div class="line">--------------</div><div class="line">{<a class="code" href="../../d7/dcc/group__core__utils__softfloat.html#gac48df53b8fd34b87e7b121fa8fd4c379">min</a>(A1,B1) <a class="code" href="../../d7/dcc/group__core__utils__softfloat.html#gac48df53b8fd34b87e7b121fa8fd4c379">min</a>(A2,B2) ...}</div></div><!-- fragment --><p> For all types except 64-bit integer. </p>
 
 </div>
 </div>
@@ -3968,7 +3971,7 @@ template&lt;typename _Tp , int n&gt; </div>
 </div><div class="memdoc">
 
 <p>Find one max value. </p>
-<p>Scheme: </p><div class="fragment"><div class="line">{A1 A2 A3 ...} =&gt; <a class="code" href="../../d2/de8/group__core__array.html#gacc40fa15eac0fb83f8ca70b7cc0b588d">max</a>(A1,A2,A3,...)</div></div><!-- fragment --><p> For 32-bit integer and 32-bit floating point types. </p>
+<p>Scheme: </p><div class="fragment"><div class="line">{A1 A2 A3 ...} =&gt; <a class="code" href="../../d7/dcc/group__core__utils__softfloat.html#ga78f988f6cfa6223610298cbd4f86ec66">max</a>(A1,A2,A3,...)</div></div><!-- fragment --><p> For 32-bit integer and 32-bit floating point types. </p>
 
 </div>
 </div>
@@ -3997,7 +4000,7 @@ template&lt;typename _Tp , int n&gt; </div>
 </div><div class="memdoc">
 
 <p>Find one min value. </p>
-<p>Scheme: </p><div class="fragment"><div class="line">{A1 A2 A3 ...} =&gt; <a class="code" href="../../d2/de8/group__core__array.html#ga9af368f182ee76d0463d0d8d5330b764">min</a>(A1,A2,A3,...)</div></div><!-- fragment --><p> For 32-bit integer and 32-bit floating point types. </p>
+<p>Scheme: </p><div class="fragment"><div class="line">{A1 A2 A3 ...} =&gt; <a class="code" href="../../d7/dcc/group__core__utils__softfloat.html#gac48df53b8fd34b87e7b121fa8fd4c379">min</a>(A1,A2,A3,...)</div></div><!-- fragment --><p> For 32-bit integer and 32-bit floating point types. </p>
 
 </div>
 </div>
@@ -4028,6 +4031,54 @@ template&lt;typename _Tp , int n&gt; </div>
 <p>Sum packed values. </p>
 <p>Scheme: </p><div class="fragment"><div class="line">{A1 A2 A3 ...} =&gt; <a class="code" href="../../d2/de8/group__core__array.html#ga716e10a2dd9e228e4d3c95818f106722">sum</a>{A1,A2,A3,...}</div></div><!-- fragment --><p> For 32-bit integer and 32-bit floating point types. </p>
 
+</div>
+</div>
+<a class="anchor" id="gafec4c6d20a68eba604ec1a480f457f34"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">v_float32x4 cv::v_reduce_sum4 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../df/d91/group__core__hal__intrin.html#gad1f972902dd8ee6dd7c2ebeb845728d4">v_float32x4</a> &amp;&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/d91/group__core__hal__intrin.html#gad1f972902dd8ee6dd7c2ebeb845728d4">v_float32x4</a> &amp;&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/d91/group__core__hal__intrin.html#gad1f972902dd8ee6dd7c2ebeb845728d4">v_float32x4</a> &amp;&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="../../df/d91/group__core__hal__intrin.html#gad1f972902dd8ee6dd7c2ebeb845728d4">v_float32x4</a> &amp;&#160;</td>
+          <td class="paramname"><em>d</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sums all elements of each input vector, returns the vector of sums. </p>
+<p>Scheme: </p><div class="fragment"><div class="line">result[0] = a[0] + a[1] + a[2] + a[3]</div><div class="line">result[1] = b[0] + b[1] + b[2] + b[3]</div><div class="line">result[2] = c[0] + c[1] + c[2] + c[3]</div><div class="line">result[3] = d[0] + d[1] + d[2] + d[3]</div></div><!-- fragment --> 
 </div>
 </div>
 <a class="anchor" id="gadd1d3630aefc75dbea57c6a9c3804075"></a>
@@ -6612,7 +6663,7 @@ template&lt;typename _Tp , int n&gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -6666,7 +6717,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -171,7 +171,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 \[f(x) = \beta_{0} + \beta^{T} x,\]
 </p>
 <p>where \(\beta\) is known as the <em>weight vector</em> and \(\beta_{0}\) as the <em>bias</em>.</p>
-<dl class="section see"><dt>See also</dt><dd>A more in depth description of this and hyperplanes you can find in the section 4.5 (<em>Seperating Hyperplanes</em>) of the book: <em>Elements of Statistical Learning</em> by T. Hastie, R. Tibshirani and J. H. Friedman (<a class="el" href="d0/de3/citelist.html#CITEREF_HTF01">[82]</a>).</dd></dl>
+<dl class="section see"><dt>See also</dt><dd>A more in depth description of this and hyperplanes you can find in the section 4.5 (<em>Seperating Hyperplanes</em>) of the book: <em>Elements of Statistical Learning</em> by T. Hastie, R. Tibshirani and J. H. Friedman (<a class="el" href="d0/de3/citelist.html#CITEREF_HTF01">[83]</a>).</dd></dl>
 <p>The optimal hyperplane can be represented in an infinite number of different ways by scaling of \(\beta\) and \(\beta_{0}\). As a matter of convention, among all the possible representations of the hyperplane, the one chosen is</p>
 <p class="formulaDsp">
 \[|\beta_{0} + \beta^{T} x| = 1\]
@@ -233,7 +233,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:24 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:41 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -287,7 +287,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

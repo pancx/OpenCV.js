@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -324,6 +324,14 @@ Functions</h2></td></tr>
 <tr class="memitem:ga9e80e080f7ef33f897e415358aee7f7e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfc/group__highgui.html#ga9e80e080f7ef33f897e415358aee7f7e">cv::resizeWindow</a> (const String &amp;winname, int width, int height)</td></tr>
 <tr class="memdesc:ga9e80e080f7ef33f897e415358aee7f7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resizes window to the specified size.  <a href="../../d7/dfc/group__highgui.html#ga9e80e080f7ef33f897e415358aee7f7e">More...</a><br /></td></tr>
 <tr class="separator:ga9e80e080f7ef33f897e415358aee7f7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8daf4730d3adf7035b6de9be4c469af5"><td class="memItemLeft" align="right" valign="top">Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfc/group__highgui.html#ga8daf4730d3adf7035b6de9be4c469af5">cv::selectROI</a> (const String &amp;windowName, InputArray img, bool showCrosshair=true, bool fromCenter=false)</td></tr>
+<tr class="memdesc:ga8daf4730d3adf7035b6de9be4c469af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects ROI on the given image. Function creates a window and allows user to select a ROI using mouse. Controls: use <code>space</code> or <code>enter</code> to finish selection, use key <code>c</code> to cancel selection (function will return the zero <a class="el" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">cv::Rect</a>).  <a href="../../d7/dfc/group__highgui.html#ga8daf4730d3adf7035b6de9be4c469af5">More...</a><br /></td></tr>
+<tr class="separator:ga8daf4730d3adf7035b6de9be4c469af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e2256794d0c88f4cfc4fdd7890c9794"><td class="memItemLeft" align="right" valign="top">Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfc/group__highgui.html#ga2e2256794d0c88f4cfc4fdd7890c9794">cv::selectROI</a> (InputArray img, bool showCrosshair=true, bool fromCenter=false)</td></tr>
+<tr class="separator:ga2e2256794d0c88f4cfc4fdd7890c9794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f11fad74a6432b8055fb21621a0f893"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfc/group__highgui.html#ga0f11fad74a6432b8055fb21621a0f893">cv::selectROIs</a> (const String &amp;windowName, InputArray img, std::vector&lt; Rect &gt; &amp;boundingBoxes, bool showCrosshair=true, bool fromCenter=false)</td></tr>
+<tr class="memdesc:ga0f11fad74a6432b8055fb21621a0f893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects ROIs on the given image. Function creates a window and allows user to select a ROIs using mouse. Controls: use <code>space</code> or <code>enter</code> to finish current selection and start a new one, use <code>esc</code> to terminate multiple ROI selection process.  <a href="../../d7/dfc/group__highgui.html#ga0f11fad74a6432b8055fb21621a0f893">More...</a><br /></td></tr>
+<tr class="separator:ga0f11fad74a6432b8055fb21621a0f893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga89e7806b0a616f6f1d502bd8c183ad3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfc/group__highgui.html#ga89e7806b0a616f6f1d502bd8c183ad3e">cv::setMouseCallback</a> (const String &amp;winname, MouseCallback onMouse, void *userdata=0)</td></tr>
 <tr class="memdesc:ga89e7806b0a616f6f1d502bd8c183ad3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets mouse handler for the specified window.  <a href="../../d7/dfc/group__highgui.html#ga89e7806b0a616f6f1d502bd8c183ad3e">More...</a><br /></td></tr>
 <tr class="separator:ga89e7806b0a616f6f1d502bd8c183ad3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -752,7 +760,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d2a/contours2_8cpp-example.html#a25">contours2.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a22">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#a21">distrans.cpp</a>, <a class="el" href="../../d3/d63/edge_8cpp-example.html#a17">edge.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a23">ffilldemo.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a7">fitellipse.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a15">laplace.cpp</a>, <a class="el" href="../../d8/dc0/morphology2_8cpp-example.html#a17">morphology2.cpp</a>, and <a class="el" href="../../d2/dc0/pca_8cpp-example.html#a29">pca.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../da/d9c/AddingImagesTrackbar_8cpp-example.html#a7">AddingImagesTrackbar.cpp</a>, <a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a26">camshiftdemo.cpp</a>, <a class="el" href="../../d0/d2a/contours2_8cpp-example.html#a25">contours2.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a22">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#a21">distrans.cpp</a>, <a class="el" href="../../d3/d63/edge_8cpp-example.html#a17">edge.cpp</a>, <a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#a43">falsecolor.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a23">ffilldemo.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a7">fitellipse.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a15">laplace.cpp</a>, <a class="el" href="../../da/d53/MatchTemplate_Demo_8cpp-example.html#a6">MatchTemplate_Demo.cpp</a>, <a class="el" href="../../d8/dc0/morphology2_8cpp-example.html#a17">morphology2.cpp</a>, and <a class="el" href="../../d2/dc0/pca_8cpp-example.html#a28">pca.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -796,7 +804,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a27">ffilldemo.cpp</a>, and <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a45">grabcut.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a64">camshiftdemo.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a27">ffilldemo.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a44">grabcut.cpp</a>, and <a class="el" href="../../da/d72/shape_example_8cpp-example.html#a21">shape_example.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -864,7 +872,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#a47">falsecolor.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="gaaf9504b8f9cf19024d9d44a14e461656"></a>
@@ -917,7 +926,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mat</em>&#160;</td>
         </tr>
         <tr>
@@ -933,7 +942,7 @@ Functions</h2></td></tr>
 <ul>
 <li>If the image is 8-bit unsigned, it is displayed as is.</li>
 <li>If the image is 16-bit unsigned or 32-bit integer, the pixels are divided by 256. That is, the value range [0,255*256] is mapped to [0,255].</li>
-<li>If the image is 32-bit floating-point, the pixel values are multiplied by 255. That is, the value range [0,1] is mapped to [0,255].</li>
+<li>If the image is 32-bit or 64-bit floating-point, the pixel values are multiplied by 255. That is, the value range [0,1] is mapped to [0,255].</li>
 </ul>
 <p>If window was created with OpenGL support, <a class="el" href="../../d7/dfc/group__highgui.html#ga453d42fe4cb60e5723281a89973ee563" title="Displays an image in the specified window. ">cv::imshow</a> also support <a class="el" href="../../d3/d68/classcv_1_1ogl_1_1Buffer.html" title="Smart pointer for OpenGL buffer object with reference counting. ">ogl::Buffer</a> , <a class="el" href="../../d5/ddf/classcv_1_1ogl_1_1Texture2D.html" title="Smart pointer for OpenGL 2D texture memory with reference counting. ">ogl::Texture2D</a> and <a class="el" href="../../d0/d60/classcv_1_1cuda_1_1GpuMat.html" title="Base storage class for GPU memory with reference counting. ">cuda::GpuMat</a> as input.</p>
 <p>If the window was not created before this function, it is assumed creating a window with <a class="el" href="../../d7/dfc/group__highgui.html#ggabf7d2c5625bc59ac130287f925557ac3acf621ace7a54954cbac01df27e47228f" title="the user cannot resize the window, the size is constrainted by the image displayed. ">cv::WINDOW_AUTOSIZE</a>.</p>
@@ -950,7 +959,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d2a/contours2_8cpp-example.html#a7">contours2.cpp</a>, <a class="el" href="../../d0/d7a/convexhull_8cpp-example.html#a19">convexhull.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a3">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#a15">distrans.cpp</a>, <a class="el" href="../../d3/d63/edge_8cpp-example.html#a6">edge.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a12">ffilldemo.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a5">fitellipse.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a21">grabcut.cpp</a>, <a class="el" href="../../d7/d5d/houghcircles_8cpp-example.html#a17">houghcircles.cpp</a>, <a class="el" href="../../d2/d7b/houghlines_8cpp-example.html#a25">houghlines.cpp</a>, <a class="el" href="../../de/d63/kmeans_8cpp-example.html#a28">kmeans.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a24">laplace.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#a16">lsd_lines.cpp</a>, <a class="el" href="../../d4/d32/minarea_8cpp-example.html#a24">minarea.cpp</a>, <a class="el" href="../../d8/dc0/morphology2_8cpp-example.html#a8">morphology2.cpp</a>, <a class="el" href="../../d2/dc0/pca_8cpp-example.html#a17">pca.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a16">polar_transforms.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#a25">segment_objects.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a12">watershed.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../da/d9c/AddingImagesTrackbar_8cpp-example.html#a2">AddingImagesTrackbar.cpp</a>, <a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a62">camshiftdemo.cpp</a>, <a class="el" href="../../dc/d56/cloning_demo_8cpp-example.html#a8">cloning_demo.cpp</a>, <a class="el" href="../../d0/d2a/contours2_8cpp-example.html#a7">contours2.cpp</a>, <a class="el" href="../../d0/d7a/convexhull_8cpp-example.html#a19">convexhull.cpp</a>, <a class="el" href="../../d3/d2e/copyMakeBorder_demo_8cpp-example.html#a10">copyMakeBorder_demo.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a3">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#a15">distrans.cpp</a>, <a class="el" href="../../dc/d88/Drawing_1_8cpp-example.html#a9">Drawing_1.cpp</a>, <a class="el" href="../../df/daf/Drawing_2_8cpp-example.html#a5">Drawing_2.cpp</a>, <a class="el" href="../../d3/d63/edge_8cpp-example.html#a6">edge.cpp</a>, <a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a44">facedetect.cpp</a>, <a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#a26">falsecolor.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a12">ffilldemo.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a5">fitellipse.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a21">grabcut.cpp</a>, <a class="el" href="../../d7/d5d/houghcircles_8cpp-example.html#a17">houghcircles.cpp</a>, <a class="el" href="../../d2/d7b/houghlines_8cpp-example.html#a26">houghlines.cpp</a>, <a class="el" href="../../d0/d7f/image_alignment_8cpp-example.html#a48">image_alignment.cpp</a>, <a class="el" href="../../d1/da2/kalman_8cpp-example.html#a30">kalman.cpp</a>, <a class="el" href="../../de/d63/kmeans_8cpp-example.html#a28">kmeans.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a24">laplace.cpp</a>, <a class="el" href="../../d2/d0a/lkdemo_8cpp-example.html#a28">lkdemo.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#a16">lsd_lines.cpp</a>, <a class="el" href="../../da/d53/MatchTemplate_Demo_8cpp-example.html#a26">MatchTemplate_Demo.cpp</a>, <a class="el" href="../../d4/d32/minarea_8cpp-example.html#a24">minarea.cpp</a>, <a class="el" href="../../d8/dc0/morphology2_8cpp-example.html#a8">morphology2.cpp</a>, <a class="el" href="../../d6/d74/npr_demo_8cpp-example.html#a5">npr_demo.cpp</a>, <a class="el" href="../../d2/dc0/pca_8cpp-example.html#a16">pca.cpp</a>, <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a32">peopledetect.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a15">polar_transforms.cpp</a>, <a class="el" href="../../d6/d73/Pyramids_8cpp-example.html#a3">Pyramids.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#a25">segment_objects.cpp</a>, <a class="el" href="../../da/d72/shape_example_8cpp-example.html#a16">shape_example.cpp</a>, <a class="el" href="../../d5/d57/videowriter_basic_8cpp-example.html#a10">videowriter_basic.cpp</a>, <a class="el" href="../../d5/dfc/warpPerspective_demo_8cpp-example.html#a20">warpPerspective_demo.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a12">watershed.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -993,7 +1002,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a8">polar_transforms.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../dc/d88/Drawing_1_8cpp-example.html#a10">Drawing_1.cpp</a>, <a class="el" href="../../d0/d7f/image_alignment_8cpp-example.html#a45">image_alignment.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a8">polar_transforms.cpp</a>, <a class="el" href="../../da/d72/shape_example_8cpp-example.html#a17">shape_example.cpp</a>, and <a class="el" href="../../d5/dfc/warpPerspective_demo_8cpp-example.html#a12">warpPerspective_demo.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1038,7 +1047,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d2a/contours2_8cpp-example.html#a20">contours2.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a21">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#a20">distrans.cpp</a>, <a class="el" href="../../d3/d63/edge_8cpp-example.html#a16">edge.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a22">ffilldemo.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a6">fitellipse.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a41">grabcut.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a14">laplace.cpp</a>, <a class="el" href="../../d8/dc0/morphology2_8cpp-example.html#a16">morphology2.cpp</a>, <a class="el" href="../../d2/dc0/pca_8cpp-example.html#a27">pca.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a6">polar_transforms.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#a20">segment_objects.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a17">watershed.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../da/d9c/AddingImagesTrackbar_8cpp-example.html#a5">AddingImagesTrackbar.cpp</a>, <a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a24">camshiftdemo.cpp</a>, <a class="el" href="../../d0/d2a/contours2_8cpp-example.html#a20">contours2.cpp</a>, <a class="el" href="../../d3/d2e/copyMakeBorder_demo_8cpp-example.html#a6">copyMakeBorder_demo.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a21">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#a20">distrans.cpp</a>, <a class="el" href="../../d3/d63/edge_8cpp-example.html#a16">edge.cpp</a>, <a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#a42">falsecolor.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a22">ffilldemo.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a6">fitellipse.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a40">grabcut.cpp</a>, <a class="el" href="../../d0/d7f/image_alignment_8cpp-example.html#a43">image_alignment.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a14">laplace.cpp</a>, <a class="el" href="../../d2/d0a/lkdemo_8cpp-example.html#a13">lkdemo.cpp</a>, <a class="el" href="../../da/d53/MatchTemplate_Demo_8cpp-example.html#a4">MatchTemplate_Demo.cpp</a>, <a class="el" href="../../d8/dc0/morphology2_8cpp-example.html#a16">morphology2.cpp</a>, <a class="el" href="../../d2/dc0/pca_8cpp-example.html#a26">pca.cpp</a>, <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a22">peopledetect.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a6">polar_transforms.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#a20">segment_objects.cpp</a>, <a class="el" href="../../d5/dfc/warpPerspective_demo_8cpp-example.html#a9">warpPerspective_demo.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a17">watershed.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1089,6 +1098,147 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="ga8daf4730d3adf7035b6de9be4c469af5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rect cv::selectROI </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d8f/classcv_1_1String.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>windowName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>showCrosshair</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fromCenter</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selects ROI on the given image. Function creates a window and allows user to select a ROI using mouse. Controls: use <code>space</code> or <code>enter</code> to finish selection, use key <code>c</code> to cancel selection (function will return the zero <a class="el" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">cv::Rect</a>). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windowName</td><td>name of the window where selection process will be shown. </td></tr>
+    <tr><td class="paramname">img</td><td>image to select a ROI. </td></tr>
+    <tr><td class="paramname">showCrosshair</td><td>if true crosshair of selection rectangle will be shown. </td></tr>
+    <tr><td class="paramname">fromCenter</td><td>if true center of selection will match initial mouse position. In opposite case a corner of selection rectangle will correspont to the initial mouse position. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>selected ROI or empty rect if selection canceled.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>The function sets it's own mouse callback for specified window using <a class="el" href="../../d7/dfc/group__highgui.html#ga89e7806b0a616f6f1d502bd8c183ad3e" title="Sets mouse handler for the specified window. ">cv::setMouseCallback</a>(windowName, ...). After finish of work an empty callback will be set for the used window. </dd></dl>
+
+</div>
+</div>
+<a class="anchor" id="ga2e2256794d0c88f4cfc4fdd7890c9794"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Rect cv::selectROI </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>showCrosshair</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fromCenter</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>This is an overloaded member function, provided for convenience. It differs from the above function only in what argument(s) it accepts. </p>
+
+</div>
+</div>
+<a class="anchor" id="ga0f11fad74a6432b8055fb21621a0f893"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void cv::selectROIs </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="../../d1/d8f/classcv_1_1String.html">String</a> &amp;&#160;</td>
+          <td class="paramname"><em>windowName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
+          <td class="paramname"><em>img</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::vector&lt; <a class="el" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">Rect</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>boundingBoxes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>showCrosshair</em> = <code>true</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>fromCenter</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Selects ROIs on the given image. Function creates a window and allows user to select a ROIs using mouse. Controls: use <code>space</code> or <code>enter</code> to finish current selection and start a new one, use <code>esc</code> to terminate multiple ROI selection process. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">windowName</td><td>name of the window where selection process will be shown. </td></tr>
+    <tr><td class="paramname">img</td><td>image to select a ROI. </td></tr>
+    <tr><td class="paramname">boundingBoxes</td><td>selected ROIs. </td></tr>
+    <tr><td class="paramname">showCrosshair</td><td>if true crosshair of selection rectangle will be shown. </td></tr>
+    <tr><td class="paramname">fromCenter</td><td>if true center of selection will match initial mouse position. In opposite case a corner of selection rectangle will correspont to the initial mouse position.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>The function sets it's own mouse callback for specified window using <a class="el" href="../../d7/dfc/group__highgui.html#ga89e7806b0a616f6f1d502bd8c183ad3e" title="Sets mouse handler for the specified window. ">cv::setMouseCallback</a>(windowName, ...). After finish of work an empty callback will be set for the used window. </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="ga89e7806b0a616f6f1d502bd8c183ad3e"></a>
 <div class="memitem">
 <div class="memproto">
@@ -1128,7 +1278,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a24">ffilldemo.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a43">grabcut.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a21">watershed.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a25">camshiftdemo.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a24">ffilldemo.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a42">grabcut.cpp</a>, <a class="el" href="../../d2/d0a/lkdemo_8cpp-example.html#a14">lkdemo.cpp</a>, <a class="el" href="../../d5/dfc/warpPerspective_demo_8cpp-example.html#a13">warpPerspective_demo.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a21">watershed.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1174,7 +1324,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#a45">falsecolor.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="gabe26ffe8d2b60cc678895595a581b7aa"></a>
@@ -1215,11 +1366,12 @@ Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">trackbarname</td><td>Name of the trackbar. </td></tr>
     <tr><td class="paramname">winname</td><td>Name of the window that is the parent of trackbar. </td></tr>
-    <tr><td class="paramname">minval</td><td>New maximum position. </td></tr>
+    <tr><td class="paramname">minval</td><td>New minimum position. </td></tr>
   </table>
   </dd>
 </dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#a44">falsecolor.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga67d73c4c9430f13481fd58410d01bd8d"></a>
@@ -1264,7 +1416,8 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#a46">falsecolor.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga66e4a6db4d4e06148bcdfe0d70a5df27"></a>
@@ -1386,7 +1539,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d2a/contours2_8cpp-example.html#a26">contours2.cpp</a>, <a class="el" href="../../d0/d7a/convexhull_8cpp-example.html#a20">convexhull.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a23">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#a22">distrans.cpp</a>, <a class="el" href="../../d3/d63/edge_8cpp-example.html#a18">edge.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a25">ffilldemo.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a8">fitellipse.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a44">grabcut.cpp</a>, <a class="el" href="../../d7/d5d/houghcircles_8cpp-example.html#a18">houghcircles.cpp</a>, <a class="el" href="../../d2/d7b/houghlines_8cpp-example.html#a26">houghlines.cpp</a>, <a class="el" href="../../de/d63/kmeans_8cpp-example.html#a29">kmeans.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a25">laplace.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#a17">lsd_lines.cpp</a>, <a class="el" href="../../d4/d32/minarea_8cpp-example.html#a25">minarea.cpp</a>, <a class="el" href="../../d8/dc0/morphology2_8cpp-example.html#a18">morphology2.cpp</a>, <a class="el" href="../../d2/dc0/pca_8cpp-example.html#a30">pca.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a17">polar_transforms.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#a26">segment_objects.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a22">watershed.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../da/d9c/AddingImagesTrackbar_8cpp-example.html#a8">AddingImagesTrackbar.cpp</a>, <a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a63">camshiftdemo.cpp</a>, <a class="el" href="../../dc/d56/cloning_demo_8cpp-example.html#a14">cloning_demo.cpp</a>, <a class="el" href="../../d0/d2a/contours2_8cpp-example.html#a26">contours2.cpp</a>, <a class="el" href="../../d0/d7a/convexhull_8cpp-example.html#a20">convexhull.cpp</a>, <a class="el" href="../../d3/d2e/copyMakeBorder_demo_8cpp-example.html#a11">copyMakeBorder_demo.cpp</a>, <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a23">demhist.cpp</a>, <a class="el" href="../../d4/d11/distrans_8cpp-example.html#a22">distrans.cpp</a>, <a class="el" href="../../dc/d88/Drawing_1_8cpp-example.html#a11">Drawing_1.cpp</a>, <a class="el" href="../../df/daf/Drawing_2_8cpp-example.html#a6">Drawing_2.cpp</a>, <a class="el" href="../../d3/d63/edge_8cpp-example.html#a18">edge.cpp</a>, <a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a15">facedetect.cpp</a>, <a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#a48">falsecolor.cpp</a>, <a class="el" href="../../d5/d26/ffilldemo_8cpp-example.html#a25">ffilldemo.cpp</a>, <a class="el" href="../../de/dc7/fitellipse_8cpp-example.html#a8">fitellipse.cpp</a>, <a class="el" href="../../de/dd0/grabcut_8cpp-example.html#a43">grabcut.cpp</a>, <a class="el" href="../../d7/d5d/houghcircles_8cpp-example.html#a18">houghcircles.cpp</a>, <a class="el" href="../../d2/d7b/houghlines_8cpp-example.html#a27">houghlines.cpp</a>, <a class="el" href="../../d0/d7f/image_alignment_8cpp-example.html#a49">image_alignment.cpp</a>, <a class="el" href="../../d1/da2/kalman_8cpp-example.html#a31">kalman.cpp</a>, <a class="el" href="../../de/d63/kmeans_8cpp-example.html#a29">kmeans.cpp</a>, <a class="el" href="../../de/db2/laplace_8cpp-example.html#a25">laplace.cpp</a>, <a class="el" href="../../d2/d0a/lkdemo_8cpp-example.html#a29">lkdemo.cpp</a>, <a class="el" href="../../d8/dd4/lsd_lines_8cpp-example.html#a17">lsd_lines.cpp</a>, <a class="el" href="../../da/d53/MatchTemplate_Demo_8cpp-example.html#a7">MatchTemplate_Demo.cpp</a>, <a class="el" href="../../d4/d32/minarea_8cpp-example.html#a25">minarea.cpp</a>, <a class="el" href="../../d8/dc0/morphology2_8cpp-example.html#a18">morphology2.cpp</a>, <a class="el" href="../../d6/d74/npr_demo_8cpp-example.html#a9">npr_demo.cpp</a>, <a class="el" href="../../d2/dc0/pca_8cpp-example.html#a29">pca.cpp</a>, <a class="el" href="../../db/db0/peopledetect_8cpp-example.html#a33">peopledetect.cpp</a>, <a class="el" href="../../dc/d5e/polar_transforms_8cpp-example.html#a16">polar_transforms.cpp</a>, <a class="el" href="../../d6/d73/Pyramids_8cpp-example.html#a4">Pyramids.cpp</a>, <a class="el" href="../../dd/d9d/segment_objects_8cpp-example.html#a26">segment_objects.cpp</a>, <a class="el" href="../../da/d72/shape_example_8cpp-example.html#a18">shape_example.cpp</a>, <a class="el" href="../../d5/d57/videowriter_basic_8cpp-example.html#a11">videowriter_basic.cpp</a>, <a class="el" href="../../d5/dfc/warpPerspective_demo_8cpp-example.html#a27">warpPerspective_demo.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a22">watershed.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -1414,7 +1567,7 @@ Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -1468,7 +1621,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

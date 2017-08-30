@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -236,7 +236,7 @@ Functions</h2></td></tr>
 <tr class="separator:gac7e9d9a4c1095962a1b4780b4fb859df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p>The video stabilization module contains a set of functions and classes that can be used to solve the problem of video stabilization. There are a few methods implemented, most of them are described in the papers <a class="el" href="../../d0/de3/citelist.html#CITEREF_OF06">[55]</a> and <a class="el" href="../../d0/de3/citelist.html#CITEREF_G11">[34]</a> . However, there are some extensions and deviations from the original paper methods.</p>
+<p>The video stabilization module contains a set of functions and classes that can be used to solve the problem of video stabilization. There are a few methods implemented, most of them are described in the papers <a class="el" href="../../d0/de3/citelist.html#CITEREF_OF06">[56]</a> and <a class="el" href="../../d0/de3/citelist.html#CITEREF_G11">[34]</a> . However, there are some extensions and deviations from the original paper methods.</p>
 <h3>References</h3>
 <ol type="1">
 <li>"Full-Frame Video Stabilization with Motion Inpainting" Yasuyuki Matsushita, Eyal Ofek, Weina Ge, Xiaoou Tang, Senior Member, and Heung-Yeung Shum</li>
@@ -254,7 +254,7 @@ Functions</h2></td></tr>
           <td class="memname">cv::videostab::ColorInpainter::ColorInpainter </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>method</em> = <code><a class="el" href="../../d1/d0d/group__photo.html#gga9629a7df23f906e22eef2d019d55d9aba892824c38e258feb5e72f308a358d52e">INPAINT_TELEA</a></code>, </td>
+          <td class="paramname"><em>method</em> = <code><a class="el" href="../../d1/d0d/group__photo.html#ggac007e35ce97fe229513dbfd407d605e3a892824c38e258feb5e72f308a358d52e">INPAINT_TELEA</a></code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -487,7 +487,7 @@ template&lt;typename T &gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:26 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:43 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -541,7 +541,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

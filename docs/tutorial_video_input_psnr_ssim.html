@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -168,7 +168,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p class="formulaDsp">
 \[PSNR = 10 \cdot \log_{10} \left( \frac{MAX_I^2}{MSE} \right)\]
 </p>
-<p>Here the \(MAX_I^2\) is the maximum valid value for a pixel. In case of the simple single byte image per pixel per channel this is 255. When two images are the same the MSE will give zero, resulting in an invalid divide by zero operation in the PSNR formula. In this case the PSNR is undefined and as we'll need to handle this case separately. The transition to a logarithmic scale is made because the pixel values have a very wide dynamic range. All this translated to OpenCV and a C++ function looks like: </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> getPSNR(<span class="keyword">const</span> Mat&amp; I1, <span class="keyword">const</span> Mat&amp; I2)</div><div class="line">{</div><div class="line"> Mat s1;</div><div class="line"> <a class="code" href="d2/de8/group__core__array.html#ga6fef31bc8c4071cbc114a758a2b79c14">absdiff</a>(I1, I2, s1);       <span class="comment">// |I1 - I2|</span></div><div class="line"> s1.convertTo(s1, <a class="code" href="d1/d1b/group__core__hal__interface.html#ga4a3def5d72b74bed31f5f8ab7676099c">CV_32F</a>);  <span class="comment">// cannot make a square on 8 bits</span></div><div class="line"> s1 = s1.mul(s1);           <span class="comment">// |I1 - I2|^2</span></div><div class="line"></div><div class="line"> <a class="code" href="dc/d84/group__core__basic.html#ga599fe92e910c027be274233eccad7beb">Scalar</a> s = <a class="code" href="d2/de8/group__core__array.html#ga716e10a2dd9e228e4d3c95818f106722">sum</a>(s1);        <span class="comment">// sum elements per channel</span></div><div class="line"></div><div class="line"> <span class="keywordtype">double</span> sse = s.val[0] + s.val[1] + s.val[2]; <span class="comment">// sum channels</span></div><div class="line"></div><div class="line"> <span class="keywordflow">if</span>( sse &lt;= 1e-10) <span class="comment">// for small values return zero</span></div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line"> <span class="keywordflow">else</span></div><div class="line"> {</div><div class="line">     <span class="keywordtype">double</span>  mse =sse /(double)(I1.channels() * I1.total());</div><div class="line">     <span class="keywordtype">double</span> psnr = 10.0*<a class="code" href="df/dfc/group__cudev.html#ga6d7f752d82c289caa24bbb5a278ac31d">log10</a>((255*255)/mse);</div><div class="line">     <span class="keywordflow">return</span> psnr;</div><div class="line"> }</div><div class="line">}</div></div><!-- fragment --><p> Typically result values are anywhere between 30 and 50 for video compression, where higher is better. If the images significantly differ you'll get much lower ones like 15 and so. This similarity check is easy and fast to calculate, however in practice it may turn out somewhat inconsistent with human eye perception. The <b>structural similarity</b> algorithm aims to correct this.</p>
+<p>Here the \(MAX_I\) is the maximum valid value for a pixel. In case of the simple single byte image per pixel per channel this is 255. When two images are the same the MSE will give zero, resulting in an invalid divide by zero operation in the PSNR formula. In this case the PSNR is undefined and as we'll need to handle this case separately. The transition to a logarithmic scale is made because the pixel values have a very wide dynamic range. All this translated to OpenCV and a C++ function looks like: </p><div class="fragment"><div class="line"><span class="keywordtype">double</span> getPSNR(<span class="keyword">const</span> Mat&amp; I1, <span class="keyword">const</span> Mat&amp; I2)</div><div class="line">{</div><div class="line"> Mat s1;</div><div class="line"> <a class="code" href="d2/de8/group__core__array.html#ga6fef31bc8c4071cbc114a758a2b79c14">absdiff</a>(I1, I2, s1);       <span class="comment">// |I1 - I2|</span></div><div class="line"> s1.convertTo(s1, <a class="code" href="d1/d1b/group__core__hal__interface.html#ga4a3def5d72b74bed31f5f8ab7676099c">CV_32F</a>);  <span class="comment">// cannot make a square on 8 bits</span></div><div class="line"> s1 = s1.mul(s1);           <span class="comment">// |I1 - I2|^2</span></div><div class="line"></div><div class="line"> <a class="code" href="dc/d84/group__core__basic.html#ga599fe92e910c027be274233eccad7beb">Scalar</a> s = <a class="code" href="d2/de8/group__core__array.html#ga716e10a2dd9e228e4d3c95818f106722">sum</a>(s1);        <span class="comment">// sum elements per channel</span></div><div class="line"></div><div class="line"> <span class="keywordtype">double</span> sse = s.val[0] + s.val[1] + s.val[2]; <span class="comment">// sum channels</span></div><div class="line"></div><div class="line"> <span class="keywordflow">if</span>( sse &lt;= 1e-10) <span class="comment">// for small values return zero</span></div><div class="line">     <span class="keywordflow">return</span> 0;</div><div class="line"> <span class="keywordflow">else</span></div><div class="line"> {</div><div class="line">     <span class="keywordtype">double</span>  mse =sse /(double)(I1.channels() * I1.total());</div><div class="line">     <span class="keywordtype">double</span> psnr = 10.0*<a class="code" href="df/dfc/group__cudev.html#ga6d7f752d82c289caa24bbb5a278ac31d">log10</a>((255*255)/mse);</div><div class="line">     <span class="keywordflow">return</span> psnr;</div><div class="line"> }</div><div class="line">}</div></div><!-- fragment --><p> Typically result values are anywhere between 30 and 50 for video compression, where higher is better. If the images significantly differ you'll get much lower ones like 15 and so. This similarity check is easy and fast to calculate, however in practice it may turn out somewhat inconsistent with human eye perception. The <b>structural similarity</b> algorithm aims to correct this.</p>
 <p>Describing the methods goes well beyond the purpose of this tutorial. For that I invite you to read the article introducing it. Nevertheless, you can get a good image of it by looking at the OpenCV implementation below.</p>
 <dl class="section see"><dt>See also</dt><dd>SSIM is described more in-depth in the: "Z. Wang, A. C. Bovik, H. R. Sheikh and E. P.
     Simoncelli, "Image quality assessment: From error visibility to structural similarity," IEEE
@@ -188,7 +188,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:24 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:41 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -242,7 +242,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

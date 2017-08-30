@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -194,6 +194,8 @@ Functions</h2></td></tr>
 <tr class="memitem:ga7e54091f0c937d49bf84152a16f76d6e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/group__imgproc__hist.html#ga7e54091f0c937d49bf84152a16f76d6e">cv::equalizeHist</a> (InputArray src, OutputArray dst)</td></tr>
 <tr class="memdesc:ga7e54091f0c937d49bf84152a16f76d6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Equalizes the histogram of a grayscale image.  <a href="../../d6/dc7/group__imgproc__hist.html#ga7e54091f0c937d49bf84152a16f76d6e">More...</a><br /></td></tr>
 <tr class="separator:ga7e54091f0c937d49bf84152a16f76d6e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga31fdda0864e64ca6b9de252a2611758b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/dc7/group__imgproc__hist.html#ga31fdda0864e64ca6b9de252a2611758b">cv::wrapperEMD</a> (InputArray signature1, InputArray signature2, int distType, InputArray cost=noArray(), Ptr&lt; float &gt; lowerBound=Ptr&lt; float &gt;(), OutputArray flow=noArray())</td></tr>
+<tr class="separator:ga31fdda0864e64ca6b9de252a2611758b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
@@ -239,7 +241,7 @@ Functions</h2></td></tr>
 <p>Alternative Chi-Square </p><p class="formulaDsp">
 \[d(H_1,H_2) = 2 * \sum _I \frac{\left(H_1(I)-H_2(I)\right)^2}{H_1(I)+H_2(I)}\]
 </p>
-<p> This alternative formula is regularly used for texture comparison. See e.g. <a class="el" href="../../d0/de3/citelist.html#CITEREF_Puzicha1997">[66]</a> </p>
+<p> This alternative formula is regularly used for texture comparison. See e.g. <a class="el" href="../../d0/de3/citelist.html#CITEREF_Puzicha1997">[67]</a> </p>
 </td></tr>
 <tr><td class="fieldname"><a class="anchor" id="gga994f53817d621e2e4228fc646342d386a0ac2233c6785267fa7232a6cc2788840"></a>HISTCMP_KL_DIV&#160;</td><td class="fielddoc">
 <p>Kullback-Leibler divergence </p><p class="formulaDsp">
@@ -276,7 +278,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>hist</em>, </td>
         </tr>
         <tr>
@@ -333,7 +335,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="../../d6/dc7/group__imgproc__hist.html#ga4b2b5fd75503ff9e6844cc4dcdaed35d" title="Calculates a histogram of a set of arrays. ">cv::calcHist</a>, <a class="el" href="../../d6/dc7/group__imgproc__hist.html#gaf4190090efa5c47cb367cf97a9a519bd" title="Compares two histograms. ">cv::compareHist</a> </dd></dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a51">camshiftdemo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga4a9f37b04e5c37fa3a8825774af6dfac"></a>
@@ -418,7 +421,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>hist</em>, </td>
         </tr>
         <tr>
@@ -475,7 +478,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
         </tr>
         <tr>
@@ -538,7 +541,7 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a4">demhist.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d2/dc1/camshiftdemo_8cpp-example.html#a39">camshiftdemo.cpp</a>, and <a class="el" href="../../d2/dcb/demhist_8cpp-example.html#a4">demhist.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -567,7 +570,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
         </tr>
         <tr>
@@ -637,7 +640,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
         </tr>
         <tr>
@@ -682,13 +685,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">double cv::compareHist </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>H1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>H2</em>, </td>
         </tr>
         <tr>
@@ -760,13 +763,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">float cv::EMD </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>signature1</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>signature2</em>, </td>
         </tr>
         <tr>
@@ -778,7 +781,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>cost</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>, </td>
         </tr>
         <tr>
@@ -802,7 +805,7 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Computes the "minimal work" distance between two weighted point configurations. </p>
-<p>The function computes the earth mover distance and/or a lower boundary of the distance between the two weighted point configurations. One of the applications described in <a class="el" href="../../d0/de3/citelist.html#CITEREF_RubnerSept98">[72]</a>, <a class="el" href="../../d0/de3/citelist.html#CITEREF_Rubner2000">[73]</a> is multi-dimensional histogram comparison for image retrieval. EMD is a transportation problem that is solved using some modification of a simplex algorithm, thus the complexity is exponential in the worst case, though, on average it is much faster. In the case of a real metric the lower boundary can be calculated even faster (using linear-time algorithm) and it can be used to determine roughly whether the two signatures are far enough so that they cannot relate to the same object.</p>
+<p>The function computes the earth mover distance and/or a lower boundary of the distance between the two weighted point configurations. One of the applications described in <a class="el" href="../../d0/de3/citelist.html#CITEREF_RubnerSept98">[73]</a>, <a class="el" href="../../d0/de3/citelist.html#CITEREF_Rubner2000">[74]</a> is multi-dimensional histogram comparison for image retrieval. EMD is a transportation problem that is solved using some modification of a simplex algorithm, thus the complexity is exponential in the worst case, though, on average it is much faster. In the case of a real metric the lower boundary can be calculated even faster (using linear-time algorithm) and it can be used to determine roughly whether the two signatures are far enough so that they cannot relate to the same object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">signature1</td><td>First signature, a \(\texttt{size1}\times \texttt{dims}+1\) floating-point matrix. Each row stores the point weight followed by the point coordinates. The matrix is allowed to have a single column (weights only) if the user-defined cost matrix is used. The weights must be non-negative and have at least one non-zero value. </td></tr>
@@ -824,7 +827,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cv::equalizeHist </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
@@ -860,6 +863,57 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../db/d3a/facedetect_8cpp-example.html#a23">facedetect.cpp</a>.</dd>
+</dl>
+</div>
+</div>
+<a class="anchor" id="ga31fdda0864e64ca6b9de252a2611758b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">float cv::wrapperEMD </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
+          <td class="paramname"><em>signature1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
+          <td class="paramname"><em>signature2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>distType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
+          <td class="paramname"><em>cost</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../d0/de7/structcv_1_1Ptr.html">Ptr</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>lowerBound</em> = <code><a class="el" href="../../d0/de7/structcv_1_1Ptr.html">Ptr</a>&lt;&#160;float&#160;&gt;()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a>&#160;</td>
+          <td class="paramname"><em>flow</em> = <code><a class="el" href="../../dc/d84/group__core__basic.html#gad9287b23bba2fed753b36ef561ae7346">noArray</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>
@@ -867,7 +921,7 @@ Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -921,7 +975,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

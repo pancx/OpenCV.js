@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -217,7 +217,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5a4d993edba38be565198098bcc40004"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the shadow value.  <a href="#a5a4d993edba38be565198098bcc40004">More...</a><br /></td></tr>
 <tr class="separator:a5a4d993edba38be565198098bcc40004"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classcv_1_1BackgroundSubtractor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classcv_1_1BackgroundSubtractor')"><img src="../../closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="../../d7/df6/classcv_1_1BackgroundSubtractor.html">cv::BackgroundSubtractor</a></td></tr>
-<tr class="memitem:aa735e76f7069b3fa9c3f32395f9ccd21 inherit pub_methods_classcv_1_1BackgroundSubtractor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/classcv_1_1BackgroundSubtractor.html#aa735e76f7069b3fa9c3f32395f9ccd21">apply</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> image, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> fgmask, double learningRate=-1)=0</td></tr>
+<tr class="memitem:aa735e76f7069b3fa9c3f32395f9ccd21 inherit pub_methods_classcv_1_1BackgroundSubtractor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/classcv_1_1BackgroundSubtractor.html#aa735e76f7069b3fa9c3f32395f9ccd21">apply</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> image, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> fgmask, double learningRate=-1)=0</td></tr>
 <tr class="memdesc:aa735e76f7069b3fa9c3f32395f9ccd21 inherit pub_methods_classcv_1_1BackgroundSubtractor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes a foreground mask.  <a href="#aa735e76f7069b3fa9c3f32395f9ccd21">More...</a><br /></td></tr>
 <tr class="separator:aa735e76f7069b3fa9c3f32395f9ccd21 inherit pub_methods_classcv_1_1BackgroundSubtractor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98cb8e292a6cbcb32436dad62a82f974 inherit pub_methods_classcv_1_1BackgroundSubtractor"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/df6/classcv_1_1BackgroundSubtractor.html#a98cb8e292a6cbcb32436dad62a82f974">getBackgroundImage</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> backgroundImage) const =0</td></tr>
@@ -266,7 +266,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>K-nearest neigbours - based Background/Foreground Segmentation <a class="el" href="../../d3/d46/classcv_1_1Algorithm.html" title="This is a base class for all more or less complex algorithms in OpenCV. ">Algorithm</a>. </p>
-<p>The class implements the K-nearest neigbours background subtraction described in <a class="el" href="../../d0/de3/citelist.html#CITEREF_Zivkovic2006">[96]</a> . Very efficient if number of foreground pixels is low. </p>
+<p>The class implements the K-nearest neigbours background subtraction described in <a class="el" href="../../d0/de3/citelist.html#CITEREF_Zivkovic2006">[97]</a> . Very efficient if number of foreground pixels is low. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ae1efd8a9c7287f0b01ff024d3eaeff0a"></a>
 <div class="memitem">
@@ -418,7 +418,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Returns the shadow threshold. </p>
-<p>A shadow is detected if pixel is a darker version of the background. The shadow threshold (Tau in the paper) is a threshold defining how much darker the shadow can be. Tau= 0.5 means that if a pixel is more than twice darker then it is not shadow. See Prati, Mikic, Trivedi and Cucchiarra, Detecting Moving Shadows...*, IEEE PAMI,2003. </p>
+<p>A shadow is detected if pixel is a darker version of the background. The shadow threshold (Tau in the paper) is a threshold defining how much darker the shadow can be. Tau= 0.5 means that if a pixel is more than twice darker then it is not shadow. See Prati, Mikic, Trivedi and Cucchiara, Detecting Moving Shadows...*, IEEE PAMI,2003. </p>
 
 </div>
 </div>
@@ -638,7 +638,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:26 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:43 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -692,7 +692,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

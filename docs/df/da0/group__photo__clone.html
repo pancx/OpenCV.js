@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -155,7 +155,7 @@ Functions</h2></td></tr>
 <tr class="memdesc:gac5025767cf2febd8029d474278e886c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Applying an appropriate non-linear transformation to the gradient field inside the selection and then integrating back with a Poisson solver, modifies locally the apparent illumination of an image.  <a href="../../df/da0/group__photo__clone.html#gac5025767cf2febd8029d474278e886c7">More...</a><br /></td></tr>
 <tr class="separator:gac5025767cf2febd8029d474278e886c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga2bf426e4c93a6b1f21705513dfeca49d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da0/group__photo__clone.html#ga2bf426e4c93a6b1f21705513dfeca49d">cv::seamlessClone</a> (InputArray src, InputArray dst, InputArray mask, Point p, OutputArray blend, int flags)</td></tr>
-<tr class="memdesc:ga2bf426e4c93a6b1f21705513dfeca49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Image editing tasks concern either global changes (color/intensity corrections, filters, deformations) or local changes concerned to a selection. Here we are interested in achieving local changes, ones that are restricted to a region manually selected (ROI), in a seamless and effortless manner. The extent of the changes ranges from slight distortions to complete replacement by novel content <a class="el" href="../../d0/de3/citelist.html#CITEREF_PM03">[65]</a> .  <a href="../../df/da0/group__photo__clone.html#ga2bf426e4c93a6b1f21705513dfeca49d">More...</a><br /></td></tr>
+<tr class="memdesc:ga2bf426e4c93a6b1f21705513dfeca49d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Image editing tasks concern either global changes (color/intensity corrections, filters, deformations) or local changes concerned to a selection. Here we are interested in achieving local changes, ones that are restricted to a region manually selected (ROI), in a seamless and effortless manner. The extent of the changes ranges from slight distortions to complete replacement by novel content <a class="el" href="../../d0/de3/citelist.html#CITEREF_PM03">[66]</a> .  <a href="../../df/da0/group__photo__clone.html#ga2bf426e4c93a6b1f21705513dfeca49d">More...</a><br /></td></tr>
 <tr class="separator:ga2bf426e4c93a6b1f21705513dfeca49d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gad55df6aa53797365fa7cc23959a54004"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../df/da0/group__photo__clone.html#gad55df6aa53797365fa7cc23959a54004">cv::textureFlattening</a> (InputArray src, InputArray mask, OutputArray dst, float low_threshold=30, float high_threshold=45, int kernel_size=3)</td></tr>
 <tr class="memdesc:gad55df6aa53797365fa7cc23959a54004"><td class="mdescLeft">&#160;</td><td class="mdescRight">By retaining only the gradients at edge locations, before integrating with the Poisson solver, one washes out the texture of the selected region, giving its contents a flat aspect. Here Canny Edge Detector is used.  <a href="../../df/da0/group__photo__clone.html#gad55df6aa53797365fa7cc23959a54004">More...</a><br /></td></tr>
@@ -170,13 +170,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cv::colorChange </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
         </tr>
         <tr>
@@ -224,7 +224,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>Multiplication factor is between .5 to 2.5. </p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../dc/d56/cloning_demo_8cpp-example.html#a11">cloning_demo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="gac5025767cf2febd8029d474278e886c7"></a>
@@ -234,13 +235,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cv::illuminationChange </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
         </tr>
         <tr>
@@ -281,7 +282,8 @@ Functions</h2></td></tr>
   </dd>
 </dl>
 <p>This is useful to highlight under-exposed foreground objects or to reduce specular reflections. </p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../dc/d56/cloning_demo_8cpp-example.html#a12">cloning_demo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="ga2bf426e4c93a6b1f21705513dfeca49d"></a>
@@ -291,19 +293,19 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cv::seamlessClone </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>dst</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
         </tr>
         <tr>
@@ -332,7 +334,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Image editing tasks concern either global changes (color/intensity corrections, filters, deformations) or local changes concerned to a selection. Here we are interested in achieving local changes, ones that are restricted to a region manually selected (ROI), in a seamless and effortless manner. The extent of the changes ranges from slight distortions to complete replacement by novel content <a class="el" href="../../d0/de3/citelist.html#CITEREF_PM03">[65]</a> . </p>
+<p>Image editing tasks concern either global changes (color/intensity corrections, filters, deformations) or local changes concerned to a selection. Here we are interested in achieving local changes, ones that are restricted to a region manually selected (ROI), in a seamless and effortless manner. The extent of the changes ranges from slight distortions to complete replacement by novel content <a class="el" href="../../d0/de3/citelist.html#CITEREF_PM03">[66]</a> . </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">src</td><td>Input 8-bit 3-channel image. </td></tr>
@@ -343,13 +345,14 @@ Functions</h2></td></tr>
     <tr><td class="paramname">flags</td><td>Cloning method that could be one of the following:<ul>
 <li><b>NORMAL_CLONE</b> The power of the method is fully expressed when inserting objects with complex outlines into a new background</li>
 <li><b>MIXED_CLONE</b> The classic method, color-based selection and alpha masking might be time consuming and often leaves an undesirable halo. Seamless cloning, even averaged with the original image, is not effective. Mixed seamless cloning based on a loose selection proves effective.</li>
-<li><b>FEATURE_EXCHANGE</b> Feature exchange allows the user to easily replace certain features of one object by alternative features. </li>
+<li><b>MONOCHROME_TRANSFER</b> Monochrome transfer allows the user to easily replace certain features of one object by alternative features. </li>
 </ul>
 </td></tr>
   </table>
   </dd>
 </dl>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../dc/d56/cloning_demo_8cpp-example.html#a7">cloning_demo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="gad55df6aa53797365fa7cc23959a54004"></a>
@@ -359,13 +362,13 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">void cv::textureFlattening </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>src</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>mask</em>, </td>
         </tr>
         <tr>
@@ -414,14 +417,15 @@ Functions</h2></td></tr>
 </dl>
 <p>NOTE:**</p>
 <p>The algorithm assumes that the color of the source image is close to that of the destination. This assumption means that when the colors don't match, the source image color gets tinted toward the color of the destination image. </p>
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../dc/d56/cloning_demo_8cpp-example.html#a13">cloning_demo.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 </div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -475,7 +479,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

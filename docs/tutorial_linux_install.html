@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -166,7 +166,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>You can use the latest stable OpenCV version or you can grab the latest snapshot from our <a href="https://github.com/opencv/opencv.git">Git repository</a>.</p>
 <h3>Getting the Latest Stable OpenCV Version</h3>
 <ul>
-<li>Go to our <a href="http://opencv.org/downloads.html">downloads page</a>.</li>
+<li>Go to our <a href="http://opencv.org/releases.html">downloads page</a>.</li>
 <li>Download the source archive and unpack it.</li>
 </ul>
 <h3>Getting the Cutting-edge OpenCV from the Git Repository</h3>
@@ -207,8 +207,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </li>
 <li><p class="startli">Build. From build directory execute <em>make</em>, it is recommended to do this in several threads</p>
 <p class="startli">For example </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;make -j7 # runs 7 jobs in parallel</div></div><!-- fragment --></li>
-<li><p class="startli">[optional] Building documents. Enter &lt;cmake_build_dir/doc/&gt; and run make with target "html_docs"</p>
-<p class="startli">For example </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cd ~/opencv/build/doc/</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;make -j7 html_docs</div></div><!-- fragment --></li>
+<li><p class="startli">[optional] Building documents. Enter &lt;cmake_build_dir/doc/&gt; and run make with target "doxygen"</p>
+<p class="startli">For example </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;cd ~/opencv/build/doc/</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;make -j7 doxygen</div></div><!-- fragment --></li>
 <li>To install libraries, execute the following command from build directory <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;sudo make install</div></div><!-- fragment --></li>
 <li><p class="startli">[optional] Running tests</p><ul>
 <li>Get the required test data from <a href="https://github.com/opencv/opencv_extra">OpenCV extra repository</a>.</li>
@@ -224,7 +224,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:24 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:41 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -278,7 +278,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

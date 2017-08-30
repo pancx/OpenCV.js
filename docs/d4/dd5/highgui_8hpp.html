@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -364,6 +364,14 @@ Functions</h2></td></tr>
 <tr class="memitem:gadf97be240277ba20442fa7ca7f6bc957"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../dc/d46/group__highgui__qt.html#gadf97be240277ba20442fa7ca7f6bc957">cv::saveWindowParameters</a> (const String &amp;windowName)</td></tr>
 <tr class="memdesc:gadf97be240277ba20442fa7ca7f6bc957"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves parameters of the specified window.  <a href="../../dc/d46/group__highgui__qt.html#gadf97be240277ba20442fa7ca7f6bc957">More...</a><br /></td></tr>
 <tr class="separator:gadf97be240277ba20442fa7ca7f6bc957"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga8daf4730d3adf7035b6de9be4c469af5"><td class="memItemLeft" align="right" valign="top">Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfc/group__highgui.html#ga8daf4730d3adf7035b6de9be4c469af5">cv::selectROI</a> (const String &amp;windowName, InputArray img, bool showCrosshair=true, bool fromCenter=false)</td></tr>
+<tr class="memdesc:ga8daf4730d3adf7035b6de9be4c469af5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects ROI on the given image. Function creates a window and allows user to select a ROI using mouse. Controls: use <code>space</code> or <code>enter</code> to finish selection, use key <code>c</code> to cancel selection (function will return the zero <a class="el" href="../../dc/d84/group__core__basic.html#ga11d95de507098e90bad732b9345402e8">cv::Rect</a>).  <a href="../../d7/dfc/group__highgui.html#ga8daf4730d3adf7035b6de9be4c469af5">More...</a><br /></td></tr>
+<tr class="separator:ga8daf4730d3adf7035b6de9be4c469af5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2e2256794d0c88f4cfc4fdd7890c9794"><td class="memItemLeft" align="right" valign="top">Rect&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfc/group__highgui.html#ga2e2256794d0c88f4cfc4fdd7890c9794">cv::selectROI</a> (InputArray img, bool showCrosshair=true, bool fromCenter=false)</td></tr>
+<tr class="separator:ga2e2256794d0c88f4cfc4fdd7890c9794"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga0f11fad74a6432b8055fb21621a0f893"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfc/group__highgui.html#ga0f11fad74a6432b8055fb21621a0f893">cv::selectROIs</a> (const String &amp;windowName, InputArray img, std::vector&lt; Rect &gt; &amp;boundingBoxes, bool showCrosshair=true, bool fromCenter=false)</td></tr>
+<tr class="memdesc:ga0f11fad74a6432b8055fb21621a0f893"><td class="mdescLeft">&#160;</td><td class="mdescRight">Selects ROIs on the given image. Function creates a window and allows user to select a ROIs using mouse. Controls: use <code>space</code> or <code>enter</code> to finish current selection and start a new one, use <code>esc</code> to terminate multiple ROI selection process.  <a href="../../d7/dfc/group__highgui.html#ga0f11fad74a6432b8055fb21621a0f893">More...</a><br /></td></tr>
+<tr class="separator:ga0f11fad74a6432b8055fb21621a0f893"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga89e7806b0a616f6f1d502bd8c183ad3e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dfc/group__highgui.html#ga89e7806b0a616f6f1d502bd8c183ad3e">cv::setMouseCallback</a> (const String &amp;winname, MouseCallback onMouse, void *userdata=0)</td></tr>
 <tr class="memdesc:ga89e7806b0a616f6f1d502bd8c183ad3e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets mouse handler for the specified window.  <a href="../../d7/dfc/group__highgui.html#ga89e7806b0a616f6f1d502bd8c183ad3e">More...</a><br /></td></tr>
 <tr class="separator:ga89e7806b0a616f6f1d502bd8c183ad3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -408,7 +416,7 @@ Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:24 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:41 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -462,7 +470,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

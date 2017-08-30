@@ -2,6 +2,7 @@ var searchData=
 [
   ['table_5fof_5fcontent_5fcalib3d_2emarkdown',['table_of_content_calib3d.markdown',['../d1/d16/table__of__content__calib3d_8markdown.html',1,'']]],
   ['table_5fof_5fcontent_5fcore_2emarkdown',['table_of_content_core.markdown',['../d7/d3a/table__of__content__core_8markdown.html',1,'']]],
+  ['table_5fof_5fcontent_5fdnn_2emarkdown',['table_of_content_dnn.markdown',['../d1/dc7/table__of__content__dnn_8markdown.html',1,'']]],
   ['table_5fof_5fcontent_5ffeatures2d_2emarkdown',['table_of_content_features2d.markdown',['../da/dcb/table__of__content__features2d_8markdown.html',1,'']]],
   ['table_5fof_5fcontent_5fgpu_2emarkdown',['table_of_content_gpu.markdown',['../dd/d68/table__of__content__gpu_8markdown.html',1,'']]],
   ['table_5fof_5fcontent_5fhighgui_2emarkdown',['table_of_content_highgui.markdown',['../d6/db0/highgui_2table__of__content__highgui_8markdown.html',1,'']]],
@@ -22,14 +23,16 @@ var searchData=
   ['threshold_5finrange_2emarkdown',['threshold_inRange.markdown',['../dc/dbe/threshold__inRange_8markdown.html',1,'']]],
   ['timelapsers_2ehpp',['timelapsers.hpp',['../d8/d46/timelapsers_8hpp.html',1,'']]],
   ['timer_2eh',['timer.h',['../d5/dd0/timer_8h.html',1,'']]],
+  ['trace_2ehpp',['trace.hpp',['../d4/db9/trace_8hpp.html',1,'']]],
+  ['trace_2eprivate_2ehpp',['trace.private.hpp',['../df/db6/trace_8private_8hpp.html',1,'']]],
   ['trackbar_2emarkdown',['trackbar.markdown',['../d5/ddb/trackbar_8markdown.html',1,'']]],
   ['tracking_2ehpp',['tracking.hpp',['../d8/d92/tracking_8hpp.html',1,'']]],
   ['tracking_5fc_2eh',['tracking_c.h',['../dc/d9e/tracking__c_8h.html',1,'']]],
   ['traincascade_2emarkdown',['traincascade.markdown',['../d1/deb/traincascade_8markdown.html',1,'']]],
-  ['traits_2ehpp',['traits.hpp',['../de/dea/cudev_2include_2opencv2_2cudev_2ptr2d_2traits_8hpp.html',1,'']]],
   ['traits_2ehpp',['traits.hpp',['../d1/df5/core_2include_2opencv2_2core_2traits_8hpp.html',1,'']]],
-  ['transform_2ehpp',['transform.hpp',['../d4/df5/cudev_2include_2opencv2_2cudev_2grid_2transform_8hpp.html',1,'']]],
+  ['traits_2ehpp',['traits.hpp',['../de/dea/cudev_2include_2opencv2_2cudev_2ptr2d_2traits_8hpp.html',1,'']]],
   ['transform_2ehpp',['transform.hpp',['../db/d8f/core_2include_2opencv2_2core_2cuda_2transform_8hpp.html',1,'']]],
+  ['transform_2ehpp',['transform.hpp',['../d4/df5/cudev_2include_2opencv2_2cudev_2grid_2transform_8hpp.html',1,'']]],
   ['transform_2ehpp',['transform.hpp',['../d7/d21/cudev_2include_2opencv2_2cudev_2ptr2d_2transform_8hpp.html',1,'']]],
   ['transformations_2emarkdown',['transformations.markdown',['../d9/d7a/transformations_8markdown.html',1,'']]],
   ['transition_5fguide_2emarkdown',['transition_guide.markdown',['../dd/d70/transition__guide_8markdown.html',1,'']]],
@@ -40,8 +43,8 @@ var searchData=
   ['tutorials_2emarkdown',['tutorials.markdown',['../d7/d54/tutorials_8markdown.html',1,'']]],
   ['type_5ftraits_2ehpp',['type_traits.hpp',['../d1/d6f/core_2include_2opencv2_2core_2cuda_2type__traits_8hpp.html',1,'']]],
   ['type_5ftraits_2ehpp',['type_traits.hpp',['../d9/da6/cudev_2include_2opencv2_2cudev_2util_2type__traits_8hpp.html',1,'']]],
-  ['types_2ehpp',['types.hpp',['../d6/d04/core_2include_2opencv2_2core_2types_8hpp.html',1,'']]],
   ['types_2ehpp',['types.hpp',['../d5/dc5/viz_2include_2opencv2_2viz_2types_8hpp.html',1,'']]],
-  ['types_5fc_2eh',['types_c.h',['../d0/dc2/core_2include_2opencv2_2core_2types__c_8h.html',1,'']]],
-  ['types_5fc_2eh',['types_c.h',['../dc/d0f/imgproc_2include_2opencv2_2imgproc_2types__c_8h.html',1,'']]]
+  ['types_2ehpp',['types.hpp',['../d6/d04/core_2include_2opencv2_2core_2types_8hpp.html',1,'']]],
+  ['types_5fc_2eh',['types_c.h',['../dc/d0f/imgproc_2include_2opencv2_2imgproc_2types__c_8h.html',1,'']]],
+  ['types_5fc_2eh',['types_c.h',['../d0/dc2/core_2include_2opencv2_2core_2types__c_8h.html',1,'']]]
 ];

@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -206,7 +206,11 @@ Enumerations</h2></td></tr>
 <br />
 &#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9aa51f13248282b8778003b9a4cf8ac07e">cv::SOLVEPNP_DLS</a> = 3, 
 <br />
-&#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9a2859c9ce1430662096d3cc3b5462847f">cv::SOLVEPNP_UPNP</a> = 4
+&#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9a2859c9ce1430662096d3cc3b5462847f">cv::SOLVEPNP_UPNP</a> = 4, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9a8d48dece2da6492d91fa2de0a04679f9">cv::SOLVEPNP_AP3P</a> = 5, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#ggad992e8239ec2871d59eed666ac8418f9a628c2ffc59c556afd75ddf8302df2baf">cv::SOLVEPNP_MAX_COUNT</a>
 <br />
  }</td></tr>
 <tr class="separator:gad992e8239ec2871d59eed666ac8418f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -264,6 +268,8 @@ Enumerations</h2></td></tr>
 &#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#gga46db002545a3b6c1904b7a0a8694b66aa2c39f08cc098e2a79b13dfbad4e59317">cv::CALIB_FIX_TAUX_TAUY</a> = 0x80000, 
 <br />
 &#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#gga46db002545a3b6c1904b7a0a8694b66aa6ee40ef8d871782b8d966eaf9ad29763">cv::CALIB_USE_QR</a> = 0x100000, 
+<br />
+&#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#gga46db002545a3b6c1904b7a0a8694b66aa69529599f6c9d237a38dcf9872887b05">cv::CALIB_FIX_TANGENT_DIST</a> = 0x200000, 
 <br />
 &#160;&#160;<a class="el" href="../../d9/d0c/group__calib3d.html#gga46db002545a3b6c1904b7a0a8694b66aa51df9c05343c61ddb18324ded0fab86a">cv::CALIB_FIX_INTRINSIC</a> = 0x00100, 
 <br />
@@ -443,6 +449,9 @@ Functions</h2></td></tr>
 <tr class="memitem:gacbba2ee98258ca81d352a31faa15a021"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0c/group__calib3d.html#gacbba2ee98258ca81d352a31faa15a021">cv::sampsonDistance</a> (InputArray pt1, InputArray pt2, InputArray F)</td></tr>
 <tr class="memdesc:gacbba2ee98258ca81d352a31faa15a021"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculates the Sampson Distance between two points.  <a href="../../d9/d0c/group__calib3d.html#gacbba2ee98258ca81d352a31faa15a021">More...</a><br /></td></tr>
 <tr class="separator:gacbba2ee98258ca81d352a31faa15a021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gae5af86788e99948d40b39a03f6acf623"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0c/group__calib3d.html#gae5af86788e99948d40b39a03f6acf623">cv::solveP3P</a> (InputArray objectPoints, InputArray imagePoints, InputArray cameraMatrix, InputArray distCoeffs, OutputArrayOfArrays rvecs, OutputArrayOfArrays tvecs, int flags)</td></tr>
+<tr class="memdesc:gae5af86788e99948d40b39a03f6acf623"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an object pose from 3 3D-2D point correspondences.  <a href="../../d9/d0c/group__calib3d.html#gae5af86788e99948d40b39a03f6acf623">More...</a><br /></td></tr>
+<tr class="separator:gae5af86788e99948d40b39a03f6acf623"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga549c2075fac14829ff4a58bc931c033d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d9/d0c/group__calib3d.html#ga549c2075fac14829ff4a58bc931c033d">cv::solvePnP</a> (InputArray objectPoints, InputArray imagePoints, InputArray cameraMatrix, InputArray distCoeffs, OutputArray rvec, OutputArray tvec, bool useExtrinsicGuess=false, int flags=SOLVEPNP_ITERATIVE)</td></tr>
 <tr class="memdesc:ga549c2075fac14829ff4a58bc931c033d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finds an object pose from 3D-2D point correspondences.  <a href="../../d9/d0c/group__calib3d.html#ga549c2075fac14829ff4a58bc931c033d">More...</a><br /></td></tr>
 <tr class="separator:ga549c2075fac14829ff4a58bc931c033d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -481,7 +490,7 @@ Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:24 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:40 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -535,7 +544,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

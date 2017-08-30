@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -181,7 +181,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a06c28035e383bc9eff22e1fad619ddf6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d2f54a5a1145e5b9f645b8983c6ae75"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd6/classcv_1_1RNG.html#a2d2f54a5a1145e5b9f645b8983c6ae75">RNG</a> (<a class="el" href="../../d1/d1b/group__core__hal__interface.html#gabc0f5bc07737e498f287334775dff2b6">uint64</a> <a class="el" href="../../d1/dd6/classcv_1_1RNG.html#a993bd2e6a5a9b8f3b37ba6049b523136">state</a>)</td></tr>
 <tr class="separator:a2d2f54a5a1145e5b9f645b8983c6ae75"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad26f2b09d9868cf108e84c9814aa682d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd6/classcv_1_1RNG.html#ad26f2b09d9868cf108e84c9814aa682d">fill</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gaf77c9a14ef956c50c1efd4547f444e63">InputOutputArray</a> mat, int distType, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> a, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> b, bool saturateRange=false)</td></tr>
+<tr class="memitem:ad26f2b09d9868cf108e84c9814aa682d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd6/classcv_1_1RNG.html#ad26f2b09d9868cf108e84c9814aa682d">fill</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gaf77c9a14ef956c50c1efd4547f444e63">InputOutputArray</a> mat, int distType, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> a, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> b, bool saturateRange=false)</td></tr>
 <tr class="memdesc:ad26f2b09d9868cf108e84c9814aa682d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fills arrays with random numbers.  <a href="#ad26f2b09d9868cf108e84c9814aa682d">More...</a><br /></td></tr>
 <tr class="separator:ad26f2b09d9868cf108e84c9814aa682d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8df8ce4dc7d15916cee743e5a884639d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d1/dd6/classcv_1_1RNG.html#a8df8ce4dc7d15916cee743e5a884639d">gaussian</a> (double sigma)</td></tr>
@@ -226,7 +226,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Random Number Generator. </p>
 <p>Random number generator. It encapsulates the state (currently, a 64-bit integer) and has methods to return scalar random values and to fill arrays with random values. Currently it supports uniform and Gaussian (normal) distributions. The generator uses Multiply-With-Carry algorithm, introduced by G. Marsaglia ( <a href="http://en.wikipedia.org/wiki/Multiply-with-carry">http://en.wikipedia.org/wiki/Multiply-with-carry</a> ). Gaussian-distribution random numbers are generated using the Ziggurat algorithm ( <a href="http://en.wikipedia.org/wiki/Ziggurat_algorithm">http://en.wikipedia.org/wiki/Ziggurat_algorithm</a> ), introduced by G. Marsaglia and W. W. Tsang. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d7a/convexhull_8cpp-example.html#_a4">convexhull.cpp</a>, <a class="el" href="../../de/d63/kmeans_8cpp-example.html#_a4">kmeans.cpp</a>, and <a class="el" href="../../d4/d32/minarea_8cpp-example.html#_a3">minarea.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d7a/convexhull_8cpp-example.html#_a4">convexhull.cpp</a>, <a class="el" href="../../d3/d2e/copyMakeBorder_demo_8cpp-example.html#_a1">copyMakeBorder_demo.cpp</a>, <a class="el" href="../../df/daf/Drawing_2_8cpp-example.html#_a1">Drawing_2.cpp</a>, <a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#_a4">falsecolor.cpp</a>, <a class="el" href="../../d0/d7f/image_alignment_8cpp-example.html#_a26">image_alignment.cpp</a>, <a class="el" href="../../de/d63/kmeans_8cpp-example.html#_a4">kmeans.cpp</a>, and <a class="el" href="../../d4/d32/minarea_8cpp-example.html#_a3">minarea.cpp</a>.</dd>
 </dl></div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a class="anchor" id="af25905f7e5db288b4b78752e34a49c95"></a>
 <div class="memitem">
@@ -307,13 +307,13 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>a</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>b</em>, </td>
         </tr>
         <tr>
@@ -342,7 +342,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 <p>Each of the methods fills the matrix with the random values from the specified distribution. As the new numbers are generated, the <a class="el" href="../../d1/dd6/classcv_1_1RNG.html" title="Random Number Generator. ">RNG</a> state is updated accordingly. In case of multiple-channel images, every channel is filled independently, which means that <a class="el" href="../../d1/dd6/classcv_1_1RNG.html" title="Random Number Generator. ">RNG</a> cannot generate samples from the multi-dimensional Gaussian distribution with non-diagonal covariance matrix directly. To do that, the method generates samples from multi-dimensional standard Gaussian distribution with zero mean and identity covariation matrix, and then transforms them using transform to get samples from the specified Gaussian distribution. </p>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../de/d63/kmeans_8cpp-example.html#a14">kmeans.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#a6">falsecolor.cpp</a>, and <a class="el" href="../../de/d63/kmeans_8cpp-example.html#a14">kmeans.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -581,14 +581,14 @@ Public Attributes</h2></td></tr>
 
 <p>returns uniformly distributed integer random number from [a,b) range </p>
 <p>The methods transform the state using the MWC algorithm and return the next uniformly-distributed random number of the specified type, deduced from the input parameter type, from the range [a, b) . There is a nuance illustrated by the following sample:</p>
-<div class="fragment"><div class="line"><a class="code" href="../../d1/dd6/classcv_1_1RNG.html#a06c28035e383bc9eff22e1fad619ddf6">RNG</a> rng;</div><div class="line"></div><div class="line"><span class="comment">// always produces 0</span></div><div class="line"><span class="keywordtype">double</span> a = rng.uniform(0, 1);</div><div class="line"></div><div class="line"><span class="comment">// produces double from [0, 1)</span></div><div class="line"><span class="keywordtype">double</span> a1 = rng.uniform((<span class="keywordtype">double</span>)0, (<span class="keywordtype">double</span>)1);</div><div class="line"></div><div class="line"><span class="comment">// produces float from [0, 1)</span></div><div class="line"><span class="keywordtype">double</span> b = rng.uniform(0.f, 1.f);</div><div class="line"></div><div class="line"><span class="comment">// produces double from [0, 1)</span></div><div class="line"><span class="keywordtype">double</span> c = rng.uniform(0., 1.);</div><div class="line"></div><div class="line"><span class="comment">// may cause compiler error because of ambiguity:</span></div><div class="line"><span class="comment">//  RNG::uniform(0, (int)0.999999)? or RNG::uniform((double)0, 0.99999)?</span></div><div class="line"><span class="keywordtype">double</span> d = rng.uniform(0, 0.999999);</div></div><!-- fragment --><p>The compiler does not take into account the type of the variable to which you assign the result of <a class="el" href="../../d1/dd6/classcv_1_1RNG.html#acde197860cea91e5aa896be8719457ae" title="returns uniformly distributed integer random number from [a,b) range ">RNG::uniform</a> . The only thing that matters to the compiler is the type of a and b parameters. So, if you want a floating-point random number, but the range boundaries are integer numbers, either put dots in the end, if they are constants, or use explicit type cast operators, as in the a1 initialization above. </p><dl class="params"><dt>Parameters</dt><dd>
+<div class="fragment"><div class="line"><a class="code" href="../../d1/dd6/classcv_1_1RNG.html#a06c28035e383bc9eff22e1fad619ddf6">RNG</a> rng;</div><div class="line"></div><div class="line"><span class="comment">// always produces 0</span></div><div class="line"><span class="keywordtype">double</span> a = rng.uniform(0, 1);</div><div class="line"></div><div class="line"><span class="comment">// produces double from [0, 1)</span></div><div class="line"><span class="keywordtype">double</span> a1 = rng.uniform((<span class="keywordtype">double</span>)0, (<span class="keywordtype">double</span>)1);</div><div class="line"></div><div class="line"><span class="comment">// produces float from [0, 1)</span></div><div class="line"><span class="keywordtype">float</span> b = rng.uniform(0.f, 1.f);</div><div class="line"></div><div class="line"><span class="comment">// produces double from [0, 1)</span></div><div class="line"><span class="keywordtype">double</span> c = rng.uniform(0., 1.);</div><div class="line"></div><div class="line"><span class="comment">// may cause compiler error because of ambiguity:</span></div><div class="line"><span class="comment">//  RNG::uniform(0, (int)0.999999)? or RNG::uniform((double)0, 0.99999)?</span></div><div class="line"><span class="keywordtype">double</span> d = rng.uniform(0, 0.999999);</div></div><!-- fragment --><p>The compiler does not take into account the type of the variable to which you assign the result of <a class="el" href="../../d1/dd6/classcv_1_1RNG.html#acde197860cea91e5aa896be8719457ae" title="returns uniformly distributed integer random number from [a,b) range ">RNG::uniform</a> . The only thing that matters to the compiler is the type of a and b parameters. So, if you want a floating-point random number, but the range boundaries are integer numbers, either put dots in the end, if they are constants, or use explicit type cast operators, as in the a1 initialization above. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">a</td><td>lower inclusive boundary of the returned random numbers. </td></tr>
-    <tr><td class="paramname">b</td><td>upper non-inclusive boundary of the returned random numbers. </td></tr>
+    <tr><td class="paramname">a</td><td>lower inclusive boundary of the returned random number. </td></tr>
+    <tr><td class="paramname">b</td><td>upper non-inclusive boundary of the returned random number. </td></tr>
   </table>
   </dd>
 </dl>
-<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d7a/convexhull_8cpp-example.html#a8">convexhull.cpp</a>, <a class="el" href="../../de/d63/kmeans_8cpp-example.html#a5">kmeans.cpp</a>, <a class="el" href="../../d4/d32/minarea_8cpp-example.html#a5">minarea.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a30">watershed.cpp</a>.</dd>
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../d0/d7a/convexhull_8cpp-example.html#a8">convexhull.cpp</a>, <a class="el" href="../../df/daf/Drawing_2_8cpp-example.html#a10">Drawing_2.cpp</a>, <a class="el" href="../../d5/dca/falsecolor_8cpp-example.html#a32">falsecolor.cpp</a>, <a class="el" href="../../de/d63/kmeans_8cpp-example.html#a5">kmeans.cpp</a>, <a class="el" href="../../d4/d32/minarea_8cpp-example.html#a5">minarea.cpp</a>, and <a class="el" href="../../d8/da9/watershed_8cpp-example.html#a30">watershed.cpp</a>.</dd>
 </dl>
 </div>
 </div>
@@ -666,7 +666,7 @@ Public Attributes</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -720,7 +720,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

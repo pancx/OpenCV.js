@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -180,7 +180,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3cb7c5a9362e838efd8d7ec41eba1970"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae50d896f7fc0e60dde24c58045a87af2"><td class="memItemLeft" align="right" valign="top">virtual float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd6/classcv_1_1MergeMertens.html#ae50d896f7fc0e60dde24c58045a87af2">getSaturationWeight</a> () const =0</td></tr>
 <tr class="separator:ae50d896f7fc0e60dde24c58045a87af2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3b5ae3fe6c15bd7db83f213903858ea0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd6/classcv_1_1MergeMertens.html#a3b5ae3fe6c15bd7db83f213903858ea0">process</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga606feabe3b50ab6838f1ba89727aa07a">InputArrayOfArrays</a> src, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> dst, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> times, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> response)=0</td></tr>
+<tr class="memitem:a3b5ae3fe6c15bd7db83f213903858ea0"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd6/classcv_1_1MergeMertens.html#a3b5ae3fe6c15bd7db83f213903858ea0">process</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga606feabe3b50ab6838f1ba89727aa07a">InputArrayOfArrays</a> src, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> dst, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> times, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> response)=0</td></tr>
 <tr class="memdesc:a3b5ae3fe6c15bd7db83f213903858ea0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Merges images.  <a href="#a3b5ae3fe6c15bd7db83f213903858ea0">More...</a><br /></td></tr>
 <tr class="separator:a3b5ae3fe6c15bd7db83f213903858ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d2254b2aab722c16954de13a663644d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d7/dd6/classcv_1_1MergeMertens.html#a2d2254b2aab722c16954de13a663644d">process</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga606feabe3b50ab6838f1ba89727aa07a">InputArrayOfArrays</a> src, <a class="el" href="../../dc/d84/group__core__basic.html#gaad17fda1d0f0d1ee069aebb1df2913c0">OutputArray</a> dst)=0</td></tr>
@@ -237,7 +237,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>Pixels are weighted using contrast, saturation and well-exposedness measures, than images are combined using laplacian pyramids. </p>
 <p>The resulting image weight is constructed as weighted average of contrast, saturation and well-exposedness measures.</p>
 <p>The resulting image doesn't require tonemapping and can be converted to 8-bit image by multiplying by 255, but it's recommended to apply gamma correction and/or linear tonemapping.</p>
-<p>For more information see <a class="el" href="../../d0/de3/citelist.html#CITEREF_MK07">[56]</a> . </p>
+<p>For more information see <a class="el" href="../../d0/de3/citelist.html#CITEREF_MK07">[57]</a> . </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ad8ab7147ec12e82042de3fa96cf3bb24"></a>
 <div class="memitem">
@@ -330,13 +330,13 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>times</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a>&#160;</td>
           <td class="paramname"><em>response</em>&#160;</td>
         </tr>
         <tr>
@@ -489,7 +489,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:26 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:43 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -543,7 +543,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

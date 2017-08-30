@@ -46,6 +46,7 @@ var searchData=
   ['cudev_2ehpp',['cudev.hpp',['../d6/d38/cudev_8hpp.html',1,'']]],
   ['cv_5fcpu_5fdispatch_2eh',['cv_cpu_dispatch.h',['../d1/dac/cv__cpu__dispatch_8h.html',1,'']]],
   ['cv_5fcpu_5fhelper_2eh',['cv_cpu_helper.h',['../d2/d3b/cv__cpu__helper_8h.html',1,'']]],
+  ['cv_5fcpu_5finclude_5fsimd_5fdeclarations_2ehpp',['cv_cpu_include_simd_declarations.hpp',['../d2/d7c/cv__cpu__include__simd__declarations_8hpp.html',1,'']]],
   ['cvdef_2eh',['cvdef.h',['../dc/dcc/cvdef_8h.html',1,'']]],
   ['cvstd_2ehpp',['cvstd.hpp',['../dd/dc7/cvstd_8hpp.html',1,'']]]
 ];

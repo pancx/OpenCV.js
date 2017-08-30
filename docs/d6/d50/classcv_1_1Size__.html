@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -183,6 +183,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9778005e591a0cc20c69ad8325cf2bcd"><td class="memItemLeft" align="right" valign="top">_Tp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d50/classcv_1_1Size__.html#a9778005e591a0cc20c69ad8325cf2bcd">area</a> () const </td></tr>
 <tr class="memdesc:a9778005e591a0cc20c69ad8325cf2bcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">the area (width*height)  <a href="#a9778005e591a0cc20c69ad8325cf2bcd">More...</a><br /></td></tr>
 <tr class="separator:a9778005e591a0cc20c69ad8325cf2bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c8aff4fd4b6da9249dbe2576a011a8e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d6/d50/classcv_1_1Size__.html#a0c8aff4fd4b6da9249dbe2576a011a8e">empty</a> () const </td></tr>
+<tr class="memdesc:a0c8aff4fd4b6da9249dbe2576a011a8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">true if empty  <a href="#a0c8aff4fd4b6da9249dbe2576a011a8e">More...</a><br /></td></tr>
+<tr class="separator:a0c8aff4fd4b6da9249dbe2576a011a8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5a8ff03a29847a33f1d7e48e132e5e1b"><td class="memTemplParams" colspan="2">template&lt;typename _Tp2 &gt; </td></tr>
 <tr class="memitem:a5a8ff03a29847a33f1d7e48e132e5e1b"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="../../d6/d50/classcv_1_1Size__.html#a5a8ff03a29847a33f1d7e48e132e5e1b">operator Size_&lt; _Tp2 &gt;</a> () const </td></tr>
 <tr class="memdesc:a5a8ff03a29847a33f1d7e48e132e5e1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">conversion of another data type.  <a href="#a5a8ff03a29847a33f1d7e48e132e5e1b">More...</a><br /></td></tr>
@@ -203,7 +206,8 @@ class cv::Size_&lt; _Tp &gt;</h3>
 
 <p>Template class for specifying the size of an image or rectangle. </p>
 <p>The class includes two members called width and height. The structure can be converted to and from the old OpenCV structures <a class="el" href="../../da/dcb/structCvSize.html">CvSize</a> and <a class="el" href="../../dd/d16/structCvSize2D32f.html">CvSize2D32f</a> . The same set of arithmetic and comparison operations as for <a class="el" href="../../db/d4e/classcv_1_1Point__.html" title="Template class for 2D points specified by its coordinates x and y. ">Point_</a> is available.</p>
-<p>OpenCV defines the following <a class="el" href="../../d6/d50/classcv_1_1Size__.html" title="Template class for specifying the size of an image or rectangle. ">Size_</a>&lt;&gt; aliases: </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> Size_&lt;int&gt; <a class="code" href="../../dc/d84/group__core__basic.html#ga5ef7f5978948e0cb3c3a3d4172594aec">Size2i</a>;</div><div class="line"><span class="keyword">typedef</span> Size2i <a class="code" href="../../dc/d84/group__core__basic.html#ga346f563897249351a34549137c8532a0">Size</a>;</div><div class="line"><span class="keyword">typedef</span> Size_&lt;float&gt; <a class="code" href="../../dc/d84/group__core__basic.html#gab34496d2466b5f69930ab74c70f117d4">Size2f</a>;</div></div><!-- fragment --> </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<p>OpenCV defines the following <a class="el" href="../../d6/d50/classcv_1_1Size__.html" title="Template class for specifying the size of an image or rectangle. ">Size_</a>&lt;&gt; aliases: </p><div class="fragment"><div class="line"><span class="keyword">typedef</span> Size_&lt;int&gt; <a class="code" href="../../dc/d84/group__core__basic.html#ga5ef7f5978948e0cb3c3a3d4172594aec">Size2i</a>;</div><div class="line"><span class="keyword">typedef</span> Size2i <a class="code" href="../../dc/d84/group__core__basic.html#ga346f563897249351a34549137c8532a0">Size</a>;</div><div class="line"><span class="keyword">typedef</span> Size_&lt;float&gt; <a class="code" href="../../dc/d84/group__core__basic.html#gab34496d2466b5f69930ab74c70f117d4">Size2f</a>;</div></div><!-- fragment --> <dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../df/daf/Drawing_2_8cpp-example.html#_a15">Drawing_2.cpp</a>, <a class="el" href="../../d2/d0a/lkdemo_8cpp-example.html#_a8">lkdemo.cpp</a>, <a class="el" href="../../da/d72/shape_example_8cpp-example.html#_a12">shape_example.cpp</a>, and <a class="el" href="../../d5/dfc/warpPerspective_demo_8cpp-example.html#_a2">warpPerspective_demo.cpp</a>.</dd>
+</dl></div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a class="anchor" id="a545d43b608de451311855c2ef808642d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -322,6 +326,25 @@ template&lt;typename _Tp&gt; </div>
 
 </div>
 </div>
+<a class="anchor" id="a0c8aff4fd4b6da9249dbe2576a011a8e"></a>
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename _Tp&gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="../../d6/d50/classcv_1_1Size__.html">cv::Size_</a>&lt; _Tp &gt;::empty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>true if empty </p>
+
+</div>
+</div>
 <a class="anchor" id="a5a8ff03a29847a33f1d7e48e132e5e1b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -373,7 +396,8 @@ template&lt;typename _Tp&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../df/daf/Drawing_2_8cpp-example.html#a17">Drawing_2.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <a class="anchor" id="abfe0367b32c407ddccf5ddf92667c73d"></a>
@@ -387,7 +411,8 @@ template&lt;typename _Tp&gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-
+<dl><dt><b>Examples: </b></dt><dd><a class="el" href="../../df/daf/Drawing_2_8cpp-example.html#a16">Drawing_2.cpp</a>, and <a class="el" href="../../da/d72/shape_example_8cpp-example.html#a19">shape_example.cpp</a>.</dd>
+</dl>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -397,7 +422,7 @@ template&lt;typename _Tp&gt; </div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:27 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:44 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -451,7 +476,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

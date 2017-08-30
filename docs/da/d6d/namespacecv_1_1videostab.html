@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -297,7 +297,7 @@ Functions</h2></td></tr>
 <tr class="memitem:ga8fa2f6a88df65ad78241783faffc26a8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d63/classcv_1_1Mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2c/group__videostab__motion.html#ga8fa2f6a88df65ad78241783faffc26a8">estimateGlobalMotionLeastSquares</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gaf77c9a14ef956c50c1efd4547f444e63">InputOutputArray</a> points0, <a class="el" href="../../dc/d84/group__core__basic.html#gaf77c9a14ef956c50c1efd4547f444e63">InputOutputArray</a> points1, int model=<a class="el" href="../../d4/d2c/group__videostab__motion.html#ggac61e59db30b7d13983885d3ad3116ce1a30b3b23d3cdd42fd8a7c4e286472de36">MM_AFFINE</a>, float *rmse=0)</td></tr>
 <tr class="memdesc:ga8fa2f6a88df65ad78241783faffc26a8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates best global motion between two 2D point clouds in the least-squares sense.  <a href="../../d4/d2c/group__videostab__motion.html#ga8fa2f6a88df65ad78241783faffc26a8">More...</a><br /></td></tr>
 <tr class="separator:ga8fa2f6a88df65ad78241783faffc26a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6260bd61792a7ec94ea974af9d94ead7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d63/classcv_1_1Mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2c/group__videostab__motion.html#ga6260bd61792a7ec94ea974af9d94ead7">estimateGlobalMotionRansac</a> (<a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> points0, <a class="el" href="../../dc/d84/group__core__basic.html#ga353a9de602fe76c709e12074a6f362ba">InputArray</a> points1, int model=<a class="el" href="../../d4/d2c/group__videostab__motion.html#ggac61e59db30b7d13983885d3ad3116ce1a30b3b23d3cdd42fd8a7c4e286472de36">MM_AFFINE</a>, const <a class="el" href="../../da/dc7/structcv_1_1videostab_1_1RansacParams.html">RansacParams</a> &amp;params=<a class="el" href="../../da/dc7/structcv_1_1videostab_1_1RansacParams.html#a30dc41affb537f4c8af23bebc18defa1">RansacParams::default2dMotion</a>(<a class="el" href="../../d4/d2c/group__videostab__motion.html#ggac61e59db30b7d13983885d3ad3116ce1a30b3b23d3cdd42fd8a7c4e286472de36">MM_AFFINE</a>), float *rmse=0, int *ninliers=0)</td></tr>
+<tr class="memitem:ga6260bd61792a7ec94ea974af9d94ead7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../d3/d63/classcv_1_1Mat.html">Mat</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2c/group__videostab__motion.html#ga6260bd61792a7ec94ea974af9d94ead7">estimateGlobalMotionRansac</a> (<a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> points0, <a class="el" href="../../dc/d84/group__core__basic.html#gab1371a23c90d5f4725ea98240377d7a1">InputArray</a> points1, int model=<a class="el" href="../../d4/d2c/group__videostab__motion.html#ggac61e59db30b7d13983885d3ad3116ce1a30b3b23d3cdd42fd8a7c4e286472de36">MM_AFFINE</a>, const <a class="el" href="../../da/dc7/structcv_1_1videostab_1_1RansacParams.html">RansacParams</a> &amp;params=<a class="el" href="../../da/dc7/structcv_1_1videostab_1_1RansacParams.html#a30dc41affb537f4c8af23bebc18defa1">RansacParams::default2dMotion</a>(<a class="el" href="../../d4/d2c/group__videostab__motion.html#ggac61e59db30b7d13983885d3ad3116ce1a30b3b23d3cdd42fd8a7c4e286472de36">MM_AFFINE</a>), float *rmse=0, int *ninliers=0)</td></tr>
 <tr class="memdesc:ga6260bd61792a7ec94ea974af9d94ead7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Estimates best global motion between two 2D point clouds robustly (using RANSAC method).  <a href="../../d4/d2c/group__videostab__motion.html#ga6260bd61792a7ec94ea974af9d94ead7">More...</a><br /></td></tr>
 <tr class="separator:ga6260bd61792a7ec94ea974af9d94ead7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gab049af45e7db622406b58686e81fa5e2"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d4/d2c/group__videostab__motion.html#gab049af45e7db622406b58686e81fa5e2">estimateOptimalTrimRatio</a> (const <a class="el" href="../../d3/d63/classcv_1_1Mat.html">Mat</a> &amp;M, <a class="el" href="../../dc/d84/group__core__basic.html#ga346f563897249351a34549137c8532a0">Size</a> size)</td></tr>
@@ -310,7 +310,7 @@ Functions</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:29 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:46 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -364,7 +364,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

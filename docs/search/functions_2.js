@@ -1,6 +1,8 @@
 var searchData=
 [
   ['back',['back',['../d8/dd7/group__core__c__glue.html#ga85c0d06ee6dc8465ea138e9ea8210992',1,'cv::Seq::back()'],['../d8/dd7/group__core__c__glue.html#ga3ea68538e93a8c888f5c4debff0f9ec0',1,'cv::Seq::back() const ']]],
+  ['backendnode',['BackendNode',['../d2/dbb/classcv_1_1dnn_1_1BackendNode.html#a45e71e013bb2ed695e18644a73375c33',1,'cv::dnn::BackendNode']]],
+  ['backendwrapper',['BackendWrapper',['../df/d7b/classcv_1_1dnn_1_1BackendWrapper.html#a523b1266b28c68bf80153fe1cce064fc',1,'cv::dnn::BackendWrapper::BackendWrapper(int backendId, int targetId)'],['../df/d7b/classcv_1_1dnn_1_1BackendWrapper.html#a4f78e2ddc8f0aeadfc1ae173cc279e3e',1,'cv::dnn::BackendWrapper::BackendWrapper(int targetId, const cv::Mat &amp;m)'],['../df/d7b/classcv_1_1dnn_1_1BackendWrapper.html#aba12624858d3e17d6702d0e4061d9e65',1,'cv::dnn::BackendWrapper::BackendWrapper(const Ptr&lt; BackendWrapper &gt; &amp;base, const MatShape &amp;shape)']]],
   ['backproject',['backProject',['../d3/d8d/classcv_1_1PCA.html#ac67e98c86479ca1068803ed983223d84',1,'cv::PCA::backProject(InputArray vec) const '],['../d3/d8d/classcv_1_1PCA.html#aa19cef798b3d90793326e357c88c30db',1,'cv::PCA::backProject(InputArray vec, OutputArray result) const ']]],
   ['backsubst',['backSubst',['../df/df7/classcv_1_1SVD.html#a7c28935c9999977dbe34285d13d43190',1,'cv::SVD::backSubst(InputArray w, InputArray u, InputArray vt, InputArray rhs, OutputArray dst)'],['../df/df7/classcv_1_1SVD.html#a74af6142fc46ff45c69e2953462b31b1',1,'cv::SVD::backSubst(InputArray rhs, OutputArray dst) const '],['../df/df7/classcv_1_1SVD.html#ae398d073d71188ed3e18ef27801b43b8',1,'cv::SVD::backSubst(const Matx&lt; _Tp, nm, 1 &gt; &amp;w, const Matx&lt; _Tp, m, nm &gt; &amp;u, const Matx&lt; _Tp, n, nm &gt; &amp;vt, const Matx&lt; _Tp, m, nb &gt; &amp;rhs, Matx&lt; _Tp, n, nb &gt; &amp;dst)']]],
   ['batchdistance',['batchDistance',['../d2/de8/group__core__array.html#ga4ba778a1c57f83233b1d851c83f5a622',1,'cv']]],
@@ -66,6 +68,8 @@ var searchData=
   ['blend',['blend',['../d6/d4a/classcv_1_1detail_1_1Blender.html#aa0a91ce0d6046d3a63e0123cbb1b5c00',1,'cv::detail::Blender::blend()'],['../d4/d69/classcv_1_1detail_1_1FeatherBlender.html#a2ad1798d9cabce025eeddcbc17133c20',1,'cv::detail::FeatherBlender::blend()'],['../d5/d4b/classcv_1_1detail_1_1MultiBandBlender.html#a8c1cdf0b69c655af5f29c66df7911434',1,'cv::detail::MultiBandBlender::blend()']]],
   ['blender',['blender',['../d2/d8d/classcv_1_1Stitcher.html#aaf325d20b42ed5336956c966b6a416fe',1,'cv::Stitcher::blender()'],['../d2/d8d/classcv_1_1Stitcher.html#a66b6312615f2d5580a784a0332f656ca',1,'cv::Stitcher::blender() const ']]],
   ['blendlinear',['blendLinear',['../d7/dbd/group__imgproc.html#ga5e76540a679333d7c6cd0617c452c23d',1,'cv::blendLinear()'],['../d0/d05/group__cudaimgproc.html#ga4793607e5729bcc15b27ea33d9fe335e',1,'cv::cuda::blendLinear()']]],
+  ['blobfromimage',['blobFromImage',['../d6/d0f/group__dnn.html#ga0507466a789702eda8ffcdfa37f4d194',1,'cv::dnn']]],
+  ['blobfromimages',['blobFromImages',['../d6/d0f/group__dnn.html#ga2171d42f5e0c5ee4e39fd5a1acf0837d',1,'cv::dnn']]],
   ['blockcopy',['blockCopy',['../df/dfc/group__cudev.html#gaf51cc0418583d154ca8154e948a9bd06',1,'cv::cudev']]],
   ['blockfill',['blockFill',['../df/dfc/group__cudev.html#ga16247ffa2276dffc70dd52bc61001eaa',1,'cv::cudev']]],
   ['blockid',['blockId',['../d3/d6c/structcv_1_1cudev_1_1Block.html#ad0cc0c3c4ed654db57e05322f02eb3c4',1,'cv::cudev::Block']]],

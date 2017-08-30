@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -159,13 +159,13 @@ var searchBox = new SearchBox("searchBox", "../../search",false,'Search');
   <tr class="even"><td class="entry"><a class="el" href="../../d1/de5/structcv_1_1cudev_1_1IsBinaryFunction.html#a3be864a9c497fc8a58cac5aa8e5465eb">check</a>(binary_function&lt; T1, T2, D &gt;)</td><td class="entry"><a class="el" href="../../d1/de5/structcv_1_1cudev_1_1IsBinaryFunction.html">cv::cudev::IsBinaryFunction&lt; F &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr><td class="entry"><a class="el" href="../../d1/de5/structcv_1_1cudev_1_1IsBinaryFunction.html#a0e4fd65fceffabea4e8d1f6148d9a681">check</a>(...)</td><td class="entry"><a class="el" href="../../d1/de5/structcv_1_1cudev_1_1IsBinaryFunction.html">cv::cudev::IsBinaryFunction&lt; F &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d1/de5/structcv_1_1cudev_1_1IsBinaryFunction.html#a1032a91a75daa80e476c5da0612cb2bc">makeF</a>()</td><td class="entry"><a class="el" href="../../d1/de5/structcv_1_1cudev_1_1IsBinaryFunction.html">cv::cudev::IsBinaryFunction&lt; F &gt;</a></td><td class="entry"><span class="mlabel">static</span></td></tr>
-  <tr><td class="entry"><a class="el" href="../../d1/de5/structcv_1_1cudev_1_1IsBinaryFunction.html#a833254a7b04536e75623aa7f84b9f858a90ad3b693ab1636982b2edc8890cb66f">value</a> enum value</td><td class="entry"><a class="el" href="../../d1/de5/structcv_1_1cudev_1_1IsBinaryFunction.html">cv::cudev::IsBinaryFunction&lt; F &gt;</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="../../d1/de5/structcv_1_1cudev_1_1IsBinaryFunction.html#a455deb039761ca2a53d9a04d8b981832a90ad3b693ab1636982b2edc8890cb66f">value</a> enum value</td><td class="entry"><a class="el" href="../../d1/de5/structcv_1_1cudev_1_1IsBinaryFunction.html">cv::cudev::IsBinaryFunction&lt; F &gt;</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="../../d1/de5/structcv_1_1cudev_1_1IsBinaryFunction.html#a4e7af1ec9a68eb1768685210aee116d9">Yes</a> typedef</td><td class="entry"><a class="el" href="../../d1/de5/structcv_1_1cudev_1_1IsBinaryFunction.html">cv::cudev::IsBinaryFunction&lt; F &gt;</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:28 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:45 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -219,7 +219,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

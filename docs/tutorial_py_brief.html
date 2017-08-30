@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -160,7 +160,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>In short, BRIEF is a faster method feature descriptor calculation and matching. It also provides high recognition rate unless there is large in-plane rotation.</p>
 <h2>BRIEF in OpenCV </h2>
 <p>Below code shows the computation of BRIEF descriptors with the help of CenSurE detector. (CenSurE detector is called STAR detector in OpenCV)</p>
-<p>note, that you need <a href="https://github.com/opencv/opencv_contrib">opencv contrib</a>) to use this. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> cv2</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;img = cv2.imread(<span class="stringliteral">&#39;simple.jpg&#39;</span>,0)</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"># Initiate FAST detector</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;star = cv2.xfeatures2d.StarDetector_create()</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"># Initiate BRIEF extractor</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;brief = cv2.xfeatures2d.BriefDescriptorExtractor_create()</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"># find the keypoints with STAR</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;kp = star.detect(img,<span class="keywordtype">None</span>)</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"># compute the descriptors with BRIEF</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;kp, des = brief.compute(img, kp)</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keywordflow">print</span> brief.descriptorSize()</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keywordflow">print</span> des.shape</div></div><!-- fragment --><p> The function brief.getDescriptorSize() gives the \(n_d\) size used in bytes. By default it is 32. Next one is matching, which will be done in another chapter.</p>
+<p>note, that you need <a href="https://github.com/opencv/opencv_contrib">opencv contrib</a>) to use this. </p><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">import</span> numpy <span class="keyword">as</span> np</div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">import</span> cv2</div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">from</span> matplotlib <span class="keyword">import</span> pyplot <span class="keyword">as</span> plt</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;</div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;img = cv2.imread(<span class="stringliteral">&#39;simple.jpg&#39;</span>,0)</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"># Initiate FAST detector</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;star = cv2.xfeatures2d.StarDetector_create()</div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"># Initiate BRIEF extractor</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;brief = cv2.xfeatures2d.BriefDescriptorExtractor_create()</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"># find the keypoints with STAR</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;kp = star.detect(img,<span class="keywordtype">None</span>)</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"># compute the descriptors with BRIEF</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;kp, des = brief.compute(img, kp)</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<a class="code" href="df/d57/namespacecv_1_1dnn.html#aa2ef06a8c0c2880c51d5f3e4e86abe4b">print</a>( brief.descriptorSize() )</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<a class="code" href="df/d57/namespacecv_1_1dnn.html#aa2ef06a8c0c2880c51d5f3e4e86abe4b">print</a>( des.shape )</div></div><!-- fragment --><p> The function brief.getDescriptorSize() gives the \(n_d\) size used in bytes. By default it is 32. Next one is matching, which will be done in another chapter.</p>
 <h2>Additional Resources </h2>
 <ol type="1">
 <li>Michael Calonder, Vincent Lepetit, Christoph Strecha, and Pascal Fua, "BRIEF: Binary Robust
@@ -171,7 +171,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -225,7 +225,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

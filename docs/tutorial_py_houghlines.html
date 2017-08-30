@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="doxygen.css" rel="stylesheet" type="text/css" />
 <link href="stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -183,7 +183,7 @@ image</div></div>
 <img src="houghlines4.png" alt="houghlines4.png"/>
 <div class="caption">
 image</div></div>
-<p> OpenCV implementation is based on Robust Detection of Lines Using the Progressive Probabilistic Hough Transform by Matas, J. and Galambos, C. and Kittler, J.V. <a class="el" href="d0/de3/citelist.html#CITEREF_Matas00">[54]</a>. The function used is <b><a class="el" href="dd/d1a/group__imgproc__feature.html#ga8618180a5948286384e3b7ca02f6feeb" title="Finds line segments in a binary image using the probabilistic Hough transform. ">cv2.HoughLinesP()</a></b>. It has two new arguments.</p><ul>
+<p> OpenCV implementation is based on Robust Detection of Lines Using the Progressive Probabilistic Hough Transform by Matas, J. and Galambos, C. and Kittler, J.V. <a class="el" href="d0/de3/citelist.html#CITEREF_Matas00">[55]</a>. The function used is <b><a class="el" href="dd/d1a/group__imgproc__feature.html#ga8618180a5948286384e3b7ca02f6feeb" title="Finds line segments in a binary image using the probabilistic Hough transform. ">cv2.HoughLinesP()</a></b>. It has two new arguments.</p><ul>
 <li><b>minLineLength</b> - Minimum length of line. Line segments shorter than this are rejected.</li>
 <li><b>maxLineGap</b> - Maximum allowed gap between line segments to treat them as a single line.</li>
 </ul>
@@ -201,7 +201,7 @@ image</div></div>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:25 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:42 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -255,7 +255,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {

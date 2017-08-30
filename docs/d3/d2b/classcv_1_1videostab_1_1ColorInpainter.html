@@ -39,7 +39,7 @@ MathJax.Hub.Config(
 }
 );
 //]]>
-</script><script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
+</script><script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js"></script>
 <link href="../../doxygen.css" rel="stylesheet" type="text/css" />
 <link href="../../stylesheet.css" rel="stylesheet" type="text/css"/>
 </head>
@@ -53,7 +53,7 @@ MathJax.Hub.Config(
   <td id="projectlogo"><img alt="Logo" src="../../opencv-logo-small.png"/></td>
   <td style="padding-left: 0.5em;">
    <div id="projectname">OpenCV
-   &#160;<span id="projectnumber">3.2.0-dev</span>
+   &#160;<span id="projectnumber">3.3.0-dev</span>
    </div>
    <div id="projectbrief">Open Source Computer Vision</div>
   </td>
@@ -170,7 +170,7 @@ Inheritance diagram for cv::videostab::ColorInpainter:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ga23ab7e15cf5caaf624a90607d863c07e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d50/group__videostab.html#ga23ab7e15cf5caaf624a90607d863c07e">ColorInpainter</a> (int method=<a class="el" href="../../d1/d0d/group__photo.html#gga9629a7df23f906e22eef2d019d55d9aba892824c38e258feb5e72f308a358d52e">INPAINT_TELEA</a>, double <a class="el" href="../../d5/d00/classcv_1_1videostab_1_1InpainterBase.html#aeb52fd6e95176f556613d0ef381a8844">radius</a>=2.)</td></tr>
+<tr class="memitem:ga23ab7e15cf5caaf624a90607d863c07e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d5/d50/group__videostab.html#ga23ab7e15cf5caaf624a90607d863c07e">ColorInpainter</a> (int method=<a class="el" href="../../d1/d0d/group__photo.html#ggac007e35ce97fe229513dbfd407d605e3a892824c38e258feb5e72f308a358d52e">INPAINT_TELEA</a>, double <a class="el" href="../../d5/d00/classcv_1_1videostab_1_1InpainterBase.html#aeb52fd6e95176f556613d0ef381a8844">radius</a>=2.)</td></tr>
 <tr class="separator:ga23ab7e15cf5caaf624a90607d863c07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3e2b2c2277d0d64aca30b9850485cd7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../d3/d2b/classcv_1_1videostab_1_1ColorInpainter.html#ad3e2b2c2277d0d64aca30b9850485cd7">inpaint</a> (int idx, <a class="el" href="../../d3/d63/classcv_1_1Mat.html">Mat</a> &amp;frame, <a class="el" href="../../d3/d63/classcv_1_1Mat.html">Mat</a> &amp;mask)</td></tr>
 <tr class="separator:ad3e2b2c2277d0d64aca30b9850485cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -270,7 +270,7 @@ Additional Inherited Members</h2></td></tr>
 <!-- HTML footer for doxygen 1.8.6-->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Aug 11 2017 15:05:29 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 10:44:46 for OpenCV by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="../../doxygen.png" alt="doxygen"/>
 </a> 1.8.11
 </small></address>
@@ -324,7 +324,7 @@ $("h2").each(function() {
     $smallerHeadings = $(this).nextUntil("h2").filter("h3").add($(this).nextUntil("h2").find("h3"));
     if ($smallerHeadings.length) {
         $smallerHeadings.each(function() {
-            var $elements = $(this).nextUntil("h3").filter("div.newInnerHTML");
+            var $elements = $(this).nextUntil("h2,h3").filter("div.newInnerHTML");
             buttonsToAdd($elements, $(this), "h3");
         });
     } else {
